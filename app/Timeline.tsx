@@ -140,7 +140,7 @@ export default function Timeline({ bands, totals }: Props) {
                           onMouseEnter={(e) => setHover({ m, x: e.clientX, y: e.clientY })}
                           onMouseMove={(e) => setHover({ m, x: e.clientX, y: e.clientY })}
                           onMouseLeave={() => setHover(null)}
-                          onClick={() => { if (m.lbLink) window.open(m.lbLink, '_blank', 'noopener,noreferrer'); }}
+                          onClick={() => window.open(m.wikiUrl, '_blank', 'noopener,noreferrer')}
                         >
                           <div
                             className={`bar${rated ? '' : ' placeholder'}`}
@@ -179,21 +179,27 @@ function Chip({ cat, label, color, count, active, onClick }: { cat: Category; la
 
 function Tooltip({ movie, x, y }: { movie: DisplayMovie; x: number; y: number }) {
   const off = 18;
-  // Lazy positioning — clamp inside viewport so it doesn't clip near edges.
-  const style: React.CSSProperties = {
-    left: `${Math.min(x + off, (typeof window !== 'undefined' ? window.innerWidth : 9999) - 280)}px`,
-    top: `${y + off}px`,
-  };
+  const TT_WIDTH = 280;
+  const TT_HEIGHT = 460;
+  // Clamp inside the viewport — flip to the cursor's left or above if
+  // we'd otherwise crash into an edge, so the poster always renders fully.
+  const vw = typeof window !== 'undefined' ? window.innerWidth : 9999;
+  const vh = typeof window !== 'undefined' ? window.innerHeight : 9999;
+  const left = x + off + TT_WIDTH > vw ? Math.max(8, x - off - TT_WIDTH) : x + off;
+  const top = y + off + TT_HEIGHT > vh ? Math.max(8, vh - TT_HEIGHT - 8) : y + off;
+  const style: React.CSSProperties = { left: `${left}px`, top: `${top}px` };
   const distClass = movie.distance == null ? '' : movie.distance > 0 ? 'above' : movie.distance < 0 ? 'below' : 'on';
   const distLabel = movie.distance == null
     ? 'unrated'
     : movie.distance === 0
       ? 'on the line'
       : `${movie.distance > 0 ? '+' : ''}${movie.distance} from the line`;
+  const epText = movie.episode != null ? `Ep #${movie.episode}` : 'no episode #';
   return (
     <div className="tooltip show" style={style}>
+      <img className="t-poster" src={movie.posterUrl} alt="" />
       <div className="t-title">{movie.title}{movie.year ? ` (${movie.year})` : ''}</div>
-      <div className="t-meta">Ep #{movie.episode}{movie.hostPick ? ` · ${movie.hostPick}'s pick` : ''}</div>
+      <div className="t-meta">{epText}{movie.hostPick ? ` · ${movie.hostPick}'s pick` : ''}</div>
       {movie.sum != null && (
         <>
           <div className="t-sum">{movie.sum}/15</div>
@@ -203,7 +209,7 @@ function Tooltip({ movie, x, y }: { movie: DisplayMovie; x: number; y: number })
           </div>
         </>
       )}
-      {movie.lbLink && <div className="t-meta" style={{ marginTop: 6 }}>click → letterboxd ↗</div>}
+      <div className="t-link">click → 70mmwiki.com/movies/{movie.id} ↗</div>
     </div>
   );
 }

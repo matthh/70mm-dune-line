@@ -78,6 +78,8 @@ export interface DisplayMovie {
   /** Hot-linked 1400x1400 poster from 70mmwiki. The wiki serves these
    *  publicly; mirroring 319 of them would bloat the deploy by ~100MB. */
   posterUrl: string;
+  /** Canonical episode page on the wiki. */
+  wikiUrl: string;
 }
 
 export interface ThemeBand {
@@ -168,6 +170,7 @@ export function buildTimeline(): { bands: ThemeBand[]; totals: Record<Category, 
       distance: m.sum == null ? null : Number((m.sum - DUNE_LINE).toFixed(2)),
       isDune,
       posterUrl: `https://70mmwiki.com/api/artwork/thumbs/${m.id}.jpg`,
+      wikiUrl: `https://70mmwiki.com/movies/${m.id}`,
     };
 
     if (m.month_theme_id && isMeaningfulThemeName(m.monthTheme?.theme_name)) {
