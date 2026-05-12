@@ -523,136 +523,159 @@ body {
   font-weight: 500;
 }
 
-/* Trophy lists — 15 Bangers fills a multi-column block. */
-.trophy {
-  margin-top: 32px;
-  padding-top: 22px;
-  border-top: 1px solid #2a2218;
-}
-.trophy-h {
-  font-family: 'Oswald', sans-serif;
-  font-size: 13px;
-  font-weight: 500;
-  letter-spacing: 0.28em;
-  color: #c89a4a;
-  text-transform: uppercase;
-  margin: 0 0 14px;
-}
-.trophy-h-count {
-  color: #6a5d44;
-  font-size: 11px;
-  margin-left: 8px;
-  letter-spacing: 0.1em;
-}
-.trophy-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  columns: 3;
-  column-gap: 24px;
-}
-.trophy-list li {
-  margin: 0 0 6px;
-  font-family: 'Oswald', sans-serif;
-  font-size: 12px;
-  letter-spacing: 0.04em;
-  break-inside: avoid;
-}
-.trophy-list a {
-  color: #f4e9d4;
-  text-decoration: none;
-  display: grid;
-  grid-template-columns: 36px 1fr;
-  gap: 8px;
-  padding: 2px 4px;
-  border-radius: 3px;
-  transition: background 0.12s;
-}
-.trophy-list a:hover { background: rgba(200,154,74,0.08); }
-.trophy-ep { color: #c89a4a; text-align: right; font-size: 11px; letter-spacing: 0.08em; }
-.trophy-title { color: #f4e9d4; }
-.trophy-year { color: #6a5d44; font-size: 11px; }
-.trophy-list a:hover .trophy-title { color: #c89a4a; }
+/* Trophy list + deep-dive sections were replaced by the movie-grid
+ * modal popup — see .modal / .movie-card rules below. */
 
-.theme-deep-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 24px;
-  margin-top: 28px;
+/* Clickable rows in the leaderboard get the same affordances as the
+ * rank-row buttons — hover lift, cursor, "→" hint. */
+.at-row.clickable { cursor: pointer; transition: background 0.15s; border-radius: 4px; padding: 4px; margin: -4px; }
+.at-row.clickable:hover { background: rgba(200,154,74,0.08); }
+.at-row.clickable:focus-visible { outline: 2px solid #c89a4a; outline-offset: 2px; }
+.at-arrow { color: #c89a4a; opacity: 0.7; margin-left: 4px; font-size: 12px; }
+
+.rank-row {
+  background: transparent;
+  border: none;
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+  transition: background 0.15s;
+  border-radius: 3px;
+  font-family: inherit;
 }
-.theme-deep {
-  background: #0a0907;
-  border: 1px solid #2a2218;
-  border-radius: 6px;
-  padding: 16px 18px;
+.rank-row:hover { background: rgba(200,154,74,0.08); }
+.rank-row:focus-visible { outline: 2px solid #c89a4a; outline-offset: 1px; }
+
+/* Modal popup */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.78);
+  backdrop-filter: blur(4px);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  animation: modal-fade 0.15s ease-out;
 }
-.theme-deep-label {
+@keyframes modal-fade { from { opacity: 0 } to { opacity: 1 } }
+.modal {
+  background: #0d0b08;
+  border: 1px solid #c89a4a;
+  border-radius: 10px;
+  max-width: 920px;
+  width: 100%;
+  max-height: 86vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 24px 64px rgba(0,0,0,0.8);
+  overflow: hidden;
+}
+.modal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 20px 24px 16px;
+  border-bottom: 1px solid #2a2218;
+  gap: 16px;
+}
+.modal-title {
   font-family: 'Oswald', sans-serif;
-  font-size: 10px;
-  letter-spacing: 0.3em;
-  color: #6a5d44;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  color: #c89a4a;
   text-transform: uppercase;
   margin: 0;
 }
-.theme-deep-name {
+.modal-sub {
   font-family: 'Oswald', sans-serif;
-  font-size: 18px;
-  font-weight: 500;
-  letter-spacing: 0.16em;
-  color: #c89a4a;
-  text-transform: uppercase;
-  margin: 4px 0 0;
-}
-.theme-deep-meta {
-  font-family: 'Oswald', sans-serif;
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: 0.18em;
   color: #6a5d44;
   text-transform: uppercase;
-  margin: 4px 0 12px;
+  margin: 4px 0 0;
 }
-.theme-deep-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.modal-close {
+  background: transparent;
+  border: 1px solid #3a3024;
+  color: #c4b594;
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: all 0.15s;
 }
-.theme-deep-list li {
-  margin: 0;
-  break-inside: avoid;
+.modal-close:hover { border-color: #c89a4a; color: #f4e9d4; }
+.modal-body {
+  overflow-y: auto;
+  padding: 20px 24px;
 }
-.theme-deep-list a {
+.movie-grid {
   display: grid;
-  grid-template-columns: 36px 1fr 80px 32px;
-  align-items: center;
-  gap: 10px;
-  padding: 5px 4px;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 16px;
+}
+.movie-card {
+  display: flex;
+  flex-direction: column;
+  background: #1a1410;
+  border: 1px solid #2a2218;
+  border-radius: 6px;
+  overflow: hidden;
+  text-decoration: none;
+  transition: transform 0.15s, border-color 0.15s;
+}
+.movie-card:hover { transform: translateY(-2px); border-color: #c89a4a; }
+.movie-card-poster {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  display: block;
+  background: #0a0907;
+}
+.movie-card-meta {
+  padding: 8px 10px 10px;
+}
+.movie-card-title {
   font-family: 'Oswald', sans-serif;
   font-size: 12px;
-  letter-spacing: 0.04em;
-  color: #f4e9d4;
-  text-decoration: none;
-  border-radius: 3px;
-}
-.theme-deep-list a:hover { background: rgba(200,154,74,0.08); }
-.td-ep { color: #c89a4a; text-align: right; font-size: 11px; letter-spacing: 0.08em; }
-.td-title {
-  color: #f4e9d4;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.td-bar { height: 6px; background: #1a1410; border-radius: 1px; overflow: hidden; }
-.td-bar-fill { height: 100%; }
-.td-sum {
-  text-align: right;
   font-weight: 500;
+  color: #f4e9d4;
   letter-spacing: 0.04em;
+  line-height: 1.25;
+  margin-bottom: 4px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
-.td-sum-above { color: #7a8a4a; }
-.td-sum-below { color: #a64a2e; }
-.td-sum-on { color: #c89a4a; }
+.movie-card-sub {
+  display: flex;
+  gap: 8px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  color: #6a5d44;
+  text-transform: uppercase;
+  align-items: center;
+}
+.movie-card-sum {
+  margin-left: auto;
+  font-size: 13px;
+  font-weight: 500;
+}
+.movie-card-sum-above { color: #7a8a4a; }
+.movie-card-sum-below { color: #a64a2e; }
+.movie-card-sum-on { color: #c89a4a; }
 
 @media (max-width: 760px) {
-  .theme-leaderboard, .theme-deep-grid { grid-template-columns: 1fr; }
-  .trophy-list { columns: 2; }
+  .theme-leaderboard { grid-template-columns: 1fr; }
+  .modal-header { padding: 16px 18px 12px; }
+  .modal-body { padding: 14px 18px; }
+  .movie-grid { grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 12px; }
 }
