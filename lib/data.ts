@@ -189,7 +189,35 @@ export interface AllTimeStats {
   buried: number;
   /** Movies tied with Dune at exactly 10.5. */
   dune: number;
+  /** The 15/15 bangers themselves, newest first. */
+  bangerMovies: BangerMovie[];
+  /** Themes with the highest average rating sum, top first. */
+  topThemes: ThemeRanking[];
+  /** Themes with the lowest average rating sum, bottom first. */
+  lowThemes: ThemeRanking[];
 }
+
+export interface BangerMovie {
+  id: number;
+  title: string;
+  year: number | null;
+  episode: number | null;
+  themeName: string | null;
+  wikiUrl: string;
+}
+
+export interface ThemeRanking {
+  themeId: number;
+  name: string;
+  shortName: string;
+  avg: number;
+  movieCount: number;
+  /** Per-movie detail surfaced in the deep-dive sections. */
+  movies: { id: number; title: string; episode: number | null; sum: number; wikiUrl: string }[];
+}
+
+const MIN_MOVIES_FOR_THEME_RANKING = 3;
+const THEME_RANKING_TAKE = 5;
 
 /** Build the band-grouped, reverse-chronological timeline the page renders. */
 export function buildTimeline(): {
@@ -296,11 +324,76 @@ export function buildTimeline(): {
       if (m.sum === 15) bangers++;
     }
   }
+
+  // Compute per-theme rankings. Only count themes whose name is
+  // meaningful (no "?" placeholders) AND have at least
+  // MIN_MOVIES_FOR_THEME_RANKING rated movies, so single-banger themes
+  // don't dominate the leaderboard. Average is the mean of sum values
+  // across rated movies in the theme.
+  const themeAggs = new Map<number, { name: string; movies: { id: number; title: string; episode: number | null; sum: number; wikiUrl: string }[] }>();
+  for (const m of regular) {
+    if (m.sum == null) continue;
+    if (!m.month_theme_id || !isMeaningfulThemeName(m.monthTheme?.theme_name)) continue;
+    const existing = themeAggs.get(m.month_theme_id);
+    const movieEntry = {
+      id: m.id,
+      title: m.movie,
+      episode: m.episode,
+      sum: m.sum,
+      wikiUrl: `https://70mmwiki.com/movies/${m.id}`,
+    };
+    if (existing) {
+      existing.movies.push(movieEntry);
+    } else {
+      themeAggs.set(m.month_theme_id, {
+        name: m.monthTheme!.theme_name!.trim(),
+        movies: [movieEntry],
+      });
+    }
+  }
+
+  const eligibleThemes: ThemeRanking[] = [];
+  for (const [themeId, agg] of themeAggs) {
+    if (agg.movies.length < MIN_MOVIES_FOR_THEME_RANKING) continue;
+    const sumTotal = agg.movies.reduce((a, x) => a + x.sum, 0);
+    eligibleThemes.push({
+      themeId,
+      name: agg.name,
+      shortName: shortenThemeName(agg.name),
+      avg: Number((sumTotal / agg.movies.length).toFixed(2)),
+      movieCount: agg.movies.length,
+      movies: agg.movies.slice().sort((a, b) => b.sum - a.sum),
+    });
+  }
+  // Highest avg → top. Lowest avg → bottom.
+  const sortedByAvgDesc = eligibleThemes.slice().sort((a, b) => b.avg - a.avg);
+  const topThemes = sortedByAvgDesc.slice(0, THEME_RANKING_TAKE);
+  const lowThemes = sortedByAvgDesc.slice(-THEME_RANKING_TAKE).reverse();
+
+  // 15-banger movies, newest first by episode #. Annotated with their
+  // theme name (if any) so the section can read like a trophy case.
+  const bangerMovies: BangerMovie[] = regular
+    .filter(m => m.sum === 15)
+    .sort((a, b) => (b.episode ?? 0) - (a.episode ?? 0))
+    .map(m => ({
+      id: m.id,
+      title: m.movie,
+      year: m.year_released,
+      episode: m.episode,
+      themeName: isMeaningfulThemeName(m.monthTheme?.theme_name)
+        ? shortenThemeName(m.monthTheme!.theme_name!)
+        : null,
+      wikiUrl: `https://70mmwiki.com/movies/${m.id}`,
+    }));
+
   const allTime: AllTimeStats = {
     bangers,
     cleared: totals.cleared,
     buried: totals.buried,
     dune: totals.dune,
+    bangerMovies,
+    topThemes,
+    lowThemes,
   };
 
   return { bands: sortedBands, totals, allTime, scrapedAt: data.scrapedAt };

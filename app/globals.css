@@ -461,3 +461,198 @@ body {
   text-align: left;
   letter-spacing: 0.04em;
 }
+
+/* Theme leaderboard: side-by-side top-N / bottom-N panels. */
+.theme-leaderboard {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 28px;
+}
+.rank-panel {
+  background: #0a0907;
+  border: 1px solid #2a2218;
+  border-radius: 6px;
+  padding: 14px 16px;
+}
+.rank-h {
+  font-family: 'Oswald', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.24em;
+  color: #c89a4a;
+  text-transform: uppercase;
+  margin: 0 0 12px;
+}
+.rank-empty {
+  font-size: 11px;
+  color: #6a5d44;
+  font-style: italic;
+  margin: 4px 0;
+}
+.rank-row {
+  display: grid;
+  grid-template-columns: 22px 1fr 80px 36px;
+  gap: 10px;
+  align-items: center;
+  padding: 4px 0;
+  font-family: 'Oswald', sans-serif;
+  font-size: 12px;
+}
+.rank-num {
+  color: #6a5d44;
+  letter-spacing: 0.1em;
+  font-size: 11px;
+  text-align: right;
+}
+.rank-name {
+  color: #f4e9d4;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.rank-count { color: #6a5d44; font-size: 10px; letter-spacing: 0.08em; }
+.rank-bar { height: 8px; background: #1a1410; border-radius: 2px; overflow: hidden; }
+.rank-bar-fill { height: 100%; }
+.rank-avg {
+  text-align: right;
+  color: #c4b594;
+  letter-spacing: 0.04em;
+  font-weight: 500;
+}
+
+/* Trophy lists — 15 Bangers fills a multi-column block. */
+.trophy {
+  margin-top: 32px;
+  padding-top: 22px;
+  border-top: 1px solid #2a2218;
+}
+.trophy-h {
+  font-family: 'Oswald', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.28em;
+  color: #c89a4a;
+  text-transform: uppercase;
+  margin: 0 0 14px;
+}
+.trophy-h-count {
+  color: #6a5d44;
+  font-size: 11px;
+  margin-left: 8px;
+  letter-spacing: 0.1em;
+}
+.trophy-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  columns: 3;
+  column-gap: 24px;
+}
+.trophy-list li {
+  margin: 0 0 6px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  break-inside: avoid;
+}
+.trophy-list a {
+  color: #f4e9d4;
+  text-decoration: none;
+  display: grid;
+  grid-template-columns: 36px 1fr;
+  gap: 8px;
+  padding: 2px 4px;
+  border-radius: 3px;
+  transition: background 0.12s;
+}
+.trophy-list a:hover { background: rgba(200,154,74,0.08); }
+.trophy-ep { color: #c89a4a; text-align: right; font-size: 11px; letter-spacing: 0.08em; }
+.trophy-title { color: #f4e9d4; }
+.trophy-year { color: #6a5d44; font-size: 11px; }
+.trophy-list a:hover .trophy-title { color: #c89a4a; }
+
+.theme-deep-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 28px;
+}
+.theme-deep {
+  background: #0a0907;
+  border: 1px solid #2a2218;
+  border-radius: 6px;
+  padding: 16px 18px;
+}
+.theme-deep-label {
+  font-family: 'Oswald', sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.3em;
+  color: #6a5d44;
+  text-transform: uppercase;
+  margin: 0;
+}
+.theme-deep-name {
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  color: #c89a4a;
+  text-transform: uppercase;
+  margin: 4px 0 0;
+}
+.theme-deep-meta {
+  font-family: 'Oswald', sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  color: #6a5d44;
+  text-transform: uppercase;
+  margin: 4px 0 12px;
+}
+.theme-deep-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.theme-deep-list li {
+  margin: 0;
+  break-inside: avoid;
+}
+.theme-deep-list a {
+  display: grid;
+  grid-template-columns: 36px 1fr 80px 32px;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 4px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  color: #f4e9d4;
+  text-decoration: none;
+  border-radius: 3px;
+}
+.theme-deep-list a:hover { background: rgba(200,154,74,0.08); }
+.td-ep { color: #c89a4a; text-align: right; font-size: 11px; letter-spacing: 0.08em; }
+.td-title {
+  color: #f4e9d4;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.td-bar { height: 6px; background: #1a1410; border-radius: 1px; overflow: hidden; }
+.td-bar-fill { height: 100%; }
+.td-sum {
+  text-align: right;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+.td-sum-above { color: #7a8a4a; }
+.td-sum-below { color: #a64a2e; }
+.td-sum-on { color: #c89a4a; }
+
+@media (max-width: 760px) {
+  .theme-leaderboard, .theme-deep-grid { grid-template-columns: 1fr; }
+  .trophy-list { columns: 2; }
+}
