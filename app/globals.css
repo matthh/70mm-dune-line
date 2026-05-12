@@ -146,9 +146,10 @@ body {
 .timeline-inner {
   display: flex;
   align-items: stretch;
-  /* Taller per request — gives bars room to be readable AND
-   * accommodate the larger poster-as-background bars. */
-  height: 720px;
+  /* Taller per request. With title labels gone (posters identify the
+   * movie now), we can squeeze a bit since we no longer reserve label
+   * space — but keep most of the room for tall posters at high ratings. */
+  height: 640px;
   min-width: 100%;
 }
 .theme-band {
@@ -193,10 +194,13 @@ body {
   text-transform: uppercase;
 }
 
+/* Chart area — zero vertical padding so its height equals the y-scale
+ * reference frame the Dune Line overlay is positioned against. The bar
+ * inside a bar-col is height: (sum/15)*100%, anchored at the bottom. */
 .theme-bars {
   flex: 1;
   position: relative;
-  padding: 10px 8px 0;
+  padding: 0 8px;
   display: flex;
   align-items: flex-end;
   justify-content: space-around;
@@ -220,14 +224,11 @@ body {
   border-radius: 3px 3px 0 0;
   transition: all 0.25s;
   position: relative;
-  /* Poster fills the top of the bar, the rest is the category color
-   * showing through. We use background-image for the poster + a solid
-   * color stripe at the bottom via a linear-gradient. */
+  /* Poster fills the top of the bar; the category color shows through
+   * below if the bar is taller than the poster. */
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 56px auto;
-  /* Edge under the poster matches the category color so the seam
-   * between poster and color fill is sharp, not gappy. */
   box-shadow: inset 0 -2px 0 rgba(0,0,0,0.25);
 }
 .bar.placeholder {
@@ -237,29 +238,17 @@ body {
   filter: brightness(1.15);
   transform: translateY(-2px);
 }
-.bar-label {
-  font-size: 13px;
-  font-weight: 600;
-  color: #f4e9d4;
-  margin-top: 6px;
-  writing-mode: vertical-rl;
-  transform: rotate(180deg);
-  white-space: nowrap;
-  max-height: 140px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  letter-spacing: 0.04em;
-  font-family: 'Oswald', sans-serif;
-  text-transform: uppercase;
-}
-.bar-label.unknown { color: #3a3024; font-style: italic; font-weight: 400; }
 .ep-num {
+  position: absolute;
+  top: -18px;
+  left: 50%;
+  transform: translateX(-50%);
   font-size: 11px;
   font-weight: 500;
   color: #c89a4a;
   letter-spacing: 0.1em;
-  margin-bottom: 4px;
   font-family: 'Oswald', sans-serif;
+  white-space: nowrap;
 }
 
 /* Hover tooltip — populated by JS, positioned at the cursor. */

@@ -35,9 +35,12 @@ export default function Timeline({ bands, totals }: Props) {
   const glowRef = useRef<HTMLDivElement>(null);
   const tagRef = useRef<HTMLDivElement>(null);
 
-  // The Dune Line is a single continuous horizontal that has to align with
-  // the bar y-scale across all bands. Compute its pixel position from the
-  // band's header height + the remaining bar area.
+  // The Dune Line is a single continuous horizontal that has to align
+  // perfectly with bar tops. Bars live inside .theme-bars and span its
+  // full vertical extent (height % set inline relative to bar-col which
+  // is height: 100% of .theme-bars with zero padding). So the line at
+  // value V sits at headerH + barsH * (1 - V/MAX) from the wrap's top —
+  // no fudge factor.
   useEffect(() => {
     const wrap = wrapRef.current;
     if (!wrap) return;
@@ -45,10 +48,11 @@ export default function Timeline({ bands, totals }: Props) {
     const headerH = headerEl ? (headerEl as HTMLElement).offsetHeight : 32;
     const wrapH = wrap.offsetHeight;
     const barsH = wrapH - headerH;
-    const linePx = headerH + barsH - (barsH * (DUNE_LINE / MAX_SUM)) - 8;
+    const yFor = (v: number) => headerH + barsH * (1 - v / MAX_SUM);
+    const linePx = yFor(DUNE_LINE);
     if (lineRef.current) lineRef.current.style.top = `${linePx - 3}px`;
     if (glowRef.current) glowRef.current.style.top = `${linePx - 8}px`;
-    if (tagRef.current) tagRef.current.style.top = `${linePx - 11}px`;
+    if (tagRef.current) tagRef.current.style.top = `${linePx - 12}px`;
 
     const y = yAxisRef.current;
     if (y) {
@@ -57,7 +61,7 @@ export default function Timeline({ bands, totals }: Props) {
         const t = document.createElement('div');
         t.className = 'y-tick';
         t.textContent = String(v);
-        t.style.top = `${headerH + barsH - (barsH * (v / MAX_SUM))}px`;
+        t.style.top = `${yFor(v)}px`;
         y.appendChild(t);
       });
     }
@@ -108,6 +112,11 @@ export default function Timeline({ bands, totals }: Props) {
                       const visible = isVisible(m.category);
                       const color = COLORS[m.category];
                       const rated = m.sum != null;
+                      // Pure bar height as % of the chart area. Bar is the
+                      // only child of bar-col so this matches the Dune Line
+                      // overlay's coordinate space exactly — no label /
+                      // ep-num eating into the chart area.
+                      const pct = rated ? (m.sum! / MAX_SUM) * 100 : 18;
                       return (
                         <div
                           key={m.id}
@@ -117,21 +126,19 @@ export default function Timeline({ bands, totals }: Props) {
                           onMouseLeave={() => setHover(null)}
                           onClick={() => { if (m.lbLink) window.open(m.lbLink, '_blank', 'noopener,noreferrer'); }}
                         >
-                          <div className="ep-num">#{m.episode}</div>
                           <div
                             className={`bar${rated ? '' : ' placeholder'}`}
                             style={
                               rated
                                 ? {
-                                    height: `${(m.sum! / MAX_SUM) * 100}%`,
+                                    height: `${pct}%`,
                                     backgroundColor: color ?? undefined,
                                     backgroundImage: `url(${m.posterUrl})`,
                                   }
-                                : { height: '60%' }
+                                : { height: `${pct}%` }
                             }
-                          />
-                          <div className={`bar-label${rated ? '' : ' unknown'}`}>
-                            {m.title}
+                          >
+                            <div className="ep-num">#{m.episode}</div>
                           </div>
                         </div>
                       );
