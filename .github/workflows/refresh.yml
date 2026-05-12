@@ -1,16 +1,17 @@
 name: Weekly refresh
 
 # Pulls a fresh copy of data/movies.json from 70mmwiki and commits it
-# back to main. Vercel redeploys automatically on push (once the
-# Vercel <-> GitHub integration is connected for this repo).
+# back to main. Vercel redeploys automatically on push.
 #
-# Schedule: Tuesdays at 13:00 UTC = 6:00 AM PT — well after a typical
-# Monday-evening episode drop, but earlier than the first US working
-# day's coffee. Manual dispatch is available for ad-hoc refreshes.
+# Schedule: daily at 13:00 UTC = 6:00 AM PT. Daily cadence so Ben's
+# wiki edits (rating + theme backfills) propagate to the site within
+# a day. Manual dispatch is available for ad-hoc refreshes.
+# The commit step is a no-op when the scrape is byte-identical, so
+# quiet days don't churn the repo.
 
 on:
   schedule:
-    - cron: '0 13 * * 2'
+    - cron: '0 13 * * *'
   workflow_dispatch:
 
 permissions:
