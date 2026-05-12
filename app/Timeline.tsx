@@ -103,10 +103,12 @@ export default function Timeline({ bands, totals }: Props) {
               // dropped entirely so we don't get empty headers.
               const visibleMovies = band.movies.filter(m => isVisible(m.category));
               if (visibleMovies.length === 0) return null;
-              // Wider per-movie slot and a higher floor so ~3 bands fit
-              // in the stage at default width. 72px per movie + padding;
-              // floor of 340px so small bands still take real estate.
-              const widthPx = Math.max(340, visibleMovies.length * 76 + 40);
+              // Width hugs the visible content — 76px per movie (64px
+              // bar-col + 8px gap + 4px slack) plus a small padding
+              // budget for the band's own header/borders. With a chip
+              // filter narrowing the view, single-movie bands collapse
+              // to ~116px instead of holding 340px of empty real estate.
+              const widthPx = visibleMovies.length * 76 + 40;
               return (
                 <div
                   key={band.key}
