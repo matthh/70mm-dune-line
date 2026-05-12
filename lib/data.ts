@@ -138,6 +138,43 @@ function isMeaningfulThemeName(name: string | null | undefined): boolean {
   return true;
 }
 
+/** Some theme names are too long to read at column width. Map the known
+ *  awkward ones to clean short versions, and fall back to a generic
+ *  ellipsis-at-word-boundary for anything else that overflows. */
+const SHORT_NAMES: Record<string, string> = {
+  'Holy/Regligion/Spiritual Month': 'Holy Month',
+  'Launch $10/tier + Phantom Menace': 'Phantom Menace',
+  'Summer Blockbusters 21st Century': 'Summer Blockbusters',
+  'Latin American Movie Month': 'Latin American',
+  '70mm Goes Back to Jakku': 'Back to Jakku',
+  '70mm goes International': 'International',
+  'Women Lovers / Femtember': 'Femtember',
+  'Road to JW/Junassic World': 'Road to JW',
+  'The Thing 40th June 25th': 'The Thing 40th',
+  'LB 1M Watched Club': 'LB 1M Club',
+  'LEADING LADIES V4': 'Leading Ladies V4',
+  'Leading Ladies Vol. 2': 'Leading Ladies V2',
+  'Leading Ladies 80s': 'Leading L80s',
+  'BUCKET LIST/SHAME': 'Bucket / Shame',
+  'VHS Village Top 100': 'VHS Top 100',
+  '90ish Mins or Less': '90ish Mins',
+  'Movies about movies': 'Movies about Movies',
+};
+
+const MAX_DISPLAY_LEN = 18;
+
+export function shortenThemeName(name: string): string {
+  const trimmed = name.trim();
+  if (SHORT_NAMES[trimmed]) return SHORT_NAMES[trimmed];
+  if (trimmed.length <= MAX_DISPLAY_LEN) return trimmed;
+  // Word-boundary truncation — back up to the last space within the
+  // budget so we don't lop off a word mid-letter, then add an ellipsis.
+  const cut = trimmed.slice(0, MAX_DISPLAY_LEN);
+  const lastSpace = cut.lastIndexOf(' ');
+  const head = lastSpace > 8 ? cut.slice(0, lastSpace) : cut;
+  return `${head}…`;
+}
+
 /** Returns true when the movie is a "main show" / regular episode. */
 function isRegular(m: RawMovie): boolean {
   return !m.bonus && !m.vault && !m.pilot && !m.book && !m.watchalong;
@@ -183,7 +220,7 @@ export function buildTimeline(): { bands: ThemeBand[]; totals: Record<Category, 
         const rawStart = cleanDate(m.monthTheme!.start_date) ?? m.date_published ?? null;
         bands.set(key, {
           key,
-          name: m.monthTheme!.theme_name!.trim(),
+          name: shortenThemeName(m.monthTheme!.theme_name!),
           startDate: rawStart,
           dateLabel: monthLabel(rawStart),
           movies: [display],

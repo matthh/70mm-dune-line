@@ -171,7 +171,12 @@ export default function Timeline({ bands, totals }: Props) {
                 <div
                   key={band.key}
                   className={`theme-band ${band.confirmed ? 'confirmed' : 'unconfirmed'}${band.isDuneMonth ? ' dune-month' : ''}`}
-                  style={{ minWidth: `${widthPx}px` }}
+                  // Hard width (not minWidth) so a long theme name in
+                  // the header can't push the band wider than its
+                  // visible-bar content dictates. The header's
+                  // theme-name has overflow:hidden + ellipsis to clip
+                  // anything that still overflows after shortening.
+                  style={{ width: `${widthPx}px`, minWidth: `${widthPx}px` }}
                 >
                   <div className="theme-header">
                     <p className={`theme-name${band.confirmed ? '' : ' unconfirmed'}`}>

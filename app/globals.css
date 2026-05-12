@@ -189,6 +189,9 @@ body {
   margin: 0;
   overflow: hidden;
   text-overflow: ellipsis;
+  /* Keep the header text inside the band's fixed width so long names
+   * can't bulge the column. Width is constrained by the parent now. */
+  max-width: 100%;
 }
 .theme-name.unconfirmed { color: #5a4e38; font-style: italic; }
 .theme-date {
