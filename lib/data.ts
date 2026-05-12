@@ -105,11 +105,35 @@ function categoryFor(sum: number | null, isDune: boolean): Category {
   return 'dune';
 }
 
-function monthLabel(iso: string | null): string {
+/** Normalize a date string the wiki might hand us in one of three shapes:
+ *  - plain ISO date: "2026-05-04"
+ *  - full ISO timestamp: "2026-02-01T06:00:00.000Z"
+ *  - JSON-stringified (older theme rows): '"2020-10-01T05:00:00.000Z"' (the
+ *    leading and trailing quotes are part of the value)
+ *  Strips wrapping quotes / whitespace so Date.parse can take it. */
+function cleanDate(s: string | null | undefined): string | null {
+  if (!s) return null;
+  const trimmed = s.trim().replace(/^"|"$/g, '');
+  return trimmed || null;
+}
+
+function monthLabel(raw: string | null | undefined): string {
+  const iso = cleanDate(raw);
   if (!iso) return '— older —';
   const d = new Date(iso);
   if (Number.isNaN(d.getTime())) return iso;
   return d.toLocaleString('en-US', { month: 'short', year: 'numeric', timeZone: 'UTC' });
+}
+
+/** Some theme rows have placeholder names like "?", "??", or empty
+ *  strings. Treat those as themeless so the band header doesn't render
+ *  a junk title — the dateLabel still anchors the band in time. */
+function isMeaningfulThemeName(name: string | null | undefined): boolean {
+  if (!name) return false;
+  const t = name.trim();
+  if (!t) return false;
+  if (/^\?+$/.test(t)) return false;
+  return true;
 }
 
 /** Returns true when the movie is a "main show" / regular episode. */
@@ -146,18 +170,19 @@ export function buildTimeline(): { bands: ThemeBand[]; totals: Record<Category, 
       posterUrl: `https://70mmwiki.com/api/artwork/thumbs/${m.id}.jpg`,
     };
 
-    if (m.month_theme_id && m.monthTheme?.theme_name) {
+    if (m.month_theme_id && isMeaningfulThemeName(m.monthTheme?.theme_name)) {
       const key = `theme-${m.month_theme_id}`;
       const existing = bands.get(key);
       if (existing) {
         existing.movies.push(display);
         if (isDune) existing.isDuneMonth = true;
       } else {
+        const rawStart = cleanDate(m.monthTheme!.start_date) ?? m.date_published ?? null;
         bands.set(key, {
           key,
-          name: m.monthTheme.theme_name,
-          startDate: m.monthTheme.start_date ?? m.date_published ?? null,
-          dateLabel: monthLabel(m.monthTheme.start_date ?? m.date_published),
+          name: m.monthTheme!.theme_name!.trim(),
+          startDate: rawStart,
+          dateLabel: monthLabel(rawStart),
           movies: [display],
           confirmed: true,
           isDuneMonth: isDune,
