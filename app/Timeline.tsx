@@ -67,8 +67,13 @@ export default function Timeline({ bands, totals }: Props) {
     }
   }, [bands]);
 
+  // Unrated bars ride along with the "everything" view. The moment the
+  // user narrows by any chip, unrated drops out — they have no rating
+  // to be cleared/buried/on so they don't belong in any single category
+  // view. When all three chips are re-enabled they reappear.
+  const allChipsActive = active.has('cleared') && active.has('buried') && active.has('dune');
   function isVisible(cat: Category): boolean {
-    if (cat === 'unrated') return true;
+    if (cat === 'unrated') return allChipsActive;
     return active.has(cat);
   }
 
