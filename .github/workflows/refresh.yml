@@ -1,0 +1,46 @@
+name: Weekly refresh
+
+# Pulls a fresh copy of data/movies.json from 70mmwiki and commits it
+# back to main. Vercel redeploys automatically on push (once the
+# Vercel <-> GitHub integration is connected for this repo).
+#
+# Schedule: Tuesdays at 13:00 UTC = 6:00 AM PT — well after a typical
+# Monday-evening episode drop, but earlier than the first US working
+# day's coffee. Manual dispatch is available for ad-hoc refreshes.
+
+on:
+  schedule:
+    - cron: '0 13 * * 2'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Run scraper
+        run: node scripts/scrape.mjs
+
+      - name: Commit if data changed
+        run: |
+          git config user.name "70mm-dune-line bot"
+          git config user.email "actions@github.com"
+          if git diff --quiet data/movies.json; then
+            echo "No data changes."
+            exit 0
+          fi
+          # Pull total count out of the new JSON for a useful commit message.
+          TOTAL=$(node -e "console.log(require('./data/movies.json').total)")
+          git add data/movies.json
+          git commit -m "data: weekly refresh ($TOTAL movies)"
+          git push
