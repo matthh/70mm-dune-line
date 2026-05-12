@@ -58,7 +58,12 @@ export interface DisplayMovie {
   id: number;
   title: string;
   year: number | null;
-  episode: number;
+  /** Episode number when assigned by the wiki. A handful of regular
+   *  episodes (Okja, Megalopolis, Willy Wonka, ...) are missing one. */
+  episode: number | null;
+  /** ISO date the episode was published — used as a within-band sort
+   *  fallback when episode # is missing. */
+  publishedAt: string | null;
   sum: number | null;
   slim: number | null;
   danny: number | null;
@@ -115,7 +120,9 @@ function isRegular(m: RawMovie): boolean {
 /** Build the band-grouped, reverse-chronological timeline the page renders. */
 export function buildTimeline(): { bands: ThemeBand[]; totals: Record<Category, number>; scrapedAt: string } {
   const data = raw as RawData;
-  const regular = data.movies.filter(isRegular).filter(m => m.episode != null);
+  // Keep every "regular" episode — including the handful the wiki hasn't
+  // assigned an episode number to. They still belong on the timeline.
+  const regular = data.movies.filter(isRegular);
 
   // Map theme_id (or synthetic key for themeless) -> ThemeBand.
   const bands = new Map<string, ThemeBand>();
@@ -125,7 +132,8 @@ export function buildTimeline(): { bands: ThemeBand[]; totals: Record<Category, 
       id: m.id,
       title: m.movie,
       year: m.year_released,
-      episode: m.episode!,
+      episode: m.episode,
+      publishedAt: m.date_published,
       sum: m.sum,
       slim: m.slim,
       danny: m.danny,
@@ -177,9 +185,19 @@ export function buildTimeline(): { bands: ThemeBand[]; totals: Record<Category, 
     }
   }
 
-  // Sort movies inside each band: episode DESC (highest = leftmost in band).
+  // Sort movies inside each band: episode DESC (highest = leftmost). For
+  // null-episode rows, fall back to publishedAt DESC so they slot into the
+  // band by date rather than disappearing or clustering at zero.
   for (const band of bands.values()) {
-    band.movies.sort((a, b) => b.episode - a.episode);
+    band.movies.sort((a, b) => {
+      const ae = a.episode, be = b.episode;
+      if (ae != null && be != null) return be - ae;
+      if (ae != null) return -1;
+      if (be != null) return 1;
+      const ad = a.publishedAt ? Date.parse(a.publishedAt) : 0;
+      const bd = b.publishedAt ? Date.parse(b.publishedAt) : 0;
+      return bd - ad;
+    });
   }
 
   // Sort bands by startDate DESC; missing dates go to the end.

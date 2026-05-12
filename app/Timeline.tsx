@@ -112,11 +112,14 @@ export default function Timeline({ bands, totals }: Props) {
                       const visible = isVisible(m.category);
                       const color = COLORS[m.category];
                       const rated = m.sum != null;
-                      // Pure bar height as % of the chart area. Bar is the
-                      // only child of bar-col so this matches the Dune Line
-                      // overlay's coordinate space exactly — no label /
-                      // ep-num eating into the chart area.
-                      const pct = rated ? (m.sum! / MAX_SUM) * 100 : 18;
+                      // Bar height % of chart area. Bar is the only child of
+                      // bar-col so this matches the Dune Line overlay's
+                      // y-frame exactly. Unrated rows get a 40% ghost bar so
+                      // they're plainly visible-but-not-misleading (no
+                      // implied rating). The poster shows on top either way;
+                      // if the wiki 404s for unaired posters, the striped
+                      // pattern falls through.
+                      const pct = rated ? (m.sum! / MAX_SUM) * 100 : 40;
                       return (
                         <div
                           key={m.id}
@@ -128,17 +131,13 @@ export default function Timeline({ bands, totals }: Props) {
                         >
                           <div
                             className={`bar${rated ? '' : ' placeholder'}`}
-                            style={
-                              rated
-                                ? {
-                                    height: `${pct}%`,
-                                    backgroundColor: color ?? undefined,
-                                    backgroundImage: `url(${m.posterUrl})`,
-                                  }
-                                : { height: `${pct}%` }
-                            }
+                            style={{
+                              height: `${pct}%`,
+                              ...(rated && color ? { backgroundColor: color } : {}),
+                              backgroundImage: `url(${m.posterUrl})`,
+                            }}
                           >
-                            <div className="ep-num">#{m.episode}</div>
+                            <div className="ep-num">{m.episode != null ? `#${m.episode}` : '—'}</div>
                           </div>
                         </div>
                       );

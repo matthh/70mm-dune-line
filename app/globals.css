@@ -231,9 +231,16 @@ body {
   background-size: 56px auto;
   box-shadow: inset 0 -2px 0 rgba(0,0,0,0.25);
 }
+/* Unrated bar: stripes form the base, the poster (if it exists on the
+ * wiki yet) sits on top via the inline background-image style. Note no
+ * !important — we want the poster image to win when present, and the
+ * stripes to show through where it 404s or is shorter than the bar. */
 .bar.placeholder {
-  background: repeating-linear-gradient(135deg, #2a2218 0px, #2a2218 3px, #1a1410 3px, #1a1410 6px) !important;
+  background-color: #1a1410;
+  background-image:
+    repeating-linear-gradient(135deg, rgba(200,154,74,0.18) 0px, rgba(200,154,74,0.18) 3px, transparent 3px, transparent 6px);
 }
+.bar.placeholder .ep-num { color: #6a5d44; }
 .bar-col:not(.dim):hover .bar:not(.placeholder) {
   filter: brightness(1.15);
   transform: translateY(-2px);
