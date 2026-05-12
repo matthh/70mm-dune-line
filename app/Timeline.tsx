@@ -91,10 +91,17 @@ export default function Timeline({ bands, totals }: Props) {
         <div className="timeline-scroll">
           <div className="timeline-inner">
             {bands.map(band => {
+              // Filter to currently-visible bars so the chart compresses
+              // horizontally when a category is unchecked instead of just
+              // dimming. Unrated rows are always visible (no chip for
+              // them). A band with zero visible bars after filtering is
+              // dropped entirely so we don't get empty headers.
+              const visibleMovies = band.movies.filter(m => isVisible(m.category));
+              if (visibleMovies.length === 0) return null;
               // Wider per-movie slot and a higher floor so ~3 bands fit
               // in the stage at default width. 72px per movie + padding;
               // floor of 340px so small bands still take real estate.
-              const widthPx = Math.max(340, band.movies.length * 76 + 40);
+              const widthPx = Math.max(340, visibleMovies.length * 76 + 40);
               return (
                 <div
                   key={band.key}
@@ -108,8 +115,7 @@ export default function Timeline({ bands, totals }: Props) {
                     <p className="theme-date">{band.dateLabel}</p>
                   </div>
                   <div className="theme-bars">
-                    {band.movies.map(m => {
-                      const visible = isVisible(m.category);
+                    {visibleMovies.map(m => {
                       const color = COLORS[m.category];
                       const rated = m.sum != null;
                       // Bar height % of chart area. Bar is the only child of
@@ -123,7 +129,7 @@ export default function Timeline({ bands, totals }: Props) {
                       return (
                         <div
                           key={m.id}
-                          className={`bar-col${visible ? '' : ' dim'}`}
+                          className="bar-col"
                           onMouseEnter={(e) => setHover({ m, x: e.clientX, y: e.clientY })}
                           onMouseMove={(e) => setHover({ m, x: e.clientX, y: e.clientY })}
                           onMouseLeave={() => setHover(null)}
