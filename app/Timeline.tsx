@@ -87,7 +87,10 @@ export default function Timeline({ bands, totals }: Props) {
         <div className="timeline-scroll">
           <div className="timeline-inner">
             {bands.map(band => {
-              const widthPx = Math.max(120, band.movies.length * 36 + 28);
+              // Wider per-movie slot and a higher floor so ~3 bands fit
+              // in the stage at default width. 72px per movie + padding;
+              // floor of 340px so small bands still take real estate.
+              const widthPx = Math.max(340, band.movies.length * 76 + 40);
               return (
                 <div
                   key={band.key}
@@ -117,10 +120,15 @@ export default function Timeline({ bands, totals }: Props) {
                           <div className="ep-num">#{m.episode}</div>
                           <div
                             className={`bar${rated ? '' : ' placeholder'}`}
-                            style={{
-                              height: rated ? `${(m.sum! / MAX_SUM) * 100}%` : '60%',
-                              background: rated && color ? color : undefined,
-                            }}
+                            style={
+                              rated
+                                ? {
+                                    height: `${(m.sum! / MAX_SUM) * 100}%`,
+                                    backgroundColor: color ?? undefined,
+                                    backgroundImage: `url(${m.posterUrl})`,
+                                  }
+                                : { height: '60%' }
+                            }
                           />
                           <div className={`bar-label${rated ? '' : ' unknown'}`}>
                             {m.title}

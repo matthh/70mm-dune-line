@@ -70,6 +70,9 @@ export interface DisplayMovie {
   distance: number | null;
   /** Whether this is Dune (2021) itself — gets the canonical sand color. */
   isDune: boolean;
+  /** Hot-linked 1400x1400 poster from 70mmwiki. The wiki serves these
+   *  publicly; mirroring 319 of them would bloat the deploy by ~100MB. */
+  posterUrl: string;
 }
 
 export interface ThemeBand {
@@ -132,6 +135,7 @@ export function buildTimeline(): { bands: ThemeBand[]; totals: Record<Category, 
       category: categoryFor(m.sum, isDune),
       distance: m.sum == null ? null : Number((m.sum - DUNE_LINE).toFixed(2)),
       isDune,
+      posterUrl: `https://70mmwiki.com/api/artwork/thumbs/${m.id}.jpg`,
     };
 
     if (m.month_theme_id && m.monthTheme?.theme_name) {

@@ -48,16 +48,15 @@ body {
   gap: 18px;
   flex-wrap: wrap;
 }
-.logo-row { display: flex; align-items: flex-end; gap: 0; line-height: 0.85; }
-.logo-70, .logo-mm {
-  font-family: 'Oswald', 'Bebas Neue', 'Impact', sans-serif;
-  font-weight: 500;
-  font-size: 52px;
-  letter-spacing: -0.02em;
+/* The actual 70MM brand mark — red filmstrip logo from 70mmwiki.
+ * Square asset, displayed at the header's tag-block height. */
+.brand-mark {
+  width: 64px;
+  height: 64px;
+  display: block;
+  border-radius: 6px;
 }
-.logo-70 { color: #f4e9d4; }
-.logo-mm { color: #c89a4a; }
-.divider { width: 1px; height: 44px; background: #c89a4a; opacity: 0.5; }
+.divider { width: 1px; height: 56px; background: #c89a4a; opacity: 0.5; }
 .tag-block { display: flex; flex-direction: column; }
 .tag-line {
   font-family: 'Oswald', 'Bebas Neue', 'Impact', sans-serif;
@@ -138,7 +137,8 @@ body {
   overflow-y: hidden;
   scrollbar-width: thin;
   scrollbar-color: #c89a4a #1a1410;
-  padding-left: 30px;
+  padding-left: 40px;
+  scroll-snap-type: x mandatory;
 }
 .timeline-scroll::-webkit-scrollbar { height: 8px; }
 .timeline-scroll::-webkit-scrollbar-track { background: #1a1410; }
@@ -146,7 +146,9 @@ body {
 .timeline-inner {
   display: flex;
   align-items: stretch;
-  height: 380px;
+  /* Taller per request — gives bars room to be readable AND
+   * accommodate the larger poster-as-background bars. */
+  height: 720px;
   min-width: 100%;
 }
 .theme-band {
@@ -156,6 +158,7 @@ body {
   border-right: 1px solid #2a2218;
   flex-shrink: 0;
   transition: opacity 0.25s;
+  scroll-snap-align: start;
 }
 .theme-band.confirmed { background: rgba(200,154,74,0.04); }
 .theme-band.unconfirmed { background: rgba(60,60,60,0.04); }
@@ -165,36 +168,39 @@ body {
   border-right: 2px solid rgba(200,154,74,0.5);
 }
 .theme-header {
-  padding: 8px 12px 6px;
+  padding: 10px 14px 8px;
   border-bottom: 1px dashed #2a2218;
   flex-shrink: 0;
 }
 .theme-name {
   font-family: 'Oswald', sans-serif;
-  font-size: 11px;
+  font-size: 14px;
+  font-weight: 500;
   letter-spacing: 0.18em;
   color: #c89a4a;
   text-transform: uppercase;
   white-space: nowrap;
   margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .theme-name.unconfirmed { color: #5a4e38; font-style: italic; }
 .theme-date {
-  font-size: 9px;
+  font-size: 11px;
   color: #5a4e38;
   letter-spacing: 0.1em;
-  margin: 2px 0 0;
+  margin: 3px 0 0;
   text-transform: uppercase;
 }
 
 .theme-bars {
   flex: 1;
   position: relative;
-  padding: 8px 4px 0;
+  padding: 10px 8px 0;
   display: flex;
   align-items: flex-end;
   justify-content: space-around;
-  gap: 4px;
+  gap: 8px;
   min-width: 0;
 }
 .bar-col {
@@ -203,40 +209,56 @@ body {
   align-items: center;
   height: 100%;
   justify-content: flex-end;
-  min-width: 26px;
+  min-width: 64px;
   cursor: pointer;
   transition: opacity 0.2s;
   position: relative;
 }
 .bar-col.dim { opacity: 0.18; }
 .bar {
-  width: 22px;
-  border-radius: 2px 2px 0 0;
+  width: 56px;
+  border-radius: 3px 3px 0 0;
   transition: all 0.25s;
   position: relative;
+  /* Poster fills the top of the bar, the rest is the category color
+   * showing through. We use background-image for the poster + a solid
+   * color stripe at the bottom via a linear-gradient. */
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 56px auto;
+  /* Edge under the poster matches the category color so the seam
+   * between poster and color fill is sharp, not gappy. */
+  box-shadow: inset 0 -2px 0 rgba(0,0,0,0.25);
 }
 .bar.placeholder {
   background: repeating-linear-gradient(135deg, #2a2218 0px, #2a2218 3px, #1a1410 3px, #1a1410 6px) !important;
 }
-.bar-col:not(.dim):hover .bar:not(.placeholder) { filter: brightness(1.3); }
+.bar-col:not(.dim):hover .bar:not(.placeholder) {
+  filter: brightness(1.15);
+  transform: translateY(-2px);
+}
 .bar-label {
-  font-size: 8px;
-  color: #6a5d44;
-  margin-top: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #f4e9d4;
+  margin-top: 6px;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
   white-space: nowrap;
-  max-height: 70px;
+  max-height: 140px;
   overflow: hidden;
   text-overflow: ellipsis;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
 }
-.bar-label.unknown { color: #3a3024; font-style: italic; }
+.bar-label.unknown { color: #3a3024; font-style: italic; font-weight: 400; }
 .ep-num {
-  font-size: 7px;
-  color: #5a4e38;
-  letter-spacing: 0.05em;
-  margin-bottom: 2px;
+  font-size: 11px;
+  font-weight: 500;
+  color: #c89a4a;
+  letter-spacing: 0.1em;
+  margin-bottom: 4px;
   font-family: 'Oswald', sans-serif;
 }
 
@@ -270,7 +292,7 @@ body {
 
 .dune-line-overlay {
   position: absolute;
-  left: 30px;
+  left: 40px;
   right: 0;
   height: 6px;
   background: #c89a4a;
@@ -280,7 +302,7 @@ body {
 }
 .dune-line-glow {
   position: absolute;
-  left: 30px;
+  left: 40px;
   right: 0;
   height: 16px;
   background: rgba(200,154,74,0.22);
@@ -289,13 +311,13 @@ body {
 }
 .dune-tag {
   position: absolute;
-  left: 38px;
+  left: 48px;
   background: #c89a4a;
   color: #1a1410;
   font-family: 'Oswald', sans-serif;
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: 0.15em;
-  padding: 4px 10px;
+  padding: 5px 12px;
   border-radius: 2px;
   z-index: 6;
   text-transform: uppercase;
@@ -308,7 +330,7 @@ body {
   left: 0;
   top: 32px;
   bottom: 0;
-  width: 30px;
+  width: 40px;
   background: #0a0907;
   border-right: 1px solid #2a2218;
   z-index: 3;
@@ -316,9 +338,10 @@ body {
 }
 .y-tick {
   position: absolute;
-  right: 4px;
-  font-size: 8px;
-  color: #4a3f2c;
+  right: 6px;
+  font-size: 11px;
+  font-family: 'Oswald', sans-serif;
+  color: #6a5d44;
   letter-spacing: 0.05em;
   transform: translateY(-50%);
 }

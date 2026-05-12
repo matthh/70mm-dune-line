@@ -8,9 +8,7 @@ export default function Page() {
   return (
     <div className="stage">
       <div className="hd">
-        <div className="logo-row">
-          <span className="logo-70">70</span><span className="logo-mm">MM</span>
-        </div>
+        <img className="brand-mark" src="/70mm-logo.jpg" alt="70mm" />
         <div className="divider" />
         <div className="tag-block">
           <p className="tag-line">THE DUNE LINE</p>
