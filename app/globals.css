@@ -394,3 +394,70 @@ body {
   padding: 0 24px;
 }
 .footer a { color: #c89a4a; text-decoration: none; }
+
+.all-time {
+  margin: 28px 24px 8px;
+  padding-top: 20px;
+  border-top: 1px solid #2a2218;
+}
+.all-time-h {
+  font-family: 'Oswald', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.32em;
+  color: #c89a4a;
+  text-transform: uppercase;
+  margin: 0 0 18px;
+  text-align: center;
+}
+.all-time-grid {
+  display: grid;
+  grid-template-columns: 140px 1fr 70px;
+  gap: 12px 18px;
+  align-items: center;
+}
+.at-row {
+  display: contents;
+}
+.at-label {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: flex-end;
+}
+.at-label-name {
+  font-family: 'Oswald', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  color: #f4e9d4;
+  text-transform: uppercase;
+}
+.at-label-sub {
+  font-size: 10px;
+  color: #6a5d44;
+  letter-spacing: 0.18em;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+}
+.at-bar {
+  height: 22px;
+  background: #1a1410;
+  border-radius: 3px;
+  overflow: hidden;
+  border: 1px solid #2a2218;
+}
+.at-bar-fill {
+  height: 100%;
+  border-radius: 2px 0 0 2px;
+  transition: width 0.4s ease-out;
+  box-shadow: inset 0 -2px 0 rgba(0,0,0,0.25);
+}
+.at-count {
+  font-family: 'Oswald', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  color: #f4e9d4;
+  text-align: left;
+  letter-spacing: 0.04em;
+}

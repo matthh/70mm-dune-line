@@ -1,10 +1,11 @@
 import { buildTimeline } from '@/lib/data';
 import Timeline from './Timeline';
+import AllTimeStats from './AllTimeStats';
 
 export default function Page() {
   // Built once at build-time (static export). The Timeline component
   // hydrates this and adds chip-filter + hover-tooltip interactivity.
-  const { bands, totals, scrapedAt } = buildTimeline();
+  const { bands, totals, allTime, scrapedAt } = buildTimeline();
   return (
     <div className="stage">
       <div className="hd">
@@ -17,6 +18,8 @@ export default function Page() {
       </div>
 
       <Timeline bands={bands} totals={totals} />
+
+      <AllTimeStats stats={allTime} />
 
       <p className="footer">
         main show only · vault excluded · data via{' '}

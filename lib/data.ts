@@ -180,8 +180,24 @@ function isRegular(m: RawMovie): boolean {
   return !m.bonus && !m.vault && !m.pilot && !m.book && !m.watchalong;
 }
 
+export interface AllTimeStats {
+  /** Movies with a 15/15 sum — the "bangers" — a subset of cleared. */
+  bangers: number;
+  /** Movies strictly above 10.5. */
+  cleared: number;
+  /** Movies strictly below 10.5. */
+  buried: number;
+  /** Movies tied with Dune at exactly 10.5. */
+  dune: number;
+}
+
 /** Build the band-grouped, reverse-chronological timeline the page renders. */
-export function buildTimeline(): { bands: ThemeBand[]; totals: Record<Category, number>; scrapedAt: string } {
+export function buildTimeline(): {
+  bands: ThemeBand[];
+  totals: Record<Category, number>;
+  allTime: AllTimeStats;
+  scrapedAt: string;
+} {
   const data = raw as RawData;
   // Keep every "regular" episode — including the handful the wiki hasn't
   // assigned an episode number to. They still belong on the timeline.
@@ -273,9 +289,19 @@ export function buildTimeline(): { bands: ThemeBand[]; totals: Record<Category, 
   });
 
   const totals: Record<Category, number> = { cleared: 0, buried: 0, dune: 0, unrated: 0 };
+  let bangers = 0;
   for (const b of sortedBands) {
-    for (const m of b.movies) totals[m.category]++;
+    for (const m of b.movies) {
+      totals[m.category]++;
+      if (m.sum === 15) bangers++;
+    }
   }
+  const allTime: AllTimeStats = {
+    bangers,
+    cleared: totals.cleared,
+    buried: totals.buried,
+    dune: totals.dune,
+  };
 
-  return { bands: sortedBands, totals, scrapedAt: data.scrapedAt };
+  return { bands: sortedBands, totals, allTime, scrapedAt: data.scrapedAt };
 }
