@@ -112,6 +112,11 @@ body {
 .chip.active.cleared { background: rgba(122,138,74,0.25); border-color: #7a8a4a; }
 .chip.active.buried { background: rgba(166,74,46,0.25); border-color: #a64a2e; }
 .chip.active.dune { background: rgba(200,154,74,0.25); border-color: #c89a4a; }
+.chip.sort.active { background: rgba(200,154,74,0.18); border-color: #c89a4a; color: #f4e9d4; }
+.chip.reset { margin-left: 12px; opacity: 0.45; }
+.chip.reset.dirty { opacity: 1; }
+.chip.reset:disabled { cursor: not-allowed; }
+.chip.reset.dirty:hover { background: rgba(200,154,74,0.12); border-color: #c89a4a; color: #f4e9d4; }
 .chip-dot { width: 8px; height: 8px; border-radius: 2px; display: inline-block; }
 .chip-count { font-size: 10px; opacity: 0.7; margin-left: 2px; }
 

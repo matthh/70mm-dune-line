@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { DUNE_LINE, MAX_SUM, type Category, type DisplayMovie, type ThemeBand } from '@/lib/data';
 
 const COLORS: Record<Category, string | null> = {
@@ -10,15 +10,20 @@ const COLORS: Record<Category, string | null> = {
   unrated: null,
 };
 
+type SortMode = 'chronological' | 'desc' | 'asc';
+
+const DEFAULT_ACTIVE: Category[] = ['cleared', 'buried', 'dune'];
+
 interface Props {
   bands: ThemeBand[];
   totals: Record<Category, number>;
 }
 
 export default function Timeline({ bands, totals }: Props) {
-  // Filter chips. 'unrated' isn't a filter — those bars are always shown
-  // as placeholders (striped fill), the user can't toggle them off.
-  const [active, setActive] = useState<Set<Category>>(new Set(['cleared', 'buried', 'dune']));
+  // Filter chips. 'unrated' isn't a filter — they ride along with the
+  // all-chips-active state and drop out the moment any chip is unchecked.
+  const [active, setActive] = useState<Set<Category>>(new Set(DEFAULT_ACTIVE));
+  const [sortMode, setSortMode] = useState<SortMode>('chronological');
   const [hover, setHover] = useState<{ m: DisplayMovie; x: number; y: number } | null>(null);
 
   function toggle(c: Category) {
@@ -27,6 +32,11 @@ export default function Timeline({ bands, totals }: Props) {
       if (next.has(c)) next.delete(c); else next.add(c);
       return next;
     });
+  }
+
+  function resetAll() {
+    setActive(new Set(DEFAULT_ACTIVE));
+    setSortMode('chronological');
   }
 
   const wrapRef = useRef<HTMLDivElement>(null);
@@ -70,15 +80,63 @@ export default function Timeline({ bands, totals }: Props) {
   // Unrated bars ride along with the "everything" view. The moment the
   // user narrows by any chip, unrated drops out — they have no rating
   // to be cleared/buried/on so they don't belong in any single category
-  // view. When all three chips are re-enabled they reappear.
+  // view. When all three chips are re-enabled they reappear. In the
+  // rating-sorted modes they're always hidden since they can't be
+  // placed on a "by rating" axis.
   const allChipsActive = active.has('cleared') && active.has('buried') && active.has('dune');
   function isVisible(cat: Category): boolean {
-    if (cat === 'unrated') return allChipsActive;
+    if (cat === 'unrated') return sortMode === 'chronological' && allChipsActive;
     return active.has(cat);
   }
 
+  // When the user picks a rating-sorted mode we collapse all bands into
+  // one synthetic band of every visible bar sorted by sum. Theme bands
+  // disappear because they don't carry meaning in a rating-sorted view.
+  const displayBands = useMemo<ThemeBand[]>(() => {
+    if (sortMode === 'chronological') return bands;
+    const flat: DisplayMovie[] = [];
+    for (const b of bands) for (const m of b.movies) flat.push(m);
+    const visible = flat.filter(m => m.sum != null && isVisible(m.category));
+    visible.sort((a, b) => sortMode === 'desc' ? (b.sum! - a.sum!) : (a.sum! - b.sum!));
+    if (visible.length === 0) return [];
+    return [{
+      key: `sorted-${sortMode}`,
+      name: sortMode === 'desc' ? 'BY RATING · HIGHEST → LOWEST' : 'BY RATING · LOWEST → HIGHEST',
+      startDate: null,
+      dateLabel: `${visible.length} rated episodes`,
+      movies: visible,
+      confirmed: true,
+      isDuneMonth: false,
+    }];
+  }, [bands, sortMode, active]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  // Has the user changed anything from the default state? The Reset
+  // button stays visually muted until there's something to undo.
+  const dirty = sortMode !== 'chronological' || active.size !== DEFAULT_ACTIVE.length
+    || !DEFAULT_ACTIVE.every(c => active.has(c));
+
+  const dirArrow = sortMode === 'chronological'
+    ? '← newer  ·  older →'
+    : sortMode === 'desc'
+      ? '← higher  ·  lower →'
+      : '← lower  ·  higher →';
+
   return (
     <>
+      <div className="filter-row">
+        <span className="filter-label">Sort</span>
+        <SortChip label="Chronological" active={sortMode === 'chronological'} onClick={() => setSortMode('chronological')} />
+        <SortChip label="Highest → Lowest" active={sortMode === 'desc'} onClick={() => setSortMode('desc')} />
+        <SortChip label="Lowest → Highest" active={sortMode === 'asc'} onClick={() => setSortMode('asc')} />
+        <button
+          className={`chip reset${dirty ? ' dirty' : ''}`}
+          onClick={resetAll}
+          disabled={!dirty}
+          title="Reset filters and sort"
+        >
+          ↺ Reset
+        </button>
+      </div>
       <div className="filter-row">
         <span className="filter-label">Show</span>
         <Chip cat="cleared" label="Cleared" color="#7a8a4a" count={totals.cleared} active={active.has('cleared')} onClick={() => toggle('cleared')} />
@@ -86,7 +144,7 @@ export default function Timeline({ bands, totals }: Props) {
         <Chip cat="dune" label="Dune" color="#c89a4a" count={totals.dune} active={active.has('dune')} onClick={() => toggle('dune')} />
       </div>
 
-      <p className="dir-arrow">← newer&nbsp;&nbsp;·&nbsp;&nbsp;older →</p>
+      <p className="dir-arrow">{dirArrow}</p>
 
       <div className="timeline-wrap" ref={wrapRef}>
         <div className="y-axis" ref={yAxisRef} />
@@ -95,7 +153,7 @@ export default function Timeline({ bands, totals }: Props) {
         <div className="dune-tag" ref={tagRef}>DUNE LINE · 10.5</div>
         <div className="timeline-scroll">
           <div className="timeline-inner">
-            {bands.map(band => {
+            {displayBands.map(band => {
               // Filter to currently-visible bars so the chart compresses
               // horizontally when a category is unchecked instead of just
               // dimming. Unrated rows are always visible (no chip for
@@ -173,6 +231,14 @@ function Chip({ cat, label, color, count, active, onClick }: { cat: Category; la
     <button className={`chip ${cat}${active ? ' active' : ''}`} onClick={onClick}>
       <span className="chip-dot" style={{ background: color }} />
       {label} <span className="chip-count">{count}</span>
+    </button>
+  );
+}
+
+function SortChip({ label, active, onClick }: { label: string; active: boolean; onClick: () => void }) {
+  return (
+    <button className={`chip sort${active ? ' active' : ''}`} onClick={onClick}>
+      {label}
     </button>
   );
 }
