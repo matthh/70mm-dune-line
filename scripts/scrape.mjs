@@ -20,9 +20,44 @@ const sleep = (ms) => new Promise(r => setTimeout(r, ms));
 
 // Local overrides for movies the wiki hasn't tagged yet. Keyed by movie id;
 // values are the month_theme_id the movie belongs to. The monthTheme object
-// is filled in from another movie already tagged with that theme.
+// is filled in from another movie already tagged with that theme. When the
+// wiki catches up, the scrape logs an "override REDUNDANT" warning so the
+// entry can be deleted from this map.
 const MONTH_THEME_OVERRIDES = {
-  438: 63, // 12 Angry Men -> Shame Month pt. 2
+  204: 2,  // 2020-12-25 The Star Wars Holiday Special -> CULT MONTH
+  226: 11, // 2021-10-21 Halloween -> Halloweenies
+  91:  12, // 2021-11-01 Dune -> Fall Vibes
+  111: 16, // 2022-03-28 The Godfather -> Leading Ladies Vol. 2
+  428: 16, // 2022-03-28 Attack of the Clones -> Leading Ladies Vol. 2
+  153: 20, // 2022-07-07 Stranger Things S4 -> 90s Action
+  429: 21, // 2022-08-13 Hard Target -> Animaugust
+  161: 24, // 2022-11-29 Andor S1 -> Movies about movies
+  224: 29, // 2023-04-07 Left Behind: The Movie -> Holy/Religion/Spiritual Month
+  431: 30, // 2023-05-03 Thunderball -> May the 4th
+  235: 30, // 2023-05-25 Return of the Jedi -> May the 4th
+  257: 34, // 2023-09-15 Ahsoka -> Women Lovers / Femtember
+  432: 35, // 2023-09-30 BASEketball -> TORMENTOBER
+  262: 35, // 2023-10-13 Friday the 13th -> TORMENTOBER
+  297: 41, // 2024-04-22 Batman -> 60s Month
+  301: 42, // 2024-05-06 Planet of the Apes -> Planet of the Maypes
+  302: 42, // 2024-05-12 Planet of the Apes -> Planet of the Maypes
+  303: 42, // 2024-05-13 The Simpsons: "A Fish Called Selma" -> Planet of the Maypes
+  312: 44, // 2024-07-01 Pearl -> LEADING LADIES V4
+  317: 44, // 2024-07-12 Willy Wonka and the Chocolate Factory -> LEADING LADIES V4
+  322: 45, // 2024-08-07 Left Behind -> ??
+  434: 46, // 2024-09-19 Rogue One -> Scream Queens
+  329: 46, // 2024-09-24 Megalopolis -> Scream Queens
+  352: 49, // 2025-02-01 Friday the 13th Part III -> Fembruary
+  365: 51, // 2025-04-09 Okja -> Tape Deck
+  435: 52, // 2025-05-08 Raiders of the Lost Ark -> Mayssion Impossible
+  372: 53, // 2025-06-04 Andor: Season 2 -> Mount Goatmore
+  381: 53, // 2025-06-30 Basic Instinct -> Mount Goatmore
+  393: 56, // 2025-09-29 Fatal Attraction -> Lo-fi Sci-fi Part 2
+  407: 58, // 2025-11-24 Wicked -> Winvember
+  408: 58, // 2025-11-24 Wicked: For Good -> Winvember
+  433: 60, // 2026-01-21 Jackass: The Movie -> 70mm goes International
+  425: 62, // 2026-03-30 Falling Down -> 70mm Goes Back to Jakku
+  438: 63, // 2026-04-20 12 Angry Men -> Shame Month pt. 2
 };
 
 async function fetchPage(page) {
