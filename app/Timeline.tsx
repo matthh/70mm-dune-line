@@ -175,12 +175,12 @@ export default function Timeline({ bands, totals }: Props) {
               // dropped entirely so we don't get empty headers.
               const visibleMovies = band.movies.filter(m => isVisible(m.category));
               if (visibleMovies.length === 0) return null;
-              // Width hugs the visible content — 76px per movie (64px
-              // bar-col + 8px gap + 4px slack) plus a small padding
-              // budget for the band's own header/borders. With a chip
-              // filter narrowing the view, single-movie bands collapse
-              // to ~116px instead of holding 340px of empty real estate.
-              const widthPx = visibleMovies.length * 76 + 40;
+              // Default rhythm: every band holds at least 5-movie width so
+              // the chart doesn't visibly stretch and shrink as you scroll
+              // through months. Bands with 6-7 movies expand. The .theme-bars
+              // flex container uses space-around, so 1-4 movie bands just
+              // distribute their bars across the same width.
+              const widthPx = Math.max(visibleMovies.length, 5) * 76 + 40;
               return (
                 <div
                   key={band.key}

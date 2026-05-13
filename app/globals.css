@@ -177,6 +177,7 @@ body {
   padding: 10px 14px 8px;
   border-bottom: 1px dashed #2a2218;
   flex-shrink: 0;
+  text-align: center;
 }
 .theme-name {
   font-family: 'Oswald', sans-serif;
