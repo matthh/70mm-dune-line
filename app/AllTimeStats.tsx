@@ -71,10 +71,21 @@ export default function AllTimeStatsSection({ stats }: { stats: AllTimeStats }) 
     `every perfect 15/15 · ${stats.bangerMovies.length} total`,
     stats.bangerMovies,
   );
+  // The Cleared row's olive (non-banger) section opens a popup whose
+  // count *excludes* the 15-bangers, since those have their own
+  // segment + popup. Total here = cleared - bangers.
+  const clearedExBangers = useMemo(
+    () => stats.clearedMovies.filter(m => m.sum !== 15),
+    [stats.clearedMovies],
+  );
   const rows: CategoryRow[] = [
     {
       label: 'Cleared', sublabel: '> 10.5', count: stats.cleared, color: '#7a8a4a',
-      onClick: () => openCategory('Cleared the Dune Line', `every movie above 10.5 · ${stats.clearedMovies.length} total · sorted highest first`, stats.clearedMovies),
+      onClick: () => openCategory(
+        'Cleared the Dune Line',
+        `cleared excluding 15-bangers · ${clearedExBangers.length} total · sorted highest first`,
+        clearedExBangers,
+      ),
       inner: { count: stats.bangers, color: '#f4e9d4', label: '15 Bangers', onClick: openBangers },
     },
     { label: 'Dune Line', sublabel: '= 10.5', count: stats.dune, color: '#c89a4a',

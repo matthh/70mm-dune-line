@@ -441,7 +441,7 @@ body {
   text-transform: uppercase;
 }
 .at-bar {
-  height: 22px;
+  height: 32px;
   background: #1a1410;
   border-radius: 3px;
   overflow: hidden;
@@ -470,12 +470,12 @@ body {
 .at-bar-inner:focus-visible { outline: 2px solid #c89a4a; outline-offset: 1px; }
 .at-bar-inner-label {
   font-family: 'Oswald', sans-serif;
-  font-size: 10px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 500;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: #1a1410;
-  padding: 0 8px;
+  padding: 0 10px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
