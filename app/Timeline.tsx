@@ -151,13 +151,6 @@ export default function Timeline({ bands, totals }: Props) {
           ↺ Reset
         </button>
       </div>
-      <div className="filter-row">
-        <span className="filter-label">Show</span>
-        <Chip cat="cleared" label="Cleared" color="#7a8a4a" count={totals.cleared} active={active.has('cleared')} onClick={() => toggle('cleared')} />
-        <Chip cat="buried" label="Buried" color="#a64a2e" count={totals.buried} active={active.has('buried')} onClick={() => toggle('buried')} />
-        <Chip cat="dune" label="Dune" color="#c89a4a" count={totals.dune} active={active.has('dune')} onClick={() => toggle('dune')} />
-      </div>
-
       <p className="dir-arrow">{dirArrow}</p>
 
       <div className="timeline-wrap" ref={wrapRef}>
