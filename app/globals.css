@@ -533,6 +533,22 @@ body {
 .at-row.clickable:focus-visible { outline: 2px solid #c89a4a; outline-offset: 2px; }
 .at-arrow { color: #c89a4a; opacity: 0.7; margin-left: 4px; font-size: 12px; }
 
+/* Nested row (15 Bangers under Cleared) sits one indent in with a
+ * subtler label so it reads as a callout, not a peer row. */
+.at-row.nested .at-label { padding-left: 22px; position: relative; }
+.at-row.nested .at-label::before {
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  width: 8px;
+  height: 1px;
+  background: #3a3024;
+}
+.at-row.nested .at-label-name { font-size: 12px; color: #c4b594; }
+.at-row.nested .at-count { font-size: 18px; color: #c4b594; }
+.at-row.nested .at-bar { height: 16px; }
+
 .rank-row {
   background: transparent;
   border: none;

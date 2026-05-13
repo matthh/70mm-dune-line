@@ -19,6 +19,8 @@ interface CategoryRow {
   color: string;
   /** Optional click handler — when present the row becomes interactive. */
   onClick?: () => void;
+  /** Indented "of which …" callouts; e.g. 15 Bangers sits under Cleared. */
+  nested?: boolean;
 }
 
 interface PopupState {
@@ -52,15 +54,19 @@ export default function AllTimeStatsSection({ stats }: { stats: AllTimeStats }) 
     setPopup({ title: t.name, subtitle: `${t.avg.toFixed(2)} avg · ${t.movieCount} movies`, movies });
   };
 
+  // Order top-to-bottom mirrors the y-axis: above the line → on the line →
+  // below the line. 15 Bangers is a callout sub-row of Cleared (every
+  // banger is by definition cleared), so it lives indented directly
+  // beneath it.
   const rows: CategoryRow[] = [
-    { label: '15 Bangers', sublabel: 'perfect 15/15', count: stats.bangers, color: '#f4e9d4',
-      onClick: () => openCategory('15 Bangers', `every perfect 15/15 · ${stats.bangerMovies.length} total`, stats.bangerMovies) },
     { label: 'Cleared', sublabel: '> 10.5', count: stats.cleared, color: '#7a8a4a',
       onClick: () => openCategory('Cleared the Dune Line', `every movie above 10.5 · ${stats.clearedMovies.length} total · sorted highest first`, stats.clearedMovies) },
+    { label: '15 Bangers', sublabel: 'of which · perfect 15/15', count: stats.bangers, color: '#f4e9d4', nested: true,
+      onClick: () => openCategory('15 Bangers', `every perfect 15/15 · ${stats.bangerMovies.length} total`, stats.bangerMovies) },
+    { label: 'Dune Line', sublabel: '= 10.5', count: stats.dune, color: '#c89a4a',
+      onClick: () => openCategory('On the Dune Line', `every movie tied with Dune at 10.5 · ${stats.duneMovies.length} total`, stats.duneMovies) },
     { label: 'Buried', sublabel: '< 10.5', count: stats.buried, color: '#a64a2e',
       onClick: () => openCategory('Buried Below the Dune Line', `every movie below 10.5 · ${stats.buriedMovies.length} total · sorted lowest first`, stats.buriedMovies) },
-    { label: 'Dune', sublabel: '= 10.5', count: stats.dune, color: '#c89a4a',
-      onClick: () => openCategory('On the Dune Line', `every movie tied with Dune at 10.5 · ${stats.duneMovies.length} total`, stats.duneMovies) },
   ];
   const max = Math.max(1, ...rows.map(r => r.count));
 
@@ -72,7 +78,7 @@ export default function AllTimeStatsSection({ stats }: { stats: AllTimeStats }) 
           const clickable = !!r.onClick;
           return (
             <div
-              className={`at-row${clickable ? ' clickable' : ''}`}
+              className={`at-row${clickable ? ' clickable' : ''}${r.nested ? ' nested' : ''}`}
               key={r.label}
               onClick={r.onClick}
               role={clickable ? 'button' : undefined}
