@@ -198,6 +198,8 @@ export interface AllTimeStats {
   topThemes: ThemeRanking[];
   /** Themes with the lowest average rating sum, bottom first. */
   lowThemes: ThemeRanking[];
+  /** Per-host avg rating across movies that host picked. Sorted highest first. */
+  hostPicks: HostRanking[];
 }
 
 export interface CatalogMovie {
@@ -220,8 +222,24 @@ export interface ThemeRanking {
   movies: { id: number; title: string; episode: number | null; sum: number; wikiUrl: string }[];
 }
 
+export interface HostRanking {
+  host: string;
+  /** Display label, capitalized. */
+  name: string;
+  avg: number;
+  movieCount: number;
+  movies: { id: number; title: string; episode: number | null; sum: number; wikiUrl: string }[];
+}
+
 const MIN_MOVIES_FOR_THEME_RANKING = 3;
 const THEME_RANKING_TAKE = 5;
+/** Hosts whose picks we count on the leaderboard. The wiki uses lowercase
+ *  short names; "dany" is a known typo of "danny". */
+const HOSTS: { key: string; name: string; aliases: string[] }[] = [
+  { key: 'slim',  name: 'Slim',  aliases: ['slim'] },
+  { key: 'danny', name: 'Danny', aliases: ['danny', 'dany'] },
+  { key: 'proto', name: 'Proto', aliases: ['proto'] },
+];
 
 /** Build the band-grouped, reverse-chronological timeline the page renders. */
 export function buildTimeline(): {
@@ -400,6 +418,23 @@ export function buildTimeline(): {
   const buriedMovies = rated.filter(m => m.sum! < DUNE_LINE).map(toCatalogMovie).sort(bySumAscThenEp);
   const duneMovies = rated.filter(m => m.sum === DUNE_LINE).map(toCatalogMovie).sort(byEpisodeDesc);
 
+  // Per-host picks. Group by host_pick (with alias normalization), then
+  // average the sum across that host's rated picks. Co-picks (e.g.
+  // "slim/dany") and guest picks aren't credited to any single host.
+  const hostPicks: HostRanking[] = HOSTS.map(h => {
+    const aliasSet = new Set(h.aliases);
+    const picked = rated.filter(m => m.host_pick != null && aliasSet.has(m.host_pick.toLowerCase().trim()));
+    const movies = picked.map(m => ({
+      id: m.id,
+      title: m.movie,
+      episode: m.episode,
+      sum: m.sum!,
+      wikiUrl: `https://70mmwiki.com/movies/${m.id}`,
+    })).sort((a, b) => b.sum - a.sum);
+    const avg = movies.length === 0 ? 0 : Number((movies.reduce((a, x) => a + x.sum, 0) / movies.length).toFixed(2));
+    return { host: h.key, name: h.name, avg, movieCount: movies.length, movies };
+  }).sort((a, b) => b.avg - a.avg);
+
   const allTime: AllTimeStats = {
     bangers,
     cleared: totals.cleared,
@@ -411,6 +446,7 @@ export function buildTimeline(): {
     duneMovies,
     topThemes,
     lowThemes,
+    hostPicks,
   };
 
   return { bands: sortedBands, totals, allTime, scrapedAt: data.scrapedAt };

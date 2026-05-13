@@ -7,7 +7,7 @@
 // titles, episodes, and ratings.
 
 import { useEffect, useMemo, useState } from 'react';
-import type { AllTimeStats, CatalogMovie, ThemeRanking } from '@/lib/data';
+import type { AllTimeStats, CatalogMovie, HostRanking, ThemeRanking } from '@/lib/data';
 import { DUNE_LINE } from '@/lib/data';
 
 const PAGE_SIZE = 24;
@@ -60,6 +60,19 @@ export default function AllTimeStatsSection({ stats }: { stats: AllTimeStats }) 
       wikiUrl: m.wikiUrl,
     }));
     setPopup({ title: t.name, subtitle: `${t.avg.toFixed(2)} avg · ${t.movieCount} movies`, movies });
+  };
+
+  const openHost = (h: HostRanking) => {
+    const movies: CatalogMovie[] = h.movies.map(m => ({
+      id: m.id,
+      title: m.title,
+      year: null,
+      episode: m.episode,
+      sum: m.sum,
+      themeName: null,
+      wikiUrl: m.wikiUrl,
+    }));
+    setPopup({ title: `${h.name}'s picks`, subtitle: `${h.avg.toFixed(2)} avg · ${h.movieCount} picks`, movies });
   };
 
   // Order top-to-bottom mirrors the y-axis: above the line → on the line →
@@ -155,10 +168,45 @@ export default function AllTimeStatsSection({ stats }: { stats: AllTimeStats }) 
           color="#a64a2e"
           onOpen={openTheme}
         />
+        <HostRankPanel
+          title="Host Picks · Best → Worst"
+          hosts={stats.hostPicks}
+          onOpen={openHost}
+        />
       </div>
 
       {popup && <Modal popup={popup} onClose={() => setPopup(null)} />}
     </section>
+  );
+}
+
+function HostRankPanel({ title, hosts, onOpen }: { title: string; hosts: HostRanking[]; onOpen: (h: HostRanking) => void }) {
+  // Color the bar for each host: top = olive (best), bottom = coral (worst),
+  // middle = sand. Length is mapped against the highest avg so the leader
+  // anchors the panel and the others read as a relative gap.
+  const max = Math.max(1, ...hosts.map(h => h.avg));
+  const COLORS = ['#7a8a4a', '#c89a4a', '#a64a2e'];
+  return (
+    <div className="rank-panel">
+      <h3 className="rank-h">{title}</h3>
+      {hosts.length === 0 && <p className="rank-empty">— not enough data —</p>}
+      {hosts.map((h, i) => (
+        <button
+          className="rank-row"
+          key={h.host}
+          onClick={() => onOpen(h)}
+          type="button"
+        >
+          <span className="rank-num">{i + 1}</span>
+          <span className="rank-name">
+            {h.name}
+            <span className="rank-count"> · {h.movieCount}</span>
+          </span>
+          <span className="rank-bar"><span className="rank-bar-fill" style={{ width: `${(h.avg / max) * 100}%`, background: COLORS[i] ?? '#5a4e38' }} /></span>
+          <span className="rank-avg">{h.avg.toFixed(1)}</span>
+        </button>
+      ))}
+    </div>
   );
 }
 

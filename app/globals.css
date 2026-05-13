@@ -209,7 +209,10 @@ body {
 .theme-bars {
   flex: 1;
   position: relative;
-  padding: 0 8px;
+  /* Top gutter: clears the stacked ep# + date label above each bar so a
+   * sum-15 bar doesn't poke into the band header. Keep in sync with the
+   * LABEL_GUTTER constant in Timeline.tsx so the Dune Line stays aligned. */
+  padding: 30px 8px 0;
   display: flex;
   align-items: flex-end;
   justify-content: space-around;
@@ -515,7 +518,7 @@ body {
 /* Theme leaderboard: side-by-side top-N / bottom-N panels. */
 .theme-leaderboard {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 24px;
   margin-top: 28px;
 }

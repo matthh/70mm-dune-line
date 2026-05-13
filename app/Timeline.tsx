@@ -59,19 +59,22 @@ export default function Timeline({ bands, totals }: Props) {
   const tagRef = useRef<HTMLDivElement>(null);
 
   // The Dune Line is a single continuous horizontal that has to align
-  // perfectly with bar tops. Bars live inside .theme-bars and span its
-  // full vertical extent (height % set inline relative to bar-col which
-  // is height: 100% of .theme-bars with zero padding). So the line at
-  // value V sits at headerH + barsH * (1 - V/MAX) from the wrap's top —
-  // no fudge factor.
+  // perfectly with bar tops. Bars live inside .theme-bars (with a top
+  // gutter for the stacked ep# + date labels) and grow upward from the
+  // bottom. So the line at value V sits at:
+  //   headerH + LABEL_GUTTER + chartH * (1 - V/MAX)
+  // where chartH = barsH - LABEL_GUTTER. Keep in sync with .theme-bars
+  // padding-top in globals.css.
   useEffect(() => {
     const wrap = wrapRef.current;
     if (!wrap) return;
     const headerEl = wrap.querySelector('.theme-header');
     const headerH = headerEl ? (headerEl as HTMLElement).offsetHeight : 32;
     const wrapH = wrap.offsetHeight;
+    const LABEL_GUTTER = 30;
     const barsH = wrapH - headerH;
-    const yFor = (v: number) => headerH + barsH * (1 - v / MAX_SUM);
+    const chartH = barsH - LABEL_GUTTER;
+    const yFor = (v: number) => headerH + LABEL_GUTTER + chartH * (1 - v / MAX_SUM);
     const linePx = yFor(DUNE_LINE);
     if (lineRef.current) lineRef.current.style.top = `${linePx - 3}px`;
     if (glowRef.current) glowRef.current.style.top = `${linePx - 8}px`;
