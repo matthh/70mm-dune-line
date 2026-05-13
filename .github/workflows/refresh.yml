@@ -40,8 +40,8 @@ jobs:
             echo "No data changes."
             exit 0
           fi
-          # Pull total count out of the new JSON for a useful commit message.
-          TOTAL=$(node -e "console.log(require('./data/movies.json').total)")
+          # Count non-vault eps for the commit message.
+          COUNT=$(node -e "const d=require('./data/movies.json'); console.log(d.movies.filter(m=>!m.vault).length)")
           git add data/movies.json
-          git commit -m "data: weekly refresh ($TOTAL movies)"
+          git commit -m "data: weekly refresh ($COUNT eps)"
           git push
