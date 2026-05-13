@@ -169,7 +169,7 @@ export default function AllTimeStatsSection({ stats }: { stats: AllTimeStats }) 
           onOpen={openTheme}
         />
         <HostRankPanel
-          title="Host Picks · Best → Worst"
+          title="Host Picks · Highest → Lowest"
           hosts={stats.hostPicks}
           onOpen={openHost}
         />
