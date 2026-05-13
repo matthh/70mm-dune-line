@@ -673,6 +673,37 @@ body {
 .movie-card-sum-below { color: #a64a2e; }
 .movie-card-sum-on { color: #c89a4a; }
 
+.modal-pager {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 12px 24px 16px;
+  border-top: 1px solid #2a2218;
+  font-family: 'Oswald', sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #c4b594;
+}
+.pager-btn {
+  background: transparent;
+  border: 1px solid #3a3024;
+  color: #c4b594;
+  padding: 7px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transition: all 0.15s;
+}
+.pager-btn:hover:not(:disabled) { border-color: #c89a4a; color: #f4e9d4; }
+.pager-btn:disabled { opacity: 0.35; cursor: not-allowed; }
+.pager-status { text-align: center; color: #f4e9d4; }
+.pager-range { color: #6a5d44; }
+
 @media (max-width: 760px) {
   .theme-leaderboard { grid-template-columns: 1fr; }
   .modal-header { padding: 16px 18px 12px; }

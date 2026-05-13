@@ -189,19 +189,23 @@ export interface AllTimeStats {
   buried: number;
   /** Movies tied with Dune at exactly 10.5. */
   dune: number;
-  /** The 15/15 bangers themselves, newest first. */
-  bangerMovies: BangerMovie[];
+  /** Subset listings each category exposes in its leaderboard popup. */
+  bangerMovies: CatalogMovie[];
+  clearedMovies: CatalogMovie[];
+  buriedMovies: CatalogMovie[];
+  duneMovies: CatalogMovie[];
   /** Themes with the highest average rating sum, top first. */
   topThemes: ThemeRanking[];
   /** Themes with the lowest average rating sum, bottom first. */
   lowThemes: ThemeRanking[];
 }
 
-export interface BangerMovie {
+export interface CatalogMovie {
   id: number;
   title: string;
   year: number | null;
   episode: number | null;
+  sum: number;
   themeName: string | null;
   wikiUrl: string;
 }
@@ -370,21 +374,31 @@ export function buildTimeline(): {
   const topThemes = sortedByAvgDesc.slice(0, THEME_RANKING_TAKE);
   const lowThemes = sortedByAvgDesc.slice(-THEME_RANKING_TAKE).reverse();
 
-  // 15-banger movies, newest first by episode #. Annotated with their
-  // theme name (if any) so the section can read like a trophy case.
-  const bangerMovies: BangerMovie[] = regular
-    .filter(m => m.sum === 15)
-    .sort((a, b) => (b.episode ?? 0) - (a.episode ?? 0))
-    .map(m => ({
-      id: m.id,
-      title: m.movie,
-      year: m.year_released,
-      episode: m.episode,
-      themeName: isMeaningfulThemeName(m.monthTheme?.theme_name)
-        ? shortenThemeName(m.monthTheme!.theme_name!)
-        : null,
-      wikiUrl: `https://70mmwiki.com/movies/${m.id}`,
-    }));
+  // Per-category movie listings. Sort orders chosen so the most
+  // interesting end of each bucket sits at the top of its popup:
+  //   bangers / cleared:  highest sum first (then newest)
+  //   buried:             lowest sum first (then newest)
+  //   dune:               newest first (every entry has sum === 10.5)
+  const toCatalogMovie = (m: RawMovie): CatalogMovie => ({
+    id: m.id,
+    title: m.movie,
+    year: m.year_released,
+    episode: m.episode,
+    sum: m.sum!,
+    themeName: isMeaningfulThemeName(m.monthTheme?.theme_name)
+      ? shortenThemeName(m.monthTheme!.theme_name!)
+      : null,
+    wikiUrl: `https://70mmwiki.com/movies/${m.id}`,
+  });
+  const byEpisodeDesc = (a: CatalogMovie, b: CatalogMovie) => (b.episode ?? 0) - (a.episode ?? 0);
+  const bySumDescThenEp = (a: CatalogMovie, b: CatalogMovie) => (b.sum - a.sum) || byEpisodeDesc(a, b);
+  const bySumAscThenEp = (a: CatalogMovie, b: CatalogMovie) => (a.sum - b.sum) || byEpisodeDesc(a, b);
+
+  const rated = regular.filter(m => m.sum != null);
+  const bangerMovies = rated.filter(m => m.sum === 15).map(toCatalogMovie).sort(byEpisodeDesc);
+  const clearedMovies = rated.filter(m => m.sum! > DUNE_LINE).map(toCatalogMovie).sort(bySumDescThenEp);
+  const buriedMovies = rated.filter(m => m.sum! < DUNE_LINE).map(toCatalogMovie).sort(bySumAscThenEp);
+  const duneMovies = rated.filter(m => m.sum === DUNE_LINE).map(toCatalogMovie).sort(byEpisodeDesc);
 
   const allTime: AllTimeStats = {
     bangers,
@@ -392,6 +406,9 @@ export function buildTimeline(): {
     buried: totals.buried,
     dune: totals.dune,
     bangerMovies,
+    clearedMovies,
+    buriedMovies,
+    duneMovies,
     topThemes,
     lowThemes,
   };

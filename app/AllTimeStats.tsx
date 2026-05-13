@@ -6,9 +6,11 @@
 // they pop up a modal that shows the actual movies with their posters,
 // titles, episodes, and ratings.
 
-import { useEffect, useState } from 'react';
-import type { AllTimeStats, BangerMovie, ThemeRanking } from '@/lib/data';
+import { useEffect, useMemo, useState } from 'react';
+import type { AllTimeStats, CatalogMovie, ThemeRanking } from '@/lib/data';
 import { DUNE_LINE } from '@/lib/data';
+
+const PAGE_SIZE = 24;
 
 interface CategoryRow {
   label: string;
@@ -19,20 +21,10 @@ interface CategoryRow {
   onClick?: () => void;
 }
 
-interface PopupMovie {
-  id: number;
-  title: string;
-  year: number | null;
-  episode: number | null;
-  sum: number | null;
-  wikiUrl: string;
-  themeName?: string | null;
-}
-
 interface PopupState {
   title: string;
   subtitle?: string;
-  movies: PopupMovie[];
+  movies: CatalogMovie[];
 }
 
 const posterFor = (id: number) => `https://70mmwiki.com/api/artwork/thumbs/${id}.jpg`;
@@ -40,30 +32,35 @@ const posterFor = (id: number) => `https://70mmwiki.com/api/artwork/thumbs/${id}
 export default function AllTimeStatsSection({ stats }: { stats: AllTimeStats }) {
   const [popup, setPopup] = useState<PopupState | null>(null);
 
-  const openBangers = () => setPopup({
-    title: '15 Bangers',
-    subtitle: `every movie that scored a perfect 15/15 · ${stats.bangerMovies.length} total`,
-    movies: stats.bangerMovies.map(bangerToPopup),
-  });
+  const openCategory = (title: string, sub: string, movies: CatalogMovie[]) => {
+    if (movies.length === 0) return;
+    setPopup({ title, subtitle: sub, movies });
+  };
 
-  const openTheme = (t: ThemeRanking) => setPopup({
-    title: t.name,
-    subtitle: `${t.avg.toFixed(2)} avg · ${t.movieCount} movies`,
-    movies: t.movies.map(m => ({
+  const openTheme = (t: ThemeRanking) => {
+    // Re-shape ThemeRanking.movies to CatalogMovie (no year on theme rows;
+    // tooltip omits the year for theme popups, that's fine).
+    const movies: CatalogMovie[] = t.movies.map(m => ({
       id: m.id,
       title: m.title,
       year: null,
       episode: m.episode,
       sum: m.sum,
+      themeName: null,
       wikiUrl: m.wikiUrl,
-    })),
-  });
+    }));
+    setPopup({ title: t.name, subtitle: `${t.avg.toFixed(2)} avg · ${t.movieCount} movies`, movies });
+  };
 
   const rows: CategoryRow[] = [
-    { label: '15 Bangers', sublabel: 'perfect 15/15', count: stats.bangers, color: '#f4e9d4', onClick: stats.bangerMovies.length > 0 ? openBangers : undefined },
-    { label: 'Cleared', sublabel: '> 10.5', count: stats.cleared, color: '#7a8a4a' },
-    { label: 'Buried', sublabel: '< 10.5', count: stats.buried, color: '#a64a2e' },
-    { label: 'Dune', sublabel: '= 10.5', count: stats.dune, color: '#c89a4a' },
+    { label: '15 Bangers', sublabel: 'perfect 15/15', count: stats.bangers, color: '#f4e9d4',
+      onClick: () => openCategory('15 Bangers', `every perfect 15/15 · ${stats.bangerMovies.length} total`, stats.bangerMovies) },
+    { label: 'Cleared', sublabel: '> 10.5', count: stats.cleared, color: '#7a8a4a',
+      onClick: () => openCategory('Cleared the Dune Line', `every movie above 10.5 · ${stats.clearedMovies.length} total · sorted highest first`, stats.clearedMovies) },
+    { label: 'Buried', sublabel: '< 10.5', count: stats.buried, color: '#a64a2e',
+      onClick: () => openCategory('Buried Below the Dune Line', `every movie below 10.5 · ${stats.buriedMovies.length} total · sorted lowest first`, stats.buriedMovies) },
+    { label: 'Dune', sublabel: '= 10.5', count: stats.dune, color: '#c89a4a',
+      onClick: () => openCategory('On the Dune Line', `every movie tied with Dune at 10.5 · ${stats.duneMovies.length} total`, stats.duneMovies) },
   ];
   const max = Math.max(1, ...rows.map(r => r.count));
 
@@ -115,18 +112,6 @@ export default function AllTimeStatsSection({ stats }: { stats: AllTimeStats }) 
   );
 }
 
-function bangerToPopup(b: BangerMovie): PopupMovie {
-  return {
-    id: b.id,
-    title: b.title,
-    year: b.year,
-    episode: b.episode,
-    sum: 15,
-    wikiUrl: b.wikiUrl,
-    themeName: b.themeName,
-  };
-}
-
 function ThemeRankPanel({ title, themes, color, onOpen }: { title: string; themes: ThemeRanking[]; color: string; onOpen: (t: ThemeRanking) => void }) {
   const max = Math.max(1, ...themes.map(t => t.avg));
   return (
@@ -154,14 +139,29 @@ function ThemeRankPanel({ title, themes, color, onOpen }: { title: string; theme
 }
 
 function Modal({ popup, onClose }: { popup: PopupState; onClose: () => void }) {
-  // Close on Escape; restore body scroll-lock on unmount.
+  const [page, setPage] = useState(0);
+  const totalPages = Math.max(1, Math.ceil(popup.movies.length / PAGE_SIZE));
+  // Reset to first page whenever the popup's content changes.
+  useEffect(() => { setPage(0); }, [popup]);
+
+  const visible = useMemo(
+    () => popup.movies.slice(page * PAGE_SIZE, page * PAGE_SIZE + PAGE_SIZE),
+    [popup.movies, page]
+  );
+
+  // Close on Escape; restore body scroll-lock on unmount. Also bind
+  // arrow keys to pagination when the popup has multiple pages.
   useEffect(() => {
-    const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') onClose(); };
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') onClose();
+      else if (e.key === 'ArrowRight' && page < totalPages - 1) setPage(page + 1);
+      else if (e.key === 'ArrowLeft' && page > 0) setPage(page - 1);
+    };
     document.addEventListener('keydown', onKey);
     const prev = document.body.style.overflow;
     document.body.style.overflow = 'hidden';
     return () => { document.removeEventListener('keydown', onKey); document.body.style.overflow = prev; };
-  }, [onClose]);
+  }, [onClose, page, totalPages]);
 
   return (
     <div className="modal-backdrop" onClick={onClose}>
@@ -175,9 +175,9 @@ function Modal({ popup, onClose }: { popup: PopupState; onClose: () => void }) {
         </div>
         <div className="modal-body">
           <div className="movie-grid">
-            {popup.movies.map(m => {
-              const dist = m.sum != null ? m.sum - DUNE_LINE : null;
-              const distClass = dist == null ? '' : dist > 0 ? 'above' : dist < 0 ? 'below' : 'on';
+            {visible.map(m => {
+              const dist = m.sum - DUNE_LINE;
+              const distClass = dist > 0 ? 'above' : dist < 0 ? 'below' : 'on';
               return (
                 <a key={m.id} className="movie-card" href={m.wikiUrl} target="_blank" rel="noopener noreferrer">
                   <img className="movie-card-poster" src={posterFor(m.id)} alt="" loading="lazy" />
@@ -186,7 +186,7 @@ function Modal({ popup, onClose }: { popup: PopupState; onClose: () => void }) {
                     <div className="movie-card-sub">
                       <span>{m.episode != null ? `#${m.episode}` : '—'}</span>
                       {m.year && <span>{m.year}</span>}
-                      {m.sum != null && <span className={`movie-card-sum movie-card-sum-${distClass}`}>{m.sum}</span>}
+                      <span className={`movie-card-sum movie-card-sum-${distClass}`}>{m.sum}</span>
                     </div>
                   </div>
                 </a>
@@ -194,6 +194,24 @@ function Modal({ popup, onClose }: { popup: PopupState; onClose: () => void }) {
             })}
           </div>
         </div>
+        {totalPages > 1 && (
+          <div className="modal-pager">
+            <button
+              className="pager-btn"
+              onClick={() => setPage(p => Math.max(0, p - 1))}
+              disabled={page === 0}
+            >← Prev</button>
+            <span className="pager-status">
+              Page {page + 1} of {totalPages}
+              <span className="pager-range"> · showing {page * PAGE_SIZE + 1}–{Math.min(popup.movies.length, (page + 1) * PAGE_SIZE)} of {popup.movies.length}</span>
+            </span>
+            <button
+              className="pager-btn"
+              onClick={() => setPage(p => Math.min(totalPages - 1, p + 1))}
+              disabled={page >= totalPages - 1}
+            >Next →</button>
+          </div>
+        )}
       </div>
     </div>
   );
