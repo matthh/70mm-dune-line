@@ -10,7 +10,7 @@ import { useEffect, useMemo, useState } from 'react';
 import type { AllTimeStats, CatalogMovie, HostRanking, ThemeRanking } from '@/lib/data';
 import { DUNE_LINE } from '@/lib/data';
 
-const PAGE_SIZE = 24;
+const PAGE_SIZE = 25;
 
 interface CategoryRow {
   label: string;
