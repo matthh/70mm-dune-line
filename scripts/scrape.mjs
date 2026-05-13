@@ -18,6 +18,13 @@ const SLEEP_MS = 1000;
 
 const sleep = (ms) => new Promise(r => setTimeout(r, ms));
 
+// Local overrides for movies the wiki hasn't tagged yet. Keyed by movie id;
+// values are the month_theme_id the movie belongs to. The monthTheme object
+// is filled in from another movie already tagged with that theme.
+const MONTH_THEME_OVERRIDES = {
+  438: 63, // 12 Angry Men -> Shame Month pt. 2
+};
+
 async function fetchPage(page) {
   const url = `${API_BASE}?page=${page}`;
   const res = await fetch(url, { headers: { 'User-Agent': UA, Accept: 'application/json' } });
@@ -42,6 +49,24 @@ async function main() {
 
   if (all.length !== total) {
     console.warn(`[scrape] WARNING: collected ${all.length} records but pagination said ${total}`);
+  }
+
+  const themesById = new Map();
+  for (const m of all) {
+    if (m.monthTheme && m.month_theme_id != null) themesById.set(m.month_theme_id, m.monthTheme);
+  }
+  for (const [movieId, themeId] of Object.entries(MONTH_THEME_OVERRIDES)) {
+    const movie = all.find(m => m.id === Number(movieId));
+    if (!movie) { console.warn(`[scrape] override: movie id ${movieId} not in response`); continue; }
+    const theme = themesById.get(themeId);
+    if (!theme) { console.warn(`[scrape] override: theme id ${themeId} not in response`); continue; }
+    if (movie.month_theme_id === themeId) {
+      console.warn(`[scrape] override REDUNDANT: wiki now tags "${movie.movie}" with theme id ${themeId}. Remove movie id ${movieId} from MONTH_THEME_OVERRIDES.`);
+      continue;
+    }
+    movie.month_theme_id = themeId;
+    movie.monthTheme = theme;
+    console.log(`[scrape] override: tagged "${movie.movie}" (id ${movie.id}) with theme "${theme.theme_name}" (id ${themeId})`);
   }
 
   const out = {

@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-05-13T15:48:01.100Z",
+  "scrapedAt": "2026-05-13T21:47:53.768Z",
   "source": "https://70mmwiki.com/api/movies",
   "total": 443,
   "movies": [
@@ -317,14 +317,23 @@
       "vger_id": null,
       "councilmember": null,
       "councilmember_lb_link": null,
-      "month_theme_id": null,
+      "month_theme_id": 63,
       "host_pick": null,
       "affiliate_link": null,
       "shirt_link": null,
       "lastSynced": "2026-04-09T04:18:30.069Z",
       "lb_link_val": "12-angry-men",
       "viewer_count": 49,
-      "monthTheme": null,
+      "monthTheme": {
+        "id": 63,
+        "theme_name": "Shame Month pt. 2",
+        "start_date": "2026-04-01",
+        "end_date": "2026-04-30",
+        "apple_link": "https://podcasts.apple.com/us/podcast/70mm-presents-shame-month/id1495604053?i=1000758685596",
+        "spotify_link": "https://open.spotify.com/episode/5SsH7WyV7ifZjBarL6l6Bx?si=oPDaZ2EwTWevuYEeAgkxVQ",
+        "description": null,
+        "created_at": "2026-03-26T01:37:28.000Z"
+      },
       "villager_count": 49,
       "sum": 15
     },
