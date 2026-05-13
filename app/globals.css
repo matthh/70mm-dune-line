@@ -465,6 +465,11 @@ body {
   cursor: pointer;
   position: relative;
   z-index: 1;
+  /* Floor wide enough to fit "15 BANGERS · NN" at 14px Oswald with
+   * letter-spacing, regardless of how narrow the proportional share
+   * would otherwise make it. Readability beats strict proportionality
+   * for this row — the count is the headline. */
+  min-width: 200px;
 }
 .at-bar-inner:hover { filter: brightness(0.92); }
 .at-bar-inner:focus-visible { outline: 2px solid #c89a4a; outline-offset: 1px; }
