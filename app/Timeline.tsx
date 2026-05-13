@@ -14,6 +14,19 @@ type SortMode = 'chronological' | 'desc' | 'asc';
 
 const DEFAULT_ACTIVE: Category[] = ['cleared', 'buried', 'dune'];
 
+function formatDateShort(iso: string | null | undefined): string {
+  if (!iso) return '';
+  const d = new Date(iso);
+  if (Number.isNaN(d.getTime())) return '';
+  return d.toLocaleString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' });
+}
+function formatDateLong(iso: string | null | undefined): string {
+  if (!iso) return 'unknown';
+  const d = new Date(iso);
+  if (Number.isNaN(d.getTime())) return iso;
+  return d.toLocaleString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
+}
+
 interface Props {
   bands: ThemeBand[];
   totals: Record<Category, number>;
@@ -220,7 +233,10 @@ export default function Timeline({ bands, totals }: Props) {
                               backgroundImage: `url(${m.posterUrl})`,
                             }}
                           >
-                            <div className="ep-num">{m.episode != null ? `#${m.episode}` : '—'}</div>
+                            <div className="ep-label">
+                              <div className="ep-num">{m.episode != null ? `#${m.episode}` : '—'}</div>
+                              <div className="ep-date">{formatDateShort(m.publishedAt)}</div>
+                            </div>
                           </div>
                         </div>
                       );
@@ -278,6 +294,7 @@ function Tooltip({ movie, x, y }: { movie: DisplayMovie; x: number; y: number })
       <img className="t-poster" src={movie.posterUrl} alt="" />
       <div className="t-title">{movie.title}{movie.year ? ` (${movie.year})` : ''}</div>
       <div className="t-meta">{epText}{movie.hostPick ? ` · ${movie.hostPick}'s pick` : ''}</div>
+      <div className="t-meta">Published {formatDateLong(movie.publishedAt)}</div>
       {movie.sum != null && (
         <>
           <div className="t-sum">{movie.sum}/15</div>
