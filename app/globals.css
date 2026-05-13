@@ -453,6 +453,38 @@ body {
   transition: width 0.4s ease-out;
   box-shadow: inset 0 -2px 0 rgba(0,0,0,0.25);
 }
+/* When the bar is composed of two stacked segments, drop the rounded
+ * leading corner from the *second* segment so the seam between the
+ * inner highlight and the rest of the bar reads as one continuous bar.
+ * The inner segment keeps its left radius. */
+.at-bar { display: flex; }
+.at-bar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+.at-bar-inner:hover { filter: brightness(0.92); }
+.at-bar-inner:focus-visible { outline: 2px solid #c89a4a; outline-offset: 1px; }
+.at-bar-inner-label {
+  font-family: 'Oswald', sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #1a1410;
+  padding: 0 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  pointer-events: none;
+  max-width: 100%;
+}
+.at-bar-rest {
+  border-radius: 0;
+}
 .at-count {
   font-family: 'Oswald', sans-serif;
   font-size: 22px;
@@ -533,21 +565,8 @@ body {
 .at-row.clickable:focus-visible { outline: 2px solid #c89a4a; outline-offset: 2px; }
 .at-arrow { color: #c89a4a; opacity: 0.7; margin-left: 4px; font-size: 12px; }
 
-/* Nested row (15 Bangers under Cleared) sits one indent in with a
- * subtler label so it reads as a callout, not a peer row. */
-.at-row.nested .at-label { padding-left: 22px; position: relative; }
-.at-row.nested .at-label::before {
-  content: '';
-  position: absolute;
-  left: 8px;
-  top: 50%;
-  width: 8px;
-  height: 1px;
-  background: #3a3024;
-}
-.at-row.nested .at-label-name { font-size: 12px; color: #c4b594; }
-.at-row.nested .at-count { font-size: 18px; color: #c4b594; }
-.at-row.nested .at-bar { height: 16px; }
+/* (Nested-row styles were removed when 15 Bangers became the leading
+ * slice of the Cleared bar instead of a separate sub-row.) */
 
 .rank-row {
   background: transparent;

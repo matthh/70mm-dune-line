@@ -19,8 +19,16 @@ interface CategoryRow {
   color: string;
   /** Optional click handler — when present the row becomes interactive. */
   onClick?: () => void;
-  /** Indented "of which …" callouts; e.g. 15 Bangers sits under Cleared. */
-  nested?: boolean;
+  /** If present, the row's bar splits into two segments: an `inner`
+   *  highlighted slice drawn first (left), then the remainder of this
+   *  row's count in the row's main color. Used to surface 15 Bangers
+   *  as the leading slice of Cleared. */
+  inner?: {
+    count: number;
+    color: string;
+    label: string;
+    onClick?: () => void;
+  };
 }
 
 interface PopupState {
@@ -55,14 +63,20 @@ export default function AllTimeStatsSection({ stats }: { stats: AllTimeStats }) 
   };
 
   // Order top-to-bottom mirrors the y-axis: above the line → on the line →
-  // below the line. 15 Bangers is a callout sub-row of Cleared (every
-  // banger is by definition cleared), so it lives indented directly
-  // beneath it.
+  // below the line. The Cleared bar is stacked: 15 Bangers form the
+  // leading (white) slice, then the remainder of Cleared continues in
+  // olive — visually showing what fraction of "cleared" is perfect.
+  const openBangers = () => openCategory(
+    '15 Bangers',
+    `every perfect 15/15 · ${stats.bangerMovies.length} total`,
+    stats.bangerMovies,
+  );
   const rows: CategoryRow[] = [
-    { label: 'Cleared', sublabel: '> 10.5', count: stats.cleared, color: '#7a8a4a',
-      onClick: () => openCategory('Cleared the Dune Line', `every movie above 10.5 · ${stats.clearedMovies.length} total · sorted highest first`, stats.clearedMovies) },
-    { label: '15 Bangers', sublabel: 'of which · perfect 15/15', count: stats.bangers, color: '#f4e9d4', nested: true,
-      onClick: () => openCategory('15 Bangers', `every perfect 15/15 · ${stats.bangerMovies.length} total`, stats.bangerMovies) },
+    {
+      label: 'Cleared', sublabel: '> 10.5', count: stats.cleared, color: '#7a8a4a',
+      onClick: () => openCategory('Cleared the Dune Line', `every movie above 10.5 · ${stats.clearedMovies.length} total · sorted highest first`, stats.clearedMovies),
+      inner: { count: stats.bangers, color: '#f4e9d4', label: '15 Bangers', onClick: openBangers },
+    },
     { label: 'Dune Line', sublabel: '= 10.5', count: stats.dune, color: '#c89a4a',
       onClick: () => openCategory('On the Dune Line', `every movie tied with Dune at 10.5 · ${stats.duneMovies.length} total`, stats.duneMovies) },
     { label: 'Buried', sublabel: '< 10.5', count: stats.buried, color: '#a64a2e',
@@ -78,7 +92,7 @@ export default function AllTimeStatsSection({ stats }: { stats: AllTimeStats }) 
           const clickable = !!r.onClick;
           return (
             <div
-              className={`at-row${clickable ? ' clickable' : ''}${r.nested ? ' nested' : ''}`}
+              className={`at-row${clickable ? ' clickable' : ''}`}
               key={r.label}
               onClick={r.onClick}
               role={clickable ? 'button' : undefined}
@@ -90,7 +104,26 @@ export default function AllTimeStatsSection({ stats }: { stats: AllTimeStats }) 
                 {r.sublabel && <span className="at-label-sub">{r.sublabel}</span>}
               </div>
               <div className="at-bar">
-                <div className="at-bar-fill" style={{ width: `${(r.count / max) * 100}%`, background: r.color }} />
+                {r.inner ? (
+                  <>
+                    <div
+                      className="at-bar-fill at-bar-inner"
+                      style={{ width: `${(r.inner.count / max) * 100}%`, background: r.inner.color }}
+                      onClick={r.inner.onClick ? (e) => { e.stopPropagation(); r.inner!.onClick!(); } : undefined}
+                      role={r.inner.onClick ? 'button' : undefined}
+                      tabIndex={r.inner.onClick ? 0 : undefined}
+                      title={`${r.inner.label} · ${r.inner.count}`}
+                    >
+                      <span className="at-bar-inner-label">{r.inner.label} · {r.inner.count}</span>
+                    </div>
+                    <div
+                      className="at-bar-fill at-bar-rest"
+                      style={{ width: `${((r.count - r.inner.count) / max) * 100}%`, background: r.color }}
+                    />
+                  </>
+                ) : (
+                  <div className="at-bar-fill" style={{ width: `${(r.count / max) * 100}%`, background: r.color }} />
+                )}
               </div>
               <div className="at-count">{r.count}</div>
             </div>
