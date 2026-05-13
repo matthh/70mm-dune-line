@@ -97,7 +97,21 @@ export default function Timeline({ bands, totals }: Props) {
     const flat: DisplayMovie[] = [];
     for (const b of bands) for (const m of b.movies) flat.push(m);
     const visible = flat.filter(m => m.sum != null && isVisible(m.category));
-    visible.sort((a, b) => sortMode === 'desc' ? (b.sum! - a.sum!) : (a.sum! - b.sum!));
+    // Primary: rating sum (desc or asc per mode). Tiebreaker: episode #
+    // descending so the most recent shows up first among equal-rated
+    // entries. Null episode #s fall to the end of their tie group, with
+    // publishedAt as a final fallback.
+    visible.sort((a, b) => {
+      const sumDiff = sortMode === 'desc' ? (b.sum! - a.sum!) : (a.sum! - b.sum!);
+      if (sumDiff !== 0) return sumDiff;
+      const ae = a.episode, be = b.episode;
+      if (ae != null && be != null) return be - ae;
+      if (ae != null) return -1;
+      if (be != null) return 1;
+      const ad = a.publishedAt ? Date.parse(a.publishedAt) : 0;
+      const bd = b.publishedAt ? Date.parse(b.publishedAt) : 0;
+      return bd - ad;
+    });
     if (visible.length === 0) return [];
     return [{
       key: `sorted-${sortMode}`,
