@@ -125,38 +125,77 @@ async function main() {
     console.log(`[scrape] rating override: set sum=${sum} for "${movie.movie}" (id ${movie.id})`);
   }
 
-  // Temporary: pull episode artwork from Spotify oEmbed for the small
-  // set of movie IDs listed below. Strip when 70mmwiki ships proper
-  // artwork. Reuses cached thumbs from the previous movies.json so daily
-  // runs only refetch when the cache is missing.
-  const SPOTIFY_THUMB_OVERRIDES = new Set([441]); // Lincoln
-  let prevThumbs = new Map();
+  // Wiki-first artwork with Spotify fallback. The wiki is the canonical
+  // source; we only attach a spotifyThumb when 70mmwiki returns 404 for
+  // an episode AND the episode has a spotify_link. Once the wiki ships
+  // proper artwork the next scrape clears the spotify fallback.
+  //
+  // Cost control: persist a wikiArtConfirmed flag per movie. Confirmed
+  // ids skip the wiki HTTP entirely on subsequent runs, so the daily
+  // scrape only re-checks new or still-missing ids — typically a few
+  // recent episodes — instead of all 300+ every time.
+  const prevCache = new Map();
   if (existsSync(OUT_PATH)) {
     try {
       const prev = JSON.parse(readFileSync(OUT_PATH, 'utf8'));
       for (const m of prev.movies ?? []) {
-        if (m.spotifyThumb) prevThumbs.set(m.id, m.spotifyThumb);
+        prevCache.set(m.id, { spotifyThumb: m.spotifyThumb, wikiArtConfirmed: m.wikiArtConfirmed });
       }
     } catch (err) {
-      console.warn(`[scrape] couldn't read prev movies.json for thumb cache:`, err.message);
+      console.warn(`[scrape] couldn't read prev movies.json:`, err.message);
     }
   }
-  let fetched = 0;
+  let wikiChecked = 0, wikiMissing = 0, spotifyFetched = 0, spotifyReused = 0, wikiAdded = 0;
   for (const movie of all) {
-    if (!SPOTIFY_THUMB_OVERRIDES.has(movie.id) || !movie.spotify_link) continue;
-    const cached = prevThumbs.get(movie.id);
-    if (cached) { movie.spotifyThumb = cached; continue; }
+    const prev = prevCache.get(movie.id) || {};
+    if (prev.wikiArtConfirmed) {
+      movie.wikiArtConfirmed = true;
+      continue;
+    }
+    wikiChecked++;
+    const wikiUrl = `https://70mmwiki.com/api/artwork/thumbs/${movie.id}.jpg`;
+    let wikiHas = false;
+    try {
+      const res = await fetch(wikiUrl);
+      if (res.ok) wikiHas = true;
+    } catch (err) {
+      console.warn(`[scrape] wiki art check error for id ${movie.id}:`, err.message);
+    }
+    if (wikiHas) {
+      movie.wikiArtConfirmed = true;
+      if (prev.spotifyThumb) {
+        wikiAdded++;
+        console.log(`[scrape] wiki added art for "${movie.movie}" (id ${movie.id}); dropping spotifyThumb fallback`);
+      }
+      await sleep(SLEEP_MS);
+      continue;
+    }
+    wikiMissing++;
+    if (prev.spotifyThumb) {
+      movie.spotifyThumb = prev.spotifyThumb;
+      spotifyReused++;
+      await sleep(SLEEP_MS);
+      continue;
+    }
+    if (!movie.spotify_link) { await sleep(SLEEP_MS); continue; }
     try {
       const url = `https://open.spotify.com/oembed?url=${encodeURIComponent(movie.spotify_link)}`;
       const res = await fetch(url, { headers: { Accept: 'application/json' } });
-      if (!res.ok) { console.warn(`[scrape] spotify oembed HTTP ${res.status} for "${movie.movie}" (id ${movie.id})`); continue; }
-      const body = await res.json();
-      if (body.thumbnail_url) { movie.spotifyThumb = body.thumbnail_url; fetched++; }
+      if (res.ok) {
+        const body = await res.json();
+        if (body.thumbnail_url) {
+          movie.spotifyThumb = body.thumbnail_url;
+          spotifyFetched++;
+        }
+      } else {
+        console.warn(`[scrape] spotify oembed HTTP ${res.status} for "${movie.movie}" (id ${movie.id})`);
+      }
     } catch (err) {
       console.warn(`[scrape] spotify oembed error for "${movie.movie}" (id ${movie.id}):`, err.message);
     }
+    await sleep(SLEEP_MS);
   }
-  console.log(`[scrape] spotify thumbs: ${fetched} newly fetched (override list: ${SPOTIFY_THUMB_OVERRIDES.size})`);
+  console.log(`[scrape] artwork: ${wikiChecked} wiki checks, ${wikiMissing} missing, ${spotifyFetched} spotify newly fetched, ${spotifyReused} reused, ${wikiAdded} wiki-restored`);
 
   const out = {
     scrapedAt: new Date().toISOString(),

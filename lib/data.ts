@@ -45,8 +45,12 @@ export interface RawMovie {
   month_theme_id?: number | null;
   spotify_link?: string | null;
   /** Spotify CDN thumbnail URL captured by the scraper from oEmbed.
-   *  Temporary stand-in until 70mmwiki posts proper artwork. */
+   *  Only present when 70mmwiki's artwork endpoint returned 404 for
+   *  this movie at scrape time. */
   spotifyThumb?: string | null;
+  /** Set true by the scraper after a successful HTTP 200 from the wiki
+   *  artwork endpoint. Used to skip re-checking on subsequent runs. */
+  wikiArtConfirmed?: boolean;
 }
 
 export interface RawData {
