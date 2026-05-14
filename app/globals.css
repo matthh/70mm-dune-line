@@ -256,9 +256,12 @@ body {
 
 /* Jump-to-movie autocomplete (left of Sort). The dropdown is absolutely
  * positioned beneath the input so it overlays the filter row without
- * pushing the chart down. */
+ * pushing the chart down. z-index sits above .timeline-wrap (which is a
+ * sibling with z-index: 1 from `.stage > *`) so the list isn't clipped
+ * by the chart header. */
 .jump-wrap {
   position: relative;
+  z-index: 60;
 }
 .jump-input {
   background: #1a1410;
@@ -289,7 +292,7 @@ body {
   min-width: 320px;
   max-height: 320px;
   overflow-y: auto;
-  z-index: 40;
+  z-index: 60;
   box-shadow: 0 6px 24px rgba(0,0,0,0.6);
 }
 .jump-result {
