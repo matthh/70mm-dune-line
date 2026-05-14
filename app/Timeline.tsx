@@ -67,6 +67,14 @@ export default function Timeline({ bands, totals }: Props) {
   function resetAll() {
     setActive(new Set(DEFAULT_ACTIVE));
     setSortMode('chronological');
+    setJumpQuery('');
+    setJumpOpen(false);
+    setFlashId(null);
+    // Snap the timeline back to its leftmost (newest) position so
+    // there's no lingering "I jumped somewhere" state.
+    requestAnimationFrame(() => {
+      scrollContainerRef.current?.scrollTo({ left: 0, behavior: 'smooth' });
+    });
   }
 
   const wrapRef = useRef<HTMLDivElement>(null);
