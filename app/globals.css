@@ -259,9 +259,13 @@ body {
  * pushing the chart down. z-index sits above .timeline-wrap (which is a
  * sibling with z-index: 1 from `.stage > *`) so the list isn't clipped
  * by the chart header. */
+/* Lift the entire filter-row above the chart so the dropdown can overlay
+ * .timeline-wrap. The `.stage > *` rule pins every direct child to
+ * z-index: 1, and .timeline-wrap is later in DOM order — so we need to
+ * win at this level, not inside .jump-wrap. */
+.filter-row.has-jump { z-index: 60; }
 .jump-wrap {
   position: relative;
-  z-index: 60;
 }
 .jump-input {
   background: #1a1410;

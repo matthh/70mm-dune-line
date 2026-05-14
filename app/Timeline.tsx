@@ -238,7 +238,7 @@ export default function Timeline({ bands, totals }: Props) {
 
   return (
     <>
-      <div className="filter-row" ref={jumpRowRef}>
+      <div className="filter-row has-jump" ref={jumpRowRef}>
         <span className="filter-label">Jump</span>
         <div className="jump-wrap">
           <input
