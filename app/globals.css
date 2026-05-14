@@ -283,11 +283,13 @@ body {
 }
 
 /* Hover tooltip — populated by JS, positioned at the cursor.
- * Pointer-events stay disabled so it doesn't block subsequent hovers;
- * the bar click underneath handles navigation. */
+ * Pointer-events are enabled so the per-host Letterboxd review links
+ * inside .t-hosts are clickable; bar→tooltip handoff is debounced via
+ * a 120ms hide-delay in Timeline.tsx so the cursor can travel between
+ * the bar and this card without losing the hover state. */
 .tooltip {
   position: fixed;
-  pointer-events: none;
+  pointer-events: auto;
   background: #1a1410;
   border: 1px solid #c89a4a;
   border-radius: 6px;
@@ -329,6 +331,8 @@ body {
 .tooltip .t-dist.below { color: #a64a2e; }
 .tooltip .t-dist.on { color: #c89a4a; }
 .tooltip .t-hosts { font-size: 11px; color: #6a5d44; margin-top: 6px; font-family: 'Oswald', sans-serif; letter-spacing: 0.08em; }
+.tooltip .t-host-link { color: #c89a4a; text-decoration: none; border-bottom: 1px dotted rgba(200,154,74,0.4); }
+.tooltip .t-host-link:hover { color: #f4e9d4; border-bottom-color: #f4e9d4; }
 .tooltip .t-link {
   margin-top: 10px;
   padding-top: 10px;

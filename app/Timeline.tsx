@@ -1,6 +1,8 @@
 'use client';
 
 import { useEffect, useMemo, useRef, useState } from 'react';
+
+const HOST_LB_HANDLES = { slim: 'slim', danny: 'danny', proto: 'protolexus' } as const;
 import { DUNE_LINE, MAX_SUM, type Category, type DisplayMovie, type ThemeBand } from '@/lib/data';
 
 const COLORS: Record<Category, string | null> = {
@@ -38,6 +40,12 @@ export default function Timeline({ bands, totals }: Props) {
   const [active, setActive] = useState<Set<Category>>(new Set(DEFAULT_ACTIVE));
   const [sortMode, setSortMode] = useState<SortMode>('chronological');
   const [hover, setHover] = useState<{ m: DisplayMovie; x: number; y: number } | null>(null);
+  // Small dismiss delay lets the cursor travel from a bar onto the
+  // tooltip without dropping the hover state — needed because the
+  // tooltip now contains clickable host-rating links.
+  const hideTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const cancelHide = () => { if (hideTimer.current) { clearTimeout(hideTimer.current); hideTimer.current = null; } };
+  const scheduleHide = () => { cancelHide(); hideTimer.current = setTimeout(() => setHover(null), 120); };
 
   function toggle(c: Category) {
     setActive(prev => {
@@ -223,9 +231,9 @@ export default function Timeline({ bands, totals }: Props) {
                         <div
                           key={m.id}
                           className="bar-col"
-                          onMouseEnter={(e) => setHover({ m, x: e.clientX, y: e.clientY })}
-                          onMouseMove={(e) => setHover({ m, x: e.clientX, y: e.clientY })}
-                          onMouseLeave={() => setHover(null)}
+                          onMouseEnter={(e) => { cancelHide(); setHover({ m, x: e.clientX, y: e.clientY }); }}
+                          onMouseMove={(e) => { cancelHide(); setHover({ m, x: e.clientX, y: e.clientY }); }}
+                          onMouseLeave={scheduleHide}
                           onClick={() => window.open(m.wikiUrl, '_blank', 'noopener,noreferrer')}
                         >
                           <div
@@ -252,7 +260,7 @@ export default function Timeline({ bands, totals }: Props) {
         </div>
       </div>
 
-      {hover && <Tooltip movie={hover.m} x={hover.x} y={hover.y} />}
+      {hover && <Tooltip movie={hover.m} x={hover.x} y={hover.y} onEnter={cancelHide} onLeave={scheduleHide} />}
     </>
   );
 }
@@ -274,7 +282,7 @@ function SortChip({ label, active, onClick }: { label: string; active: boolean; 
   );
 }
 
-function Tooltip({ movie, x, y }: { movie: DisplayMovie; x: number; y: number }) {
+function Tooltip({ movie, x, y, onEnter, onLeave }: { movie: DisplayMovie; x: number; y: number; onEnter: () => void; onLeave: () => void }) {
   const off = 18;
   const TT_WIDTH = 280;
   const TT_HEIGHT = 460;
@@ -292,8 +300,21 @@ function Tooltip({ movie, x, y }: { movie: DisplayMovie; x: number; y: number })
       ? 'on the line'
       : `${movie.distance > 0 ? '+' : ''}${movie.distance} from the line`;
   const epText = movie.episode != null ? `Ep #${movie.episode}` : 'no episode #';
+  // Per-host rating cell. When we have both a rating and the movie's
+  // Letterboxd slug, the cell links to that host's review on Letterboxd.
+  // Otherwise it falls back to plain text (or "—" for null ratings).
+  const hostCell = (label: string, host: keyof typeof HOST_LB_HANDLES, rating: number | null) => {
+    if (rating == null) return <span>{label} —</span>;
+    if (!movie.lbSlug) return <span>{label} {rating}</span>;
+    const url = `https://letterboxd.com/${HOST_LB_HANDLES[host]}/film/${movie.lbSlug}/`;
+    return (
+      <a className="t-host-link" href={url} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}>
+        {label} {rating}
+      </a>
+    );
+  };
   return (
-    <div className="tooltip show" style={style}>
+    <div className="tooltip show" style={style} onMouseEnter={onEnter} onMouseLeave={onLeave}>
       <img className="t-poster" src={movie.posterUrl} alt="" />
       <div className="t-title">{movie.title}{movie.year ? ` (${movie.year})` : ''}</div>
       <div className="t-meta">{epText}{movie.hostPick ? ` · ${movie.hostPick}'s pick` : ''}</div>
@@ -303,7 +324,7 @@ function Tooltip({ movie, x, y }: { movie: DisplayMovie; x: number; y: number })
           <div className="t-sum">{movie.sum}/15</div>
           <div className={`t-dist ${distClass}`}>{distLabel}</div>
           <div className="t-hosts">
-            S {movie.slim ?? '—'} · D {movie.danny ?? '—'} · P {movie.proto ?? '—'}
+            {hostCell('S', 'slim', movie.slim)} · {hostCell('D', 'danny', movie.danny)} · {hostCell('P', 'proto', movie.proto)}
           </div>
         </>
       )}

@@ -44,6 +44,9 @@ export interface RawMovie {
   } | null;
   month_theme_id?: number | null;
   spotify_link?: string | null;
+  /** Letterboxd movie slug, e.g. "12-angry-men" — used to build per-host
+   *  review URLs as letterboxd.com/{handle}/film/{slug}/. */
+  lb_link_val?: string | null;
   /** Spotify CDN thumbnail URL captured by the scraper from oEmbed.
    *  Only present when 70mmwiki's artwork endpoint returned 404 for
    *  this movie at scrape time. */
@@ -78,6 +81,8 @@ export interface DisplayMovie {
   proto: number | null;
   hostPick: string | null;
   lbLink: string | null;
+  /** Letterboxd film slug for per-host review URLs. */
+  lbSlug: string | null;
   category: Category;
   /** Distance from the Dune Line (sum - 10.5); null if unrated. */
   distance: number | null;
@@ -277,6 +282,7 @@ export function buildTimeline(): {
       proto: m.proto,
       hostPick: m.host_pick,
       lbLink: m.lb_link ?? null,
+      lbSlug: m.lb_link_val ?? null,
       category: categoryFor(m.sum, isDune),
       distance: m.sum == null ? null : Number((m.sum - DUNE_LINE).toFixed(2)),
       isDune,
