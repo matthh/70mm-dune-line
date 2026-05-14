@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 
 const HOST_LB_HANDLES = { slim: 'slim', danny: 'danny', proto: 'protolexus' } as const;
 import { DUNE_LINE, MAX_SUM, type Category, type DisplayMovie, type ThemeBand } from '@/lib/data';
@@ -40,6 +40,15 @@ export default function Timeline({ bands, totals }: Props) {
   const [active, setActive] = useState<Set<Category>>(new Set(DEFAULT_ACTIVE));
   const [sortMode, setSortMode] = useState<SortMode>('chronological');
   const [hover, setHover] = useState<{ m: DisplayMovie; x: number; y: number } | null>(null);
+  const [jumpQuery, setJumpQuery] = useState('');
+  const [jumpOpen, setJumpOpen] = useState(false);
+  // The id of a bar that should briefly highlight after a Jump selection,
+  // and the count of "jumps" so the effect re-fires even when the user
+  // jumps to the same movie twice.
+  const [flashId, setFlashId] = useState<number | null>(null);
+  const flashTick = useRef(0);
+  const jumpRowRef = useRef<HTMLDivElement>(null);
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
   // Small dismiss delay lets the cursor travel from a bar onto the
   // tooltip without dropping the hover state — needed because the
   // tooltip now contains clickable host-rating links.
@@ -153,6 +162,74 @@ export default function Timeline({ bands, totals }: Props) {
   const dirty = sortMode !== 'chronological' || active.size !== DEFAULT_ACTIVE.length
     || !DEFAULT_ACTIVE.every(c => active.has(c));
 
+  // Jump autocomplete: flatten every movie across bands once so each
+  // keystroke is a cheap substring filter. Match against the movie title.
+  // Dedupe by id (the same movie could conceivably appear in multiple
+  // bands if the data ever changes shape — defensive).
+  const allMovies = useMemo<DisplayMovie[]>(() => {
+    const seen = new Set<number>();
+    const out: DisplayMovie[] = [];
+    for (const b of bands) {
+      for (const m of b.movies) {
+        if (seen.has(m.id)) continue;
+        seen.add(m.id);
+        out.push(m);
+      }
+    }
+    return out;
+  }, [bands]);
+
+  const jumpMatches = useMemo<DisplayMovie[]>(() => {
+    const q = jumpQuery.trim().toLowerCase();
+    if (q.length < 2) return [];
+    return allMovies
+      .filter(m => m.title.toLowerCase().includes(q))
+      .sort((a, b) => {
+        // Prefix matches first, then by episode # desc so newer wins
+        // within the same prefix bucket.
+        const aP = a.title.toLowerCase().startsWith(q) ? 0 : 1;
+        const bP = b.title.toLowerCase().startsWith(q) ? 0 : 1;
+        if (aP !== bP) return aP - bP;
+        return (b.episode ?? 0) - (a.episode ?? 0);
+      })
+      .slice(0, 8);
+  }, [jumpQuery, allMovies]);
+
+  const handleJumpSelect = useCallback((m: DisplayMovie) => {
+    setJumpQuery('');
+    setJumpOpen(false);
+    // Sort-by-rating modes hide unrated bars. Switch to chronological
+    // so the target is always rendered before we try to scroll to it.
+    if (sortMode !== 'chronological') setSortMode('chronological');
+    // Scroll after the next paint so the band reflows (the bar may not
+    // be in the DOM yet if we just changed sort mode).
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        const el = document.querySelector(`[data-movie-id="${m.id}"]`) as HTMLElement | null;
+        const container = scrollContainerRef.current;
+        if (!el || !container) return;
+        const cRect = container.getBoundingClientRect();
+        const eRect = el.getBoundingClientRect();
+        const delta = (eRect.left + eRect.width / 2) - (cRect.left + cRect.width / 2);
+        container.scrollBy({ left: delta, behavior: 'smooth' });
+        flashTick.current += 1;
+        setFlashId(m.id);
+        const tick = flashTick.current;
+        setTimeout(() => { if (flashTick.current === tick) setFlashId(null); }, 1500);
+      });
+    });
+  }, [sortMode]);
+
+  // Close the dropdown on outside click.
+  useEffect(() => {
+    if (!jumpOpen) return;
+    const onDoc = (e: MouseEvent) => {
+      if (!jumpRowRef.current?.contains(e.target as Node)) setJumpOpen(false);
+    };
+    document.addEventListener('mousedown', onDoc);
+    return () => document.removeEventListener('mousedown', onDoc);
+  }, [jumpOpen]);
+
   const dirArrow = sortMode === 'chronological'
     ? '← newer  ·  older →'
     : sortMode === 'desc'
@@ -161,8 +238,42 @@ export default function Timeline({ bands, totals }: Props) {
 
   return (
     <>
-      <div className="filter-row">
-        <span className="filter-label">Sort</span>
+      <div className="filter-row" ref={jumpRowRef}>
+        <span className="filter-label">Jump</span>
+        <div className="jump-wrap">
+          <input
+            className="jump-input"
+            type="text"
+            value={jumpQuery}
+            onChange={(e) => { setJumpQuery(e.target.value); setJumpOpen(true); }}
+            onFocus={() => setJumpOpen(true)}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' && jumpMatches.length > 0) handleJumpSelect(jumpMatches[0]);
+              else if (e.key === 'Escape') { setJumpOpen(false); setJumpQuery(''); }
+            }}
+            placeholder="Type a movie title…"
+            spellCheck={false}
+          />
+          {jumpOpen && jumpMatches.length > 0 && (
+            <ul className="jump-results">
+              {jumpMatches.map(m => (
+                <li
+                  key={m.id}
+                  className="jump-result"
+                  onMouseDown={(e) => { e.preventDefault(); handleJumpSelect(m); }}
+                >
+                  <span className="jump-result-title">{m.title}</span>
+                  <span className="jump-result-meta">
+                    {m.episode != null ? `#${m.episode}` : '—'}
+                    {m.year ? ` · ${m.year}` : ''}
+                    {m.sum != null ? ` · ${m.sum}/15` : ''}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+        <span className="filter-label" style={{ marginLeft: '12px' }}>Sort</span>
         <SortChip label="Chronological" active={sortMode === 'chronological'} onClick={() => setSortMode('chronological')} />
         <SortChip label="Highest → Lowest" active={sortMode === 'desc'} onClick={() => setSortMode('desc')} />
         <SortChip label="Lowest → Highest" active={sortMode === 'asc'} onClick={() => setSortMode('asc')} />
@@ -182,7 +293,7 @@ export default function Timeline({ bands, totals }: Props) {
         <div className="dune-line-glow" ref={glowRef} />
         <div className="dune-line-overlay" ref={lineRef} />
         <div className="dune-tag" ref={tagRef}>DUNE LINE · 10.5</div>
-        <div className="timeline-scroll">
+        <div className="timeline-scroll" ref={scrollContainerRef}>
           <div className="timeline-inner">
             {displayBands.map(band => {
               // Filter to currently-visible bars so the chart compresses
@@ -230,7 +341,8 @@ export default function Timeline({ bands, totals }: Props) {
                       return (
                         <div
                           key={m.id}
-                          className="bar-col"
+                          className={`bar-col${flashId === m.id ? ' flash' : ''}`}
+                          data-movie-id={m.id}
                           onMouseEnter={(e) => { cancelHide(); setHover({ m, x: e.clientX, y: e.clientY }); }}
                           onMouseMove={(e) => { cancelHide(); setHover({ m, x: e.clientX, y: e.clientY }); }}
                           onMouseLeave={scheduleHide}

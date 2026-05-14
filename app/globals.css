@@ -253,6 +253,64 @@ body {
     repeating-linear-gradient(135deg, rgba(200,154,74,0.18) 0px, rgba(200,154,74,0.18) 3px, transparent 3px, transparent 6px);
 }
 .bar.placeholder .ep-num { color: #6a5d44; }
+
+/* Jump-to-movie autocomplete (left of Sort). The dropdown is absolutely
+ * positioned beneath the input so it overlays the filter row without
+ * pushing the chart down. */
+.jump-wrap {
+  position: relative;
+}
+.jump-input {
+  background: #1a1410;
+  border: 1px solid #2a2218;
+  color: #f4e9d4;
+  font-family: inherit;
+  font-size: 13px;
+  padding: 6px 10px;
+  border-radius: 4px;
+  width: 220px;
+  letter-spacing: 0.04em;
+}
+.jump-input:focus {
+  outline: none;
+  border-color: #c89a4a;
+}
+.jump-input::placeholder { color: #5a4e38; }
+.jump-results {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  margin: 0;
+  padding: 4px 0;
+  list-style: none;
+  background: #1a1410;
+  border: 1px solid #c89a4a;
+  border-radius: 6px;
+  min-width: 320px;
+  max-height: 320px;
+  overflow-y: auto;
+  z-index: 40;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.6);
+}
+.jump-result {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 12px;
+}
+.jump-result:hover { background: rgba(200,154,74,0.12); }
+.jump-result-title { color: #f4e9d4; flex: 1; }
+.jump-result-meta { color: #6a5d44; font-size: 10px; letter-spacing: 0.08em; white-space: nowrap; }
+
+/* Flash applied to a bar-col when the user jumps to it. Pulse the
+ * highlight twice so it draws the eye without being distracting. */
+.bar-col.flash > .bar { animation: barFlash 1.4s ease-out; }
+@keyframes barFlash {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(200,154,74,0); }
+  20%, 60% { box-shadow: 0 0 0 4px rgba(200,154,74,0.9); }
+}
 .bar-col:not(.dim):hover .bar:not(.placeholder) {
   filter: brightness(1.15);
   transform: translateY(-2px);
