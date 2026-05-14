@@ -43,6 +43,10 @@ export interface RawMovie {
     end_date: string | null;
   } | null;
   month_theme_id?: number | null;
+  spotify_link?: string | null;
+  /** Spotify CDN thumbnail URL captured by the scraper from oEmbed.
+   *  Temporary stand-in until 70mmwiki posts proper artwork. */
+  spotifyThumb?: string | null;
 }
 
 export interface RawData {
@@ -272,7 +276,7 @@ export function buildTimeline(): {
       category: categoryFor(m.sum, isDune),
       distance: m.sum == null ? null : Number((m.sum - DUNE_LINE).toFixed(2)),
       isDune,
-      posterUrl: `https://70mmwiki.com/api/artwork/thumbs/${m.id}.jpg`,
+      posterUrl: m.spotifyThumb || `https://70mmwiki.com/api/artwork/thumbs/${m.id}.jpg`,
       wikiUrl: `https://70mmwiki.com/movies/${m.id}`,
     };
 

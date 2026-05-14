@@ -6,7 +6,7 @@
 // polite (the wiki is small and fan-maintained). Identify ourselves in the
 // User-Agent so the maintainers can find us if anything goes sideways.
 
-import { writeFileSync, mkdirSync } from 'node:fs';
+import { writeFileSync, mkdirSync, readFileSync, existsSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -124,6 +124,39 @@ async function main() {
     movie.sum = sum;
     console.log(`[scrape] rating override: set sum=${sum} for "${movie.movie}" (id ${movie.id})`);
   }
+
+  // Temporary: pull episode artwork from Spotify oEmbed for the small
+  // set of movie IDs listed below. Strip when 70mmwiki ships proper
+  // artwork. Reuses cached thumbs from the previous movies.json so daily
+  // runs only refetch when the cache is missing.
+  const SPOTIFY_THUMB_OVERRIDES = new Set([441]); // Lincoln
+  let prevThumbs = new Map();
+  if (existsSync(OUT_PATH)) {
+    try {
+      const prev = JSON.parse(readFileSync(OUT_PATH, 'utf8'));
+      for (const m of prev.movies ?? []) {
+        if (m.spotifyThumb) prevThumbs.set(m.id, m.spotifyThumb);
+      }
+    } catch (err) {
+      console.warn(`[scrape] couldn't read prev movies.json for thumb cache:`, err.message);
+    }
+  }
+  let fetched = 0;
+  for (const movie of all) {
+    if (!SPOTIFY_THUMB_OVERRIDES.has(movie.id) || !movie.spotify_link) continue;
+    const cached = prevThumbs.get(movie.id);
+    if (cached) { movie.spotifyThumb = cached; continue; }
+    try {
+      const url = `https://open.spotify.com/oembed?url=${encodeURIComponent(movie.spotify_link)}`;
+      const res = await fetch(url, { headers: { Accept: 'application/json' } });
+      if (!res.ok) { console.warn(`[scrape] spotify oembed HTTP ${res.status} for "${movie.movie}" (id ${movie.id})`); continue; }
+      const body = await res.json();
+      if (body.thumbnail_url) { movie.spotifyThumb = body.thumbnail_url; fetched++; }
+    } catch (err) {
+      console.warn(`[scrape] spotify oembed error for "${movie.movie}" (id ${movie.id}):`, err.message);
+    }
+  }
+  console.log(`[scrape] spotify thumbs: ${fetched} newly fetched (override list: ${SPOTIFY_THUMB_OVERRIDES.size})`);
 
   const out = {
     scrapedAt: new Date().toISOString(),
