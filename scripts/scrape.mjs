@@ -60,6 +60,16 @@ const MONTH_THEME_OVERRIDES = {
   438: 63, // 2026-04-20 12 Angry Men -> Shame Month pt. 2
 };
 
+// Local overrides for movie-level rating sums the wiki hasn't published
+// yet. Keyed by movie id; the value is the sum to assign. Individual
+// host ratings (slim/danny/proto) are left null — the tooltip will show
+// "—" for each. When the wiki publishes any sum value (regardless of
+// match), the scrape logs an "override REDUNDANT" warning so the entry
+// can be deleted from this map.
+const RATING_OVERRIDES = {
+  441: 10.5, // 2026-05-11 Lincoln -> on the Dune Line
+};
+
 async function fetchPage(page) {
   const url = `${API_BASE}?page=${page}`;
   const res = await fetch(url, { headers: { 'User-Agent': UA, Accept: 'application/json' } });
@@ -102,6 +112,17 @@ async function main() {
     movie.month_theme_id = themeId;
     movie.monthTheme = theme;
     console.log(`[scrape] override: tagged "${movie.movie}" (id ${movie.id}) with theme "${theme.theme_name}" (id ${themeId})`);
+  }
+
+  for (const [movieId, sum] of Object.entries(RATING_OVERRIDES)) {
+    const movie = all.find(m => m.id === Number(movieId));
+    if (!movie) { console.warn(`[scrape] rating override: movie id ${movieId} not in response`); continue; }
+    if (movie.sum != null) {
+      console.warn(`[scrape] rating override REDUNDANT: wiki now publishes sum=${movie.sum} for "${movie.movie}". Remove movie id ${movieId} from RATING_OVERRIDES.`);
+      continue;
+    }
+    movie.sum = sum;
+    console.log(`[scrape] rating override: set sum=${sum} for "${movie.movie}" (id ${movie.id})`);
   }
 
   const out = {

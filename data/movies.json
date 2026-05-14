@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-05-13T21:52:45.961Z",
+  "scrapedAt": "2026-05-14T00:09:03.833Z",
   "source": "https://70mmwiki.com/api/movies",
   "total": 443,
   "movies": [
@@ -148,7 +148,7 @@
         "created_at": "2026-04-29T20:52:15.000Z"
       },
       "villager_count": 0,
-      "sum": null
+      "sum": 10.5
     },
     {
       "id": 440,
