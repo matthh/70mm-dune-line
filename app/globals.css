@@ -620,6 +620,13 @@ body {
   padding: 4px 0;
   font-family: 'Oswald', sans-serif;
   font-size: 12px;
+  background: transparent;
+  border: none;
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+  transition: background 0.15s;
+  border-radius: 3px;
 }
 .rank-num {
   color: #6a5d44;
@@ -644,6 +651,8 @@ body {
   letter-spacing: 0.04em;
   font-weight: 500;
 }
+.rank-row:hover { background: rgba(200,154,74,0.08); }
+.rank-row:focus-visible { outline: 2px solid #c89a4a; outline-offset: 1px; }
 
 /* Trophy list + deep-dive sections were replaced by the movie-grid
  * modal popup — see .modal / .movie-card rules below. */
@@ -654,22 +663,6 @@ body {
 .at-row.clickable:hover { background: rgba(200,154,74,0.08); }
 .at-row.clickable:focus-visible { outline: 2px solid #c89a4a; outline-offset: 2px; }
 .at-arrow { color: #c89a4a; opacity: 0.7; margin-left: 4px; font-size: 12px; }
-
-/* (Nested-row styles were removed when 15 Bangers became the leading
- * slice of the Cleared bar instead of a separate sub-row.) */
-
-.rank-row {
-  background: transparent;
-  border: none;
-  text-align: left;
-  width: 100%;
-  cursor: pointer;
-  transition: background 0.15s;
-  border-radius: 3px;
-  font-family: inherit;
-}
-.rank-row:hover { background: rgba(200,154,74,0.08); }
-.rank-row:focus-visible { outline: 2px solid #c89a4a; outline-offset: 1px; }
 
 /* Modal popup */
 .modal-backdrop {

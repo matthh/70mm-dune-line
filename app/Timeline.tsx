@@ -1,9 +1,9 @@
 'use client';
 
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { DUNE_LINE, MAX_SUM, type Category, type DisplayMovie, type ThemeBand } from '@/lib/data';
 
 const HOST_LB_HANDLES = { slim: 'slim', danny: 'danny', proto: 'protolexus' } as const;
-import { DUNE_LINE, MAX_SUM, type Category, type DisplayMovie, type ThemeBand } from '@/lib/data';
 
 const COLORS: Record<Category, string | null> = {
   cleared: '#7a8a4a',
@@ -385,15 +385,6 @@ export default function Timeline({ bands, totals }: Props) {
   );
 }
 
-function Chip({ cat, label, color, count, active, onClick }: { cat: Category; label: string; color: string; count: number; active: boolean; onClick: () => void }) {
-  return (
-    <button className={`chip ${cat}${active ? ' active' : ''}`} onClick={onClick}>
-      <span className="chip-dot" style={{ background: color }} />
-      {label} <span className="chip-count">{count}</span>
-    </button>
-  );
-}
-
 function SortChip({ label, active, onClick }: { label: string; active: boolean; onClick: () => void }) {
   return (
     <button className={`chip sort${active ? ' active' : ''}`} onClick={onClick}>
@@ -408,8 +399,8 @@ function Tooltip({ movie, x, y, onEnter, onLeave }: { movie: DisplayMovie; x: nu
   const TT_HEIGHT = 460;
   // Clamp inside the viewport — flip to the cursor's left or above if
   // we'd otherwise crash into an edge, so the poster always renders fully.
-  const vw = typeof window !== 'undefined' ? window.innerWidth : 9999;
-  const vh = typeof window !== 'undefined' ? window.innerHeight : 9999;
+  const vw = window.innerWidth;
+  const vh = window.innerHeight;
   const left = x + off + TT_WIDTH > vw ? Math.max(8, x - off - TT_WIDTH) : x + off;
   const top = y + off + TT_HEIGHT > vh ? Math.max(8, vh - TT_HEIGHT - 8) : y + off;
   const style: React.CSSProperties = { left: `${left}px`, top: `${top}px` };
