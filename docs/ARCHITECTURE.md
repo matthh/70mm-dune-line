@@ -1,6 +1,6 @@
 # Architecture — 70mm Dune Line
 
-Last reviewed: 2026-06-09
+Last reviewed: 2026-06-16
 
 ## Purpose
 
@@ -118,12 +118,13 @@ None. This is a small, single-purpose app with no deprecated endpoints or remove
 - **Hot-linked poster images** create a runtime dependency on 70mmwiki.com availability. If the wiki goes offline, all posters 404 — the striped placeholder CSS class covers this gracefully, but it's worth noting.
 - **`isVisible` defined inside the component** (`Timeline.tsx`) then used inside a `useMemo` with a suppressed exhaustive-deps warning (`eslint-disable-line`). The suppression is intentional (the function is always stable relative to the `active` set), but it's fragile if the function signature changes.
 - **No tests**. The data transformation in `lib/data.ts` is pure and well-suited to unit tests; none exist.
-- **`backfill.csv` committed to repo root**. This is a generated artifact (output of `backfill-csv.mjs`) and probably should be `.gitignore`d or moved to a scratch location.
+- **`backfill.csv` committed to repo root**. This is a generated artifact (output of `backfill-csv.mjs`) and probably should be `.gitignore`d or moved to a scratch location. (Added to `.gitignore` in 2026-06-09 audit.)
+- **PostCSS 8.4.31 (installed via next@16.2.6)** has a moderate XSS vulnerability (GHSA-qx2v-qp2m-jg93) in its CSS stringify output. This affects the build toolchain only — not the deployed static bundle, since PostCSS is a dev/build-time tool. Fix: update `next` to 16.2.9+ or wait for Next.js to pull in postcss ≥ 8.5.10.
 
 ## Gotchas
 
 - **Episode number `null` is common**: a handful of regular episodes (Okja, Megalopolis, Willy Wonka, etc.) have no episode number assigned by the wiki. These are handled throughout with `m.episode ?? '—'` fallbacks. Sort tiebreakers fall back to `publishedAt`.
-- **`movies.json` is ~450-entry** as of 2026-06. The Next.js static import bundles it into the build; at current size (~200 KB) this is fine but worth monitoring if the wiki grows substantially.
+- **`movies.json` is ~464-entry** as of 2026-06 (364 non-vault eps). The Next.js static import bundles it into the build; at current size (~200 KB) this is fine but worth monitoring if the wiki grows substantially.
 - **Dev port is 3000** (`npm run dev`). README correctly states 3000. No custom port is pinned in `next.config.ts`.
 - **Vercel static export**: `output: 'export'` means no ISR, no server actions, no middleware. Everything must work at build time or in the client bundle.
 - **GitHub Actions `contents: write`**: The refresh workflow has broad write permission on the repo so it can commit updated JSON. This is intentional but means a compromised Actions token could push arbitrary commits.
