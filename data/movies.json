@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-06-17T16:41:22.781Z",
+  "scrapedAt": "2026-06-18T16:39:22.165Z",
   "source": "https://70mmwiki.com/api/movies",
   "total": 448,
   "movies": [
@@ -112,16 +112,16 @@
       "pilot": null,
       "book": null,
       "watchalong": null,
-      "slim": null,
-      "danny": null,
-      "proto": null,
+      "slim": 4,
+      "danny": 3,
+      "proto": 3,
       "lb_link": "https://boxd.it/27ww",
       "guest": null,
       "guest_lb_link": null,
       "guest_rating": null,
       "transcript_link": null,
-      "apple_link": null,
-      "spotify_link": null,
+      "apple_link": "https://podcasts.apple.com/us/podcast/ratatouille-2007/id1495604053?i=1000772724763",
+      "spotify_link": "https://open.spotify.com/episode/3JoPriaR2kiXKdYFpQpA4s?si=RIw0DWp0QS-IY5wXtnsq6w",
       "store_link": null,
       "tmdb_id": "2062",
       "tmdb_tv_id": null,
@@ -148,7 +148,8 @@
         "created_at": "2026-05-21T03:12:56.000Z"
       },
       "villager_count": 47,
-      "sum": null
+      "sum": 10,
+      "wikiArtConfirmed": true
     },
     {
       "id": 445,
@@ -161,16 +162,16 @@
       "pilot": null,
       "book": null,
       "watchalong": null,
-      "slim": null,
-      "danny": null,
-      "proto": null,
+      "slim": 5,
+      "danny": 5,
+      "proto": 5,
       "lb_link": "https://boxd.it/1VFw",
       "guest": null,
       "guest_lb_link": null,
       "guest_rating": null,
       "transcript_link": null,
-      "apple_link": null,
-      "spotify_link": null,
+      "apple_link": "https://podcasts.apple.com/us/podcast/mulan-1998/id1495604053?i=1000771631607",
+      "spotify_link": "https://open.spotify.com/episode/1JWHjRCla455WMjqiOouiO?si=reyImX5ORhmJmjwCGhetZQ",
       "store_link": null,
       "tmdb_id": "10674",
       "tmdb_tv_id": null,
@@ -197,7 +198,8 @@
         "created_at": "2026-05-21T03:12:56.000Z"
       },
       "villager_count": 26,
-      "sum": null
+      "sum": 15,
+      "wikiArtConfirmed": true
     },
     {
       "id": 444,
@@ -210,9 +212,9 @@
       "pilot": null,
       "book": null,
       "watchalong": null,
-      "slim": null,
-      "danny": null,
-      "proto": null,
+      "slim": 4,
+      "danny": 5,
+      "proto": 4,
       "lb_link": "https://boxd.it/1XLm",
       "guest": null,
       "guest_lb_link": null,
@@ -246,8 +248,8 @@
         "created_at": "2026-05-21T03:12:56.000Z"
       },
       "villager_count": 46,
-      "sum": null,
-      "spotifyThumb": "https://image-cdn-fa.spotifycdn.com/image/ab67656300005f1f2039b1ce87fc0e3361e95901"
+      "sum": 13,
+      "wikiArtConfirmed": true
     },
     {
       "id": 443,
@@ -360,9 +362,9 @@
       "pilot": null,
       "book": null,
       "watchalong": null,
-      "slim": null,
-      "danny": null,
-      "proto": null,
+      "slim": 2,
+      "danny": 4,
+      "proto": 4,
       "lb_link": "https://boxd.it/2n2s",
       "guest": null,
       "guest_lb_link": null,
@@ -396,7 +398,7 @@
         "created_at": "2026-04-29T20:52:15.000Z"
       },
       "villager_count": 28,
-      "sum": 10.5,
+      "sum": 10,
       "wikiArtConfirmed": true
     },
     {
