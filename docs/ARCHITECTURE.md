@@ -1,6 +1,6 @@
 # Architecture — 70mm Dune Line
 
-Last reviewed: 2026-06-16
+Last reviewed: 2026-06-23
 
 ## Purpose
 
@@ -27,7 +27,7 @@ This app **reads, never writes** any external data.
 
 - `data/movies.json` is the only data artifact. It is committed to the repo and rebuilt by the scraper.
 - The scraper (`scripts/scrape.mjs`) pulls from `https://70mmwiki.com/api/movies` — a public, fan-maintained wiki API.
-- Poster images are **hot-linked** from `https://70mmwiki.com/api/artwork/thumbs/{id}.jpg`. The wiki serves these publicly; mirroring ~400+ posters would bloat the deploy by ~100 MB.
+- Poster images are **hot-linked** from `https://70mmwiki.com/api/artwork/thumbs/{id}.jpg`. The wiki serves these publicly; mirroring 300+ posters would bloat the deploy significantly.
 - Spotify oEmbed thumbnail URLs (`spotifyThumb`) are used as fallback when the wiki 404s for a poster. These are stored in `movies.json` and served from Spotify's CDN.
 - No user data is collected or stored anywhere.
 
@@ -118,13 +118,14 @@ None. This is a small, single-purpose app with no deprecated endpoints or remove
 - **Hot-linked poster images** create a runtime dependency on 70mmwiki.com availability. If the wiki goes offline, all posters 404 — the striped placeholder CSS class covers this gracefully, but it's worth noting.
 - **`isVisible` defined inside the component** (`Timeline.tsx`) then used inside a `useMemo` with a suppressed exhaustive-deps warning (`eslint-disable-line`). The suppression is intentional (the function is always stable relative to the `active` set), but it's fragile if the function signature changes.
 - **No tests**. The data transformation in `lib/data.ts` is pure and well-suited to unit tests; none exist.
-- **`backfill.csv` committed to repo root**. This is a generated artifact (output of `backfill-csv.mjs`) and probably should be `.gitignore`d or moved to a scratch location. (Added to `.gitignore` in 2026-06-09 audit.)
-- **PostCSS 8.4.31 (installed via next@16.2.6)** has a moderate XSS vulnerability (GHSA-qx2v-qp2m-jg93) in its CSS stringify output. This affects the build toolchain only — not the deployed static bundle, since PostCSS is a dev/build-time tool. Fix: update `next` to 16.2.9+ or wait for Next.js to pull in postcss ≥ 8.5.10.
+- **`backfill.csv` `.gitignore`d** since the 2026-06-09 audit. The generated artifact is no longer tracked, but `scripts/backfill-csv.mjs` remains as a dev utility.
+- **PostCSS 8.4.31 (installed via next@16.2.6)** has a moderate XSS vulnerability (GHSA-qx2v-qp2m-jg93) in its CSS stringify output. This affects the build toolchain only — not the deployed static bundle, since PostCSS is a dev/build-time tool. Fix: update `next` to 16.2.9+ or wait for Next.js to pull in postcss ≥ 8.5.10. Open since 2026-06-16 audit.
+- **`at-row.clickable` hover/cursor styles invisible** — `.at-row` uses `display: contents`, so `background`, `cursor`, and box-model properties on it have no effect. The "clickable" visual affordance does not render. Open since 2026-06-09 audit.
 
 ## Gotchas
 
 - **Episode number `null` is common**: a handful of regular episodes (Okja, Megalopolis, Willy Wonka, etc.) have no episode number assigned by the wiki. These are handled throughout with `m.episode ?? '—'` fallbacks. Sort tiebreakers fall back to `publishedAt`.
-- **`movies.json` is ~464-entry** as of 2026-06 (364 non-vault eps). The Next.js static import bundles it into the build; at current size (~200 KB) this is fine but worth monitoring if the wiki grows substantially.
+- **`movies.json` is 448-entry** as of 2026-06-22 (364 non-vault, 324 regular/main-show). The Next.js static import bundles it into the build; at current size (~200 KB) this is fine but worth monitoring if the wiki grows substantially.
 - **Dev port is 3000** (`npm run dev`). README correctly states 3000. No custom port is pinned in `next.config.ts`.
 - **Vercel static export**: `output: 'export'` means no ISR, no server actions, no middleware. Everything must work at build time or in the client bundle.
 - **GitHub Actions `contents: write`**: The refresh workflow has broad write permission on the repo so it can commit updated JSON. This is intentional but means a compromised Actions token could push arbitrary commits.
