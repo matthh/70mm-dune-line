@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-07-16T15:08:43.798Z",
+  "scrapedAt": "2026-07-17T14:49:24.653Z",
   "source": "https://70mmwiki.com/api/movies",
   "total": 453,
   "movies": [
@@ -112,16 +112,16 @@
       "pilot": null,
       "book": null,
       "watchalong": null,
-      "slim": null,
-      "danny": null,
-      "proto": null,
+      "slim": 4,
+      "danny": 3,
+      "proto": 2,
       "lb_link": "https://boxd.it/2490",
       "guest": null,
       "guest_lb_link": null,
       "guest_rating": null,
       "transcript_link": null,
-      "apple_link": null,
-      "spotify_link": null,
+      "apple_link": "https://podcasts.apple.com/us/podcast/panic-room-2002/id1495604053?i=1000776569890",
+      "spotify_link": "https://open.spotify.com/episode/2gjkdGEtmuLndnuZkKklhJ?si=oaMB4j3XSY2MSLWqbkoTRQ",
       "store_link": null,
       "tmdb_id": "4547",
       "tmdb_tv_id": null,
@@ -148,7 +148,8 @@
         "created_at": "2026-06-25T16:58:15.000Z"
       },
       "villager_count": 30,
-      "sum": null
+      "sum": 9,
+      "wikiArtConfirmed": true
     },
     {
       "id": 449,
@@ -169,8 +170,8 @@
       "guest_lb_link": null,
       "guest_rating": null,
       "transcript_link": null,
-      "apple_link": null,
-      "spotify_link": null,
+      "apple_link": "https://podcasts.apple.com/us/podcast/gone-with-the-wind-1939/id1495604053?i=1000775628219",
+      "spotify_link": "https://open.spotify.com/episode/3IFpncqFpgXshzRdkd1FKH?si=0Td0r9HDTIC4rjpg3Fidag",
       "store_link": null,
       "tmdb_id": "770",
       "tmdb_tv_id": null,
@@ -197,7 +198,8 @@
         "created_at": "2026-06-25T16:58:15.000Z"
       },
       "villager_count": 14,
-      "sum": null
+      "sum": null,
+      "wikiArtConfirmed": true
     },
     {
       "id": 453,
@@ -258,8 +260,8 @@
       "guest_lb_link": null,
       "guest_rating": null,
       "transcript_link": null,
-      "apple_link": null,
-      "spotify_link": null,
+      "apple_link": "https://podcasts.apple.com/us/podcast/the-american-president-1995/id1495604053?i=1000774670557",
+      "spotify_link": "https://open.spotify.com/episode/5SHIvwHuTcKZmB26nkTOSx?si=sXvw0IgXTHyfer-Bb8AMTQ",
       "store_link": null,
       "tmdb_id": "9087",
       "tmdb_tv_id": null,
@@ -286,7 +288,8 @@
         "created_at": "2026-05-29T17:07:16.000Z"
       },
       "villager_count": 21,
-      "sum": 5
+      "sum": 5,
+      "wikiArtConfirmed": true
     },
     {
       "id": 447,
