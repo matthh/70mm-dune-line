@@ -1,6 +1,6 @@
 # Architecture — 70mm Dune Line
 
-Last reviewed: 2026-07-21
+Last reviewed: 2026-07-28
 
 ## Purpose
 
@@ -118,14 +118,14 @@ None. This is a small, single-purpose app with no deprecated endpoints or remove
 - **Hot-linked poster images** create a runtime dependency on 70mmwiki.com availability. If the wiki goes offline, all posters 404 — the striped placeholder CSS class covers this gracefully, but it's worth noting.
 - **`isVisible` defined inside the component** (`Timeline.tsx`) then used inside a `useMemo` with a suppressed exhaustive-deps warning (`eslint-disable-line`). The suppression is intentional (the function is always stable relative to the `active` set), but it's fragile if the function signature changes.
 - **No tests**. The data transformation in `lib/data.ts` is pure and well-suited to unit tests; none exist.
-- **`backfill.csv` `.gitignore`d** since the 2026-06-09 audit. The generated artifact is no longer tracked, but `scripts/backfill-csv.mjs` remains as a dev utility.
+- **`backfill.csv` `.gitignore`d** since the 2026-06-09 audit. The file was still tracked in the git index until the 2026-07-28 audit (the `git rm --cached` step was missed at initial add); corrected in that cycle. `scripts/backfill-csv.mjs` remains as a dev utility.
 - **PostCSS 8.4.31 (installed via next@16.2.6)** has a moderate XSS vulnerability (GHSA-qx2v-qp2m-jg93) in its CSS stringify output. This affects the build toolchain only — not the deployed static bundle, since PostCSS is a dev/build-time tool. Fix: update `next` to 16.2.9+ or wait for Next.js to pull in postcss ≥ 8.5.10. Open since 2026-06-16 audit.
 - **`at-row.clickable` hover/cursor styles invisible** — `.at-row` uses `display: contents`, so `background`, `cursor`, and box-model properties on it have no effect. The "clickable" visual affordance does not render. Open since 2026-06-09 audit.
 
 ## Gotchas
 
 - **Episode number `null` is common**: a handful of regular episodes (Okja, Megalopolis, Willy Wonka, etc.) have no episode number assigned by the wiki. These are handled throughout with `m.episode ?? '—'` fallbacks. Sort tiebreakers fall back to `publishedAt`.
-- **`movies.json` is 453-entry** as of 2026-07-20 (stable; same total as 2026-07-13). The Next.js static import bundles it into the build; at current size (~200 KB) this is fine but worth monitoring if the wiki grows substantially.
+- **`movies.json` is 458-entry** as of 2026-07-27 (up from 453 on 2026-07-20). The Next.js static import bundles it into the build; at current size (~200 KB) this is fine but worth monitoring if the wiki grows substantially.
 - **Dev port is 3000** (`npm run dev`). README correctly states 3000. No custom port is pinned in `next.config.ts`.
 - **Vercel static export**: `output: 'export'` means no ISR, no server actions, no middleware. Everything must work at build time or in the client bundle.
 - **GitHub Actions `contents: write`**: The refresh workflow has broad write permission on the repo so it can commit updated JSON. This is intentional but means a compromised Actions token could push arbitrary commits.
