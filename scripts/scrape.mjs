@@ -67,7 +67,7 @@ const MONTH_THEME_OVERRIDES = {
 // match), the scrape logs an "override REDUNDANT" warning so the entry
 // can be deleted from this map.
 const RATING_OVERRIDES = {
-  441: 10.5, // 2026-05-11 Lincoln -> on the Dune Line
+  // (no active overrides — add entries here when the wiki lags a new episode)
 };
 
 async function fetchPage(page) {
