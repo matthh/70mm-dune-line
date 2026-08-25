@@ -1,6 +1,6 @@
 # Architecture — 70mm Dune Line
 
-Last reviewed: 2026-08-18
+Last reviewed: 2026-08-25
 
 ## Purpose
 
@@ -76,7 +76,7 @@ app/page.tsx         (Server Component — runs at build time)
 | `app/globals.css` | All CSS; dark sand/olive/coral palette |
 | `scripts/scrape.mjs` | Data scraper; pagination, overrides, artwork caching |
 | `scripts/backfill-csv.mjs` | Dev utility; emits CSV of episodes needing data backfills |
-| `data/movies.json` | Committed data artifact; ~450 movies as of 2026-06 |
+| `data/movies.json` | Committed data artifact; 459 movies / 333 regular as of 2026-08-24 |
 | `.github/workflows/refresh.yml` | Daily cron: runs scraper, commits changed JSON, triggers Vercel redeploy |
 | `next.config.ts` | `output: 'export'` — pure static, no server runtime |
 
@@ -99,10 +99,10 @@ External domains accessed by the browser at runtime:
 
 ### Manual override maps in `scripts/scrape.mjs`
 - **`MONTH_THEME_OVERRIDES`**: 34 entries correcting wiki theme-tagging lag. Keyed by movie id; value is the target `month_theme_id`. Logged as `REDUNDANT` once the wiki catches up so entries can be pruned.
-- **`RATING_OVERRIDES`**: small map for pre-publication sum values. Same REDUNDANT-log mechanism. As of 2026-08-04 this map has zero entries — movie id 441 (Lincoln) was the last entry and was pruned this cycle when the wiki published sum=10.
+- **`RATING_OVERRIDES`**: small map for pre-publication sum values. Same REDUNDANT-log mechanism. As of 2026-08-25 this map has zero active entries.
 
 ### Artwork caching
-The scraper persists a `wikiArtConfirmed: true` flag per movie in `movies.json`. On subsequent runs, confirmed IDs skip the HTTP artwork check entirely, so the daily scrape only rechecks new/missing episodes rather than all 400+.
+The scraper persists a `wikiArtConfirmed: true` flag per movie in `movies.json`. On subsequent runs, confirmed IDs skip the HTTP artwork check entirely, so the daily scrape only rechecks new/missing episodes rather than all 400+. As of 2026-08-24: 331 wiki-confirmed, 0 using Spotify fallback, 2 with no art (both recently-published unrated episodes).
 
 ### Theme band grouping
 Movies with a meaningful `month_theme_id` and non-placeholder `theme_name` go into a `theme-{id}` band. Movies with no theme (or placeholder `"?"` names) are bucketed into a synthetic `themeless-YYYY-MM` band by their publication month.
@@ -116,16 +116,17 @@ None. This is a small, single-purpose app with no deprecated endpoints or remove
 - **Hardcoded Dune id `91`** in `lib/data.ts` (`isDune = m.id === 91`). If the wiki ever re-keys that movie the line constant silently breaks. Low risk since the wiki id is stable.
 - **Growing `MONTH_THEME_OVERRIDES` map** (34 entries). There is no automated pruning; stale entries accumulate until someone reads the REDUNDANT warnings and manually cleans up. Could become a maintenance burden at scale.
 - **Hot-linked poster images** create a runtime dependency on 70mmwiki.com availability. If the wiki goes offline, all posters 404 — the striped placeholder CSS class covers this gracefully, but it's worth noting.
-- **`isVisible` defined inside the component** (`Timeline.tsx`) then used inside a `useMemo` with a suppressed exhaustive-deps warning (`eslint-disable-line`). The suppression is intentional (the function is always stable relative to the `active` set), but it's fragile if the function signature changes.
+- **`isVisible` defined inside the component** (`Timeline.tsx`) then used inside a `useMemo` with a suppressed exhaustive-deps warning (`eslint-disable-line`). The suppression is intentional (the function's captured values — `sortMode`, `active` — are correctly listed in the deps array), but it's fragile if the function signature changes.
+- **`AllTimeStats` modal uses wiki-only poster URL** (`app/AllTimeStats.tsx:40`). The `posterFor` local function always constructs `70mmwiki.com/api/artwork/thumbs/{id}.jpg` and ignores any `spotifyThumb` fallback. Currently harmless (zero regular episodes rely on the Spotify fallback as of 2026-08-24), but inconsistent with `lib/data.ts` which prefers `spotifyThumb` when available.
 - **No tests**. The data transformation in `lib/data.ts` is pure and well-suited to unit tests; none exist.
-- **`backfill.csv` `.gitignore`d** since the 2026-06-09 audit. The file was still tracked in the git index until the 2026-07-28 audit (the `git rm --cached` step was missed at initial add); corrected in that cycle. `scripts/backfill-csv.mjs` remains as a dev utility.
-- **All npm vulnerabilities cleared (2026-08-18 audit).** `npm audit fix` upgraded `next` 16.2.6 → 16.3.1, postcss 8.4.31 → 8.5.23, nanoid 3.3.12 → 3.3.18, and sharp 0.34.5 → 0.35.3. `npm audit` now reports zero vulnerabilities. Only `package-lock.json` changed (all bumps were within the existing `^16.2.4` semver range).
+- **`backfill.csv` `.gitignore`d** since the 2026-06-09 audit; `git rm --cached` was applied in the 2026-07-28 cycle. `scripts/backfill-csv.mjs` remains as a dev utility.
+- **All npm vulnerabilities cleared (2026-08-18 audit).** `npm audit` reports zero vulnerabilities as of 2026-08-25.
 - **`at-row.clickable` hover/cursor styles invisible** — `.at-row` uses `display: contents`, so `background`, `cursor`, and box-model properties on it have no effect. The "clickable" visual affordance does not render. Open since 2026-06-09 audit.
 
 ## Gotchas
 
 - **Episode number `null` is common**: a handful of regular episodes (Okja, Megalopolis, Willy Wonka, etc.) have no episode number assigned by the wiki. These are handled throughout with `m.episode ?? '—'` fallbacks. Sort tiebreakers fall back to `publishedAt`.
-- **`movies.json` is 458-entry** as of 2026-08-17 (stable — no new entries since 2026-07-27). Of these, 333 are regular (main-show) episodes and 374 are non-vault. The Next.js static import bundles it into the build; at current size (~200 KB) this is fine but worth monitoring if the wiki grows substantially.
+- **`movies.json` is 459-entry** as of 2026-08-24 (333 regular episodes). The Next.js static import bundles it into the build; at current size (~200 KB) this is fine but worth monitoring if the wiki grows substantially.
 - **Dev port is 3000** (`npm run dev`). README correctly states 3000. No custom port is pinned in `next.config.ts`.
 - **Vercel static export**: `output: 'export'` means no ISR, no server actions, no middleware. Everything must work at build time or in the client bundle.
 - **GitHub Actions `contents: write`**: The refresh workflow has broad write permission on the repo so it can commit updated JSON. This is intentional but means a compromised Actions token could push arbitrary commits.
