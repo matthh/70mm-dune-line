@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-08-28T22:59:29.078Z",
+  "scrapedAt": "2026-08-29T17:03:47.054Z",
   "source": "https://70mmwiki.com/api/movies",
   "total": 459,
   "movies": [
@@ -36,9 +36,9 @@
       "host_pick": null,
       "affiliate_link": null,
       "shirt_link": null,
-      "lastSynced": "2026-07-25T01:01:05.951Z",
+      "lastSynced": "2026-08-29T01:00:51.867Z",
       "lb_link_val": "disclosure",
-      "viewer_count": 2,
+      "viewer_count": 7,
       "monthTheme": {
         "id": 68,
         "theme_name": "Newgust",
@@ -49,7 +49,7 @@
         "description": null,
         "created_at": "2026-07-24T22:11:08.000Z"
       },
-      "villager_count": 2,
+      "villager_count": 7,
       "sum": null
     },
     {
@@ -85,9 +85,9 @@
       "host_pick": "slim",
       "affiliate_link": null,
       "shirt_link": null,
-      "lastSynced": "2026-07-25T01:01:05.951Z",
+      "lastSynced": "2026-08-29T01:00:51.867Z",
       "lb_link_val": "teenage-sex-and-death-at-camp-miasma",
-      "viewer_count": 1,
+      "viewer_count": 43,
       "monthTheme": {
         "id": 68,
         "theme_name": "Newgust",
@@ -98,7 +98,7 @@
         "description": null,
         "created_at": "2026-07-24T22:11:08.000Z"
       },
-      "villager_count": 1,
+      "villager_count": 43,
       "sum": null
     },
     {
@@ -134,9 +134,9 @@
       "host_pick": "proto",
       "affiliate_link": null,
       "shirt_link": null,
-      "lastSynced": "2026-07-25T01:01:05.951Z",
+      "lastSynced": "2026-08-29T01:00:51.867Z",
       "lb_link_val": "blue-heron",
-      "viewer_count": 10,
+      "viewer_count": 24,
       "monthTheme": {
         "id": 68,
         "theme_name": "Newgust",
@@ -147,7 +147,7 @@
         "description": null,
         "created_at": "2026-07-24T22:11:08.000Z"
       },
-      "villager_count": 10,
+      "villager_count": 24,
       "sum": 14,
       "wikiArtConfirmed": true
     },
@@ -184,9 +184,9 @@
       "host_pick": "danny",
       "affiliate_link": null,
       "shirt_link": null,
-      "lastSynced": "2026-07-25T01:01:05.951Z",
+      "lastSynced": "2026-08-29T01:00:51.867Z",
       "lb_link_val": "the-bride-2026",
-      "viewer_count": 29,
+      "viewer_count": 44,
       "monthTheme": {
         "id": 68,
         "theme_name": "Newgust",
@@ -197,7 +197,7 @@
         "description": null,
         "created_at": "2026-07-24T22:11:08.000Z"
       },
-      "villager_count": 29,
+      "villager_count": 44,
       "sum": 50,
       "wikiArtConfirmed": true
     },
@@ -284,9 +284,9 @@
       "host_pick": null,
       "affiliate_link": null,
       "shirt_link": null,
-      "lastSynced": "2026-07-25T01:01:05.951Z",
+      "lastSynced": "2026-08-29T01:00:51.867Z",
       "lb_link_val": "obsession-2025",
-      "viewer_count": 55,
+      "viewer_count": 70,
       "monthTheme": {
         "id": 68,
         "theme_name": "Newgust",
@@ -297,7 +297,7 @@
         "description": null,
         "created_at": "2026-07-24T22:11:08.000Z"
       },
-      "villager_count": 55,
+      "villager_count": 70,
       "sum": 12,
       "wikiArtConfirmed": true
     },
