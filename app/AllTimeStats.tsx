@@ -37,7 +37,9 @@ interface PopupState {
   movies: CatalogMovie[];
 }
 
-const posterFor = (id: number) => `https://70mmwiki.com/api/artwork/thumbs/${id}.jpg`;
+// posterUrl is now carried on CatalogMovie itself (populated by toCatalogMovie
+// in lib/data.ts) so we can respect the Spotify fallback consistently with
+// the timeline bar rendering. The old local posterFor helper is removed.
 
 export default function AllTimeStatsSection({ stats }: { stats: AllTimeStats }) {
   const [popup, setPopup] = useState<PopupState | null>(null);
@@ -58,6 +60,7 @@ export default function AllTimeStatsSection({ stats }: { stats: AllTimeStats }) 
       sum: m.sum,
       themeName: null,
       wikiUrl: m.wikiUrl,
+      posterUrl: m.posterUrl,
     }));
     setPopup({ title: t.name, subtitle: `${t.avg.toFixed(2)} avg · ${t.movieCount} movies`, movies });
   };
@@ -71,6 +74,7 @@ export default function AllTimeStatsSection({ stats }: { stats: AllTimeStats }) 
       sum: m.sum,
       themeName: null,
       wikiUrl: m.wikiUrl,
+      posterUrl: m.posterUrl,
     }));
     setPopup({ title: `${h.name}'s picks`, subtitle: `${h.avg.toFixed(2)} avg · ${h.movieCount} picks`, movies });
   };
@@ -278,7 +282,7 @@ function Modal({ popup, onClose }: { popup: PopupState; onClose: () => void }) {
               const distClass = dist > 0 ? 'above' : dist < 0 ? 'below' : 'on';
               return (
                 <a key={m.id} className="movie-card" href={m.wikiUrl} target="_blank" rel="noopener noreferrer">
-                  <img className="movie-card-poster" src={posterFor(m.id)} alt="" loading="lazy" />
+                  <img className="movie-card-poster" src={m.posterUrl} alt="" loading="lazy" />
                   <div className="movie-card-meta">
                     <div className="movie-card-title">{m.title}</div>
                     <div className="movie-card-sub">

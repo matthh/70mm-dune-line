@@ -223,6 +223,11 @@ export interface CatalogMovie {
   sum: number;
   themeName: string | null;
   wikiUrl: string;
+  /** Resolved poster URL: spotifyThumb when wiki artwork is absent,
+   *  otherwise the canonical wiki artwork endpoint. Consistent with
+   *  DisplayMovie.posterUrl so the modal and the timeline bar show the
+   *  same image. */
+  posterUrl: string;
 }
 
 export interface ThemeRanking {
@@ -232,7 +237,7 @@ export interface ThemeRanking {
   avg: number;
   movieCount: number;
   /** Per-movie detail surfaced in the deep-dive sections. */
-  movies: { id: number; title: string; episode: number | null; sum: number; wikiUrl: string }[];
+  movies: { id: number; title: string; episode: number | null; sum: number; wikiUrl: string; posterUrl: string }[];
 }
 
 export interface HostRanking {
@@ -241,7 +246,7 @@ export interface HostRanking {
   name: string;
   avg: number;
   movieCount: number;
-  movies: { id: number; title: string; episode: number | null; sum: number; wikiUrl: string }[];
+  movies: { id: number; title: string; episode: number | null; sum: number; wikiUrl: string; posterUrl: string }[];
 }
 
 const MIN_MOVIES_FOR_THEME_RANKING = 3;
@@ -366,7 +371,7 @@ export function buildTimeline(): {
   // MIN_MOVIES_FOR_THEME_RANKING rated movies, so single-banger themes
   // don't dominate the leaderboard. Average is the mean of sum values
   // across rated movies in the theme.
-  const themeAggs = new Map<number, { name: string; movies: { id: number; title: string; episode: number | null; sum: number; wikiUrl: string }[] }>();
+  const themeAggs = new Map<number, { name: string; movies: { id: number; title: string; episode: number | null; sum: number; wikiUrl: string; posterUrl: string }[] }>();
   for (const m of regular) {
     if (m.sum == null) continue;
     if (!m.month_theme_id || !isMeaningfulThemeName(m.monthTheme?.theme_name)) continue;
@@ -377,6 +382,7 @@ export function buildTimeline(): {
       episode: m.episode,
       sum: m.sum,
       wikiUrl: `https://70mmwiki.com/movies/${m.id}`,
+      posterUrl: m.spotifyThumb || `https://70mmwiki.com/api/artwork/thumbs/${m.id}.jpg`,
     };
     if (existing) {
       existing.movies.push(movieEntry);
@@ -421,6 +427,7 @@ export function buildTimeline(): {
       ? shortenThemeName(m.monthTheme!.theme_name!)
       : null,
     wikiUrl: `https://70mmwiki.com/movies/${m.id}`,
+    posterUrl: m.spotifyThumb || `https://70mmwiki.com/api/artwork/thumbs/${m.id}.jpg`,
   });
   const byEpisodeDesc = (a: CatalogMovie, b: CatalogMovie) => (b.episode ?? 0) - (a.episode ?? 0);
   const bySumDescThenEp = (a: CatalogMovie, b: CatalogMovie) => (b.sum - a.sum) || byEpisodeDesc(a, b);
@@ -444,6 +451,7 @@ export function buildTimeline(): {
       episode: m.episode,
       sum: m.sum!,
       wikiUrl: `https://70mmwiki.com/movies/${m.id}`,
+      posterUrl: m.spotifyThumb || `https://70mmwiki.com/api/artwork/thumbs/${m.id}.jpg`,
     })).sort((a, b) => b.sum - a.sum);
     const avg = movies.length === 0 ? 0 : Number((movies.reduce((a, x) => a + x.sum, 0) / movies.length).toFixed(2));
     return { host: h.key, name: h.name, avg, movieCount: movies.length, movies };

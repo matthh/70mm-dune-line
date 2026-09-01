@@ -1,6 +1,6 @@
 # Architecture — 70mm Dune Line
 
-Last reviewed: 2026-08-25
+Last reviewed: 2026-09-01
 
 ## Purpose
 
@@ -68,7 +68,7 @@ app/page.tsx         (Server Component — runs at build time)
 
 | File | Role |
 |---|---|
-| `lib/data.ts` | All data transformation: types (`RawMovie`, `DisplayMovie`, `ThemeBand`, `AllTimeStats`), `buildTimeline()`, `shortenThemeName()`, `categoryFor()` |
+| `lib/data.ts` | All data transformation: types (`RawMovie`, `DisplayMovie`, `ThemeBand`, `AllTimeStats`, `CatalogMovie`, `ThemeRanking`, `HostRanking`), `buildTimeline()`, `shortenThemeName()`, `categoryFor()` |
 | `app/page.tsx` | Root server component; calls `buildTimeline()` at build time; passes props to `Timeline` and `AllTimeStats` |
 | `app/Timeline.tsx` | Client component; renders horizontal scrolling chart, filter chips, sort modes, jump autocomplete, Dune Line overlay, hover tooltip |
 | `app/AllTimeStats.tsx` | Client component; renders leaderboard bar chart, theme/host rank panels, movie-grid modal |
@@ -76,7 +76,7 @@ app/page.tsx         (Server Component — runs at build time)
 | `app/globals.css` | All CSS; dark sand/olive/coral palette |
 | `scripts/scrape.mjs` | Data scraper; pagination, overrides, artwork caching |
 | `scripts/backfill-csv.mjs` | Dev utility; emits CSV of episodes needing data backfills |
-| `data/movies.json` | Committed data artifact; 459 movies / 333 regular as of 2026-08-24 |
+| `data/movies.json` | Committed data artifact; 459 movies / 333 regular as of 2026-08-31 |
 | `.github/workflows/refresh.yml` | Daily cron: runs scraper, commits changed JSON, triggers Vercel redeploy |
 | `next.config.ts` | `output: 'export'` — pure static, no server runtime |
 
@@ -99,10 +99,10 @@ External domains accessed by the browser at runtime:
 
 ### Manual override maps in `scripts/scrape.mjs`
 - **`MONTH_THEME_OVERRIDES`**: 34 entries correcting wiki theme-tagging lag. Keyed by movie id; value is the target `month_theme_id`. Logged as `REDUNDANT` once the wiki catches up so entries can be pruned.
-- **`RATING_OVERRIDES`**: small map for pre-publication sum values. Same REDUNDANT-log mechanism. As of 2026-08-25 this map has zero active entries.
+- **`RATING_OVERRIDES`**: small map for pre-publication sum values. Same REDUNDANT-log mechanism. As of 2026-09-01 this map has zero active entries.
 
 ### Artwork caching
-The scraper persists a `wikiArtConfirmed: true` flag per movie in `movies.json`. On subsequent runs, confirmed IDs skip the HTTP artwork check entirely, so the daily scrape only rechecks new/missing episodes rather than all 400+. As of 2026-08-24: 331 wiki-confirmed, 0 using Spotify fallback, 2 with no art (both recently-published unrated episodes).
+The scraper persists a `wikiArtConfirmed: true` flag per movie in `movies.json`. On subsequent runs, confirmed IDs skip the HTTP artwork check entirely, so the daily scrape only rechecks new/missing episodes rather than all 400+. As of 2026-08-31: 445 wiki-confirmed (out of 459 total), 0 using Spotify fallback, 14 not yet confirmed (all recent or non-regular entries).
 
 ### Theme band grouping
 Movies with a meaningful `month_theme_id` and non-placeholder `theme_name` go into a `theme-{id}` band. Movies with no theme (or placeholder `"?"` names) are bucketed into a synthetic `themeless-YYYY-MM` band by their publication month.
@@ -117,16 +117,16 @@ None. This is a small, single-purpose app with no deprecated endpoints or remove
 - **Growing `MONTH_THEME_OVERRIDES` map** (34 entries). There is no automated pruning; stale entries accumulate until someone reads the REDUNDANT warnings and manually cleans up. Could become a maintenance burden at scale.
 - **Hot-linked poster images** create a runtime dependency on 70mmwiki.com availability. If the wiki goes offline, all posters 404 — the striped placeholder CSS class covers this gracefully, but it's worth noting.
 - **`isVisible` defined inside the component** (`Timeline.tsx`) then used inside a `useMemo` with a suppressed exhaustive-deps warning (`eslint-disable-line`). The suppression is intentional (the function's captured values — `sortMode`, `active` — are correctly listed in the deps array), but it's fragile if the function signature changes.
-- **`AllTimeStats` modal uses wiki-only poster URL** (`app/AllTimeStats.tsx:40`). The `posterFor` local function always constructs `70mmwiki.com/api/artwork/thumbs/{id}.jpg` and ignores any `spotifyThumb` fallback. Currently harmless (zero regular episodes rely on the Spotify fallback as of 2026-08-24), but inconsistent with `lib/data.ts` which prefers `spotifyThumb` when available.
+- **`CatalogMovie` now carries `posterUrl`** (fixed 2026-09-01). `AllTimeStats.tsx` and the leaderboard modal now use `m.posterUrl` (consistent with `DisplayMovie.posterUrl`) instead of the former local `posterFor(id)` helper that always constructed the wiki URL and ignored `spotifyThumb`. The fix propagates `posterUrl` through `toCatalogMovie`, the `themeAggs` map, and host-picks aggregation in `lib/data.ts`. TypeScript enforces correctness at all call sites.
 - **No tests**. The data transformation in `lib/data.ts` is pure and well-suited to unit tests; none exist.
 - **`backfill.csv` `.gitignore`d** since the 2026-06-09 audit; `git rm --cached` was applied in the 2026-07-28 cycle. `scripts/backfill-csv.mjs` remains as a dev utility.
-- **All npm vulnerabilities cleared (2026-08-18 audit).** `npm audit` reports zero vulnerabilities as of 2026-08-25.
+- **All npm vulnerabilities cleared (2026-08-18 audit).** `npm audit` reports zero vulnerabilities as of 2026-09-01.
 - **`at-row.clickable` hover/cursor styles invisible** — `.at-row` uses `display: contents`, so `background`, `cursor`, and box-model properties on it have no effect. The "clickable" visual affordance does not render. Open since 2026-06-09 audit.
 
 ## Gotchas
 
 - **Episode number `null` is common**: a handful of regular episodes (Okja, Megalopolis, Willy Wonka, etc.) have no episode number assigned by the wiki. These are handled throughout with `m.episode ?? '—'` fallbacks. Sort tiebreakers fall back to `publishedAt`.
-- **`movies.json` is 459-entry** as of 2026-08-24 (333 regular episodes). The Next.js static import bundles it into the build; at current size (~200 KB) this is fine but worth monitoring if the wiki grows substantially.
+- **`movies.json` is 459-entry** as of 2026-08-31 (333 regular episodes). The Next.js static import bundles it into the build; at current size (~200 KB) this is fine but worth monitoring if the wiki grows substantially.
 - **Dev port is 3000** (`npm run dev`). README correctly states 3000. No custom port is pinned in `next.config.ts`.
 - **Vercel static export**: `output: 'export'` means no ISR, no server actions, no middleware. Everything must work at build time or in the client bundle.
 - **GitHub Actions `contents: write`**: The refresh workflow has broad write permission on the repo so it can commit updated JSON. This is intentional but means a compromised Actions token could push arbitrary commits.
