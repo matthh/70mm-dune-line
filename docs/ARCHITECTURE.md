@@ -1,6 +1,6 @@
 # Architecture — 70mm Dune Line
 
-Last reviewed: 2026-09-01
+Last reviewed: 2026-09-08
 
 ## Purpose
 
@@ -98,8 +98,8 @@ External domains accessed by the browser at runtime:
 `DUNE_LINE = 10.5` (defined in `lib/data.ts`). Dune (2021) is identified by its wiki id `91`. Movies tied at exactly 10.5 are categorized as `'dune'` (sand-colored), not `'cleared'`.
 
 ### Manual override maps in `scripts/scrape.mjs`
-- **`MONTH_THEME_OVERRIDES`**: 34 entries correcting wiki theme-tagging lag. Keyed by movie id; value is the target `month_theme_id`. Logged as `REDUNDANT` once the wiki catches up so entries can be pruned.
-- **`RATING_OVERRIDES`**: small map for pre-publication sum values. Same REDUNDANT-log mechanism. As of 2026-09-01 this map has zero active entries.
+- **`MONTH_THEME_OVERRIDES`**: Keyed by movie id; value is the target `month_theme_id`. Logged as `REDUNDANT` once the wiki catches up so entries can be pruned. As of 2026-09-08 this map has **zero active entries** — all 34 prior corrections were confirmed REDUNDANT and pruned (wiki now tags every affected movie natively). Add entries here when the wiki lags a new episode.
+- **`RATING_OVERRIDES`**: small map for pre-publication sum values. Same REDUNDANT-log mechanism. Zero active entries as of 2026-09-08.
 
 ### Artwork caching
 The scraper persists a `wikiArtConfirmed: true` flag per movie in `movies.json`. On subsequent runs, confirmed IDs skip the HTTP artwork check entirely, so the daily scrape only rechecks new/missing episodes rather than all 400+. As of 2026-08-31: 445 wiki-confirmed (out of 459 total), 0 using Spotify fallback, 14 not yet confirmed (all recent or non-regular entries).
@@ -114,7 +114,7 @@ None. This is a small, single-purpose app with no deprecated endpoints or remove
 ## Tech Debt
 
 - **Hardcoded Dune id `91`** in `lib/data.ts` (`isDune = m.id === 91`). If the wiki ever re-keys that movie the line constant silently breaks. Low risk since the wiki id is stable.
-- **Growing `MONTH_THEME_OVERRIDES` map** (34 entries). There is no automated pruning; stale entries accumulate until someone reads the REDUNDANT warnings and manually cleans up. Could become a maintenance burden at scale.
+- **`MONTH_THEME_OVERRIDES` map** is now empty (pruned 2026-09-08; all 34 prior entries were REDUNDANT). Add entries only when the wiki lags a new theme assignment.
 - **Hot-linked poster images** create a runtime dependency on 70mmwiki.com availability. If the wiki goes offline, all posters 404 — the striped placeholder CSS class covers this gracefully, but it's worth noting.
 - **`isVisible` defined inside the component** (`Timeline.tsx`) then used inside a `useMemo` with a suppressed exhaustive-deps warning (`eslint-disable-line`). The suppression is intentional (the function's captured values — `sortMode`, `active` — are correctly listed in the deps array), but it's fragile if the function signature changes.
 - **`CatalogMovie` now carries `posterUrl`** (fixed 2026-09-01). `AllTimeStats.tsx` and the leaderboard modal now use `m.posterUrl` (consistent with `DisplayMovie.posterUrl`) instead of the former local `posterFor(id)` helper that always constructed the wiki URL and ignored `spotifyThumb`. The fix propagates `posterUrl` through `toCatalogMovie`, the `themeAggs` map, and host-picks aggregation in `lib/data.ts`. TypeScript enforces correctness at all call sites.

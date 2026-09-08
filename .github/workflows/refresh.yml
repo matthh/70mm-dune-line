@@ -1,4 +1,4 @@
-name: Weekly refresh
+name: Daily refresh
 
 # Pulls a fresh copy of data/movies.json from 70mmwiki and commits it
 # back to main. Vercel redeploys automatically on push.
