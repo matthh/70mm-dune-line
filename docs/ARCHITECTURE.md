@@ -1,6 +1,6 @@
 # Architecture — 70mm Dune Line
 
-Last reviewed: 2026-09-22
+Last reviewed: 2026-10-06
 
 ## Purpose
 
@@ -10,7 +10,7 @@ A fully-static fan visualization of the [70mm podcast](https://70mmpodcast.com/)
 
 | Layer | Technology |
 |---|---|
-| Framework | Next.js 16.3.5 (App Router), fully static export (`output: 'export'`) |
+| Framework | Next.js 16.3.8 (App Router), fully static export (`output: 'export'`) |
 | Language | TypeScript 5, strict mode |
 | React | 19 (client components only for interactivity) |
 | Styling | Global CSS (`app/globals.css`), no CSS-in-JS or utility library |
@@ -120,7 +120,7 @@ None. This is a small, single-purpose app with no deprecated endpoints or remove
 - **`CatalogMovie` now carries `posterUrl`** (fixed 2026-09-01). `AllTimeStats.tsx` and the leaderboard modal now use `m.posterUrl` (consistent with `DisplayMovie.posterUrl`) instead of the former local `posterFor(id)` helper that always constructed the wiki URL and ignored `spotifyThumb`. The fix propagates `posterUrl` through `toCatalogMovie`, the `themeAggs` map, and host-picks aggregation in `lib/data.ts`. TypeScript enforces correctness at all call sites.
 - **No tests**. The data transformation in `lib/data.ts` is pure and well-suited to unit tests; none exist.
 - **`backfill.csv` `.gitignore`d** since the 2026-06-09 audit; `git rm --cached` was applied in the 2026-07-28 cycle. `scripts/backfill-csv.mjs` remains as a dev utility.
-- **npm dependencies.** Three new vulnerabilities appeared since the 2026-08-18 clearance: Critical (next.js RCE), High (sharp/libheif), and Moderate (baseline-browser-mapping). All three were fixed in the 2026-09-22 audit by updating `package-lock.json` via `npm audit fix` (next@16.3.5, sharp@0.35.4). `npm audit` reports zero vulnerabilities as of 2026-09-22. The critical next.js RCE affects Windows-hosted servers and the Image Optimization API — neither applies to this static-export Vercel deployment — but the lock file should not pin a vulnerable version.
+- **npm dependencies.** Two new vulnerabilities appeared since the 2026-09-22 clearance: Critical (`GHSA-vcvr-r3jv-pc5j` — next.js RCE in next/og ImageResponse, affects 16.2.0–16.3.5) and High (`GHSA-68fv-2mgg-jv7q` — source-map-js event-loop DoS, affects 1.0.0–1.2.1). Both were fixed in the 2026-10-06 audit by `npm audit fix` (next@16.3.8, source-map-js@1.2.2). `npm audit` reports zero vulnerabilities as of 2026-10-06. The next.js RCE affects the next/og ImageResponse API — not used in this static-export site — but the lock file should not pin a vulnerable version.
 - **`at-row.clickable` hover/cursor styles invisible** — `.at-row` uses `display: contents`, so `background`, `cursor`, and box-model properties on it have no effect. The "clickable" visual affordance does not render. Open since 2026-06-09 audit.
 
 ## Gotchas
