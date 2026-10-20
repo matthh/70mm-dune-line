@@ -1,6 +1,6 @@
 # Architecture — 70mm Dune Line
 
-Last reviewed: 2026-10-13
+Last reviewed: 2026-10-20
 
 ## Purpose
 
@@ -76,7 +76,7 @@ app/page.tsx         (Server Component — runs at build time)
 | `app/globals.css` | All CSS; dark sand/olive/coral palette |
 | `scripts/scrape.mjs` | Data scraper; pagination, overrides, artwork caching |
 | `scripts/backfill-csv.mjs` | Dev utility; emits CSV of episodes needing data backfills |
-| `data/movies.json` | Committed data artifact; 465 total movies / 339 regular as of 2026-10-12 scrape |
+| `data/movies.json` | Committed data artifact; 465 total movies / 339 regular as of 2026-10-19 scrape |
 | `.github/workflows/refresh.yml` | Daily cron: runs scraper, commits changed JSON, triggers Vercel redeploy |
 | `next.config.ts` | `output: 'export'` — pure static, no server runtime |
 
