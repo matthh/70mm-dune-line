@@ -1,6 +1,6 @@
 # Architecture — 70mm Dune Line
 
-Last reviewed: 2026-10-20
+Last reviewed: 2026-10-27
 
 ## Purpose
 
@@ -10,7 +10,7 @@ A fully-static fan visualization of the [70mm podcast](https://70mmpodcast.com/)
 
 | Layer | Technology |
 |---|---|
-| Framework | Next.js 16.4.0 (App Router), fully static export (`output: 'export'`) |
+| Framework | Next.js 16.4.2 (App Router), fully static export (`output: 'export'`) |
 | Language | TypeScript 5, strict mode |
 | React | 19 (client components only for interactivity) |
 | Styling | Global CSS (`app/globals.css`), no CSS-in-JS or utility library |
@@ -76,7 +76,7 @@ app/page.tsx         (Server Component — runs at build time)
 | `app/globals.css` | All CSS; dark sand/olive/coral palette |
 | `scripts/scrape.mjs` | Data scraper; pagination, overrides, artwork caching |
 | `scripts/backfill-csv.mjs` | Dev utility; emits CSV of episodes needing data backfills |
-| `data/movies.json` | Committed data artifact; 465 total movies / 339 regular as of 2026-10-19 scrape |
+| `data/movies.json` | Committed data artifact; 473 total movies / 346 regular as of 2026-10-26 scrape |
 | `.github/workflows/refresh.yml` | Daily cron: runs scraper, commits changed JSON, triggers Vercel redeploy |
 | `next.config.ts` | `output: 'export'` — pure static, no server runtime |
 
@@ -102,7 +102,7 @@ External domains accessed by the browser at runtime:
 - **`RATING_OVERRIDES`**: small map for pre-publication sum values. Same REDUNDANT-log mechanism. Zero active entries as of 2026-09-08.
 
 ### Artwork caching
-The scraper persists a `wikiArtConfirmed: true` flag per movie in `movies.json`. On subsequent runs, confirmed IDs skip the HTTP artwork check entirely, so the daily scrape only rechecks new/missing episodes rather than all 400+. As of 2026-10-12: 465 total movies in the dataset; artwork logic unchanged.
+The scraper persists a `wikiArtConfirmed: true` flag per movie in `movies.json`. On subsequent runs, confirmed IDs skip the HTTP artwork check entirely, so the daily scrape only rechecks new/missing episodes rather than all 400+. As of 2026-10-26: 473 total movies in the dataset; artwork logic unchanged.
 
 ### Theme band grouping
 Movies with a meaningful `month_theme_id` and non-placeholder `theme_name` go into a `theme-{id}` band. Movies with no theme (or placeholder `"?"` names) are bucketed into a synthetic `themeless-YYYY-MM` band by their publication month.
@@ -120,13 +120,13 @@ None. This is a small, single-purpose app with no deprecated endpoints or remove
 - **`CatalogMovie` now carries `posterUrl`** (fixed 2026-09-01). `AllTimeStats.tsx` and the leaderboard modal now use `m.posterUrl` (consistent with `DisplayMovie.posterUrl`) instead of the former local `posterFor(id)` helper that always constructed the wiki URL and ignored `spotifyThumb`. The fix propagates `posterUrl` through `toCatalogMovie`, the `themeAggs` map, and host-picks aggregation in `lib/data.ts`. TypeScript enforces correctness at all call sites.
 - **No tests**. The data transformation in `lib/data.ts` is pure and well-suited to unit tests; none exist.
 - **`backfill.csv` `.gitignore`d** since the 2026-06-09 audit; `git rm --cached` was applied in the 2026-07-28 cycle. `scripts/backfill-csv.mjs` remains as a dev utility.
-- **npm dependencies.** Three vulnerabilities were fixed in the 2026-10-13 audit via `npm audit fix`: Critical (next.js — multiple CVEs including RCE in next/og), High (source-map-js event-loop DoS), and High (sharp/librsvg CVE-2026-96889). Updated to next@16.4.0, source-map-js@1.2.2, sharp@0.35.5. `npm audit` reports zero vulnerabilities as of 2026-10-13.
+- **npm dependencies.** Three vulnerabilities were fixed in the 2026-10-13 audit via `npm audit fix`. Next.js was further upgraded to 16.4.2 and sharp to 0.35.5 on 2026-10-21. `npm audit` reports zero vulnerabilities as of 2026-10-27.
 - **`at-row.clickable` hover/cursor styles invisible** — `.at-row` uses `display: contents`, so `background`, `cursor`, and box-model properties on it have no effect. The "clickable" visual affordance does not render. Open since 2026-06-09 audit.
 
 ## Gotchas
 
 - **Episode number `null` is common**: a handful of regular episodes (Okja, Megalopolis, Willy Wonka, etc.) have no episode number assigned by the wiki. These are handled throughout with `m.episode ?? '—'` fallbacks. Sort tiebreakers fall back to `publishedAt`.
-- **`movies.json` is 465-entry** as of 2026-10-12 (339 regular episodes). The Next.js static import bundles it into the build; at current size (~200 KB) this is fine but worth monitoring if the wiki grows substantially.
+- **`movies.json` is 473-entry** as of 2026-10-26 (346 regular episodes). The Next.js static import bundles it into the build; at current size (~200 KB) this is fine but worth monitoring if the wiki grows substantially.
 - **Dev port is 3000** (`npm run dev`). README correctly states 3000. No custom port is pinned in `next.config.ts`.
 - **Vercel static export**: `output: 'export'` means no ISR, no server actions, no middleware. Everything must work at build time or in the client bundle.
 - **GitHub Actions `contents: write`**: The refresh workflow has broad write permission on the repo so it can commit updated JSON. This is intentional but means a compromised Actions token could push arbitrary commits.
