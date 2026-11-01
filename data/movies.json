@@ -1,7 +1,7 @@
 {
-  "scrapedAt": "2026-10-31T17:37:10.475Z",
+  "scrapedAt": "2026-11-01T18:21:33.798Z",
   "source": "https://70mmwiki.com/api/movies",
-  "total": 473,
+  "total": 474,
   "movies": [
     {
       "id": 474,
@@ -259,9 +259,9 @@
       "pilot": null,
       "book": null,
       "watchalong": null,
-      "slim": null,
-      "danny": null,
-      "proto": null,
+      "slim": 4,
+      "danny": 5,
+      "proto": 4,
       "lb_link": "https://boxd.it/29KU",
       "guest": null,
       "guest_lb_link": null,
@@ -295,7 +295,56 @@
         "created_at": "2026-10-25T14:05:43.000Z"
       },
       "villager_count": 23,
-      "sum": null
+      "sum": 13
+    },
+    {
+      "id": 475,
+      "movie": "Airborne",
+      "year_released": 1993,
+      "date_published": "2026-11-01",
+      "episode": null,
+      "bonus": null,
+      "vault": 86,
+      "pilot": null,
+      "book": null,
+      "watchalong": null,
+      "slim": 4,
+      "danny": 5,
+      "proto": 4,
+      "lb_link": "https://boxd.it/1QVu",
+      "guest": null,
+      "guest_lb_link": null,
+      "guest_rating": null,
+      "transcript_link": null,
+      "apple_link": null,
+      "spotify_link": null,
+      "store_link": null,
+      "tmdb_id": "13064",
+      "tmdb_tv_id": null,
+      "tmdb_tv_season": null,
+      "tmdb_tv_episode": null,
+      "vger_id": null,
+      "councilmember": "Mike",
+      "councilmember_lb_link": "https://letterboxd.com/mikerapin",
+      "month_theme_id": 71,
+      "host_pick": null,
+      "affiliate_link": null,
+      "shirt_link": null,
+      "lastSynced": null,
+      "lb_link_val": "airborne",
+      "viewer_count": 0,
+      "monthTheme": {
+        "id": 71,
+        "theme_name": "Newvember Rain",
+        "start_date": "2026-11-01",
+        "end_date": "2026-11-30",
+        "apple_link": null,
+        "spotify_link": null,
+        "description": null,
+        "created_at": "2026-10-25T14:05:43.000Z"
+      },
+      "villager_count": 0,
+      "sum": 13
     },
     {
       "id": 468,
@@ -316,8 +365,8 @@
       "guest_lb_link": null,
       "guest_rating": null,
       "transcript_link": null,
-      "apple_link": null,
-      "spotify_link": null,
+      "apple_link": "https://podcasts.apple.com/us/podcast/they-live-1988/id1495604053?i=1000798152147",
+      "spotify_link": "https://open.spotify.com/episode/1YYlS0PsHh1UcZ2T2UbSTb?si=SUVH8GRTTLm_f1EE32cNtQ",
       "store_link": null,
       "tmdb_id": "8337",
       "tmdb_tv_id": null,
@@ -344,7 +393,8 @@
         "created_at": "2026-10-11T14:31:53.000Z"
       },
       "villager_count": 67,
-      "sum": null
+      "sum": null,
+      "wikiArtConfirmed": true
     },
     {
       "id": 467,
@@ -415,8 +465,8 @@
       "guest_lb_link": null,
       "guest_rating": null,
       "transcript_link": null,
-      "apple_link": null,
-      "spotify_link": null,
+      "apple_link": "https://podcasts.apple.com/us/podcast/nope-2022/id1495604053?i=1000795918654",
+      "spotify_link": "https://open.spotify.com/episode/7bRUWG7DnSZ90p2sYKIxtb?si=tDwjxK7ITeKdvKtIOys1zQ",
       "store_link": null,
       "tmdb_id": "762504",
       "tmdb_tv_id": null,
@@ -443,7 +493,8 @@
         "created_at": "2026-10-11T14:31:53.000Z"
       },
       "villager_count": 85,
-      "sum": null
+      "sum": null,
+      "wikiArtConfirmed": true
     },
     {
       "id": 466,
@@ -493,7 +544,7 @@
       },
       "villager_count": 16,
       "sum": null,
-      "spotifyThumb": "https://image-cdn-ak.spotifycdn.com/image/ab67656300005f1f972e49155e2077e2bd457604"
+      "wikiArtConfirmed": true
     },
     {
       "id": 464,
@@ -543,7 +594,7 @@
       },
       "villager_count": 37,
       "sum": null,
-      "spotifyThumb": "https://image-cdn-fa.spotifycdn.com/image/ab67656300005f1f4327ba0e6eb1c01e9ee3e593"
+      "wikiArtConfirmed": true
     },
     {
       "id": 463,
@@ -564,8 +615,8 @@
       "guest_lb_link": null,
       "guest_rating": null,
       "transcript_link": null,
-      "apple_link": null,
-      "spotify_link": null,
+      "apple_link": "https://podcasts.apple.com/us/podcast/starship-troopers-1997/id1495604053?i=1000790924110",
+      "spotify_link": "https://open.spotify.com/episode/4VDP2EIV7SJiSaI8rZNeU6?si=A4f0HZepRLCJ0ydCOdBrYA",
       "store_link": null,
       "tmdb_id": "563",
       "tmdb_tv_id": null,
@@ -592,7 +643,8 @@
         "created_at": "2026-09-01T17:51:22.000Z"
       },
       "villager_count": 54,
-      "sum": null
+      "sum": null,
+      "wikiArtConfirmed": true
     },
     {
       "id": 462,
@@ -613,8 +665,8 @@
       "guest_lb_link": null,
       "guest_rating": null,
       "transcript_link": null,
-      "apple_link": null,
-      "spotify_link": null,
+      "apple_link": "https://podcasts.apple.com/us/podcast/good-will-hunting-1997/id1495604053?i=1000789528762",
+      "spotify_link": "https://open.spotify.com/episode/01MLpNPdHuRXgIJPPPf8le?si=xM0GA2dTSm24H2KUjzlOZw",
       "store_link": null,
       "tmdb_id": "489",
       "tmdb_tv_id": null,
@@ -641,7 +693,8 @@
         "created_at": "2026-09-01T17:51:22.000Z"
       },
       "villager_count": 49,
-      "sum": 13
+      "sum": 13,
+      "wikiArtConfirmed": true
     },
     {
       "id": 461,
