@@ -1,6 +1,6 @@
 # Architecture — 70mm Dune Line
 
-Last reviewed: 2026-10-27
+Last reviewed: 2026-11-03
 
 ## Purpose
 
@@ -76,7 +76,7 @@ app/page.tsx         (Server Component — runs at build time)
 | `app/globals.css` | All CSS; dark sand/olive/coral palette |
 | `scripts/scrape.mjs` | Data scraper; pagination, overrides, artwork caching |
 | `scripts/backfill-csv.mjs` | Dev utility; emits CSV of episodes needing data backfills |
-| `data/movies.json` | Committed data artifact; 473 total movies / 346 regular as of 2026-10-26 scrape |
+| `data/movies.json` | Committed data artifact; 474 total movies / 346 regular as of 2026-11-02 scrape |
 | `.github/workflows/refresh.yml` | Daily cron: runs scraper, commits changed JSON, triggers Vercel redeploy |
 | `next.config.ts` | `output: 'export'` — pure static, no server runtime |
 
@@ -102,7 +102,7 @@ External domains accessed by the browser at runtime:
 - **`RATING_OVERRIDES`**: small map for pre-publication sum values. Same REDUNDANT-log mechanism. Zero active entries as of 2026-09-08.
 
 ### Artwork caching
-The scraper persists a `wikiArtConfirmed: true` flag per movie in `movies.json`. On subsequent runs, confirmed IDs skip the HTTP artwork check entirely, so the daily scrape only rechecks new/missing episodes rather than all 400+. As of 2026-10-26: 473 total movies in the dataset; artwork logic unchanged.
+The scraper persists a `wikiArtConfirmed: true` flag per movie in `movies.json`. On subsequent runs, confirmed IDs skip the HTTP artwork check entirely, so the daily scrape only rechecks new/missing episodes rather than all 400+. As of 2026-11-02: 474 total movies in the dataset; artwork logic unchanged.
 
 ### Theme band grouping
 Movies with a meaningful `month_theme_id` and non-placeholder `theme_name` go into a `theme-{id}` band. Movies with no theme (or placeholder `"?"` names) are bucketed into a synthetic `themeless-YYYY-MM` band by their publication month.
