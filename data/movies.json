@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-11-06T19:55:31.060Z",
+  "scrapedAt": "2026-11-07T17:59:30.361Z",
   "source": "https://70mmwiki.com/api/movies",
   "total": 474,
   "movies": [
@@ -330,9 +330,9 @@
       "host_pick": null,
       "affiliate_link": null,
       "shirt_link": null,
-      "lastSynced": null,
+      "lastSynced": "2026-11-07T01:01:01.245Z",
       "lb_link_val": "airborne",
-      "viewer_count": 0,
+      "viewer_count": 7,
       "monthTheme": {
         "id": 71,
         "theme_name": "Newvember Rain",
@@ -343,7 +343,7 @@
         "description": null,
         "created_at": "2026-10-25T14:05:43.000Z"
       },
-      "villager_count": 0,
+      "villager_count": 7,
       "sum": 13
     },
     {
@@ -779,7 +779,7 @@
       "host_pick": null,
       "affiliate_link": null,
       "shirt_link": null,
-      "lastSynced": "2026-10-03T01:01:12.036Z",
+      "lastSynced": "2026-11-07T01:01:01.245Z",
       "lb_link_val": "disclosure",
       "viewer_count": 13,
       "monthTheme": {
@@ -829,9 +829,9 @@
       "host_pick": "slim",
       "affiliate_link": null,
       "shirt_link": null,
-      "lastSynced": "2026-10-03T01:01:12.036Z",
+      "lastSynced": "2026-11-07T01:01:01.245Z",
       "lb_link_val": "teenage-sex-and-death-at-camp-miasma",
-      "viewer_count": 56,
+      "viewer_count": 61,
       "monthTheme": {
         "id": 68,
         "theme_name": "Newgust",
@@ -842,7 +842,7 @@
         "description": "New releases for August 2026",
         "created_at": "2026-07-24T22:11:08.000Z"
       },
-      "villager_count": 56,
+      "villager_count": 61,
       "sum": 7,
       "wikiArtConfirmed": true
     },
@@ -879,9 +879,9 @@
       "host_pick": "proto",
       "affiliate_link": null,
       "shirt_link": null,
-      "lastSynced": "2026-10-03T01:01:12.036Z",
+      "lastSynced": "2026-11-07T01:01:01.245Z",
       "lb_link_val": "blue-heron",
-      "viewer_count": 25,
+      "viewer_count": 26,
       "monthTheme": {
         "id": 68,
         "theme_name": "Newgust",
@@ -892,7 +892,7 @@
         "description": "New releases for August 2026",
         "created_at": "2026-07-24T22:11:08.000Z"
       },
-      "villager_count": 25,
+      "villager_count": 26,
       "sum": 14,
       "wikiArtConfirmed": true
     },
@@ -929,9 +929,9 @@
       "host_pick": "danny",
       "affiliate_link": null,
       "shirt_link": null,
-      "lastSynced": "2026-10-03T01:01:12.036Z",
+      "lastSynced": "2026-11-07T01:01:01.245Z",
       "lb_link_val": "the-bride-2026",
-      "viewer_count": 45,
+      "viewer_count": 47,
       "monthTheme": {
         "id": 68,
         "theme_name": "Newgust",
@@ -942,7 +942,7 @@
         "description": "New releases for August 2026",
         "created_at": "2026-07-24T22:11:08.000Z"
       },
-      "villager_count": 45,
+      "villager_count": 47,
       "sum": 50,
       "wikiArtConfirmed": true
     },
@@ -1029,9 +1029,9 @@
       "host_pick": null,
       "affiliate_link": null,
       "shirt_link": null,
-      "lastSynced": "2026-10-03T01:01:12.036Z",
+      "lastSynced": "2026-11-07T01:01:01.245Z",
       "lb_link_val": "obsession-2025",
-      "viewer_count": 71,
+      "viewer_count": 75,
       "monthTheme": {
         "id": 68,
         "theme_name": "Newgust",
@@ -1042,7 +1042,7 @@
         "description": "New releases for August 2026",
         "created_at": "2026-07-24T22:11:08.000Z"
       },
-      "villager_count": 71,
+      "villager_count": 75,
       "sum": 12,
       "wikiArtConfirmed": true
     },
