@@ -155,7 +155,7 @@ function isMeaningfulThemeName(name: string | null | undefined): boolean {
  *  awkward ones to clean short versions, and fall back to a generic
  *  ellipsis-at-word-boundary for anything else that overflows. */
 const SHORT_NAMES: Record<string, string> = {
-  'Holy/Regligion/Spiritual Month': 'Holy Month',
+  'Holy/Regligion/Spiritual Month': 'Holy Month', // typo mirrors wiki source verbatim — do not "fix" spelling
   'Launch $10/tier + Phantom Menace': 'Phantom Menace',
   'Summer Blockbusters 21st Century': 'Summer Blockbusters',
   'Latin American Movie Month': 'Latin American',
