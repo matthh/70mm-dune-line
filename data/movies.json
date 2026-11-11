@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2026-11-10T20:24:49.194Z",
+  "scrapedAt": "2026-11-11T20:06:36.436Z",
   "source": "https://70mmwiki.com/api/movies",
   "total": 474,
   "movies": [
@@ -36,7 +36,7 @@
       "host_pick": null,
       "affiliate_link": null,
       "shirt_link": null,
-      "lastSynced": "2026-10-31T01:01:02.135Z",
+      "lastSynced": "2026-11-11T16:40:15.244Z",
       "lb_link_val": "the-game",
       "viewer_count": 48,
       "monthTheme": {
@@ -134,7 +134,7 @@
       "host_pick": null,
       "affiliate_link": null,
       "shirt_link": null,
-      "lastSynced": "2026-10-31T01:01:02.135Z",
+      "lastSynced": "2026-11-11T16:40:15.244Z",
       "lb_link_val": "the-odyssey-2026",
       "viewer_count": 86,
       "monthTheme": {
@@ -232,9 +232,9 @@
       "host_pick": null,
       "affiliate_link": null,
       "shirt_link": null,
-      "lastSynced": "2026-10-31T01:01:02.135Z",
+      "lastSynced": "2026-11-11T15:19:22.266Z",
       "lb_link_val": "godzilla-minus-zero",
-      "viewer_count": 0,
+      "viewer_count": 34,
       "monthTheme": {
         "id": 71,
         "theme_name": "Newvember Rain",
@@ -245,7 +245,7 @@
         "description": null,
         "created_at": "2026-10-25T14:05:43.000Z"
       },
-      "villager_count": 0,
+      "villager_count": 34,
       "sum": null
     },
     {
@@ -281,9 +281,9 @@
       "host_pick": null,
       "affiliate_link": null,
       "shirt_link": null,
-      "lastSynced": "2026-10-31T01:01:02.135Z",
+      "lastSynced": "2026-11-11T15:19:23.388Z",
       "lb_link_val": "goldeneye",
-      "viewer_count": 23,
+      "viewer_count": 27,
       "monthTheme": {
         "id": 71,
         "theme_name": "Newvember Rain",
@@ -294,7 +294,7 @@
         "description": null,
         "created_at": "2026-10-25T14:05:43.000Z"
       },
-      "villager_count": 23,
+      "villager_count": 27,
       "sum": 13
     },
     {
@@ -330,9 +330,9 @@
       "host_pick": null,
       "affiliate_link": null,
       "shirt_link": null,
-      "lastSynced": "2026-11-07T01:01:01.245Z",
+      "lastSynced": "2026-11-11T16:40:15.244Z",
       "lb_link_val": "airborne",
-      "viewer_count": 7,
+      "viewer_count": 9,
       "monthTheme": {
         "id": 71,
         "theme_name": "Newvember Rain",
@@ -343,7 +343,7 @@
         "description": null,
         "created_at": "2026-10-25T14:05:43.000Z"
       },
-      "villager_count": 7,
+      "villager_count": 9,
       "sum": 13
     },
     {
@@ -481,7 +481,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-17T01:00:33.125Z",
       "lb_link_val": "nope",
-      "viewer_count": 85,
+      "viewer_count": 84,
       "monthTheme": {
         "id": 70,
         "theme_name": "UFOctober",
@@ -492,7 +492,7 @@
         "description": null,
         "created_at": "2026-10-11T14:31:53.000Z"
       },
-      "villager_count": 85,
+      "villager_count": 84,
       "sum": null,
       "wikiArtConfirmed": true
     },
@@ -581,7 +581,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-17T01:00:33.125Z",
       "lb_link_val": "batman-robin",
-      "viewer_count": 37,
+      "viewer_count": 38,
       "monthTheme": {
         "id": 70,
         "theme_name": "UFOctober",
@@ -592,7 +592,7 @@
         "description": null,
         "created_at": "2026-10-11T14:31:53.000Z"
       },
-      "villager_count": 37,
+      "villager_count": 38,
       "sum": null,
       "wikiArtConfirmed": true
     },
@@ -681,7 +681,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-17T01:00:33.125Z",
       "lb_link_val": "good-will-hunting",
-      "viewer_count": 49,
+      "viewer_count": 48,
       "monthTheme": {
         "id": 69,
         "theme_name": "70mm '97",
@@ -692,7 +692,7 @@
         "description": "Films released in 1997",
         "created_at": "2026-09-01T17:51:22.000Z"
       },
-      "villager_count": 49,
+      "villager_count": 48,
       "sum": 13,
       "wikiArtConfirmed": true
     },
@@ -831,7 +831,7 @@
       "shirt_link": null,
       "lastSynced": "2026-11-07T01:01:01.245Z",
       "lb_link_val": "teenage-sex-and-death-at-camp-miasma",
-      "viewer_count": 61,
+      "viewer_count": 60,
       "monthTheme": {
         "id": 68,
         "theme_name": "Newgust",
@@ -842,7 +842,7 @@
         "description": "New releases for August 2026",
         "created_at": "2026-07-24T22:11:08.000Z"
       },
-      "villager_count": 61,
+      "villager_count": 60,
       "sum": 7,
       "wikiArtConfirmed": true
     },
@@ -908,7 +908,7 @@
       "book": null,
       "watchalong": null,
       "slim": 2,
-      "danny": 45,
+      "danny": 4.5,
       "proto": 3,
       "lb_link": "https://boxd.it/HSw6",
       "guest": null,
@@ -943,7 +943,7 @@
         "created_at": "2026-07-24T22:11:08.000Z"
       },
       "villager_count": 47,
-      "sum": 50,
+      "sum": 9.5,
       "wikiArtConfirmed": true
     },
     {
@@ -981,7 +981,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-31T01:01:02.135Z",
       "lb_link_val": "spider-man-brand-new-day",
-      "viewer_count": 66,
+      "viewer_count": 65,
       "monthTheme": {
         "id": 68,
         "theme_name": "Newgust",
@@ -992,7 +992,7 @@
         "description": "New releases for August 2026",
         "created_at": "2026-07-24T22:11:08.000Z"
       },
-      "villager_count": 66,
+      "villager_count": 65,
       "sum": null,
       "wikiArtConfirmed": true
     },
@@ -1031,7 +1031,7 @@
       "shirt_link": null,
       "lastSynced": "2026-11-07T01:01:01.245Z",
       "lb_link_val": "obsession-2025",
-      "viewer_count": 75,
+      "viewer_count": 74,
       "monthTheme": {
         "id": 68,
         "theme_name": "Newgust",
@@ -1042,7 +1042,7 @@
         "description": "New releases for August 2026",
         "created_at": "2026-07-24T22:11:08.000Z"
       },
-      "villager_count": 75,
+      "villager_count": 74,
       "sum": 12,
       "wikiArtConfirmed": true
     },
@@ -1131,7 +1131,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": "scarface-1983",
-      "viewer_count": 41,
+      "viewer_count": 40,
       "monthTheme": {
         "id": 67,
         "theme_name": "Protopendence Part 3",
@@ -1142,7 +1142,7 @@
         "description": null,
         "created_at": "2026-06-25T16:58:15.000Z"
       },
-      "villager_count": 41,
+      "villager_count": 40,
       "sum": 12,
       "wikiArtConfirmed": true
     },
@@ -1371,7 +1371,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-17T01:00:33.125Z",
       "lb_link_val": "the-lion-king",
-      "viewer_count": 40,
+      "viewer_count": 39,
       "monthTheme": {
         "id": 65,
         "theme_name": "June March Madness",
@@ -1382,7 +1382,7 @@
         "description": null,
         "created_at": "2026-05-21T03:12:56.000Z"
       },
-      "villager_count": 40,
+      "villager_count": 39,
       "sum": 15,
       "wikiArtConfirmed": true
     },
@@ -1421,7 +1421,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-17T01:00:33.125Z",
       "lb_link_val": "ratatouille",
-      "viewer_count": 54,
+      "viewer_count": 53,
       "monthTheme": {
         "id": 65,
         "theme_name": "June March Madness",
@@ -1432,7 +1432,7 @@
         "description": null,
         "created_at": "2026-05-21T03:12:56.000Z"
       },
-      "villager_count": 54,
+      "villager_count": 53,
       "sum": 10,
       "wikiArtConfirmed": true
     },
@@ -1471,7 +1471,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-17T01:00:33.125Z",
       "lb_link_val": "mulan",
-      "viewer_count": 37,
+      "viewer_count": 36,
       "monthTheme": {
         "id": 65,
         "theme_name": "June March Madness",
@@ -1482,7 +1482,7 @@
         "description": null,
         "created_at": "2026-05-21T03:12:56.000Z"
       },
-      "villager_count": 37,
+      "villager_count": 36,
       "sum": 15,
       "wikiArtConfirmed": true
     },
@@ -1521,7 +1521,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-17T01:00:33.125Z",
       "lb_link_val": "the-incredibles",
-      "viewer_count": 50,
+      "viewer_count": 49,
       "monthTheme": {
         "id": 65,
         "theme_name": "June March Madness",
@@ -1532,7 +1532,7 @@
         "description": null,
         "created_at": "2026-05-21T03:12:56.000Z"
       },
-      "villager_count": 50,
+      "villager_count": 49,
       "sum": 13,
       "wikiArtConfirmed": true
     },
@@ -1571,7 +1571,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-17T01:00:33.125Z",
       "lb_link_val": "gangs-of-new-york-2002",
-      "viewer_count": 34,
+      "viewer_count": 33,
       "monthTheme": {
         "id": 64,
         "theme_name": "Daniel May Lewis",
@@ -1582,7 +1582,7 @@
         "description": null,
         "created_at": "2026-04-29T20:52:15.000Z"
       },
-      "villager_count": 34,
+      "villager_count": 33,
       "sum": 8,
       "wikiArtConfirmed": true
     },
@@ -1621,7 +1621,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-17T01:00:33.125Z",
       "lb_link_val": "phantom-thread",
-      "viewer_count": 69,
+      "viewer_count": 68,
       "monthTheme": {
         "id": 64,
         "theme_name": "Daniel May Lewis",
@@ -1632,7 +1632,7 @@
         "description": null,
         "created_at": "2026-04-29T20:52:15.000Z"
       },
-      "villager_count": 69,
+      "villager_count": 68,
       "sum": null,
       "wikiArtConfirmed": true
     },
@@ -1671,7 +1671,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-17T01:00:33.125Z",
       "lb_link_val": "lincoln",
-      "viewer_count": 28,
+      "viewer_count": 27,
       "monthTheme": {
         "id": 64,
         "theme_name": "Daniel May Lewis",
@@ -1682,7 +1682,7 @@
         "description": null,
         "created_at": "2026-04-29T20:52:15.000Z"
       },
-      "villager_count": 28,
+      "villager_count": 27,
       "sum": 10,
       "wikiArtConfirmed": true
     },
@@ -1721,7 +1721,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-17T01:00:33.125Z",
       "lb_link_val": "there-will-be-blood",
-      "viewer_count": 66,
+      "viewer_count": 65,
       "monthTheme": {
         "id": 64,
         "theme_name": "Daniel May Lewis",
@@ -1732,7 +1732,7 @@
         "description": null,
         "created_at": "2026-04-29T20:52:15.000Z"
       },
-      "villager_count": 66,
+      "villager_count": 65,
       "sum": 15,
       "wikiArtConfirmed": true
     },
@@ -1771,9 +1771,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": "1U9E",
-      "viewer_count": 24,
+      "viewer_count": 23,
       "monthTheme": null,
-      "villager_count": 24,
+      "villager_count": 23,
       "sum": 12,
       "wikiArtConfirmed": true
     },
@@ -1812,7 +1812,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-17T01:00:33.125Z",
       "lb_link_val": "the-nice-guys",
-      "viewer_count": 71,
+      "viewer_count": 70,
       "monthTheme": {
         "id": 63,
         "theme_name": "Shame Month pt. 2",
@@ -1823,7 +1823,7 @@
         "description": null,
         "created_at": "2026-03-26T01:37:28.000Z"
       },
-      "villager_count": 71,
+      "villager_count": 70,
       "sum": 13,
       "wikiArtConfirmed": true
     },
@@ -1862,9 +1862,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-17T01:00:33.125Z",
       "lb_link_val": "12-angry-men",
-      "viewer_count": 62,
+      "viewer_count": 61,
       "monthTheme": null,
-      "villager_count": 62,
+      "villager_count": 61,
       "sum": 15,
       "wikiArtConfirmed": true
     },
@@ -1903,7 +1903,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-17T01:00:33.125Z",
       "lb_link_val": "28Gs",
-      "viewer_count": 34,
+      "viewer_count": 33,
       "monthTheme": {
         "id": 63,
         "theme_name": "Shame Month pt. 2",
@@ -1914,7 +1914,7 @@
         "description": null,
         "created_at": "2026-03-26T01:37:28.000Z"
       },
-      "villager_count": 34,
+      "villager_count": 33,
       "sum": 9,
       "wikiArtConfirmed": true
     },
@@ -1953,7 +1953,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": "sunset-boulevard",
-      "viewer_count": 65,
+      "viewer_count": 64,
       "monthTheme": {
         "id": 63,
         "theme_name": "Shame Month pt. 2",
@@ -1964,7 +1964,7 @@
         "description": null,
         "created_at": "2026-03-26T01:37:28.000Z"
       },
-      "villager_count": 65,
+      "villager_count": 64,
       "sum": 15,
       "wikiArtConfirmed": true
     },
@@ -2085,7 +2085,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": "star-trek",
-      "viewer_count": 38,
+      "viewer_count": 37,
       "monthTheme": {
         "id": 62,
         "theme_name": "70mm Goes Back to Jakku",
@@ -2096,7 +2096,7 @@
         "description": null,
         "created_at": "2026-03-03T19:11:42.356Z"
       },
-      "villager_count": 38,
+      "villager_count": 37,
       "sum": 13,
       "wikiArtConfirmed": true
     },
@@ -2135,7 +2135,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": "5xlK",
-      "viewer_count": 67,
+      "viewer_count": 66,
       "monthTheme": {
         "id": 62,
         "theme_name": "70mm Goes Back to Jakku",
@@ -2146,7 +2146,7 @@
         "description": null,
         "created_at": "2026-03-03T19:11:42.356Z"
       },
-      "villager_count": 67,
+      "villager_count": 66,
       "sum": null,
       "wikiArtConfirmed": true
     },
@@ -2185,7 +2185,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": "5xme",
-      "viewer_count": 70,
+      "viewer_count": 69,
       "monthTheme": {
         "id": 62,
         "theme_name": "70mm Goes Back to Jakku",
@@ -2196,7 +2196,7 @@
         "description": null,
         "created_at": "2026-03-03T19:11:42.356Z"
       },
-      "villager_count": 70,
+      "villager_count": 69,
       "sum": null,
       "wikiArtConfirmed": true
     },
@@ -2235,7 +2235,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": "4vru",
-      "viewer_count": 66,
+      "viewer_count": 65,
       "monthTheme": {
         "id": 62,
         "theme_name": "70mm Goes Back to Jakku",
@@ -2246,7 +2246,7 @@
         "description": null,
         "created_at": "2026-03-03T19:11:42.356Z"
       },
-      "villager_count": 66,
+      "villager_count": 65,
       "sum": 15,
       "wikiArtConfirmed": true
     },
@@ -2285,7 +2285,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": "KQMM",
-      "viewer_count": 99,
+      "viewer_count": 98,
       "monthTheme": {
         "id": 61,
         "theme_name": "Black History Month",
@@ -2296,7 +2296,7 @@
         "description": null,
         "created_at": "2026-02-14T08:20:00.785Z"
       },
-      "villager_count": 99,
+      "villager_count": 98,
       "sum": 13,
       "wikiArtConfirmed": true
     },
@@ -2335,7 +2335,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": "29Ug",
-      "viewer_count": 36,
+      "viewer_count": 35,
       "monthTheme": {
         "id": 61,
         "theme_name": "Black History Month",
@@ -2346,7 +2346,7 @@
         "description": null,
         "created_at": "2026-02-14T08:20:00.785Z"
       },
-      "villager_count": 36,
+      "villager_count": 35,
       "sum": null,
       "wikiArtConfirmed": true
     },
@@ -2385,7 +2385,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": "1wX6",
-      "viewer_count": 39,
+      "viewer_count": 38,
       "monthTheme": {
         "id": 61,
         "theme_name": "Black History Month",
@@ -2396,7 +2396,7 @@
         "description": null,
         "created_at": "2026-02-14T08:20:00.785Z"
       },
-      "villager_count": 39,
+      "villager_count": 38,
       "sum": 14,
       "wikiArtConfirmed": true
     },
@@ -2435,7 +2435,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": "8MHs",
-      "viewer_count": 65,
+      "viewer_count": 64,
       "monthTheme": {
         "id": 61,
         "theme_name": "Black History Month",
@@ -2446,7 +2446,7 @@
         "description": null,
         "created_at": "2026-02-14T08:20:00.785Z"
       },
-      "villager_count": 65,
+      "villager_count": 64,
       "sum": 11.5,
       "wikiArtConfirmed": true
     },
@@ -2675,7 +2675,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 48,
+      "viewer_count": 47,
       "monthTheme": {
         "id": 60,
         "theme_name": "70mm goes International",
@@ -2686,7 +2686,7 @@
         "description": null,
         "created_at": "2026-01-06T23:26:59.932Z"
       },
-      "villager_count": 48,
+      "villager_count": 47,
       "sum": null,
       "wikiArtConfirmed": true
     },
@@ -2725,9 +2725,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 50,
+      "viewer_count": 49,
       "monthTheme": null,
-      "villager_count": 50,
+      "villager_count": 49,
       "sum": null
     },
     {
@@ -2865,7 +2865,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 66,
+      "viewer_count": 65,
       "monthTheme": {
         "id": 59,
         "theme_name": "70mm's Forbidden Journey",
@@ -2876,7 +2876,7 @@
         "description": null,
         "created_at": "2026-01-06T23:26:59.932Z"
       },
-      "villager_count": 66,
+      "villager_count": 65,
       "sum": null,
       "wikiArtConfirmed": true
     },
@@ -2915,9 +2915,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 86,
+      "viewer_count": 85,
       "monthTheme": null,
-      "villager_count": 86,
+      "villager_count": 85,
       "sum": null,
       "wikiArtConfirmed": true
     },
@@ -2956,9 +2956,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 53,
+      "viewer_count": 52,
       "monthTheme": null,
-      "villager_count": 53,
+      "villager_count": 52,
       "sum": null,
       "wikiArtConfirmed": true
     },
@@ -2997,7 +2997,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 62,
+      "viewer_count": 61,
       "monthTheme": {
         "id": 58,
         "theme_name": "Winvember",
@@ -3008,7 +3008,7 @@
         "description": null,
         "created_at": "2025-11-07T04:21:01.163Z"
       },
-      "villager_count": 62,
+      "villager_count": 61,
       "sum": 14,
       "wikiArtConfirmed": true
     },
@@ -3097,7 +3097,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 53,
+      "viewer_count": 52,
       "monthTheme": {
         "id": 58,
         "theme_name": "Winvember",
@@ -3108,7 +3108,7 @@
         "description": null,
         "created_at": "2025-11-07T04:21:01.163Z"
       },
-      "villager_count": 53,
+      "villager_count": 52,
       "sum": null,
       "wikiArtConfirmed": true
     },
@@ -3561,7 +3561,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 53,
+      "viewer_count": 52,
       "monthTheme": {
         "id": 56,
         "theme_name": "Lo-fi Sci-fi Part 2",
@@ -3572,7 +3572,7 @@
         "description": null,
         "created_at": "2025-08-23T03:40:18.444Z"
       },
-      "villager_count": 53,
+      "villager_count": 52,
       "sum": 14,
       "wikiArtConfirmed": true
     },
@@ -3611,7 +3611,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 24,
+      "viewer_count": 23,
       "monthTheme": {
         "id": 56,
         "theme_name": "Lo-fi Sci-fi Part 2",
@@ -3622,7 +3622,7 @@
         "description": null,
         "created_at": "2025-08-23T03:40:18.444Z"
       },
-      "villager_count": 24,
+      "villager_count": 23,
       "sum": 5.5,
       "wikiArtConfirmed": true
     },
@@ -3711,7 +3711,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 52,
+      "viewer_count": 51,
       "monthTheme": {
         "id": 55,
         "theme_name": "Hogust",
@@ -3722,7 +3722,7 @@
         "description": null,
         "created_at": "2025-08-23T03:39:10.007Z"
       },
-      "villager_count": 52,
+      "villager_count": 51,
       "sum": 15,
       "wikiArtConfirmed": true
     },
@@ -3761,9 +3761,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 55,
+      "viewer_count": 54,
       "monthTheme": null,
-      "villager_count": 55,
+      "villager_count": 54,
       "sum": null,
       "wikiArtConfirmed": true
     },
@@ -3802,7 +3802,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 43,
+      "viewer_count": 42,
       "monthTheme": {
         "id": 55,
         "theme_name": "Hogust",
@@ -3813,7 +3813,7 @@
         "description": null,
         "created_at": "2025-08-23T03:39:10.007Z"
       },
-      "villager_count": 43,
+      "villager_count": 42,
       "sum": null,
       "wikiArtConfirmed": true
     },
@@ -3852,7 +3852,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 68,
+      "viewer_count": 67,
       "monthTheme": {
         "id": 55,
         "theme_name": "Hogust",
@@ -3863,7 +3863,7 @@
         "description": null,
         "created_at": "2025-08-23T03:39:10.007Z"
       },
-      "villager_count": 68,
+      "villager_count": 67,
       "sum": null,
       "wikiArtConfirmed": true
     },
@@ -3902,7 +3902,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 59,
+      "viewer_count": 58,
       "monthTheme": {
         "id": 55,
         "theme_name": "Hogust",
@@ -3913,7 +3913,7 @@
         "description": null,
         "created_at": "2025-08-23T03:39:10.007Z"
       },
-      "villager_count": 59,
+      "villager_count": 58,
       "sum": null,
       "wikiArtConfirmed": true
     },
@@ -3952,7 +3952,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 41,
+      "viewer_count": 43,
       "monthTheme": {
         "id": 54,
         "theme_name": "Blockbusted Vol. 3",
@@ -3963,7 +3963,7 @@
         "description": null,
         "created_at": "2025-06-24T18:33:19.446Z"
       },
-      "villager_count": 41,
+      "villager_count": 43,
       "sum": null,
       "wikiArtConfirmed": true
     },
@@ -4043,7 +4043,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 91,
+      "viewer_count": 90,
       "monthTheme": {
         "id": 53,
         "theme_name": "Mount Goatmore",
@@ -4054,7 +4054,7 @@
         "description": null,
         "created_at": "2025-06-05T20:18:42.591Z"
       },
-      "villager_count": 91,
+      "villager_count": 90,
       "sum": null,
       "wikiArtConfirmed": true
     },
@@ -4093,7 +4093,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 37,
+      "viewer_count": 36,
       "monthTheme": {
         "id": 54,
         "theme_name": "Blockbusted Vol. 3",
@@ -4104,7 +4104,7 @@
         "description": null,
         "created_at": "2025-06-24T18:33:19.446Z"
       },
-      "villager_count": 37,
+      "villager_count": 36,
       "sum": 4,
       "wikiArtConfirmed": true
     },
@@ -4284,7 +4284,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 39,
+      "viewer_count": 40,
       "monthTheme": {
         "id": 53,
         "theme_name": "Mount Goatmore",
@@ -4295,7 +4295,7 @@
         "description": null,
         "created_at": "2025-06-05T20:18:42.591Z"
       },
-      "villager_count": 39,
+      "villager_count": 40,
       "sum": null,
       "wikiArtConfirmed": true
     },
@@ -4334,7 +4334,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 29,
+      "viewer_count": 30,
       "monthTheme": {
         "id": 53,
         "theme_name": "Mount Goatmore",
@@ -4345,7 +4345,7 @@
         "description": null,
         "created_at": "2025-06-05T20:18:42.591Z"
       },
-      "villager_count": 29,
+      "villager_count": 30,
       "sum": null,
       "wikiArtConfirmed": true
     },
@@ -4384,9 +4384,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 14,
+      "viewer_count": 15,
       "monthTheme": null,
-      "villager_count": 14,
+      "villager_count": 15,
       "sum": 11.5,
       "wikiArtConfirmed": true
     },
@@ -4425,7 +4425,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 52,
+      "viewer_count": 53,
       "monthTheme": {
         "id": 53,
         "theme_name": "Mount Goatmore",
@@ -4436,7 +4436,7 @@
         "description": null,
         "created_at": "2025-06-05T20:18:42.591Z"
       },
-      "villager_count": 52,
+      "villager_count": 53,
       "sum": 11,
       "wikiArtConfirmed": true
     },
@@ -4516,7 +4516,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 50,
+      "viewer_count": 51,
       "monthTheme": {
         "id": 53,
         "theme_name": "Mount Goatmore",
@@ -4527,7 +4527,7 @@
         "description": null,
         "created_at": "2025-06-05T20:18:42.591Z"
       },
-      "villager_count": 50,
+      "villager_count": 51,
       "sum": 14.5,
       "wikiArtConfirmed": true
     },
@@ -4616,7 +4616,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 80,
+      "viewer_count": 82,
       "monthTheme": {
         "id": 52,
         "theme_name": "Mayssion Impossible",
@@ -4627,7 +4627,7 @@
         "description": null,
         "created_at": "2025-04-26T04:11:20.487Z"
       },
-      "villager_count": 80,
+      "villager_count": 82,
       "sum": null,
       "wikiArtConfirmed": true
     },
@@ -4666,7 +4666,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 75,
+      "viewer_count": 76,
       "monthTheme": {
         "id": 52,
         "theme_name": "Mayssion Impossible",
@@ -4677,7 +4677,7 @@
         "description": null,
         "created_at": "2025-04-26T04:11:20.487Z"
       },
-      "villager_count": 75,
+      "villager_count": 76,
       "sum": null,
       "wikiArtConfirmed": true
     },
@@ -4716,9 +4716,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-17T01:00:33.125Z",
       "lb_link_val": null,
-      "viewer_count": 79,
+      "viewer_count": 80,
       "monthTheme": null,
-      "villager_count": 79,
+      "villager_count": 80,
       "sum": null
     },
     {
@@ -4756,7 +4756,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 86,
+      "viewer_count": 88,
       "monthTheme": {
         "id": 52,
         "theme_name": "Mayssion Impossible",
@@ -4767,7 +4767,7 @@
         "description": null,
         "created_at": "2025-04-26T04:11:20.487Z"
       },
-      "villager_count": 86,
+      "villager_count": 88,
       "sum": 14,
       "wikiArtConfirmed": true
     },
@@ -4806,7 +4806,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 36,
+      "viewer_count": 37,
       "monthTheme": {
         "id": 51,
         "theme_name": "Tape Deck",
@@ -4817,7 +4817,7 @@
         "description": null,
         "created_at": "2025-03-24T01:14:49.898Z"
       },
-      "villager_count": 36,
+      "villager_count": 37,
       "sum": 13,
       "wikiArtConfirmed": true
     },
@@ -4906,7 +4906,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 21,
+      "viewer_count": 22,
       "monthTheme": {
         "id": 51,
         "theme_name": "Tape Deck",
@@ -4917,7 +4917,7 @@
         "description": null,
         "created_at": "2025-03-24T01:14:49.898Z"
       },
-      "villager_count": 21,
+      "villager_count": 22,
       "sum": 7,
       "wikiArtConfirmed": true
     },
@@ -4997,7 +4997,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 54,
+      "viewer_count": 55,
       "monthTheme": {
         "id": 51,
         "theme_name": "Tape Deck",
@@ -5008,7 +5008,7 @@
         "description": null,
         "created_at": "2025-03-24T01:14:49.898Z"
       },
-      "villager_count": 54,
+      "villager_count": 55,
       "sum": 15,
       "wikiArtConfirmed": true
     },
@@ -5097,7 +5097,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 61,
+      "viewer_count": 63,
       "monthTheme": {
         "id": 50,
         "theme_name": "BDSM",
@@ -5108,7 +5108,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:02.530Z"
       },
-      "villager_count": 61,
+      "villager_count": 63,
       "sum": null,
       "wikiArtConfirmed": true
     },
@@ -5147,7 +5147,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 50,
+      "viewer_count": 52,
       "monthTheme": {
         "id": 50,
         "theme_name": "BDSM",
@@ -5158,7 +5158,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:02.530Z"
       },
-      "villager_count": 50,
+      "villager_count": 52,
       "sum": 10.5,
       "wikiArtConfirmed": true
     },
@@ -5238,7 +5238,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 62,
+      "viewer_count": 64,
       "monthTheme": {
         "id": 50,
         "theme_name": "BDSM",
@@ -5249,7 +5249,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:02.530Z"
       },
-      "villager_count": 62,
+      "villager_count": 64,
       "sum": 15,
       "wikiArtConfirmed": true
     },
@@ -5288,7 +5288,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 47,
+      "viewer_count": 49,
       "monthTheme": {
         "id": 49,
         "theme_name": "Fembruary",
@@ -5299,7 +5299,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:02.492Z"
       },
-      "villager_count": 47,
+      "villager_count": 49,
       "sum": 10.5,
       "wikiArtConfirmed": true
     },
@@ -5338,7 +5338,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 48,
+      "viewer_count": 51,
       "monthTheme": {
         "id": 49,
         "theme_name": "Fembruary",
@@ -5349,7 +5349,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:02.492Z"
       },
-      "villager_count": 48,
+      "villager_count": 51,
       "sum": 9,
       "wikiArtConfirmed": true
     },
@@ -5429,7 +5429,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 43,
+      "viewer_count": 44,
       "monthTheme": {
         "id": 49,
         "theme_name": "Fembruary",
@@ -5440,7 +5440,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:02.492Z"
       },
-      "villager_count": 43,
+      "villager_count": 44,
       "sum": null,
       "wikiArtConfirmed": true
     },
@@ -5570,7 +5570,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 83,
+      "viewer_count": 84,
       "monthTheme": {
         "id": 48,
         "theme_name": "Village Top 100",
@@ -5581,7 +5581,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:02.452Z"
       },
-      "villager_count": 83,
+      "villager_count": 84,
       "sum": 14,
       "wikiArtConfirmed": true
     },
@@ -5620,9 +5620,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 32,
+      "viewer_count": 33,
       "monthTheme": null,
-      "villager_count": 32,
+      "villager_count": 33,
       "sum": 8.5,
       "wikiArtConfirmed": true
     },
@@ -5661,7 +5661,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 69,
+      "viewer_count": 71,
       "monthTheme": {
         "id": 48,
         "theme_name": "Village Top 100",
@@ -5672,7 +5672,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:02.452Z"
       },
-      "villager_count": 69,
+      "villager_count": 71,
       "sum": 13,
       "wikiArtConfirmed": true
     },
@@ -5711,7 +5711,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 46,
+      "viewer_count": 48,
       "monthTheme": {
         "id": 48,
         "theme_name": "Village Top 100",
@@ -5722,7 +5722,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:02.452Z"
       },
-      "villager_count": 46,
+      "villager_count": 48,
       "sum": 14,
       "wikiArtConfirmed": true
     },
@@ -5761,7 +5761,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 56,
+      "viewer_count": 57,
       "monthTheme": {
         "id": 48,
         "theme_name": "Village Top 100",
@@ -5772,7 +5772,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:02.452Z"
       },
-      "villager_count": 56,
+      "villager_count": 57,
       "sum": null,
       "wikiArtConfirmed": true
     },
@@ -5852,9 +5852,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 35,
+      "viewer_count": 37,
       "monthTheme": null,
-      "villager_count": 35,
+      "villager_count": 37,
       "sum": null,
       "wikiArtConfirmed": true
     },
@@ -5934,9 +5934,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 46,
+      "viewer_count": 47,
       "monthTheme": null,
-      "villager_count": 46,
+      "villager_count": 47,
       "sum": 12,
       "wikiArtConfirmed": true
     },
@@ -5975,9 +5975,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 10,
+      "viewer_count": 9,
       "monthTheme": null,
-      "villager_count": 10,
+      "villager_count": 9,
       "sum": null,
       "wikiArtConfirmed": true
     },
@@ -6016,7 +6016,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 61,
+      "viewer_count": 62,
       "monthTheme": {
         "id": 36,
         "theme_name": "Newvember",
@@ -6027,7 +6027,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.962Z"
       },
-      "villager_count": 61,
+      "villager_count": 62,
       "sum": 13,
       "wikiArtConfirmed": true
     },
@@ -6066,7 +6066,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 63,
+      "viewer_count": 65,
       "monthTheme": {
         "id": 36,
         "theme_name": "Newvember",
@@ -6077,7 +6077,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.962Z"
       },
-      "villager_count": 63,
+      "villager_count": 65,
       "sum": null,
       "wikiArtConfirmed": true
     },
@@ -6116,7 +6116,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 76,
+      "viewer_count": 78,
       "monthTheme": {
         "id": 36,
         "theme_name": "Newvember",
@@ -6127,7 +6127,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.962Z"
       },
-      "villager_count": 76,
+      "villager_count": 78,
       "sum": 13,
       "wikiArtConfirmed": true
     },
@@ -6207,7 +6207,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 43,
+      "viewer_count": 44,
       "monthTheme": {
         "id": 47,
         "theme_name": "Monster Tober",
@@ -6218,7 +6218,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:02.412Z"
       },
-      "villager_count": 43,
+      "villager_count": 44,
       "sum": null,
       "wikiArtConfirmed": true
     },
@@ -6257,7 +6257,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 51,
+      "viewer_count": 52,
       "monthTheme": {
         "id": 47,
         "theme_name": "Monster Tober",
@@ -6268,7 +6268,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:02.412Z"
       },
-      "villager_count": 51,
+      "villager_count": 52,
       "sum": 9,
       "wikiArtConfirmed": true
     },
@@ -6307,7 +6307,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 32,
+      "viewer_count": 33,
       "monthTheme": {
         "id": 47,
         "theme_name": "Monster Tober",
@@ -6318,7 +6318,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:02.412Z"
       },
-      "villager_count": 32,
+      "villager_count": 33,
       "sum": 8.5,
       "wikiArtConfirmed": true
     },
@@ -6357,9 +6357,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 58,
+      "viewer_count": 59,
       "monthTheme": null,
-      "villager_count": 58,
+      "villager_count": 59,
       "sum": null,
       "wikiArtConfirmed": true
     },
@@ -6398,7 +6398,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 53,
+      "viewer_count": 54,
       "monthTheme": {
         "id": 47,
         "theme_name": "Monster Tober",
@@ -6409,7 +6409,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:02.412Z"
       },
-      "villager_count": 53,
+      "villager_count": 54,
       "sum": 13.5,
       "wikiArtConfirmed": true
     },
@@ -6448,7 +6448,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 35,
+      "viewer_count": 37,
       "monthTheme": {
         "id": 46,
         "theme_name": "Scream Queens",
@@ -6459,7 +6459,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:02.372Z"
       },
-      "villager_count": 35,
+      "villager_count": 37,
       "sum": 13,
       "wikiArtConfirmed": true
     },
@@ -6580,7 +6580,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 52,
+      "viewer_count": 53,
       "monthTheme": {
         "id": 46,
         "theme_name": "Scream Queens",
@@ -6591,7 +6591,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:02.372Z"
       },
-      "villager_count": 52,
+      "villager_count": 53,
       "sum": 8.5,
       "wikiArtConfirmed": true
     },
@@ -6630,9 +6630,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 67,
+      "viewer_count": 70,
       "monthTheme": null,
-      "villager_count": 67,
+      "villager_count": 70,
       "sum": null
     },
     {
@@ -6761,7 +6761,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 68,
+      "viewer_count": 69,
       "monthTheme": {
         "id": 46,
         "theme_name": "Scream Queens",
@@ -6772,7 +6772,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:02.372Z"
       },
-      "villager_count": 68,
+      "villager_count": 69,
       "sum": 15,
       "wikiArtConfirmed": true
     },
@@ -6811,7 +6811,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 56,
+      "viewer_count": 57,
       "monthTheme": {
         "id": 46,
         "theme_name": "Scream Queens",
@@ -6822,7 +6822,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:02.372Z"
       },
-      "villager_count": 56,
+      "villager_count": 57,
       "sum": 7.5,
       "wikiArtConfirmed": true
     },
@@ -6861,7 +6861,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 51,
+      "viewer_count": 52,
       "monthTheme": {
         "id": 45,
         "theme_name": "??",
@@ -6872,7 +6872,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:02.334Z"
       },
-      "villager_count": 51,
+      "villager_count": 52,
       "sum": 12,
       "wikiArtConfirmed": true
     },
@@ -6911,7 +6911,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 56,
+      "viewer_count": 58,
       "monthTheme": {
         "id": 45,
         "theme_name": "??",
@@ -6922,7 +6922,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:02.334Z"
       },
-      "villager_count": 56,
+      "villager_count": 58,
       "sum": 14,
       "wikiArtConfirmed": true
     },
@@ -6961,7 +6961,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 50,
+      "viewer_count": 51,
       "monthTheme": {
         "id": 45,
         "theme_name": "??",
@@ -6972,7 +6972,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:02.334Z"
       },
-      "villager_count": 50,
+      "villager_count": 51,
       "sum": 12,
       "wikiArtConfirmed": true
     },
@@ -7052,7 +7052,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 39,
+      "viewer_count": 38,
       "monthTheme": {
         "id": 45,
         "theme_name": "??",
@@ -7063,7 +7063,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:02.334Z"
       },
-      "villager_count": 39,
+      "villager_count": 38,
       "sum": 12,
       "wikiArtConfirmed": true
     },
@@ -7102,7 +7102,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 47,
+      "viewer_count": 48,
       "monthTheme": {
         "id": 44,
         "theme_name": "LEADING LADIES V4",
@@ -7113,7 +7113,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:02.295Z"
       },
-      "villager_count": 47,
+      "villager_count": 48,
       "sum": null,
       "wikiArtConfirmed": true
     },
@@ -7202,7 +7202,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 63,
+      "viewer_count": 64,
       "monthTheme": {
         "id": 44,
         "theme_name": "LEADING LADIES V4",
@@ -7213,7 +7213,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:02.295Z"
       },
-      "villager_count": 63,
+      "villager_count": 64,
       "sum": null,
       "wikiArtConfirmed": true
     },
@@ -7252,9 +7252,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 37,
+      "viewer_count": 40,
       "monthTheme": null,
-      "villager_count": 37,
+      "villager_count": 40,
       "sum": 9.5,
       "wikiArtConfirmed": true
     },
@@ -7293,7 +7293,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 62,
+      "viewer_count": 63,
       "monthTheme": {
         "id": 44,
         "theme_name": "LEADING LADIES V4",
@@ -7304,7 +7304,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:02.295Z"
       },
-      "villager_count": 62,
+      "villager_count": 63,
       "sum": 13,
       "wikiArtConfirmed": true
     },
@@ -7343,7 +7343,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 74,
+      "viewer_count": 76,
       "monthTheme": {
         "id": 44,
         "theme_name": "LEADING LADIES V4",
@@ -7354,7 +7354,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:02.295Z"
       },
-      "villager_count": 74,
+      "villager_count": 76,
       "sum": 9,
       "wikiArtConfirmed": true
     },
@@ -7393,9 +7393,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 65,
+      "viewer_count": 66,
       "monthTheme": null,
-      "villager_count": 65,
+      "villager_count": 66,
       "sum": 10,
       "wikiArtConfirmed": true
     },
@@ -7484,7 +7484,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 89,
+      "viewer_count": 91,
       "monthTheme": {
         "id": 43,
         "theme_name": "BLOCKBUSTED",
@@ -7495,7 +7495,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:02.250Z"
       },
-      "villager_count": 89,
+      "villager_count": 91,
       "sum": null,
       "wikiArtConfirmed": true
     },
@@ -7534,9 +7534,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 48,
+      "viewer_count": 49,
       "monthTheme": null,
-      "villager_count": 48,
+      "villager_count": 49,
       "sum": null,
       "wikiArtConfirmed": true
     },
@@ -7575,7 +7575,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 41,
+      "viewer_count": 42,
       "monthTheme": {
         "id": 43,
         "theme_name": "BLOCKBUSTED",
@@ -7586,7 +7586,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:02.250Z"
       },
-      "villager_count": 41,
+      "villager_count": 42,
       "sum": 10.5,
       "wikiArtConfirmed": true
     },
@@ -7625,7 +7625,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 65,
+      "viewer_count": 67,
       "monthTheme": {
         "id": 43,
         "theme_name": "BLOCKBUSTED",
@@ -7636,7 +7636,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:02.250Z"
       },
-      "villager_count": 65,
+      "villager_count": 67,
       "sum": 14,
       "wikiArtConfirmed": true
     },
@@ -7675,7 +7675,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 51,
+      "viewer_count": 52,
       "monthTheme": {
         "id": 42,
         "theme_name": "Planet of the Maypes",
@@ -7686,7 +7686,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:02.213Z"
       },
-      "villager_count": 51,
+      "villager_count": 52,
       "sum": 13,
       "wikiArtConfirmed": true
     },
@@ -7766,7 +7766,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 49,
+      "viewer_count": 51,
       "monthTheme": {
         "id": 42,
         "theme_name": "Planet of the Maypes",
@@ -7777,7 +7777,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:02.213Z"
       },
-      "villager_count": 49,
+      "villager_count": 51,
       "sum": 9,
       "wikiArtConfirmed": true
     },
@@ -7857,9 +7857,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 33,
+      "viewer_count": 35,
       "monthTheme": null,
-      "villager_count": 33,
+      "villager_count": 35,
       "sum": 6,
       "wikiArtConfirmed": true
     },
@@ -7898,9 +7898,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 54,
+      "viewer_count": 56,
       "monthTheme": null,
-      "villager_count": 54,
+      "villager_count": 56,
       "sum": 10.5,
       "wikiArtConfirmed": true
     },
@@ -7939,7 +7939,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 42,
+      "viewer_count": 44,
       "monthTheme": {
         "id": 41,
         "theme_name": "60s Month",
@@ -7950,7 +7950,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:02.172Z"
       },
-      "villager_count": 42,
+      "villager_count": 44,
       "sum": 13,
       "wikiArtConfirmed": true
     },
@@ -7989,9 +7989,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 29,
+      "viewer_count": 30,
       "monthTheme": null,
-      "villager_count": 29,
+      "villager_count": 30,
       "sum": 12,
       "wikiArtConfirmed": true
     },
@@ -8071,7 +8071,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 38,
+      "viewer_count": 40,
       "monthTheme": {
         "id": 41,
         "theme_name": "60s Month",
@@ -8082,7 +8082,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:02.172Z"
       },
-      "villager_count": 38,
+      "villager_count": 40,
       "sum": 11.5,
       "wikiArtConfirmed": true
     },
@@ -8121,7 +8121,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 59,
+      "viewer_count": 60,
       "monthTheme": {
         "id": 41,
         "theme_name": "60s Month",
@@ -8132,7 +8132,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:02.172Z"
       },
-      "villager_count": 59,
+      "villager_count": 60,
       "sum": 12.5,
       "wikiArtConfirmed": true
     },
@@ -8221,9 +8221,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 38,
+      "viewer_count": 39,
       "monthTheme": null,
-      "villager_count": 38,
+      "villager_count": 39,
       "sum": 12,
       "wikiArtConfirmed": true
     },
@@ -8312,7 +8312,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 73,
+      "viewer_count": 75,
       "monthTheme": {
         "id": 40,
         "theme_name": "90ish Mins or Less",
@@ -8323,7 +8323,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:02.132Z"
       },
-      "villager_count": 73,
+      "villager_count": 75,
       "sum": 12.5,
       "wikiArtConfirmed": true
     },
@@ -8362,7 +8362,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 51,
+      "viewer_count": 52,
       "monthTheme": {
         "id": 40,
         "theme_name": "90ish Mins or Less",
@@ -8373,7 +8373,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:02.132Z"
       },
-      "villager_count": 51,
+      "villager_count": 52,
       "sum": 14,
       "wikiArtConfirmed": true
     },
@@ -8412,9 +8412,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 99,
+      "viewer_count": 100,
       "monthTheme": null,
-      "villager_count": 99,
+      "villager_count": 100,
       "sum": 12.5,
       "wikiArtConfirmed": true
     },
@@ -8453,7 +8453,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 44,
+      "viewer_count": 46,
       "monthTheme": {
         "id": 39,
         "theme_name": "Faves Round 2",
@@ -8464,7 +8464,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:02.092Z"
       },
-      "villager_count": 44,
+      "villager_count": 46,
       "sum": null,
       "wikiArtConfirmed": true
     },
@@ -8503,9 +8503,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 28,
+      "viewer_count": 29,
       "monthTheme": null,
-      "villager_count": 28,
+      "villager_count": 29,
       "sum": 11,
       "wikiArtConfirmed": true
     },
@@ -8544,7 +8544,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 40,
+      "viewer_count": 41,
       "monthTheme": {
         "id": 39,
         "theme_name": "Faves Round 2",
@@ -8555,7 +8555,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:02.092Z"
       },
-      "villager_count": 40,
+      "villager_count": 41,
       "sum": 13,
       "wikiArtConfirmed": true
     },
@@ -8594,9 +8594,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 33,
+      "viewer_count": 34,
       "monthTheme": null,
-      "villager_count": 33,
+      "villager_count": 34,
       "sum": 13,
       "wikiArtConfirmed": true
     },
@@ -8635,7 +8635,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 60,
+      "viewer_count": 61,
       "monthTheme": {
         "id": 39,
         "theme_name": "Faves Round 2",
@@ -8646,7 +8646,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:02.092Z"
       },
-      "villager_count": 60,
+      "villager_count": 61,
       "sum": null,
       "wikiArtConfirmed": true
     },
@@ -8776,7 +8776,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 51,
+      "viewer_count": 52,
       "monthTheme": {
         "id": 38,
         "theme_name": "LB 1M Watched Club",
@@ -8787,7 +8787,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:02.045Z"
       },
-      "villager_count": 51,
+      "villager_count": 52,
       "sum": null,
       "wikiArtConfirmed": true
     },
@@ -8826,9 +8826,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 43,
+      "viewer_count": 45,
       "monthTheme": null,
-      "villager_count": 43,
+      "villager_count": 45,
       "sum": 9,
       "wikiArtConfirmed": true
     },
@@ -8908,7 +8908,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 69,
+      "viewer_count": 71,
       "monthTheme": {
         "id": 38,
         "theme_name": "LB 1M Watched Club",
@@ -8919,7 +8919,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:02.045Z"
       },
-      "villager_count": 69,
+      "villager_count": 71,
       "sum": 15,
       "wikiArtConfirmed": true
     },
@@ -8958,7 +8958,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 80,
+      "viewer_count": 81,
       "monthTheme": {
         "id": 38,
         "theme_name": "LB 1M Watched Club",
@@ -8969,7 +8969,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:02.045Z"
       },
-      "villager_count": 80,
+      "villager_count": 81,
       "sum": 15,
       "wikiArtConfirmed": true
     },
@@ -9008,7 +9008,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 79,
+      "viewer_count": 81,
       "monthTheme": {
         "id": 38,
         "theme_name": "LB 1M Watched Club",
@@ -9019,7 +9019,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:02.045Z"
       },
-      "villager_count": 79,
+      "villager_count": 81,
       "sum": 15,
       "wikiArtConfirmed": true
     },
@@ -9058,7 +9058,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 43,
+      "viewer_count": 44,
       "monthTheme": {
         "id": 37,
         "theme_name": "Christmas In December",
@@ -9069,7 +9069,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:02.002Z"
       },
-      "villager_count": 43,
+      "villager_count": 44,
       "sum": 15,
       "wikiArtConfirmed": true
     },
@@ -9108,7 +9108,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 52,
+      "viewer_count": 54,
       "monthTheme": {
         "id": 37,
         "theme_name": "Christmas In December",
@@ -9119,7 +9119,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:02.002Z"
       },
-      "villager_count": 52,
+      "villager_count": 54,
       "sum": 13,
       "wikiArtConfirmed": true
     },
@@ -9158,7 +9158,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 57,
+      "viewer_count": 58,
       "monthTheme": {
         "id": 37,
         "theme_name": "Christmas In December",
@@ -9169,7 +9169,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:02.002Z"
       },
-      "villager_count": 57,
+      "villager_count": 58,
       "sum": 7,
       "wikiArtConfirmed": true
     },
@@ -9208,7 +9208,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 65,
+      "viewer_count": 66,
       "monthTheme": {
         "id": 37,
         "theme_name": "Christmas In December",
@@ -9219,7 +9219,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:02.002Z"
       },
-      "villager_count": 65,
+      "villager_count": 66,
       "sum": 13.5,
       "wikiArtConfirmed": true
     },
@@ -9258,9 +9258,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 42,
+      "viewer_count": 43,
       "monthTheme": null,
-      "villager_count": 42,
+      "villager_count": 43,
       "sum": 7.5,
       "wikiArtConfirmed": true
     },
@@ -9349,7 +9349,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 75,
+      "viewer_count": 76,
       "monthTheme": {
         "id": 36,
         "theme_name": "Newvember",
@@ -9360,7 +9360,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.962Z"
       },
-      "villager_count": 75,
+      "villager_count": 76,
       "sum": 8,
       "wikiArtConfirmed": true
     },
@@ -9399,9 +9399,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 22,
+      "viewer_count": 23,
       "monthTheme": null,
-      "villager_count": 22,
+      "villager_count": 23,
       "sum": 10.5,
       "wikiArtConfirmed": true
     },
@@ -9440,7 +9440,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 55,
+      "viewer_count": 56,
       "monthTheme": {
         "id": 36,
         "theme_name": "Newvember",
@@ -9451,7 +9451,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.962Z"
       },
-      "villager_count": 55,
+      "villager_count": 56,
       "sum": null,
       "wikiArtConfirmed": true
     },
@@ -9490,7 +9490,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 81,
+      "viewer_count": 82,
       "monthTheme": {
         "id": 36,
         "theme_name": "Newvember",
@@ -9501,7 +9501,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.962Z"
       },
-      "villager_count": 81,
+      "villager_count": 82,
       "sum": 10.5,
       "wikiArtConfirmed": true
     },
@@ -9540,7 +9540,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 58,
+      "viewer_count": 59,
       "monthTheme": {
         "id": 35,
         "theme_name": "TORMENTOBER",
@@ -9551,7 +9551,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.909Z"
       },
-      "villager_count": 58,
+      "villager_count": 59,
       "sum": 12.5,
       "wikiArtConfirmed": true
     },
@@ -9731,9 +9731,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 47,
+      "viewer_count": 48,
       "monthTheme": null,
-      "villager_count": 47,
+      "villager_count": 48,
       "sum": null,
       "wikiArtConfirmed": true
     },
@@ -9772,7 +9772,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 34,
+      "viewer_count": 33,
       "monthTheme": {
         "id": 35,
         "theme_name": "TORMENTOBER",
@@ -9783,7 +9783,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.909Z"
       },
-      "villager_count": 34,
+      "villager_count": 33,
       "sum": 12,
       "wikiArtConfirmed": true
     },
@@ -9822,7 +9822,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 24,
+      "viewer_count": 25,
       "monthTheme": {
         "id": 35,
         "theme_name": "TORMENTOBER",
@@ -9833,7 +9833,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.909Z"
       },
-      "villager_count": 24,
+      "villager_count": 25,
       "sum": 11,
       "wikiArtConfirmed": true
     },
@@ -9872,9 +9872,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 8,
+      "viewer_count": 7,
       "monthTheme": null,
-      "villager_count": 8,
+      "villager_count": 7,
       "sum": null
     },
     {
@@ -9912,7 +9912,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 30,
+      "viewer_count": 29,
       "monthTheme": {
         "id": 34,
         "theme_name": "Women Lovers / Femtember",
@@ -9923,7 +9923,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.871Z"
       },
-      "villager_count": 30,
+      "villager_count": 29,
       "sum": 10,
       "wikiArtConfirmed": true
     },
@@ -9962,9 +9962,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 32,
+      "viewer_count": 34,
       "monthTheme": null,
-      "villager_count": 32,
+      "villager_count": 34,
       "sum": null,
       "wikiArtConfirmed": true
     },
@@ -10135,7 +10135,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 47,
+      "viewer_count": 46,
       "monthTheme": {
         "id": 34,
         "theme_name": "Women Lovers / Femtember",
@@ -10146,7 +10146,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.871Z"
       },
-      "villager_count": 47,
+      "villager_count": 46,
       "sum": 10,
       "wikiArtConfirmed": true
     },
@@ -10235,9 +10235,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 47,
+      "viewer_count": 48,
       "monthTheme": null,
-      "villager_count": 47,
+      "villager_count": 48,
       "sum": 14,
       "wikiArtConfirmed": true
     },
@@ -10276,7 +10276,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 25,
+      "viewer_count": 27,
       "monthTheme": {
         "id": 33,
         "theme_name": "Fogaust",
@@ -10287,7 +10287,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.833Z"
       },
-      "villager_count": 25,
+      "villager_count": 27,
       "sum": 5,
       "wikiArtConfirmed": true
     },
@@ -10326,7 +10326,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 38,
+      "viewer_count": 39,
       "monthTheme": {
         "id": 33,
         "theme_name": "Fogaust",
@@ -10337,7 +10337,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.833Z"
       },
-      "villager_count": 38,
+      "villager_count": 39,
       "sum": 12,
       "wikiArtConfirmed": true
     },
@@ -10476,7 +10476,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 101,
+      "viewer_count": 103,
       "monthTheme": {
         "id": 32,
         "theme_name": "BarbenHeimer",
@@ -10487,7 +10487,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.796Z"
       },
-      "villager_count": 101,
+      "villager_count": 103,
       "sum": 15,
       "wikiArtConfirmed": true
     },
@@ -10526,7 +10526,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 69,
+      "viewer_count": 71,
       "monthTheme": {
         "id": 32,
         "theme_name": "BarbenHeimer",
@@ -10537,7 +10537,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.796Z"
       },
-      "villager_count": 69,
+      "villager_count": 71,
       "sum": 12,
       "wikiArtConfirmed": true
     },
@@ -10576,9 +10576,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 16,
+      "viewer_count": 18,
       "monthTheme": null,
-      "villager_count": 16,
+      "villager_count": 18,
       "sum": null,
       "wikiArtConfirmed": true
     },
@@ -10617,7 +10617,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 63,
+      "viewer_count": 65,
       "monthTheme": {
         "id": 32,
         "theme_name": "BarbenHeimer",
@@ -10628,7 +10628,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.796Z"
       },
-      "villager_count": 63,
+      "villager_count": 65,
       "sum": 12,
       "wikiArtConfirmed": true
     },
@@ -10667,7 +10667,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 47,
+      "viewer_count": 48,
       "monthTheme": {
         "id": 32,
         "theme_name": "BarbenHeimer",
@@ -10678,7 +10678,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.796Z"
       },
-      "villager_count": 47,
+      "villager_count": 48,
       "sum": 14.5,
       "wikiArtConfirmed": true
     },
@@ -10717,9 +10717,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 72,
+      "viewer_count": 73,
       "monthTheme": null,
-      "villager_count": 72,
+      "villager_count": 73,
       "sum": 12,
       "wikiArtConfirmed": true
     },
@@ -10758,7 +10758,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 64,
+      "viewer_count": 66,
       "monthTheme": {
         "id": 31,
         "theme_name": "Comic Book",
@@ -10769,7 +10769,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.755Z"
       },
-      "villager_count": 64,
+      "villager_count": 66,
       "sum": 14,
       "wikiArtConfirmed": true
     },
@@ -10808,7 +10808,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 37,
+      "viewer_count": 38,
       "monthTheme": {
         "id": 31,
         "theme_name": "Comic Book",
@@ -10819,7 +10819,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.755Z"
       },
-      "villager_count": 37,
+      "villager_count": 38,
       "sum": 14,
       "wikiArtConfirmed": true
     },
@@ -10858,7 +10858,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 40,
+      "viewer_count": 43,
       "monthTheme": {
         "id": 31,
         "theme_name": "Comic Book",
@@ -10869,7 +10869,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.755Z"
       },
-      "villager_count": 40,
+      "villager_count": 43,
       "sum": 10,
       "wikiArtConfirmed": true
     },
@@ -10908,7 +10908,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 91,
+      "viewer_count": 93,
       "monthTheme": {
         "id": 31,
         "theme_name": "Comic Book",
@@ -10919,7 +10919,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.755Z"
       },
-      "villager_count": 91,
+      "villager_count": 93,
       "sum": 15,
       "wikiArtConfirmed": true
     },
@@ -11008,7 +11008,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 28,
+      "viewer_count": 29,
       "monthTheme": {
         "id": 30,
         "theme_name": "May the 4th",
@@ -11019,7 +11019,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.718Z"
       },
-      "villager_count": 28,
+      "villager_count": 29,
       "sum": 11.5,
       "wikiArtConfirmed": true
     },
@@ -11058,9 +11058,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 65,
+      "viewer_count": 68,
       "monthTheme": null,
-      "villager_count": 65,
+      "villager_count": 68,
       "sum": 14,
       "wikiArtConfirmed": true
     },
@@ -11240,7 +11240,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 31,
+      "viewer_count": 32,
       "monthTheme": {
         "id": 30,
         "theme_name": "May the 4th",
@@ -11251,7 +11251,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.718Z"
       },
-      "villager_count": 31,
+      "villager_count": 32,
       "sum": 10.5,
       "wikiArtConfirmed": true
     },
@@ -11330,7 +11330,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 79,
+      "viewer_count": 81,
       "monthTheme": {
         "id": 30,
         "theme_name": "May the 4th",
@@ -11341,7 +11341,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.718Z"
       },
-      "villager_count": 79,
+      "villager_count": 81,
       "sum": 14.5,
       "wikiArtConfirmed": true
     },
@@ -11380,7 +11380,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 28,
+      "viewer_count": 29,
       "monthTheme": {
         "id": 29,
         "theme_name": "Holy/Regligion/Spiritual Month",
@@ -11391,7 +11391,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.680Z"
       },
-      "villager_count": 28,
+      "villager_count": 29,
       "sum": 12.5,
       "wikiArtConfirmed": true
     },
@@ -11430,7 +11430,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 40,
+      "viewer_count": 41,
       "monthTheme": {
         "id": 29,
         "theme_name": "Holy/Regligion/Spiritual Month",
@@ -11441,7 +11441,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.680Z"
       },
-      "villager_count": 40,
+      "villager_count": 41,
       "sum": 11.5,
       "wikiArtConfirmed": true
     },
@@ -11480,7 +11480,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 76,
+      "viewer_count": 78,
       "monthTheme": {
         "id": 29,
         "theme_name": "Holy/Regligion/Spiritual Month",
@@ -11491,7 +11491,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.680Z"
       },
-      "villager_count": 76,
+      "villager_count": 78,
       "sum": 15,
       "wikiArtConfirmed": true
     },
@@ -11621,7 +11621,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 68,
+      "viewer_count": 70,
       "monthTheme": {
         "id": 28,
         "theme_name": "Leading L80s",
@@ -11632,7 +11632,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.638Z"
       },
-      "villager_count": 68,
+      "villager_count": 70,
       "sum": 13,
       "wikiArtConfirmed": true
     },
@@ -11671,7 +11671,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 32,
+      "viewer_count": 33,
       "monthTheme": {
         "id": 27,
         "theme_name": "Leading Ladies 80s",
@@ -11682,7 +11682,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.599Z"
       },
-      "villager_count": 32,
+      "villager_count": 33,
       "sum": 8.5,
       "wikiArtConfirmed": true
     },
@@ -11762,7 +11762,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 49,
+      "viewer_count": 51,
       "monthTheme": {
         "id": 27,
         "theme_name": "Leading Ladies 80s",
@@ -11773,7 +11773,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.599Z"
       },
-      "villager_count": 49,
+      "villager_count": 51,
       "sum": 15,
       "wikiArtConfirmed": true
     },
@@ -11862,7 +11862,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 71,
+      "viewer_count": 73,
       "monthTheme": {
         "id": 26,
         "theme_name": "VHS Village Top 100",
@@ -11873,7 +11873,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.561Z"
       },
-      "villager_count": 71,
+      "villager_count": 73,
       "sum": 15,
       "wikiArtConfirmed": true
     },
@@ -11912,7 +11912,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 57,
+      "viewer_count": 60,
       "monthTheme": {
         "id": 26,
         "theme_name": "VHS Village Top 100",
@@ -11923,7 +11923,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.561Z"
       },
-      "villager_count": 57,
+      "villager_count": 60,
       "sum": 15,
       "wikiArtConfirmed": true
     },
@@ -11962,9 +11962,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 43,
+      "viewer_count": 46,
       "monthTheme": null,
-      "villager_count": 43,
+      "villager_count": 46,
       "sum": 12,
       "wikiArtConfirmed": true
     },
@@ -12044,7 +12044,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 37,
+      "viewer_count": 38,
       "monthTheme": {
         "id": 26,
         "theme_name": "VHS Village Top 100",
@@ -12055,7 +12055,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.561Z"
       },
-      "villager_count": 37,
+      "villager_count": 38,
       "sum": 12,
       "wikiArtConfirmed": true
     },
@@ -12135,7 +12135,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 68,
+      "viewer_count": 70,
       "monthTheme": {
         "id": 26,
         "theme_name": "VHS Village Top 100",
@@ -12146,7 +12146,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.561Z"
       },
-      "villager_count": 68,
+      "villager_count": 70,
       "sum": 13.5,
       "wikiArtConfirmed": true
     },
@@ -12235,7 +12235,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 38,
+      "viewer_count": 39,
       "monthTheme": {
         "id": 25,
         "theme_name": "70s",
@@ -12246,7 +12246,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.520Z"
       },
-      "villager_count": 38,
+      "villager_count": 39,
       "sum": 9.5,
       "wikiArtConfirmed": true
     },
@@ -12326,7 +12326,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 64,
+      "viewer_count": 67,
       "monthTheme": {
         "id": 25,
         "theme_name": "70s",
@@ -12337,7 +12337,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.520Z"
       },
-      "villager_count": 64,
+      "villager_count": 67,
       "sum": 9.5,
       "wikiArtConfirmed": true
     },
@@ -12476,9 +12476,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 75,
+      "viewer_count": 77,
       "monthTheme": null,
-      "villager_count": 75,
+      "villager_count": 77,
       "sum": 14,
       "wikiArtConfirmed": true
     },
@@ -12517,9 +12517,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 60,
+      "viewer_count": 62,
       "monthTheme": null,
-      "villager_count": 60,
+      "villager_count": 62,
       "sum": 15,
       "wikiArtConfirmed": true
     },
@@ -12558,9 +12558,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 61,
+      "viewer_count": 60,
       "monthTheme": null,
-      "villager_count": 61,
+      "villager_count": 60,
       "sum": null
     },
     {
@@ -12639,7 +12639,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 68,
+      "viewer_count": 69,
       "monthTheme": {
         "id": 24,
         "theme_name": "Movies about movies",
@@ -12650,7 +12650,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.481Z"
       },
-      "villager_count": 68,
+      "villager_count": 69,
       "sum": 11,
       "wikiArtConfirmed": true
     },
@@ -12730,7 +12730,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 73,
+      "viewer_count": 76,
       "monthTheme": {
         "id": 24,
         "theme_name": "Movies about movies",
@@ -12741,7 +12741,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.481Z"
       },
-      "villager_count": 73,
+      "villager_count": 76,
       "sum": 10,
       "wikiArtConfirmed": true
     },
@@ -12780,7 +12780,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 17,
+      "viewer_count": 18,
       "monthTheme": {
         "id": 24,
         "theme_name": "Movies about movies",
@@ -12791,7 +12791,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.481Z"
       },
-      "villager_count": 17,
+      "villager_count": 18,
       "sum": 11.5,
       "wikiArtConfirmed": true
     },
@@ -12921,7 +12921,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 56,
+      "viewer_count": 58,
       "monthTheme": {
         "id": 24,
         "theme_name": "Movies about movies",
@@ -12932,7 +12932,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.481Z"
       },
-      "villager_count": 56,
+      "villager_count": 58,
       "sum": 10.5,
       "wikiArtConfirmed": true
     },
@@ -12971,7 +12971,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 68,
+      "viewer_count": 70,
       "monthTheme": {
         "id": 23,
         "theme_name": "Hauntvember",
@@ -12982,7 +12982,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.443Z"
       },
-      "villager_count": 68,
+      "villager_count": 70,
       "sum": 12.5,
       "wikiArtConfirmed": true
     },
@@ -13112,7 +13112,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 56,
+      "viewer_count": 58,
       "monthTheme": {
         "id": 23,
         "theme_name": "Hauntvember",
@@ -13123,7 +13123,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.443Z"
       },
-      "villager_count": 56,
+      "villager_count": 58,
       "sum": 11,
       "wikiArtConfirmed": true
     },
@@ -13203,7 +13203,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 32,
+      "viewer_count": 34,
       "monthTheme": {
         "id": 23,
         "theme_name": "Hauntvember",
@@ -13214,7 +13214,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.443Z"
       },
-      "villager_count": 32,
+      "villager_count": 34,
       "sum": 12,
       "wikiArtConfirmed": true
     },
@@ -13253,7 +13253,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 43,
+      "viewer_count": 44,
       "monthTheme": {
         "id": 23,
         "theme_name": "Hauntvember",
@@ -13264,7 +13264,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.443Z"
       },
-      "villager_count": 43,
+      "villager_count": 44,
       "sum": 11.5,
       "wikiArtConfirmed": true
     },
@@ -13435,7 +13435,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 24,
+      "viewer_count": 25,
       "monthTheme": {
         "id": 22,
         "theme_name": "Lo-fi Sci-fi Month",
@@ -13446,7 +13446,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.406Z"
       },
-      "villager_count": 24,
+      "villager_count": 25,
       "sum": 12,
       "wikiArtConfirmed": true
     },
@@ -13717,7 +13717,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 33,
+      "viewer_count": 34,
       "monthTheme": {
         "id": 21,
         "theme_name": "Animaugust",
@@ -13728,7 +13728,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.364Z"
       },
-      "villager_count": 33,
+      "villager_count": 34,
       "sum": 10.5,
       "wikiArtConfirmed": true
     },
@@ -13808,7 +13808,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 61,
+      "viewer_count": 62,
       "monthTheme": {
         "id": 21,
         "theme_name": "Animaugust",
@@ -13819,7 +13819,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.364Z"
       },
-      "villager_count": 61,
+      "villager_count": 62,
       "sum": 15,
       "wikiArtConfirmed": true
     },
@@ -13898,7 +13898,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 61,
+      "viewer_count": 63,
       "monthTheme": {
         "id": 21,
         "theme_name": "Animaugust",
@@ -13909,7 +13909,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.364Z"
       },
-      "villager_count": 61,
+      "villager_count": 63,
       "sum": 14,
       "wikiArtConfirmed": true
     },
@@ -13948,7 +13948,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 51,
+      "viewer_count": 52,
       "monthTheme": {
         "id": 21,
         "theme_name": "Animaugust",
@@ -13959,7 +13959,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.364Z"
       },
-      "villager_count": 51,
+      "villager_count": 52,
       "sum": 12,
       "wikiArtConfirmed": true
     },
@@ -14039,7 +14039,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 82,
+      "viewer_count": 83,
       "monthTheme": {
         "id": 20,
         "theme_name": "90s Action",
@@ -14050,7 +14050,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.323Z"
       },
-      "villager_count": 82,
+      "villager_count": 83,
       "sum": 15,
       "wikiArtConfirmed": true
     },
@@ -14139,7 +14139,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 71,
+      "viewer_count": 72,
       "monthTheme": {
         "id": 20,
         "theme_name": "90s Action",
@@ -14150,7 +14150,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.323Z"
       },
-      "villager_count": 71,
+      "villager_count": 72,
       "sum": 12,
       "wikiArtConfirmed": true
     },
@@ -14230,9 +14230,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 48,
+      "viewer_count": 49,
       "monthTheme": null,
-      "villager_count": 48,
+      "villager_count": 49,
       "sum": 14,
       "wikiArtConfirmed": true
     },
@@ -14271,7 +14271,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 53,
+      "viewer_count": 54,
       "monthTheme": {
         "id": 19,
         "theme_name": "The Thing 40th June 25th",
@@ -14282,7 +14282,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.287Z"
       },
-      "villager_count": 53,
+      "villager_count": 54,
       "sum": 13,
       "wikiArtConfirmed": true
     },
@@ -14321,9 +14321,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 88,
+      "viewer_count": 90,
       "monthTheme": null,
-      "villager_count": 88,
+      "villager_count": 90,
       "sum": 15,
       "wikiArtConfirmed": true
     },
@@ -14362,7 +14362,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 46,
+      "viewer_count": 47,
       "monthTheme": {
         "id": 18,
         "theme_name": "Road to JW/Junassic World",
@@ -14373,7 +14373,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.249Z"
       },
-      "villager_count": 46,
+      "villager_count": 47,
       "sum": 5,
       "wikiArtConfirmed": true
     },
@@ -14412,7 +14412,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 48,
+      "viewer_count": 50,
       "monthTheme": {
         "id": 18,
         "theme_name": "Road to JW/Junassic World",
@@ -14423,7 +14423,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.249Z"
       },
-      "villager_count": 48,
+      "villager_count": 50,
       "sum": 8,
       "wikiArtConfirmed": true
     },
@@ -14462,7 +14462,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 42,
+      "viewer_count": 44,
       "monthTheme": {
         "id": 18,
         "theme_name": "Road to JW/Junassic World",
@@ -14473,7 +14473,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.249Z"
       },
-      "villager_count": 42,
+      "villager_count": 44,
       "sum": 8,
       "wikiArtConfirmed": true
     },
@@ -14512,9 +14512,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 43,
+      "viewer_count": 45,
       "monthTheme": null,
-      "villager_count": 43,
+      "villager_count": 45,
       "sum": 10.5,
       "wikiArtConfirmed": true
     },
@@ -14553,9 +14553,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 40,
+      "viewer_count": 42,
       "monthTheme": null,
-      "villager_count": 40,
+      "villager_count": 42,
       "sum": 10,
       "wikiArtConfirmed": true
     },
@@ -14644,7 +14644,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 67,
+      "viewer_count": 66,
       "monthTheme": {
         "id": 17,
         "theme_name": "Sequels",
@@ -14655,7 +14655,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.211Z"
       },
-      "villager_count": 67,
+      "villager_count": 66,
       "sum": 14,
       "wikiArtConfirmed": true
     },
@@ -14694,7 +14694,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-17T01:00:33.125Z",
       "lb_link_val": null,
-      "viewer_count": 62,
+      "viewer_count": 64,
       "monthTheme": {
         "id": 17,
         "theme_name": "Sequels",
@@ -14705,7 +14705,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.211Z"
       },
-      "villager_count": 62,
+      "villager_count": 64,
       "sum": 9,
       "wikiArtConfirmed": true
     },
@@ -14744,9 +14744,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 44,
+      "viewer_count": 46,
       "monthTheme": null,
-      "villager_count": 44,
+      "villager_count": 46,
       "sum": 11,
       "wikiArtConfirmed": true
     },
@@ -14835,9 +14835,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 11,
+      "viewer_count": 12,
       "monthTheme": null,
-      "villager_count": 11,
+      "villager_count": 12,
       "sum": 10,
       "wikiArtConfirmed": true
     },
@@ -14876,7 +14876,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-17T01:00:33.125Z",
       "lb_link_val": null,
-      "viewer_count": 50,
+      "viewer_count": 51,
       "monthTheme": {
         "id": 17,
         "theme_name": "Sequels",
@@ -14887,7 +14887,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.211Z"
       },
-      "villager_count": 50,
+      "villager_count": 51,
       "sum": 12.5,
       "wikiArtConfirmed": true
     },
@@ -14926,7 +14926,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-17T01:00:33.125Z",
       "lb_link_val": null,
-      "viewer_count": 51,
+      "viewer_count": 52,
       "monthTheme": {
         "id": 16,
         "theme_name": "Leading Ladies Vol. 2",
@@ -14937,7 +14937,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.172Z"
       },
-      "villager_count": 51,
+      "villager_count": 52,
       "sum": 14,
       "wikiArtConfirmed": true
     },
@@ -15026,7 +15026,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-17T01:00:33.125Z",
       "lb_link_val": null,
-      "viewer_count": 62,
+      "viewer_count": 63,
       "monthTheme": {
         "id": 16,
         "theme_name": "Leading Ladies Vol. 2",
@@ -15037,7 +15037,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.172Z"
       },
-      "villager_count": 62,
+      "villager_count": 63,
       "sum": 13,
       "wikiArtConfirmed": true
     },
@@ -15167,9 +15167,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-17T01:00:33.125Z",
       "lb_link_val": null,
-      "viewer_count": 70,
+      "viewer_count": 73,
       "monthTheme": null,
-      "villager_count": 70,
+      "villager_count": 73,
       "sum": 14,
       "wikiArtConfirmed": true
     },
@@ -15208,9 +15208,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 62,
+      "viewer_count": 64,
       "monthTheme": null,
-      "villager_count": 62,
+      "villager_count": 64,
       "sum": null
     },
     {
@@ -15248,9 +15248,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 45,
+      "viewer_count": 47,
       "monthTheme": null,
-      "villager_count": 45,
+      "villager_count": 47,
       "sum": 10,
       "wikiArtConfirmed": true
     },
@@ -15339,7 +15339,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-17T01:00:33.125Z",
       "lb_link_val": null,
-      "viewer_count": 91,
+      "viewer_count": 94,
       "monthTheme": {
         "id": 15,
         "theme_name": "Road to the Batman",
@@ -15350,7 +15350,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.136Z"
       },
-      "villager_count": 91,
+      "villager_count": 94,
       "sum": 13.5,
       "wikiArtConfirmed": true
     },
@@ -15430,7 +15430,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-17T01:00:33.125Z",
       "lb_link_val": null,
-      "viewer_count": 62,
+      "viewer_count": 64,
       "monthTheme": {
         "id": 15,
         "theme_name": "Road to the Batman",
@@ -15441,7 +15441,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.136Z"
       },
-      "villager_count": 62,
+      "villager_count": 64,
       "sum": 9.5,
       "wikiArtConfirmed": true
     },
@@ -15480,7 +15480,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-17T01:00:33.125Z",
       "lb_link_val": null,
-      "viewer_count": 72,
+      "viewer_count": 74,
       "monthTheme": {
         "id": 15,
         "theme_name": "Road to the Batman",
@@ -15491,7 +15491,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.136Z"
       },
-      "villager_count": 72,
+      "villager_count": 74,
       "sum": 13.5,
       "wikiArtConfirmed": true
     },
@@ -15530,7 +15530,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 67,
+      "viewer_count": 70,
       "monthTheme": {
         "id": 15,
         "theme_name": "Road to the Batman",
@@ -15541,7 +15541,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.136Z"
       },
-      "villager_count": 67,
+      "villager_count": 70,
       "sum": 11.5,
       "wikiArtConfirmed": true
     },
@@ -15580,7 +15580,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-17T01:00:33.125Z",
       "lb_link_val": null,
-      "viewer_count": 65,
+      "viewer_count": 67,
       "monthTheme": {
         "id": 15,
         "theme_name": "Road to the Batman",
@@ -15591,7 +15591,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.136Z"
       },
-      "villager_count": 65,
+      "villager_count": 67,
       "sum": 11.5,
       "wikiArtConfirmed": true
     },
@@ -15630,9 +15630,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-17T01:00:33.125Z",
       "lb_link_val": null,
-      "viewer_count": 31,
+      "viewer_count": 34,
       "monthTheme": null,
-      "villager_count": 31,
+      "villager_count": 34,
       "sum": 11,
       "wikiArtConfirmed": true
     },
@@ -15671,9 +15671,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 34,
+      "viewer_count": 36,
       "monthTheme": null,
-      "villager_count": 34,
+      "villager_count": 36,
       "sum": 7.5,
       "wikiArtConfirmed": true
     },
@@ -15712,9 +15712,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-17T01:00:33.125Z",
       "lb_link_val": null,
-      "viewer_count": 34,
+      "viewer_count": 35,
       "monthTheme": null,
-      "villager_count": 34,
+      "villager_count": 35,
       "sum": 13.5,
       "wikiArtConfirmed": true
     },
@@ -15753,9 +15753,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 52,
+      "viewer_count": 54,
       "monthTheme": null,
-      "villager_count": 52,
+      "villager_count": 54,
       "sum": 8.5,
       "wikiArtConfirmed": true
     },
@@ -15794,7 +15794,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-17T01:00:33.125Z",
       "lb_link_val": null,
-      "viewer_count": 50,
+      "viewer_count": 51,
       "monthTheme": {
         "id": 14,
         "theme_name": "No Theme",
@@ -15805,7 +15805,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.097Z"
       },
-      "villager_count": 50,
+      "villager_count": 51,
       "sum": 11.5,
       "wikiArtConfirmed": true
     },
@@ -15894,7 +15894,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-17T01:00:33.125Z",
       "lb_link_val": null,
-      "viewer_count": 54,
+      "viewer_count": 56,
       "monthTheme": {
         "id": 14,
         "theme_name": "No Theme",
@@ -15905,7 +15905,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.097Z"
       },
-      "villager_count": 54,
+      "villager_count": 56,
       "sum": 13.5,
       "wikiArtConfirmed": true
     },
@@ -15944,7 +15944,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-17T01:00:33.125Z",
       "lb_link_val": null,
-      "viewer_count": 48,
+      "viewer_count": 49,
       "monthTheme": {
         "id": 14,
         "theme_name": "No Theme",
@@ -15955,7 +15955,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.097Z"
       },
-      "villager_count": 48,
+      "villager_count": 49,
       "sum": 11,
       "wikiArtConfirmed": true
     },
@@ -16035,7 +16035,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-17T01:00:33.125Z",
       "lb_link_val": null,
-      "viewer_count": 80,
+      "viewer_count": 81,
       "monthTheme": {
         "id": 13,
         "theme_name": "Launch $10/tier + Phantom Menace",
@@ -16046,7 +16046,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.059Z"
       },
-      "villager_count": 80,
+      "villager_count": 81,
       "sum": 15,
       "wikiArtConfirmed": true
     },
@@ -16085,9 +16085,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 68,
+      "viewer_count": 67,
       "monthTheme": null,
-      "villager_count": 68,
+      "villager_count": 67,
       "sum": null
     },
     {
@@ -16125,9 +16125,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-17T01:00:33.125Z",
       "lb_link_val": null,
-      "viewer_count": 50,
+      "viewer_count": 52,
       "monthTheme": null,
-      "villager_count": 50,
+      "villager_count": 52,
       "sum": 13.5,
       "wikiArtConfirmed": true
     },
@@ -16166,9 +16166,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 59,
+      "viewer_count": 61,
       "monthTheme": null,
-      "villager_count": 59,
+      "villager_count": 61,
       "sum": 13.5,
       "wikiArtConfirmed": true
     },
@@ -16207,9 +16207,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-17T01:00:33.125Z",
       "lb_link_val": null,
-      "viewer_count": 69,
+      "viewer_count": 72,
       "monthTheme": null,
-      "villager_count": 69,
+      "villager_count": 72,
       "sum": 14,
       "wikiArtConfirmed": true
     },
@@ -16248,9 +16248,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-17T01:00:33.125Z",
       "lb_link_val": null,
-      "viewer_count": 76,
+      "viewer_count": 79,
       "monthTheme": null,
-      "villager_count": 76,
+      "villager_count": 79,
       "sum": 15,
       "wikiArtConfirmed": true
     },
@@ -16289,9 +16289,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 51,
+      "viewer_count": 53,
       "monthTheme": null,
-      "villager_count": 51,
+      "villager_count": 53,
       "sum": 11.5,
       "wikiArtConfirmed": true
     },
@@ -16330,9 +16330,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-17T01:00:33.125Z",
       "lb_link_val": null,
-      "viewer_count": 77,
+      "viewer_count": 80,
       "monthTheme": null,
-      "villager_count": 77,
+      "villager_count": 80,
       "sum": 15,
       "wikiArtConfirmed": true
     },
@@ -16371,9 +16371,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 39,
+      "viewer_count": 40,
       "monthTheme": null,
-      "villager_count": 39,
+      "villager_count": 40,
       "sum": 5.5,
       "wikiArtConfirmed": true
     },
@@ -16412,7 +16412,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-17T01:00:33.125Z",
       "lb_link_val": null,
-      "viewer_count": 54,
+      "viewer_count": 55,
       "monthTheme": {
         "id": 12,
         "theme_name": "Fall Vibes",
@@ -16423,7 +16423,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.020Z"
       },
-      "villager_count": 54,
+      "villager_count": 55,
       "sum": 12,
       "wikiArtConfirmed": true
     },
@@ -16462,7 +16462,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-17T01:00:33.125Z",
       "lb_link_val": null,
-      "viewer_count": 38,
+      "viewer_count": 39,
       "monthTheme": {
         "id": 12,
         "theme_name": "Fall Vibes",
@@ -16473,7 +16473,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.020Z"
       },
-      "villager_count": 38,
+      "villager_count": 39,
       "sum": 11,
       "wikiArtConfirmed": true
     },
@@ -16512,9 +16512,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 57,
+      "viewer_count": 59,
       "monthTheme": null,
-      "villager_count": 57,
+      "villager_count": 59,
       "sum": 11,
       "wikiArtConfirmed": true
     },
@@ -16553,7 +16553,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-17T01:00:33.125Z",
       "lb_link_val": null,
-      "viewer_count": 49,
+      "viewer_count": 50,
       "monthTheme": {
         "id": 12,
         "theme_name": "Fall Vibes",
@@ -16564,7 +16564,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.020Z"
       },
-      "villager_count": 49,
+      "villager_count": 50,
       "sum": 13,
       "wikiArtConfirmed": true
     },
@@ -16603,7 +16603,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-17T01:00:33.125Z",
       "lb_link_val": null,
-      "viewer_count": 50,
+      "viewer_count": 52,
       "monthTheme": {
         "id": 12,
         "theme_name": "Fall Vibes",
@@ -16614,7 +16614,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:01.020Z"
       },
-      "villager_count": 50,
+      "villager_count": 52,
       "sum": 13,
       "wikiArtConfirmed": true
     },
@@ -16653,9 +16653,9 @@
       "shirt_link": "https://vhsvillage.com/products/70mm-the-animatrix-unisex-garment-dyed-t-shirt",
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 15,
+      "viewer_count": 16,
       "monthTheme": null,
-      "villager_count": 15,
+      "villager_count": 16,
       "sum": 10.5,
       "wikiArtConfirmed": true
     },
@@ -16694,9 +16694,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-17T01:00:33.125Z",
       "lb_link_val": null,
-      "viewer_count": 98,
+      "viewer_count": 100,
       "monthTheme": null,
-      "villager_count": 98,
+      "villager_count": 100,
       "sum": 10.5,
       "wikiArtConfirmed": true
     },
@@ -16735,9 +16735,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 44,
+      "viewer_count": 45,
       "monthTheme": null,
-      "villager_count": 44,
+      "villager_count": 45,
       "sum": null,
       "wikiArtConfirmed": true
     },
@@ -16776,7 +16776,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-17T01:00:33.125Z",
       "lb_link_val": null,
-      "viewer_count": 53,
+      "viewer_count": 54,
       "monthTheme": {
         "id": 11,
         "theme_name": "Halloweenies",
@@ -16787,7 +16787,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:00.979Z"
       },
-      "villager_count": 53,
+      "villager_count": 54,
       "sum": 10,
       "wikiArtConfirmed": true
     },
@@ -16867,9 +16867,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 43,
+      "viewer_count": 44,
       "monthTheme": null,
-      "villager_count": 43,
+      "villager_count": 44,
       "sum": null,
       "wikiArtConfirmed": true
     },
@@ -16958,7 +16958,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-17T01:00:33.125Z",
       "lb_link_val": null,
-      "viewer_count": 54,
+      "viewer_count": 55,
       "monthTheme": {
         "id": 11,
         "theme_name": "Halloweenies",
@@ -16969,7 +16969,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:00.979Z"
       },
-      "villager_count": 54,
+      "villager_count": 55,
       "sum": 10.5,
       "wikiArtConfirmed": true
     },
@@ -17008,7 +17008,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-17T01:00:33.125Z",
       "lb_link_val": null,
-      "viewer_count": 37,
+      "viewer_count": 39,
       "monthTheme": {
         "id": 11,
         "theme_name": "Halloweenies",
@@ -17019,7 +17019,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:00.979Z"
       },
-      "villager_count": 37,
+      "villager_count": 39,
       "sum": 13,
       "wikiArtConfirmed": true
     },
@@ -17058,9 +17058,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 61,
+      "viewer_count": 63,
       "monthTheme": null,
-      "villager_count": 61,
+      "villager_count": 63,
       "sum": 13,
       "wikiArtConfirmed": true
     },
@@ -17099,7 +17099,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-17T01:00:33.125Z",
       "lb_link_val": null,
-      "viewer_count": 41,
+      "viewer_count": 44,
       "monthTheme": {
         "id": 11,
         "theme_name": "Halloweenies",
@@ -17110,7 +17110,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:00.979Z"
       },
-      "villager_count": 41,
+      "villager_count": 44,
       "sum": 12.5,
       "wikiArtConfirmed": true
     },
@@ -17149,9 +17149,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 65,
+      "viewer_count": 66,
       "monthTheme": null,
-      "villager_count": 65,
+      "villager_count": 66,
       "sum": 14,
       "wikiArtConfirmed": true
     },
@@ -17281,7 +17281,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-17T01:00:33.125Z",
       "lb_link_val": null,
-      "viewer_count": 51,
+      "viewer_count": 52,
       "monthTheme": {
         "id": 10,
         "theme_name": "Latin American Movie Month",
@@ -17292,7 +17292,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:00.942Z"
       },
-      "villager_count": 51,
+      "villager_count": 52,
       "sum": 15,
       "wikiArtConfirmed": true
     },
@@ -17331,9 +17331,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 38,
+      "viewer_count": 40,
       "monthTheme": null,
-      "villager_count": 38,
+      "villager_count": 40,
       "sum": null,
       "wikiArtConfirmed": true
     },
@@ -17422,9 +17422,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 19,
+      "viewer_count": 20,
       "monthTheme": null,
-      "villager_count": 19,
+      "villager_count": 20,
       "sum": 11,
       "wikiArtConfirmed": true
     },
@@ -17463,7 +17463,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": null,
-      "viewer_count": 36,
+      "viewer_count": 38,
       "monthTheme": {
         "id": 9,
         "theme_name": "Summer Blockbusters 21st Century",
@@ -17474,7 +17474,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:00.905Z"
       },
-      "villager_count": 36,
+      "villager_count": 38,
       "sum": 7.5,
       "wikiArtConfirmed": true
     },
@@ -17513,7 +17513,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": null,
-      "viewer_count": 54,
+      "viewer_count": 55,
       "monthTheme": {
         "id": 9,
         "theme_name": "Summer Blockbusters 21st Century",
@@ -17524,7 +17524,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:00.905Z"
       },
-      "villager_count": 54,
+      "villager_count": 55,
       "sum": 9,
       "wikiArtConfirmed": true
     },
@@ -17563,7 +17563,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": null,
-      "viewer_count": 43,
+      "viewer_count": 45,
       "monthTheme": {
         "id": 9,
         "theme_name": "Summer Blockbusters 21st Century",
@@ -17574,7 +17574,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:00.905Z"
       },
-      "villager_count": 43,
+      "villager_count": 45,
       "sum": 13.5,
       "wikiArtConfirmed": true
     },
@@ -17613,7 +17613,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": null,
-      "viewer_count": 29,
+      "viewer_count": 32,
       "monthTheme": {
         "id": 9,
         "theme_name": "Summer Blockbusters 21st Century",
@@ -17624,7 +17624,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:00.905Z"
       },
-      "villager_count": 29,
+      "villager_count": 32,
       "sum": 11,
       "wikiArtConfirmed": true
     },
@@ -17663,7 +17663,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": null,
-      "viewer_count": 71,
+      "viewer_count": 72,
       "monthTheme": {
         "id": 9,
         "theme_name": "Summer Blockbusters 21st Century",
@@ -17674,7 +17674,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:00.905Z"
       },
-      "villager_count": 71,
+      "villager_count": 72,
       "sum": 14.5,
       "wikiArtConfirmed": true
     },
@@ -17713,9 +17713,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": null,
-      "viewer_count": 43,
+      "viewer_count": 46,
       "monthTheme": null,
-      "villager_count": 43,
+      "villager_count": 46,
       "sum": 12.5,
       "wikiArtConfirmed": true
     },
@@ -17754,9 +17754,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 37,
+      "viewer_count": 38,
       "monthTheme": null,
-      "villager_count": 37,
+      "villager_count": 38,
       "sum": 3,
       "wikiArtConfirmed": true
     },
@@ -17795,7 +17795,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": null,
-      "viewer_count": 22,
+      "viewer_count": 23,
       "monthTheme": {
         "id": 8,
         "theme_name": "Freedom",
@@ -17806,7 +17806,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:00.863Z"
       },
-      "villager_count": 22,
+      "villager_count": 23,
       "sum": 10.5,
       "wikiArtConfirmed": true
     },
@@ -17845,7 +17845,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": null,
-      "viewer_count": 54,
+      "viewer_count": 55,
       "monthTheme": {
         "id": 8,
         "theme_name": "Freedom",
@@ -17856,7 +17856,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:00.863Z"
       },
-      "villager_count": 54,
+      "villager_count": 55,
       "sum": 10,
       "wikiArtConfirmed": true
     },
@@ -17895,7 +17895,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": null,
-      "viewer_count": 53,
+      "viewer_count": 54,
       "monthTheme": {
         "id": 8,
         "theme_name": "Freedom",
@@ -17906,7 +17906,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:00.863Z"
       },
-      "villager_count": 53,
+      "villager_count": 54,
       "sum": 13.5,
       "wikiArtConfirmed": true
     },
@@ -17945,9 +17945,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 42,
+      "viewer_count": 45,
       "monthTheme": null,
-      "villager_count": 42,
+      "villager_count": 45,
       "sum": 8.5,
       "wikiArtConfirmed": true
     },
@@ -17986,7 +17986,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": null,
-      "viewer_count": 56,
+      "viewer_count": 57,
       "monthTheme": {
         "id": 8,
         "theme_name": "Freedom",
@@ -17997,7 +17997,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:00.863Z"
       },
-      "villager_count": 56,
+      "villager_count": 57,
       "sum": 11,
       "wikiArtConfirmed": true
     },
@@ -18086,7 +18086,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": null,
-      "viewer_count": 75,
+      "viewer_count": 77,
       "monthTheme": {
         "id": 7,
         "theme_name": "Indiana Junes",
@@ -18097,7 +18097,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:00.823Z"
       },
-      "villager_count": 75,
+      "villager_count": 77,
       "sum": 15,
       "wikiArtConfirmed": true
     },
@@ -18136,7 +18136,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": null,
-      "viewer_count": 67,
+      "viewer_count": 68,
       "monthTheme": {
         "id": 7,
         "theme_name": "Indiana Junes",
@@ -18147,7 +18147,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:00.823Z"
       },
-      "villager_count": 67,
+      "villager_count": 68,
       "sum": 12,
       "wikiArtConfirmed": true
     },
@@ -18186,7 +18186,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": null,
-      "viewer_count": 79,
+      "viewer_count": 80,
       "monthTheme": {
         "id": 7,
         "theme_name": "Indiana Junes",
@@ -18197,7 +18197,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:00.823Z"
       },
-      "villager_count": 79,
+      "villager_count": 80,
       "sum": 15,
       "wikiArtConfirmed": true
     },
@@ -18236,7 +18236,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": null,
-      "viewer_count": 74,
+      "viewer_count": 76,
       "monthTheme": {
         "id": 6,
         "theme_name": "Leading Ladies",
@@ -18247,7 +18247,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:00.784Z"
       },
-      "villager_count": 74,
+      "villager_count": 76,
       "sum": 14,
       "wikiArtConfirmed": true
     },
@@ -18286,9 +18286,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 47,
+      "viewer_count": 50,
       "monthTheme": null,
-      "villager_count": 47,
+      "villager_count": 50,
       "sum": 14,
       "wikiArtConfirmed": true
     },
@@ -18327,7 +18327,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": null,
-      "viewer_count": 39,
+      "viewer_count": 41,
       "monthTheme": {
         "id": 6,
         "theme_name": "Leading Ladies",
@@ -18338,7 +18338,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:00.784Z"
       },
-      "villager_count": 39,
+      "villager_count": 41,
       "sum": 14,
       "wikiArtConfirmed": true
     },
@@ -18377,7 +18377,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": null,
-      "viewer_count": 65,
+      "viewer_count": 66,
       "monthTheme": {
         "id": 6,
         "theme_name": "Leading Ladies",
@@ -18388,7 +18388,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:00.784Z"
       },
-      "villager_count": 65,
+      "villager_count": 66,
       "sum": 13,
       "wikiArtConfirmed": true
     },
@@ -18427,7 +18427,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": null,
-      "viewer_count": 31,
+      "viewer_count": 32,
       "monthTheme": {
         "id": 6,
         "theme_name": "Leading Ladies",
@@ -18438,7 +18438,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:00.784Z"
       },
-      "villager_count": 31,
+      "villager_count": 32,
       "sum": 10.5,
       "wikiArtConfirmed": true
     },
@@ -18477,7 +18477,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": null,
-      "viewer_count": 26,
+      "viewer_count": 27,
       "monthTheme": {
         "id": 6,
         "theme_name": "Leading Ladies",
@@ -18488,7 +18488,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:00.784Z"
       },
-      "villager_count": 26,
+      "villager_count": 27,
       "sum": 10.5,
       "wikiArtConfirmed": true
     },
@@ -18527,9 +18527,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": null,
-      "viewer_count": 43,
+      "viewer_count": 46,
       "monthTheme": null,
-      "villager_count": 43,
+      "villager_count": 46,
       "sum": 13,
       "wikiArtConfirmed": true
     },
@@ -18568,9 +18568,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 33,
+      "viewer_count": 35,
       "monthTheme": null,
-      "villager_count": 33,
+      "villager_count": 35,
       "sum": 12,
       "wikiArtConfirmed": true
     },
@@ -18609,7 +18609,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 39,
+      "viewer_count": 40,
       "monthTheme": {
         "id": 5,
         "theme_name": "Box Office Bombs",
@@ -18620,7 +18620,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:00.746Z"
       },
-      "villager_count": 39,
+      "villager_count": 40,
       "sum": 6.5,
       "wikiArtConfirmed": true
     },
@@ -18659,7 +18659,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": null,
-      "viewer_count": 52,
+      "viewer_count": 55,
       "monthTheme": {
         "id": 5,
         "theme_name": "Box Office Bombs",
@@ -18670,7 +18670,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:00.746Z"
       },
-      "villager_count": 52,
+      "villager_count": 55,
       "sum": 10.5,
       "wikiArtConfirmed": true
     },
@@ -18709,7 +18709,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": null,
-      "viewer_count": 21,
+      "viewer_count": 22,
       "monthTheme": {
         "id": 5,
         "theme_name": "Box Office Bombs",
@@ -18720,7 +18720,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:00.746Z"
       },
-      "villager_count": 21,
+      "villager_count": 22,
       "sum": 9,
       "wikiArtConfirmed": true
     },
@@ -18759,7 +18759,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": null,
-      "viewer_count": 51,
+      "viewer_count": 53,
       "monthTheme": {
         "id": 5,
         "theme_name": "Box Office Bombs",
@@ -18770,7 +18770,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:00.746Z"
       },
-      "villager_count": 51,
+      "villager_count": 53,
       "sum": 11,
       "wikiArtConfirmed": true
     },
@@ -18809,9 +18809,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": null,
-      "viewer_count": 27,
+      "viewer_count": 28,
       "monthTheme": null,
-      "villager_count": 27,
+      "villager_count": 28,
       "sum": 8,
       "wikiArtConfirmed": true
     },
@@ -18850,9 +18850,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": null,
-      "viewer_count": 40,
+      "viewer_count": 43,
       "monthTheme": null,
-      "villager_count": 40,
+      "villager_count": 43,
       "sum": 12,
       "wikiArtConfirmed": true
     },
@@ -18891,9 +18891,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 41,
+      "viewer_count": 42,
       "monthTheme": null,
-      "villager_count": 41,
+      "villager_count": 42,
       "sum": 10,
       "wikiArtConfirmed": true
     },
@@ -18932,7 +18932,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": null,
-      "viewer_count": 31,
+      "viewer_count": 32,
       "monthTheme": {
         "id": 4,
         "theme_name": "BUCKET LIST/SHAME",
@@ -18943,7 +18943,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:00.709Z"
       },
-      "villager_count": 31,
+      "villager_count": 32,
       "sum": 11,
       "wikiArtConfirmed": true
     },
@@ -18982,7 +18982,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": null,
-      "viewer_count": 49,
+      "viewer_count": 50,
       "monthTheme": {
         "id": 4,
         "theme_name": "BUCKET LIST/SHAME",
@@ -18993,7 +18993,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:00.709Z"
       },
-      "villager_count": 49,
+      "villager_count": 50,
       "sum": 13.5,
       "wikiArtConfirmed": true
     },
@@ -19032,7 +19032,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": null,
-      "viewer_count": 46,
+      "viewer_count": 48,
       "monthTheme": {
         "id": 4,
         "theme_name": "BUCKET LIST/SHAME",
@@ -19043,7 +19043,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:00.709Z"
       },
-      "villager_count": 46,
+      "villager_count": 48,
       "sum": 15,
       "wikiArtConfirmed": true
     },
@@ -19082,7 +19082,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": null,
-      "viewer_count": 48,
+      "viewer_count": 50,
       "monthTheme": {
         "id": 3,
         "theme_name": "FAVES",
@@ -19093,7 +19093,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:00.670Z"
       },
-      "villager_count": 48,
+      "villager_count": 50,
       "sum": 14.5,
       "wikiArtConfirmed": true
     },
@@ -19132,7 +19132,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": null,
-      "viewer_count": 38,
+      "viewer_count": 40,
       "monthTheme": {
         "id": 3,
         "theme_name": "FAVES",
@@ -19143,7 +19143,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:00.670Z"
       },
-      "villager_count": 38,
+      "villager_count": 40,
       "sum": 13.5,
       "wikiArtConfirmed": true
     },
@@ -19232,9 +19232,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 24,
+      "viewer_count": 26,
       "monthTheme": null,
-      "villager_count": 24,
+      "villager_count": 26,
       "sum": 10.5,
       "wikiArtConfirmed": true
     },
@@ -19273,7 +19273,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": null,
-      "viewer_count": 68,
+      "viewer_count": 71,
       "monthTheme": {
         "id": 3,
         "theme_name": "FAVES",
@@ -19284,7 +19284,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:00.670Z"
       },
-      "villager_count": 68,
+      "villager_count": 71,
       "sum": 14,
       "wikiArtConfirmed": true
     },
@@ -19323,7 +19323,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": null,
-      "viewer_count": 12,
+      "viewer_count": 13,
       "monthTheme": {
         "id": 2,
         "theme_name": "CULT MONTH",
@@ -19334,7 +19334,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:00.626Z"
       },
-      "villager_count": 12,
+      "villager_count": 13,
       "sum": 6,
       "wikiArtConfirmed": true
     },
@@ -19373,7 +19373,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": null,
-      "viewer_count": 26,
+      "viewer_count": 27,
       "monthTheme": {
         "id": 2,
         "theme_name": "CULT MONTH",
@@ -19384,7 +19384,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:00.626Z"
       },
-      "villager_count": 26,
+      "villager_count": 27,
       "sum": 10,
       "wikiArtConfirmed": true
     },
@@ -19423,7 +19423,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": null,
-      "viewer_count": 41,
+      "viewer_count": 44,
       "monthTheme": {
         "id": 2,
         "theme_name": "CULT MONTH",
@@ -19434,7 +19434,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:00.626Z"
       },
-      "villager_count": 41,
+      "villager_count": 44,
       "sum": 13,
       "wikiArtConfirmed": true
     },
@@ -19655,9 +19655,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": null,
-      "viewer_count": 69,
+      "viewer_count": 70,
       "monthTheme": null,
-      "villager_count": 69,
+      "villager_count": 70,
       "sum": 14,
       "wikiArtConfirmed": true
     },
@@ -19737,9 +19737,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": null,
-      "viewer_count": 67,
+      "viewer_count": 68,
       "monthTheme": null,
-      "villager_count": 67,
+      "villager_count": 68,
       "sum": 7,
       "wikiArtConfirmed": true
     },
@@ -19778,9 +19778,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": null,
-      "viewer_count": 71,
+      "viewer_count": 74,
       "monthTheme": null,
-      "villager_count": 71,
+      "villager_count": 74,
       "sum": 15,
       "wikiArtConfirmed": true
     },
@@ -19819,9 +19819,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": null,
-      "viewer_count": 64,
+      "viewer_count": 66,
       "monthTheme": null,
-      "villager_count": 64,
+      "villager_count": 66,
       "sum": 13.5,
       "wikiArtConfirmed": true
     },
@@ -19901,9 +19901,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 41,
+      "viewer_count": 42,
       "monthTheme": null,
-      "villager_count": 41,
+      "villager_count": 42,
       "sum": 9,
       "wikiArtConfirmed": true
     },
@@ -19942,9 +19942,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": null,
-      "viewer_count": 25,
+      "viewer_count": 26,
       "monthTheme": null,
-      "villager_count": 25,
+      "villager_count": 26,
       "sum": 10.5,
       "wikiArtConfirmed": true
     },
@@ -19983,9 +19983,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 62,
+      "viewer_count": 63,
       "monthTheme": null,
-      "villager_count": 62,
+      "villager_count": 63,
       "sum": 10.5,
       "wikiArtConfirmed": true
     },
@@ -20024,7 +20024,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": null,
-      "viewer_count": 50,
+      "viewer_count": 51,
       "monthTheme": {
         "id": 1,
         "theme_name": "HORROR",
@@ -20035,7 +20035,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:00.578Z"
       },
-      "villager_count": 50,
+      "villager_count": 51,
       "sum": 9.5,
       "wikiArtConfirmed": true
     },
@@ -20124,7 +20124,7 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": null,
-      "viewer_count": 78,
+      "viewer_count": 79,
       "monthTheme": {
         "id": 1,
         "theme_name": "HORROR",
@@ -20135,7 +20135,7 @@
         "description": null,
         "created_at": "2025-03-05T05:13:00.578Z"
       },
-      "villager_count": 78,
+      "villager_count": 79,
       "sum": 12,
       "wikiArtConfirmed": true
     },
@@ -20265,9 +20265,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 48,
+      "viewer_count": 49,
       "monthTheme": null,
-      "villager_count": 48,
+      "villager_count": 49,
       "sum": 12.5,
       "wikiArtConfirmed": true
     },
@@ -20306,9 +20306,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": null,
-      "viewer_count": 36,
+      "viewer_count": 38,
       "monthTheme": null,
-      "villager_count": 36,
+      "villager_count": 38,
       "sum": 12.5,
       "wikiArtConfirmed": true
     },
@@ -20347,9 +20347,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": null,
-      "viewer_count": 31,
+      "viewer_count": 32,
       "monthTheme": null,
-      "villager_count": 31,
+      "villager_count": 32,
       "sum": 7.5,
       "wikiArtConfirmed": true
     },
@@ -20388,9 +20388,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": null,
-      "viewer_count": 52,
+      "viewer_count": 53,
       "monthTheme": null,
-      "villager_count": 52,
+      "villager_count": 53,
       "sum": 14.5,
       "wikiArtConfirmed": true
     },
@@ -20429,9 +20429,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": null,
-      "viewer_count": 54,
+      "viewer_count": 55,
       "monthTheme": null,
-      "villager_count": 54,
+      "villager_count": 55,
       "sum": 13,
       "wikiArtConfirmed": true
     },
@@ -20511,9 +20511,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": null,
-      "viewer_count": 28,
+      "viewer_count": 29,
       "monthTheme": null,
-      "villager_count": 28,
+      "villager_count": 29,
       "sum": 8.5,
       "wikiArtConfirmed": true
     },
@@ -20552,9 +20552,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 45,
+      "viewer_count": 47,
       "monthTheme": null,
-      "villager_count": 45,
+      "villager_count": 47,
       "sum": 10,
       "wikiArtConfirmed": true
     },
@@ -20593,9 +20593,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": null,
-      "viewer_count": 56,
+      "viewer_count": 58,
       "monthTheme": null,
-      "villager_count": 56,
+      "villager_count": 58,
       "sum": 12,
       "wikiArtConfirmed": true
     },
@@ -20675,9 +20675,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": null,
-      "viewer_count": 43,
+      "viewer_count": 45,
       "monthTheme": null,
-      "villager_count": 43,
+      "villager_count": 45,
       "sum": 12.5,
       "wikiArtConfirmed": true
     },
@@ -20716,9 +20716,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": null,
-      "viewer_count": 33,
+      "viewer_count": 34,
       "monthTheme": null,
-      "villager_count": 33,
+      "villager_count": 34,
       "sum": 7,
       "wikiArtConfirmed": true
     },
@@ -20839,9 +20839,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 41,
+      "viewer_count": 42,
       "monthTheme": null,
-      "villager_count": 41,
+      "villager_count": 42,
       "sum": 12,
       "wikiArtConfirmed": true
     },
@@ -20880,9 +20880,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": null,
-      "viewer_count": 54,
+      "viewer_count": 57,
       "monthTheme": null,
-      "villager_count": 54,
+      "villager_count": 57,
       "sum": 12,
       "wikiArtConfirmed": true
     },
@@ -20921,9 +20921,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": null,
-      "viewer_count": 87,
+      "viewer_count": 88,
       "monthTheme": null,
-      "villager_count": 87,
+      "villager_count": 88,
       "sum": 13,
       "wikiArtConfirmed": true
     },
@@ -21044,9 +21044,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": null,
-      "viewer_count": 61,
+      "viewer_count": 64,
       "monthTheme": null,
-      "villager_count": 61,
+      "villager_count": 64,
       "sum": 13,
       "wikiArtConfirmed": true
     },
@@ -21085,9 +21085,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": null,
-      "viewer_count": 42,
+      "viewer_count": 43,
       "monthTheme": null,
-      "villager_count": 42,
+      "villager_count": 43,
       "sum": 12,
       "wikiArtConfirmed": true
     },
@@ -21167,9 +21167,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
-      "viewer_count": 71,
+      "viewer_count": 74,
       "monthTheme": null,
-      "villager_count": 71,
+      "villager_count": 74,
       "sum": 15,
       "wikiArtConfirmed": true
     },
@@ -21208,9 +21208,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": null,
-      "viewer_count": 54,
+      "viewer_count": 55,
       "monthTheme": null,
-      "villager_count": 54,
+      "villager_count": 55,
       "sum": 14,
       "wikiArtConfirmed": true
     },
@@ -21290,9 +21290,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": null,
-      "viewer_count": 34,
+      "viewer_count": 35,
       "monthTheme": null,
-      "villager_count": 34,
+      "villager_count": 35,
       "sum": 14.5,
       "wikiArtConfirmed": true
     },
@@ -21372,9 +21372,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": null,
-      "viewer_count": 69,
+      "viewer_count": 71,
       "monthTheme": null,
-      "villager_count": 69,
+      "villager_count": 71,
       "sum": 13.5,
       "wikiArtConfirmed": true
     },
@@ -21454,9 +21454,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": null,
-      "viewer_count": 52,
+      "viewer_count": 53,
       "monthTheme": null,
-      "villager_count": 52,
+      "villager_count": 53,
       "sum": 5,
       "wikiArtConfirmed": true
     },
@@ -21495,9 +21495,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": null,
-      "viewer_count": 36,
+      "viewer_count": 38,
       "monthTheme": null,
-      "villager_count": 36,
+      "villager_count": 38,
       "sum": 12,
       "wikiArtConfirmed": true
     },
@@ -21536,9 +21536,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": null,
-      "viewer_count": 65,
+      "viewer_count": 68,
       "monthTheme": null,
-      "villager_count": 65,
+      "villager_count": 68,
       "sum": 15,
       "wikiArtConfirmed": true
     },
@@ -21577,9 +21577,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": null,
-      "viewer_count": 21,
+      "viewer_count": 22,
       "monthTheme": null,
-      "villager_count": 21,
+      "villager_count": 22,
       "sum": 8,
       "wikiArtConfirmed": true
     },
@@ -21659,9 +21659,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": null,
-      "viewer_count": 62,
+      "viewer_count": 65,
       "monthTheme": null,
-      "villager_count": 62,
+      "villager_count": 65,
       "sum": 14,
       "wikiArtConfirmed": true
     },
@@ -21700,9 +21700,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": null,
-      "viewer_count": 67,
+      "viewer_count": 70,
       "monthTheme": null,
-      "villager_count": 67,
+      "villager_count": 70,
       "sum": 11,
       "wikiArtConfirmed": true
     },
@@ -21741,9 +21741,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": null,
-      "viewer_count": 57,
+      "viewer_count": 59,
       "monthTheme": null,
-      "villager_count": 57,
+      "villager_count": 59,
       "sum": 12,
       "wikiArtConfirmed": true
     },
@@ -21823,9 +21823,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": null,
-      "viewer_count": 55,
+      "viewer_count": 57,
       "monthTheme": null,
-      "villager_count": 55,
+      "villager_count": 57,
       "sum": 10.5,
       "wikiArtConfirmed": true
     },
@@ -21864,9 +21864,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": null,
-      "viewer_count": 67,
+      "viewer_count": 68,
       "monthTheme": null,
-      "villager_count": 67,
+      "villager_count": 68,
       "sum": 15,
       "wikiArtConfirmed": true
     },
@@ -21905,9 +21905,9 @@
       "shirt_link": null,
       "lastSynced": "2026-10-10T01:01:14.174Z",
       "lb_link_val": null,
-      "viewer_count": 41,
+      "viewer_count": 42,
       "monthTheme": null,
-      "villager_count": 41,
+      "villager_count": 42,
       "sum": 12.5,
       "wikiArtConfirmed": true
     },
