@@ -40,8 +40,8 @@ jobs:
             echo "No data changes."
             exit 0
           fi
-          # Count non-vault eps for the commit message.
-          COUNT=$(node -e "const d=require('./data/movies.json'); console.log(d.movies.filter(m=>!m.vault).length)")
+          # Count regular (main-show) eps for the commit message — mirrors isRegular() in lib/data.ts.
+          COUNT=$(node -e "const d=require('./data/movies.json'); console.log(d.movies.filter(m=>!m.bonus&&!m.vault&&!m.pilot&&!m.book&&!m.watchalong).length)")
           git add data/movies.json
           git commit -m "data: daily refresh ($COUNT eps)"
           git push
