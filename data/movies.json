@@ -1,7 +1,7 @@
 {
-  "scrapedAt": "2026-11-25T22:20:49.255Z",
+  "scrapedAt": "2026-11-26T22:13:49.340Z",
   "source": "https://70mmwiki.com/api/movies",
-  "total": 494,
+  "total": 497,
   "movies": [
     {
       "id": 492,
@@ -42,6 +42,7 @@
       "monthTheme": {
         "id": 73,
         "theme_name": "For Your Eyes Only",
+        "is_special": true,
         "start_date": null,
         "end_date": null,
         "apple_link": null,
@@ -91,6 +92,7 @@
       "monthTheme": {
         "id": 73,
         "theme_name": "For Your Eyes Only",
+        "is_special": true,
         "start_date": null,
         "end_date": null,
         "apple_link": null,
@@ -140,6 +142,7 @@
       "monthTheme": {
         "id": 73,
         "theme_name": "For Your Eyes Only",
+        "is_special": true,
         "start_date": null,
         "end_date": null,
         "apple_link": null,
@@ -189,6 +192,7 @@
       "monthTheme": {
         "id": 73,
         "theme_name": "For Your Eyes Only",
+        "is_special": true,
         "start_date": null,
         "end_date": null,
         "apple_link": null,
@@ -238,6 +242,7 @@
       "monthTheme": {
         "id": 73,
         "theme_name": "For Your Eyes Only",
+        "is_special": true,
         "start_date": null,
         "end_date": null,
         "apple_link": null,
@@ -287,6 +292,7 @@
       "monthTheme": {
         "id": 73,
         "theme_name": "For Your Eyes Only",
+        "is_special": true,
         "start_date": null,
         "end_date": null,
         "apple_link": null,
@@ -336,6 +342,7 @@
       "monthTheme": {
         "id": 73,
         "theme_name": "For Your Eyes Only",
+        "is_special": true,
         "start_date": null,
         "end_date": null,
         "apple_link": null,
@@ -385,6 +392,7 @@
       "monthTheme": {
         "id": 73,
         "theme_name": "For Your Eyes Only",
+        "is_special": true,
         "start_date": null,
         "end_date": null,
         "apple_link": null,
@@ -434,6 +442,7 @@
       "monthTheme": {
         "id": 72,
         "theme_name": "The Real Actual MCU",
+        "is_special": false,
         "start_date": "2026-12-01",
         "end_date": "2026-12-31",
         "apple_link": null,
@@ -483,6 +492,7 @@
       "monthTheme": {
         "id": 72,
         "theme_name": "The Real Actual MCU",
+        "is_special": false,
         "start_date": "2026-12-01",
         "end_date": "2026-12-31",
         "apple_link": null,
@@ -532,6 +542,7 @@
       "monthTheme": {
         "id": 72,
         "theme_name": "The Real Actual MCU",
+        "is_special": false,
         "start_date": "2026-12-01",
         "end_date": "2026-12-31",
         "apple_link": null,
@@ -581,6 +592,7 @@
       "monthTheme": {
         "id": 72,
         "theme_name": "The Real Actual MCU",
+        "is_special": false,
         "start_date": "2026-12-01",
         "end_date": "2026-12-31",
         "apple_link": null,
@@ -630,8 +642,9 @@
       "monthTheme": {
         "id": 66,
         "theme_name": "Sexual Michael Douglas",
+        "is_special": true,
         "start_date": null,
-        "end_date": null,
+        "end_date": "2026-11-30",
         "apple_link": null,
         "spotify_link": null,
         "description": "When a month has five weeks, the fifth week might be a Michael Douglas film (in honor of the long-lost potential Sexual Michael Douglas month). The theme concludes in 2026.",
@@ -651,13 +664,13 @@
       "pilot": null,
       "book": null,
       "watchalong": null,
-      "slim": null,
+      "slim": 3,
       "danny": null,
       "proto": null,
       "lb_link": "https://letterboxd.com/film/witchcraft-evil-encounters/",
-      "guest": null,
-      "guest_lb_link": null,
-      "guest_rating": null,
+      "guest": "Dale",
+      "guest_lb_link": "https://letterboxd.com/dale_a/",
+      "guest_rating": 3.5,
       "transcript_link": null,
       "apple_link": null,
       "spotify_link": null,
@@ -679,6 +692,7 @@
       "monthTheme": {
         "id": 75,
         "theme_name": "Dale and Slim Presents…",
+        "is_special": true,
         "start_date": null,
         "end_date": null,
         "apple_link": null,
@@ -710,7 +724,7 @@
       "transcript_link": null,
       "apple_link": null,
       "spotify_link": "https://open.spotify.com/episode/2mwX4QHZjv0GIHMhBkzfn4",
-      "store_link": null,
+      "store_link": "https://vhsvillage.com/products/episode-338-scrooged",
       "tmdb_id": "9647",
       "tmdb_tv_id": null,
       "tmdb_tv_season": null,
@@ -728,6 +742,7 @@
       "monthTheme": {
         "id": 71,
         "theme_name": "Newvember Rain",
+        "is_special": false,
         "start_date": "2026-11-01",
         "end_date": "2026-11-30",
         "apple_link": null,
@@ -760,7 +775,7 @@
       "transcript_link": null,
       "apple_link": null,
       "spotify_link": null,
-      "store_link": null,
+      "store_link": "https://vhsvillage.com/products/bonus-episode-the-odyssey",
       "tmdb_id": "1368337",
       "tmdb_tv_id": null,
       "tmdb_tv_season": null,
@@ -778,6 +793,7 @@
       "monthTheme": {
         "id": 71,
         "theme_name": "Newvember Rain",
+        "is_special": false,
         "start_date": "2026-11-01",
         "end_date": "2026-11-30",
         "apple_link": null,
@@ -810,7 +826,7 @@
       "transcript_link": null,
       "apple_link": null,
       "spotify_link": null,
-      "store_link": null,
+      "store_link": "https://vhsvillage.com/products/episode-337-interview-with-a-vampire",
       "tmdb_id": "628",
       "tmdb_tv_id": null,
       "tmdb_tv_season": null,
@@ -828,6 +844,7 @@
       "monthTheme": {
         "id": 71,
         "theme_name": "Newvember Rain",
+        "is_special": false,
         "start_date": "2026-11-01",
         "end_date": "2026-11-30",
         "apple_link": null,
@@ -860,7 +877,7 @@
       "transcript_link": null,
       "apple_link": null,
       "spotify_link": null,
-      "store_link": null,
+      "store_link": "https://vhsvillage.com/products/bonus-episode-friday-the-13th-2009",
       "tmdb_id": "13207",
       "tmdb_tv_id": null,
       "tmdb_tv_season": null,
@@ -871,13 +888,14 @@
       "month_theme_id": 74,
       "host_pick": null,
       "affiliate_link": null,
-      "shirt_link": null,
+      "shirt_link": "https://vhsvillage.com/products/70mm-friday-the-13th-2009-unisex-garment-dyed-t-shirt",
       "lastSynced": "2026-11-24T14:04:01.513Z",
       "lb_link_val": "friday-the-13th-2009",
       "viewer_count": 32,
       "monthTheme": {
         "id": 74,
         "theme_name": "Journeys with Dale",
+        "is_special": true,
         "start_date": null,
         "end_date": null,
         "apple_link": null,
@@ -910,7 +928,7 @@
       "transcript_link": null,
       "apple_link": null,
       "spotify_link": "https://open.spotify.com/episode/4F3jd7A6aIWO9CiTF6SV9w",
-      "store_link": null,
+      "store_link": "https://vhsvillage.com/products/bonus-episode-friday-the-13th-jason-lives",
       "tmdb_id": "10225",
       "tmdb_tv_id": null,
       "tmdb_tv_season": null,
@@ -921,13 +939,14 @@
       "month_theme_id": 74,
       "host_pick": null,
       "affiliate_link": null,
-      "shirt_link": null,
+      "shirt_link": "https://vhsvillage.com/products/70mm-friday-the-13th-jason-lives-unisex-garment-dyed-t-shirt",
       "lastSynced": "2026-11-24T14:18:57.922Z",
       "lb_link_val": "jason-lives-friday-the-13th-part-vi",
       "viewer_count": 39,
       "monthTheme": {
         "id": 74,
         "theme_name": "Journeys with Dale",
+        "is_special": true,
         "start_date": null,
         "end_date": null,
         "apple_link": null,
@@ -960,7 +979,7 @@
       "transcript_link": null,
       "apple_link": null,
       "spotify_link": null,
-      "store_link": null,
+      "store_link": "https://vhsvillage.com/products/episode-336-godzilla-minus-zero",
       "tmdb_id": "1381071",
       "tmdb_tv_id": null,
       "tmdb_tv_season": null,
@@ -971,13 +990,14 @@
       "month_theme_id": 71,
       "host_pick": null,
       "affiliate_link": null,
-      "shirt_link": null,
+      "shirt_link": "https://vhsvillage.com/products/70mm-minus-zero-unisex-garment-dyed-t-shirt",
       "lastSynced": "2026-11-22T01:00:59.758Z",
       "lb_link_val": "godzilla-minus-zero",
       "viewer_count": 57,
       "monthTheme": {
         "id": 71,
         "theme_name": "Newvember Rain",
+        "is_special": false,
         "start_date": "2026-11-01",
         "end_date": "2026-11-30",
         "apple_link": null,
@@ -988,6 +1008,46 @@
       "villager_count": 57,
       "sum": 14,
       "wikiArtConfirmed": true
+    },
+    {
+      "id": 498,
+      "movie": "Munchkins Incursion Dunkin' Commercial",
+      "year_released": 2026,
+      "date_published": "2026-11-07",
+      "episode": null,
+      "bonus": null,
+      "vault": 92,
+      "pilot": null,
+      "book": null,
+      "watchalong": null,
+      "slim": null,
+      "danny": null,
+      "proto": null,
+      "lb_link": null,
+      "guest": null,
+      "guest_lb_link": null,
+      "guest_rating": null,
+      "transcript_link": null,
+      "apple_link": null,
+      "spotify_link": null,
+      "store_link": null,
+      "tmdb_id": null,
+      "tmdb_tv_id": null,
+      "tmdb_tv_season": null,
+      "tmdb_tv_episode": null,
+      "vger_id": null,
+      "councilmember": null,
+      "councilmember_lb_link": null,
+      "month_theme_id": null,
+      "host_pick": null,
+      "affiliate_link": null,
+      "shirt_link": null,
+      "lastSynced": null,
+      "lb_link_val": null,
+      "viewer_count": 0,
+      "monthTheme": null,
+      "villager_count": 0,
+      "sum": null
     },
     {
       "id": 469,
@@ -1010,7 +1070,7 @@
       "transcript_link": null,
       "apple_link": null,
       "spotify_link": null,
-      "store_link": null,
+      "store_link": "https://vhsvillage.com/products/episode-336-goldeneye",
       "tmdb_id": "710",
       "tmdb_tv_id": null,
       "tmdb_tv_season": null,
@@ -1028,6 +1088,7 @@
       "monthTheme": {
         "id": 71,
         "theme_name": "Newvember Rain",
+        "is_special": false,
         "start_date": "2026-11-01",
         "end_date": "2026-11-30",
         "apple_link": null,
@@ -1060,7 +1121,7 @@
       "transcript_link": null,
       "apple_link": null,
       "spotify_link": null,
-      "store_link": null,
+      "store_link": "https://vhsvillage.com/products/bonus-episode-airbourne",
       "tmdb_id": "13064",
       "tmdb_tv_id": null,
       "tmdb_tv_season": null,
@@ -1078,6 +1139,7 @@
       "monthTheme": {
         "id": 71,
         "theme_name": "Newvember Rain",
+        "is_special": false,
         "start_date": "2026-11-01",
         "end_date": "2026-11-30",
         "apple_link": null,
@@ -1110,7 +1172,7 @@
       "transcript_link": null,
       "apple_link": "https://podcasts.apple.com/us/podcast/they-live-1988/id1495604053?i=1000798152147",
       "spotify_link": "https://open.spotify.com/episode/1YYlS0PsHh1UcZ2T2UbSTb?si=SUVH8GRTTLm_f1EE32cNtQ",
-      "store_link": null,
+      "store_link": "https://vhsvillage.com/products/episode-335-they-live",
       "tmdb_id": "8337",
       "tmdb_tv_id": null,
       "tmdb_tv_season": null,
@@ -1128,6 +1190,7 @@
       "monthTheme": {
         "id": 70,
         "theme_name": "UFOctober",
+        "is_special": false,
         "start_date": "2026-10-01",
         "end_date": "2026-10-30",
         "apple_link": "https://podcasts.apple.com/us/podcast/70mm-presents-ufoctober/id1495604053?i=1000792365366",
@@ -1160,7 +1223,7 @@
       "transcript_link": null,
       "apple_link": null,
       "spotify_link": null,
-      "store_link": null,
+      "store_link": "https://vhsvillage.com/products/episode-334-inception",
       "tmdb_id": "27205",
       "tmdb_tv_id": null,
       "tmdb_tv_season": null,
@@ -1201,7 +1264,7 @@
       "transcript_link": null,
       "apple_link": "https://podcasts.apple.com/us/podcast/super-8-2011/id1495604053?i=1000797045998",
       "spotify_link": "https://open.spotify.com/episode/0WVFZWClB2ab5vdIEX87Vb?si=4azuE-d-TmaijPwWW8LgAA",
-      "store_link": null,
+      "store_link": "https://vhsvillage.com/products/episode-333-super-8",
       "tmdb_id": "37686",
       "tmdb_tv_id": null,
       "tmdb_tv_season": null,
@@ -1219,6 +1282,7 @@
       "monthTheme": {
         "id": 70,
         "theme_name": "UFOctober",
+        "is_special": false,
         "start_date": "2026-10-01",
         "end_date": "2026-10-30",
         "apple_link": "https://podcasts.apple.com/us/podcast/70mm-presents-ufoctober/id1495604053?i=1000792365366",
@@ -1251,7 +1315,7 @@
       "transcript_link": null,
       "apple_link": "https://podcasts.apple.com/us/podcast/nope-2022/id1495604053?i=1000795918654",
       "spotify_link": "https://open.spotify.com/episode/7bRUWG7DnSZ90p2sYKIxtb?si=tDwjxK7ITeKdvKtIOys1zQ",
-      "store_link": null,
+      "store_link": "https://vhsvillage.com/products/episode-332-nope",
       "tmdb_id": "762504",
       "tmdb_tv_id": null,
       "tmdb_tv_season": null,
@@ -1269,6 +1333,7 @@
       "monthTheme": {
         "id": 70,
         "theme_name": "UFOctober",
+        "is_special": false,
         "start_date": "2026-10-01",
         "end_date": "2026-10-30",
         "apple_link": "https://podcasts.apple.com/us/podcast/70mm-presents-ufoctober/id1495604053?i=1000792365366",
@@ -1301,7 +1366,7 @@
       "transcript_link": null,
       "apple_link": "https://podcasts.apple.com/us/podcast/x-files-1998/id1495604053?i=1000793213591",
       "spotify_link": "https://open.spotify.com/episode/3vk7gGDh3gtXFSHMSj3NrG?si=xFwg5EzKS3KglT_FYBhVfQ",
-      "store_link": null,
+      "store_link": "https://vhsvillage.com/products/episode-331-x-files",
       "tmdb_id": "846",
       "tmdb_tv_id": null,
       "tmdb_tv_season": null,
@@ -1319,6 +1384,7 @@
       "monthTheme": {
         "id": 70,
         "theme_name": "UFOctober",
+        "is_special": false,
         "start_date": "2026-10-01",
         "end_date": "2026-10-30",
         "apple_link": "https://podcasts.apple.com/us/podcast/70mm-presents-ufoctober/id1495604053?i=1000792365366",
@@ -1351,7 +1417,7 @@
       "transcript_link": null,
       "apple_link": "https://podcasts.apple.com/us/podcast/batman-robin-1997/id1495604053?i=1000792003832",
       "spotify_link": "https://open.spotify.com/episode/1515wTcSbE7FoGqm6vDL7h?si=te-NITHURaWsijisgBmWDw",
-      "store_link": null,
+      "store_link": "https://vhsvillage.com/products/episode-330-batman-robin",
       "tmdb_id": "415",
       "tmdb_tv_id": null,
       "tmdb_tv_season": null,
@@ -1369,6 +1435,7 @@
       "monthTheme": {
         "id": 70,
         "theme_name": "UFOctober",
+        "is_special": false,
         "start_date": "2026-10-01",
         "end_date": "2026-10-30",
         "apple_link": "https://podcasts.apple.com/us/podcast/70mm-presents-ufoctober/id1495604053?i=1000792365366",
@@ -1401,7 +1468,7 @@
       "transcript_link": null,
       "apple_link": "https://podcasts.apple.com/us/podcast/starship-troopers-1997/id1495604053?i=1000790924110",
       "spotify_link": "https://open.spotify.com/episode/4VDP2EIV7SJiSaI8rZNeU6?si=A4f0HZepRLCJ0ydCOdBrYA",
-      "store_link": null,
+      "store_link": "https://vhsvillage.com/products/episode-329-starship-troopers",
       "tmdb_id": "563",
       "tmdb_tv_id": null,
       "tmdb_tv_season": null,
@@ -1419,6 +1486,7 @@
       "monthTheme": {
         "id": 69,
         "theme_name": "70mm '97",
+        "is_special": false,
         "start_date": "2026-09-01",
         "end_date": "2026-09-30",
         "apple_link": "https://podcasts.apple.com/us/podcast/70mm-presents-70mm-97/id1495604053?i=1000786511060",
@@ -1469,6 +1537,7 @@
       "monthTheme": {
         "id": 75,
         "theme_name": "Dale and Slim Presents…",
+        "is_special": true,
         "start_date": null,
         "end_date": null,
         "apple_link": null,
@@ -1500,7 +1569,7 @@
       "transcript_link": null,
       "apple_link": "https://podcasts.apple.com/us/podcast/good-will-hunting-1997/id1495604053?i=1000789528762",
       "spotify_link": "https://open.spotify.com/episode/01MLpNPdHuRXgIJPPPf8le?si=xM0GA2dTSm24H2KUjzlOZw",
-      "store_link": null,
+      "store_link": "https://vhsvillage.com/products/episode-328-good-will-hunting",
       "tmdb_id": "489",
       "tmdb_tv_id": null,
       "tmdb_tv_season": null,
@@ -1518,6 +1587,7 @@
       "monthTheme": {
         "id": 69,
         "theme_name": "70mm '97",
+        "is_special": false,
         "start_date": "2026-09-01",
         "end_date": "2026-09-30",
         "apple_link": "https://podcasts.apple.com/us/podcast/70mm-presents-70mm-97/id1495604053?i=1000786511060",
@@ -1550,7 +1620,7 @@
       "transcript_link": null,
       "apple_link": "https://podcasts.apple.com/us/podcast/l-a-confidential-1997/id1495604053?i=1000788264733",
       "spotify_link": "https://open.spotify.com/episode/6iQJdB3WqSR1FKFIUcWnAv?si=jg5ssuoRQSOX63-3eGQ-3A",
-      "store_link": null,
+      "store_link": "https://vhsvillage.com/products/episode-327-la-confidential",
       "tmdb_id": "2118",
       "tmdb_tv_id": null,
       "tmdb_tv_season": null,
@@ -1568,6 +1638,7 @@
       "monthTheme": {
         "id": 69,
         "theme_name": "70mm '97",
+        "is_special": false,
         "start_date": "2026-09-01",
         "end_date": "2026-09-30",
         "apple_link": "https://podcasts.apple.com/us/podcast/70mm-presents-70mm-97/id1495604053?i=1000786511060",
@@ -1600,7 +1671,7 @@
       "transcript_link": null,
       "apple_link": "https://podcasts.apple.com/us/podcast/disclosure-1994/id1495604053?i=1000786939548",
       "spotify_link": "https://open.spotify.com/episode/2hKUuUzPRriWJZWc5FJ3T2?si=N8wvTy2yReKV1GL9Mbzi4w",
-      "store_link": null,
+      "store_link": "https://vhsvillage.com/products/episode-326-disclosure",
       "tmdb_id": "8984",
       "tmdb_tv_id": null,
       "tmdb_tv_season": null,
@@ -1618,6 +1689,7 @@
       "monthTheme": {
         "id": 68,
         "theme_name": "Newgust",
+        "is_special": false,
         "start_date": "2026-08-01",
         "end_date": "2026-08-31",
         "apple_link": "https://podcasts.apple.com/us/podcast/70mm-presents-newgust/id1495604053?i=1000779262252",
@@ -1668,6 +1740,7 @@
       "monthTheme": {
         "id": 75,
         "theme_name": "Dale and Slim Presents…",
+        "is_special": true,
         "start_date": null,
         "end_date": null,
         "apple_link": null,
@@ -1699,7 +1772,7 @@
       "transcript_link": null,
       "apple_link": "https://podcasts.apple.com/us/podcast/teenage-sex-and-death-at-camp-miasma-2026/id1495604053?i=1000785451995",
       "spotify_link": "https://open.spotify.com/episode/68UiAti9XBA86QHZ8xsR4E?si=5X5TPwQFQmqLT8Mlm2Mp-Q",
-      "store_link": null,
+      "store_link": "https://vhsvillage.com/products/episode-325-camp-miasma",
       "tmdb_id": "1240889",
       "tmdb_tv_id": null,
       "tmdb_tv_season": null,
@@ -1710,13 +1783,14 @@
       "month_theme_id": 68,
       "host_pick": "slim",
       "affiliate_link": null,
-      "shirt_link": null,
+      "shirt_link": "https://vhsvillage.com/products/70mm-camp-miasma-garment-dyed-t-shirt",
       "lastSynced": "2026-11-07T01:01:01.245Z",
       "lb_link_val": "teenage-sex-and-death-at-camp-miasma",
       "viewer_count": 61,
       "monthTheme": {
         "id": 68,
         "theme_name": "Newgust",
+        "is_special": false,
         "start_date": "2026-08-01",
         "end_date": "2026-08-31",
         "apple_link": "https://podcasts.apple.com/us/podcast/70mm-presents-newgust/id1495604053?i=1000779262252",
@@ -1749,7 +1823,7 @@
       "transcript_link": null,
       "apple_link": null,
       "spotify_link": null,
-      "store_link": null,
+      "store_link": "https://vhsvillage.com/products/bonus-episode-a-knights-tale",
       "tmdb_id": "9476",
       "tmdb_tv_id": null,
       "tmdb_tv_season": null,
@@ -1790,7 +1864,7 @@
       "transcript_link": null,
       "apple_link": "https://podcasts.apple.com/us/podcast/blue-heron-2025/id1495604053?i=1000783856899",
       "spotify_link": "https://open.spotify.com/episode/5KniWzSQTuEqcu1rspTgPP?si=G-m7ex16QDyB_NYKIQtlVg",
-      "store_link": null,
+      "store_link": "https://vhsvillage.com/products/episode-324-blue-heron",
       "tmdb_id": "1184941",
       "tmdb_tv_id": null,
       "tmdb_tv_season": null,
@@ -1808,6 +1882,7 @@
       "monthTheme": {
         "id": 68,
         "theme_name": "Newgust",
+        "is_special": false,
         "start_date": "2026-08-01",
         "end_date": "2026-08-31",
         "apple_link": "https://podcasts.apple.com/us/podcast/70mm-presents-newgust/id1495604053?i=1000779262252",
@@ -1840,7 +1915,7 @@
       "transcript_link": null,
       "apple_link": "https://podcasts.apple.com/us/podcast/the-bride-2026/id1495604053?i=1000781922664",
       "spotify_link": "https://open.spotify.com/episode/6H1E6Ee3YTqiK9D8UifrDI?si=WN9SFq8tQO6HybKcUm1PIw",
-      "store_link": null,
+      "store_link": "https://vhsvillage.com/products/episode-323-the-bride",
       "tmdb_id": "1159831",
       "tmdb_tv_id": null,
       "tmdb_tv_season": null,
@@ -1858,6 +1933,7 @@
       "monthTheme": {
         "id": 68,
         "theme_name": "Newgust",
+        "is_special": false,
         "start_date": "2026-08-01",
         "end_date": "2026-08-31",
         "apple_link": "https://podcasts.apple.com/us/podcast/70mm-presents-newgust/id1495604053?i=1000779262252",
@@ -1908,6 +1984,7 @@
       "monthTheme": {
         "id": 68,
         "theme_name": "Newgust",
+        "is_special": false,
         "start_date": "2026-08-01",
         "end_date": "2026-08-31",
         "apple_link": "https://podcasts.apple.com/us/podcast/70mm-presents-newgust/id1495604053?i=1000779262252",
@@ -1940,7 +2017,7 @@
       "transcript_link": null,
       "apple_link": "https://podcasts.apple.com/us/podcast/obsession-2025/id1495604053?i=1000779668954",
       "spotify_link": "https://open.spotify.com/episode/4aaz27gCSNMAG20r9CFYke?si=1hAJqsPKRPedrG4uorkPpw",
-      "store_link": null,
+      "store_link": "https://vhsvillage.com/products/episode-322-obsession",
       "tmdb_id": "1339713",
       "tmdb_tv_id": null,
       "tmdb_tv_season": null,
@@ -1951,13 +2028,14 @@
       "month_theme_id": 68,
       "host_pick": null,
       "affiliate_link": null,
-      "shirt_link": null,
+      "shirt_link": "https://vhsvillage.com/products/obsessed-shirt",
       "lastSynced": "2026-11-07T01:01:01.245Z",
       "lb_link_val": "obsession-2025",
       "viewer_count": 75,
       "monthTheme": {
         "id": 68,
         "theme_name": "Newgust",
+        "is_special": false,
         "start_date": "2026-08-01",
         "end_date": "2026-08-31",
         "apple_link": "https://podcasts.apple.com/us/podcast/70mm-presents-newgust/id1495604053?i=1000779262252",
@@ -1990,7 +2068,7 @@
       "transcript_link": null,
       "apple_link": "https://podcasts.apple.com/us/podcast/noah-2014/id1495604053?i=1000778524378",
       "spotify_link": "https://open.spotify.com/episode/1jALuNIP0PApYzCnJOWfJW?si=Ang2Ll4jRpadWgEVb-mj6g",
-      "store_link": null,
+      "store_link": "https://vhsvillage.com/products/episode-321-noah",
       "tmdb_id": "86834",
       "tmdb_tv_id": null,
       "tmdb_tv_season": null,
@@ -2008,6 +2086,7 @@
       "monthTheme": {
         "id": 67,
         "theme_name": "Protopendence Part 3",
+        "is_special": false,
         "start_date": "2026-07-01",
         "end_date": "2026-07-31",
         "apple_link": "https://podcasts.apple.com/us/podcast/70mm-presents-protopendence/id1495604053?i=1000775013140",
@@ -2040,7 +2119,7 @@
       "transcript_link": null,
       "apple_link": "https://podcasts.apple.com/us/podcast/scarface-1983/id1495604053?i=1000777541205",
       "spotify_link": "https://open.spotify.com/episode/2Wyzf0iXBCXGb8CxN4FClk?si=qjqA_WtvRkqr-d_4w7gWIA",
-      "store_link": null,
+      "store_link": "https://vhsvillage.com/products/episode-319-scarface",
       "tmdb_id": "111",
       "tmdb_tv_id": null,
       "tmdb_tv_season": null,
@@ -2058,6 +2137,7 @@
       "monthTheme": {
         "id": 67,
         "theme_name": "Protopendence Part 3",
+        "is_special": false,
         "start_date": "2026-07-01",
         "end_date": "2026-07-31",
         "apple_link": "https://podcasts.apple.com/us/podcast/70mm-presents-protopendence/id1495604053?i=1000775013140",
@@ -2090,7 +2170,7 @@
       "transcript_link": null,
       "apple_link": "https://podcasts.apple.com/us/podcast/panic-room-2002/id1495604053?i=1000776569890",
       "spotify_link": "https://open.spotify.com/episode/2gjkdGEtmuLndnuZkKklhJ?si=oaMB4j3XSY2MSLWqbkoTRQ",
-      "store_link": null,
+      "store_link": "https://vhsvillage.com/products/episode-318-panic-room",
       "tmdb_id": "4547",
       "tmdb_tv_id": null,
       "tmdb_tv_season": null,
@@ -2108,6 +2188,7 @@
       "monthTheme": {
         "id": 67,
         "theme_name": "Protopendence Part 3",
+        "is_special": false,
         "start_date": "2026-07-01",
         "end_date": "2026-07-31",
         "apple_link": "https://podcasts.apple.com/us/podcast/70mm-presents-protopendence/id1495604053?i=1000775013140",
@@ -2140,7 +2221,7 @@
       "transcript_link": null,
       "apple_link": "https://podcasts.apple.com/us/podcast/gone-with-the-wind-1939/id1495604053?i=1000775628219",
       "spotify_link": "https://open.spotify.com/episode/3IFpncqFpgXshzRdkd1FKH?si=0Td0r9HDTIC4rjpg3Fidag",
-      "store_link": null,
+      "store_link": "https://vhsvillage.com/products/episode-318-gone-with-the-wind",
       "tmdb_id": "770",
       "tmdb_tv_id": null,
       "tmdb_tv_season": null,
@@ -2158,6 +2239,7 @@
       "monthTheme": {
         "id": 67,
         "theme_name": "Protopendence Part 3",
+        "is_special": false,
         "start_date": "2026-07-01",
         "end_date": "2026-07-31",
         "apple_link": "https://podcasts.apple.com/us/podcast/70mm-presents-protopendence/id1495604053?i=1000775013140",
@@ -2231,7 +2313,7 @@
       "transcript_link": null,
       "apple_link": "https://podcasts.apple.com/us/podcast/the-american-president-1995/id1495604053?i=1000774670557",
       "spotify_link": "https://open.spotify.com/episode/5SHIvwHuTcKZmB26nkTOSx?si=sXvw0IgXTHyfer-Bb8AMTQ",
-      "store_link": null,
+      "store_link": "https://vhsvillage.com/products/episode-317-american-president",
       "tmdb_id": "9087",
       "tmdb_tv_id": null,
       "tmdb_tv_season": null,
@@ -2249,8 +2331,9 @@
       "monthTheme": {
         "id": 66,
         "theme_name": "Sexual Michael Douglas",
+        "is_special": true,
         "start_date": null,
-        "end_date": null,
+        "end_date": "2026-11-30",
         "apple_link": null,
         "spotify_link": null,
         "description": "When a month has five weeks, the fifth week might be a Michael Douglas film (in honor of the long-lost potential Sexual Michael Douglas month). The theme concludes in 2026.",
@@ -2299,6 +2382,7 @@
       "monthTheme": {
         "id": 65,
         "theme_name": "June March Madness",
+        "is_special": false,
         "start_date": "2026-06-01",
         "end_date": "2026-06-30",
         "apple_link": "https://podcasts.apple.com/us/podcast/70mm-presents-june-march-madness/id1495604053?i=1000769767862",
@@ -2349,6 +2433,7 @@
       "monthTheme": {
         "id": 65,
         "theme_name": "June March Madness",
+        "is_special": false,
         "start_date": "2026-06-01",
         "end_date": "2026-06-30",
         "apple_link": "https://podcasts.apple.com/us/podcast/70mm-presents-june-march-madness/id1495604053?i=1000769767862",
@@ -2399,6 +2484,7 @@
       "monthTheme": {
         "id": 65,
         "theme_name": "June March Madness",
+        "is_special": false,
         "start_date": "2026-06-01",
         "end_date": "2026-06-30",
         "apple_link": "https://podcasts.apple.com/us/podcast/70mm-presents-june-march-madness/id1495604053?i=1000769767862",
@@ -2449,6 +2535,7 @@
       "monthTheme": {
         "id": 65,
         "theme_name": "June March Madness",
+        "is_special": false,
         "start_date": "2026-06-01",
         "end_date": "2026-06-30",
         "apple_link": "https://podcasts.apple.com/us/podcast/70mm-presents-june-march-madness/id1495604053?i=1000769767862",
@@ -2459,6 +2546,46 @@
       "villager_count": 109,
       "sum": 13,
       "wikiArtConfirmed": true
+    },
+    {
+      "id": 497,
+      "movie": "The West Wing (Pilot)",
+      "year_released": 1999,
+      "date_published": "2026-05-26",
+      "episode": null,
+      "bonus": null,
+      "vault": 91,
+      "pilot": 16,
+      "book": null,
+      "watchalong": null,
+      "slim": null,
+      "danny": null,
+      "proto": null,
+      "lb_link": null,
+      "guest": null,
+      "guest_lb_link": null,
+      "guest_rating": null,
+      "transcript_link": null,
+      "apple_link": null,
+      "spotify_link": null,
+      "store_link": null,
+      "tmdb_id": null,
+      "tmdb_tv_id": "688",
+      "tmdb_tv_season": 1,
+      "tmdb_tv_episode": 1,
+      "vger_id": null,
+      "councilmember": null,
+      "councilmember_lb_link": null,
+      "month_theme_id": null,
+      "host_pick": null,
+      "affiliate_link": null,
+      "shirt_link": null,
+      "lastSynced": null,
+      "lb_link_val": null,
+      "viewer_count": 0,
+      "monthTheme": null,
+      "villager_count": 0,
+      "sum": null
     },
     {
       "id": 443,
@@ -2492,13 +2619,14 @@
       "month_theme_id": 64,
       "host_pick": "slim",
       "affiliate_link": null,
-      "shirt_link": null,
+      "shirt_link": "https://vhsvillage.com/products/70mm-gangs-of-ny-unisex-garment-dyed-t-shirt",
       "lastSynced": "2026-11-22T01:00:59.758Z",
       "lb_link_val": "gangs-of-new-york-2002",
       "viewer_count": 67,
       "monthTheme": {
         "id": 64,
         "theme_name": "Daniel May Lewis",
+        "is_special": false,
         "start_date": "2026-05-04",
         "end_date": "2026-05-25",
         "apple_link": "https://podcasts.apple.com/us/podcast/70mm-presents-daniel-may-lewis/id1495604053?i=1000764544708",
@@ -2549,6 +2677,7 @@
       "monthTheme": {
         "id": 64,
         "theme_name": "Daniel May Lewis",
+        "is_special": false,
         "start_date": "2026-05-04",
         "end_date": "2026-05-25",
         "apple_link": "https://podcasts.apple.com/us/podcast/70mm-presents-daniel-may-lewis/id1495604053?i=1000764544708",
@@ -2599,6 +2728,7 @@
       "monthTheme": {
         "id": 64,
         "theme_name": "Daniel May Lewis",
+        "is_special": false,
         "start_date": "2026-05-04",
         "end_date": "2026-05-25",
         "apple_link": "https://podcasts.apple.com/us/podcast/70mm-presents-daniel-may-lewis/id1495604053?i=1000764544708",
@@ -2649,6 +2779,7 @@
       "monthTheme": {
         "id": 64,
         "theme_name": "Daniel May Lewis",
+        "is_special": false,
         "start_date": "2026-05-04",
         "end_date": "2026-05-25",
         "apple_link": "https://podcasts.apple.com/us/podcast/70mm-presents-daniel-may-lewis/id1495604053?i=1000764544708",
@@ -2740,6 +2871,7 @@
       "monthTheme": {
         "id": 63,
         "theme_name": "Shame Month pt. 2",
+        "is_special": false,
         "start_date": "2026-04-01",
         "end_date": "2026-04-30",
         "apple_link": "https://podcasts.apple.com/us/podcast/70mm-presents-shame-month/id1495604053?i=1000758685596",
@@ -2831,6 +2963,7 @@
       "monthTheme": {
         "id": 63,
         "theme_name": "Shame Month pt. 2",
+        "is_special": false,
         "start_date": "2026-04-01",
         "end_date": "2026-04-30",
         "apple_link": "https://podcasts.apple.com/us/podcast/70mm-presents-shame-month/id1495604053?i=1000758685596",
@@ -2881,6 +3014,7 @@
       "monthTheme": {
         "id": 63,
         "theme_name": "Shame Month pt. 2",
+        "is_special": false,
         "start_date": "2026-04-01",
         "end_date": "2026-04-30",
         "apple_link": "https://podcasts.apple.com/us/podcast/70mm-presents-shame-month/id1495604053?i=1000758685596",
@@ -3013,6 +3147,7 @@
       "monthTheme": {
         "id": 62,
         "theme_name": "70mm Goes Back to Jakku",
+        "is_special": false,
         "start_date": "2026-03-01",
         "end_date": "2026-03-31",
         "apple_link": "https://podcasts.apple.com/us/podcast/70mm-goes-back-to-jakku-star-wars-sequel-trilogy-month/id1495604053?i=1000751758000",
@@ -3063,6 +3198,7 @@
       "monthTheme": {
         "id": 62,
         "theme_name": "70mm Goes Back to Jakku",
+        "is_special": false,
         "start_date": "2026-03-01",
         "end_date": "2026-03-31",
         "apple_link": "https://podcasts.apple.com/us/podcast/70mm-goes-back-to-jakku-star-wars-sequel-trilogy-month/id1495604053?i=1000751758000",
@@ -3113,6 +3249,7 @@
       "monthTheme": {
         "id": 62,
         "theme_name": "70mm Goes Back to Jakku",
+        "is_special": false,
         "start_date": "2026-03-01",
         "end_date": "2026-03-31",
         "apple_link": "https://podcasts.apple.com/us/podcast/70mm-goes-back-to-jakku-star-wars-sequel-trilogy-month/id1495604053?i=1000751758000",
@@ -3163,6 +3300,7 @@
       "monthTheme": {
         "id": 62,
         "theme_name": "70mm Goes Back to Jakku",
+        "is_special": false,
         "start_date": "2026-03-01",
         "end_date": "2026-03-31",
         "apple_link": "https://podcasts.apple.com/us/podcast/70mm-goes-back-to-jakku-star-wars-sequel-trilogy-month/id1495604053?i=1000751758000",
@@ -3206,13 +3344,14 @@
       "month_theme_id": 61,
       "host_pick": null,
       "affiliate_link": null,
-      "shirt_link": null,
+      "shirt_link": "https://vhsvillage.com/products/70mm-sinners-unisex-garment-dyed-t-shirt",
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": "KQMM",
       "viewer_count": 99,
       "monthTheme": {
         "id": 61,
         "theme_name": "Black History Month",
+        "is_special": false,
         "start_date": "\"2026-02-01T06:00:00.000Z\"",
         "end_date": "\"2026-02-28T06:00:00.000Z\"",
         "apple_link": null,
@@ -3263,6 +3402,7 @@
       "monthTheme": {
         "id": 61,
         "theme_name": "Black History Month",
+        "is_special": false,
         "start_date": "\"2026-02-01T06:00:00.000Z\"",
         "end_date": "\"2026-02-28T06:00:00.000Z\"",
         "apple_link": null,
@@ -3295,7 +3435,7 @@
       "transcript_link": null,
       "apple_link": "https://podcasts.apple.com/us/podcast/friday-the-13th-a-new-beginning-1985/id1495604053?i=1000749551974",
       "spotify_link": null,
-      "store_link": null,
+      "store_link": "https://vhsvillage.com/products/bonus-episode-friday-the-13th-part-5",
       "tmdb_id": "9731",
       "tmdb_tv_id": null,
       "tmdb_tv_season": null,
@@ -3313,6 +3453,7 @@
       "monthTheme": {
         "id": 74,
         "theme_name": "Journeys with Dale",
+        "is_special": true,
         "start_date": null,
         "end_date": null,
         "apple_link": null,
@@ -3362,6 +3503,7 @@
       "monthTheme": {
         "id": 61,
         "theme_name": "Black History Month",
+        "is_special": false,
         "start_date": "\"2026-02-01T06:00:00.000Z\"",
         "end_date": "\"2026-02-28T06:00:00.000Z\"",
         "apple_link": null,
@@ -3412,6 +3554,7 @@
       "monthTheme": {
         "id": 61,
         "theme_name": "Black History Month",
+        "is_special": false,
         "start_date": "\"2026-02-01T06:00:00.000Z\"",
         "end_date": "\"2026-02-28T06:00:00.000Z\"",
         "apple_link": null,
@@ -3462,6 +3605,7 @@
       "monthTheme": {
         "id": 60,
         "theme_name": "70mm goes International",
+        "is_special": false,
         "start_date": "\"2026-01-01T06:00:00.000Z\"",
         "end_date": "\"2026-01-31T06:00:00.000Z\"",
         "apple_link": null,
@@ -3553,6 +3697,7 @@
       "monthTheme": {
         "id": 60,
         "theme_name": "70mm goes International",
+        "is_special": false,
         "start_date": "\"2026-01-01T06:00:00.000Z\"",
         "end_date": "\"2026-01-31T06:00:00.000Z\"",
         "apple_link": null,
@@ -3603,6 +3748,7 @@
       "monthTheme": {
         "id": 60,
         "theme_name": "70mm goes International",
+        "is_special": false,
         "start_date": "\"2026-01-01T06:00:00.000Z\"",
         "end_date": "\"2026-01-31T06:00:00.000Z\"",
         "apple_link": null,
@@ -3653,6 +3799,7 @@
       "monthTheme": {
         "id": 60,
         "theme_name": "70mm goes International",
+        "is_special": false,
         "start_date": "\"2026-01-01T06:00:00.000Z\"",
         "end_date": "\"2026-01-31T06:00:00.000Z\"",
         "apple_link": null,
@@ -3737,13 +3884,14 @@
       "month_theme_id": 59,
       "host_pick": null,
       "affiliate_link": null,
-      "shirt_link": null,
+      "shirt_link": "https://vhsvillage.com/products/70mm-kong-05-unisex-garment-dyed-t-shirt",
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
       "viewer_count": 58,
       "monthTheme": {
         "id": 59,
         "theme_name": "70mm's Forbidden Journey",
+        "is_special": false,
         "start_date": "\"2025-12-01T06:00:00.000Z\"",
         "end_date": "\"2025-12-31T06:00:00.000Z\"",
         "apple_link": null,
@@ -3794,6 +3942,7 @@
       "monthTheme": {
         "id": 59,
         "theme_name": "70mm's Forbidden Journey",
+        "is_special": false,
         "start_date": "\"2025-12-01T06:00:00.000Z\"",
         "end_date": "\"2025-12-31T06:00:00.000Z\"",
         "apple_link": null,
@@ -3844,6 +3993,7 @@
       "monthTheme": {
         "id": 59,
         "theme_name": "70mm's Forbidden Journey",
+        "is_special": false,
         "start_date": "\"2025-12-01T06:00:00.000Z\"",
         "end_date": "\"2025-12-31T06:00:00.000Z\"",
         "apple_link": null,
@@ -3876,7 +4026,7 @@
       "transcript_link": null,
       "apple_link": "https://podcasts.apple.com/us/podcast/wicked-the-whole-bloody-affair/id1495604053?i=1000738084682",
       "spotify_link": "https://open.spotify.com/episode/5tZrqbqsPUWOzUniJnimUA?si=fth7tUyYQl2_Ziw-PDRh1A",
-      "store_link": "https://vhsvillage.com/products/episode-291-wicked-the-whole-bloody-affair",
+      "store_link": null,
       "tmdb_id": "402431",
       "tmdb_tv_id": null,
       "tmdb_tv_season": null,
@@ -3917,7 +4067,7 @@
       "transcript_link": null,
       "apple_link": "https://podcasts.apple.com/us/podcast/wicked-the-whole-bloody-affair/id1495604053?i=1000738084682",
       "spotify_link": "https://open.spotify.com/episode/5tZrqbqsPUWOzUniJnimUA?si=fth7tUyYQl2_Ziw-PDRh1A",
-      "store_link": "https://vhsvillage.com/products/episode-291-wicked-the-whole-bloody-affair",
+      "store_link": null,
       "tmdb_id": "967941",
       "tmdb_tv_id": null,
       "tmdb_tv_season": null,
@@ -3976,6 +4126,7 @@
       "monthTheme": {
         "id": 58,
         "theme_name": "Winvember",
+        "is_special": false,
         "start_date": "\"2025-11-01T05:00:00.000Z\"",
         "end_date": "\"2025-11-30T06:00:00.000Z\"",
         "apple_link": null,
@@ -4019,13 +4170,14 @@
       "month_theme_id": 58,
       "host_pick": "slim",
       "affiliate_link": null,
-      "shirt_link": null,
+      "shirt_link": "https://vhsvillage.com/products/70mm-citizen-kane-unisex-garment-dyed-t-shirt",
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
       "viewer_count": 75,
       "monthTheme": {
         "id": 58,
         "theme_name": "Winvember",
+        "is_special": false,
         "start_date": "\"2025-11-01T05:00:00.000Z\"",
         "end_date": "\"2025-11-30T06:00:00.000Z\"",
         "apple_link": null,
@@ -4076,6 +4228,7 @@
       "monthTheme": {
         "id": 58,
         "theme_name": "Winvember",
+        "is_special": false,
         "start_date": "\"2025-11-01T05:00:00.000Z\"",
         "end_date": "\"2025-11-30T06:00:00.000Z\"",
         "apple_link": null,
@@ -4126,6 +4279,7 @@
       "monthTheme": {
         "id": 74,
         "theme_name": "Journeys with Dale",
+        "is_special": true,
         "start_date": null,
         "end_date": null,
         "apple_link": null,
@@ -4176,6 +4330,7 @@
       "monthTheme": {
         "id": 57,
         "theme_name": "Bigelowber",
+        "is_special": false,
         "start_date": "\"2025-10-01T05:00:00.000Z\"",
         "end_date": "\"2025-10-31T05:00:00.000Z\"",
         "apple_link": null,
@@ -4267,6 +4422,7 @@
       "monthTheme": {
         "id": 57,
         "theme_name": "Bigelowber",
+        "is_special": false,
         "start_date": "\"2025-10-01T05:00:00.000Z\"",
         "end_date": "\"2025-10-31T05:00:00.000Z\"",
         "apple_link": null,
@@ -4317,6 +4473,7 @@
       "monthTheme": {
         "id": 57,
         "theme_name": "Bigelowber",
+        "is_special": false,
         "start_date": "\"2025-10-01T05:00:00.000Z\"",
         "end_date": "\"2025-10-31T05:00:00.000Z\"",
         "apple_link": null,
@@ -4367,6 +4524,7 @@
       "monthTheme": {
         "id": 57,
         "theme_name": "Bigelowber",
+        "is_special": false,
         "start_date": "\"2025-10-01T05:00:00.000Z\"",
         "end_date": "\"2025-10-31T05:00:00.000Z\"",
         "apple_link": null,
@@ -4499,6 +4657,7 @@
       "monthTheme": {
         "id": 56,
         "theme_name": "Lo-fi Sci-fi Part 2",
+        "is_special": false,
         "start_date": "\"2025-09-01T05:00:00.000Z\"",
         "end_date": "\"2025-09-30T05:00:00.000Z\"",
         "apple_link": null,
@@ -4549,6 +4708,7 @@
       "monthTheme": {
         "id": 56,
         "theme_name": "Lo-fi Sci-fi Part 2",
+        "is_special": false,
         "start_date": "\"2025-09-01T05:00:00.000Z\"",
         "end_date": "\"2025-09-30T05:00:00.000Z\"",
         "apple_link": null,
@@ -4599,6 +4759,7 @@
       "monthTheme": {
         "id": 56,
         "theme_name": "Lo-fi Sci-fi Part 2",
+        "is_special": false,
         "start_date": "\"2025-09-01T05:00:00.000Z\"",
         "end_date": "\"2025-09-30T05:00:00.000Z\"",
         "apple_link": null,
@@ -4649,6 +4810,7 @@
       "monthTheme": {
         "id": 56,
         "theme_name": "Lo-fi Sci-fi Part 2",
+        "is_special": false,
         "start_date": "\"2025-09-01T05:00:00.000Z\"",
         "end_date": "\"2025-09-30T05:00:00.000Z\"",
         "apple_link": null,
@@ -4699,6 +4861,7 @@
       "monthTheme": {
         "id": 55,
         "theme_name": "Hogust",
+        "is_special": false,
         "start_date": "\"2025-08-01T05:00:00.000Z\"",
         "end_date": "\"2025-08-31T05:00:00.000Z\"",
         "apple_link": null,
@@ -4790,6 +4953,7 @@
       "monthTheme": {
         "id": 55,
         "theme_name": "Hogust",
+        "is_special": false,
         "start_date": "\"2025-08-01T05:00:00.000Z\"",
         "end_date": "\"2025-08-31T05:00:00.000Z\"",
         "apple_link": null,
@@ -4840,6 +5004,7 @@
       "monthTheme": {
         "id": 55,
         "theme_name": "Hogust",
+        "is_special": false,
         "start_date": "\"2025-08-01T05:00:00.000Z\"",
         "end_date": "\"2025-08-31T05:00:00.000Z\"",
         "apple_link": null,
@@ -4890,6 +5055,7 @@
       "monthTheme": {
         "id": 55,
         "theme_name": "Hogust",
+        "is_special": false,
         "start_date": "\"2025-08-01T05:00:00.000Z\"",
         "end_date": "\"2025-08-31T05:00:00.000Z\"",
         "apple_link": null,
@@ -4940,6 +5106,7 @@
       "monthTheme": {
         "id": 54,
         "theme_name": "Blockbusted Vol. 3",
+        "is_special": false,
         "start_date": "\"2025-07-07T05:00:00.000Z\"",
         "end_date": "\"2025-07-31T05:00:00.000Z\"",
         "apple_link": null,
@@ -5031,6 +5198,7 @@
       "monthTheme": {
         "id": 53,
         "theme_name": "Mount Goatmore",
+        "is_special": false,
         "start_date": "\"2025-06-02T05:00:00.000Z\"",
         "end_date": "\"2025-06-30T05:00:00.000Z\"",
         "apple_link": null,
@@ -5081,6 +5249,7 @@
       "monthTheme": {
         "id": 54,
         "theme_name": "Blockbusted Vol. 3",
+        "is_special": false,
         "start_date": "\"2025-07-07T05:00:00.000Z\"",
         "end_date": "\"2025-07-31T05:00:00.000Z\"",
         "apple_link": null,
@@ -5172,6 +5341,7 @@
       "monthTheme": {
         "id": 54,
         "theme_name": "Blockbusted Vol. 3",
+        "is_special": false,
         "start_date": "\"2025-07-07T05:00:00.000Z\"",
         "end_date": "\"2025-07-31T05:00:00.000Z\"",
         "apple_link": null,
@@ -5222,8 +5392,9 @@
       "monthTheme": {
         "id": 66,
         "theme_name": "Sexual Michael Douglas",
+        "is_special": true,
         "start_date": null,
-        "end_date": null,
+        "end_date": "2026-11-30",
         "apple_link": null,
         "spotify_link": null,
         "description": "When a month has five weeks, the fifth week might be a Michael Douglas film (in honor of the long-lost potential Sexual Michael Douglas month). The theme concludes in 2026.",
@@ -5272,6 +5443,7 @@
       "monthTheme": {
         "id": 53,
         "theme_name": "Mount Goatmore",
+        "is_special": false,
         "start_date": "\"2025-06-02T05:00:00.000Z\"",
         "end_date": "\"2025-06-30T05:00:00.000Z\"",
         "apple_link": null,
@@ -5322,6 +5494,7 @@
       "monthTheme": {
         "id": 53,
         "theme_name": "Mount Goatmore",
+        "is_special": false,
         "start_date": "\"2025-06-02T05:00:00.000Z\"",
         "end_date": "\"2025-06-30T05:00:00.000Z\"",
         "apple_link": null,
@@ -5413,6 +5586,7 @@
       "monthTheme": {
         "id": 53,
         "theme_name": "Mount Goatmore",
+        "is_special": false,
         "start_date": "\"2025-06-02T05:00:00.000Z\"",
         "end_date": "\"2025-06-30T05:00:00.000Z\"",
         "apple_link": null,
@@ -5504,6 +5678,7 @@
       "monthTheme": {
         "id": 53,
         "theme_name": "Mount Goatmore",
+        "is_special": false,
         "start_date": "\"2025-06-02T05:00:00.000Z\"",
         "end_date": "\"2025-06-30T05:00:00.000Z\"",
         "apple_link": null,
@@ -5536,7 +5711,7 @@
       "transcript_link": null,
       "apple_link": "https://podcasts.apple.com/us/podcast/mission-impossible-the-final-reckoning-2025/id1495604053?i=1000709862782",
       "spotify_link": "https://open.spotify.com/episode/05raZRgCRpdD9dqdabpaKh?si=-a-YZtYYTtCsJ_INfRe2KA",
-      "store_link": "https://vhsvillage.com/products/episode-265-mission-impossible-final-reckoning",
+      "store_link": null,
       "tmdb_id": "575265",
       "tmdb_tv_id": null,
       "tmdb_tv_season": null,
@@ -5554,6 +5729,7 @@
       "monthTheme": {
         "id": 52,
         "theme_name": "Mayssion Impossible",
+        "is_special": false,
         "start_date": "\"2025-05-05T05:00:00.000Z\"",
         "end_date": "\"2025-05-26T05:00:00.000Z\"",
         "apple_link": null,
@@ -5604,6 +5780,7 @@
       "monthTheme": {
         "id": 52,
         "theme_name": "Mayssion Impossible",
+        "is_special": false,
         "start_date": "\"2025-05-05T05:00:00.000Z\"",
         "end_date": "\"2025-05-26T05:00:00.000Z\"",
         "apple_link": null,
@@ -5654,6 +5831,7 @@
       "monthTheme": {
         "id": 52,
         "theme_name": "Mayssion Impossible",
+        "is_special": false,
         "start_date": "\"2025-05-05T05:00:00.000Z\"",
         "end_date": "\"2025-05-26T05:00:00.000Z\"",
         "apple_link": null,
@@ -5726,7 +5904,7 @@
       "transcript_link": null,
       "apple_link": "https://podcasts.apple.com/us/podcast/mission-impossible-1996/id1495604053?i=1000706315262",
       "spotify_link": "https://open.spotify.com/episode/2Dvwi87U9vjVDMcDGsEA6Y?si=bNhxiYDuQ56Ojw7KZRI-cQ",
-      "store_link": "https://vhsvillage.com/products/episode-262-mission-impossible",
+      "store_link": null,
       "tmdb_id": "954",
       "tmdb_tv_id": null,
       "tmdb_tv_season": null,
@@ -5744,6 +5922,7 @@
       "monthTheme": {
         "id": 52,
         "theme_name": "Mayssion Impossible",
+        "is_special": false,
         "start_date": "\"2025-05-05T05:00:00.000Z\"",
         "end_date": "\"2025-05-26T05:00:00.000Z\"",
         "apple_link": null,
@@ -5794,6 +5973,7 @@
       "monthTheme": {
         "id": 51,
         "theme_name": "Tape Deck",
+        "is_special": false,
         "start_date": "\"2025-03-31T05:00:00.000Z\"",
         "end_date": "\"2025-04-28T05:00:00.000Z\"",
         "apple_link": null,
@@ -5844,6 +6024,7 @@
       "monthTheme": {
         "id": 51,
         "theme_name": "Tape Deck",
+        "is_special": false,
         "start_date": "\"2025-03-31T05:00:00.000Z\"",
         "end_date": "\"2025-04-28T05:00:00.000Z\"",
         "apple_link": null,
@@ -5894,6 +6075,7 @@
       "monthTheme": {
         "id": 51,
         "theme_name": "Tape Deck",
+        "is_special": false,
         "start_date": "\"2025-03-31T05:00:00.000Z\"",
         "end_date": "\"2025-04-28T05:00:00.000Z\"",
         "apple_link": null,
@@ -5937,7 +6119,7 @@
       "month_theme_id": null,
       "host_pick": null,
       "affiliate_link": null,
-      "shirt_link": null,
+      "shirt_link": "https://vhsvillage.com/products/70mm-okja-unisex-garment-dyed-t-shirt",
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
       "viewer_count": 51,
@@ -5978,13 +6160,14 @@
       "month_theme_id": 51,
       "host_pick": "slim",
       "affiliate_link": null,
-      "shirt_link": null,
+      "shirt_link": "https://vhsvillage.com/products/70mm-tombstone-unisex-garment-dyed-t-shirt",
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
       "viewer_count": 64,
       "monthTheme": {
         "id": 51,
         "theme_name": "Tape Deck",
+        "is_special": false,
         "start_date": "\"2025-03-31T05:00:00.000Z\"",
         "end_date": "\"2025-04-28T05:00:00.000Z\"",
         "apple_link": null,
@@ -6035,6 +6218,7 @@
       "monthTheme": {
         "id": 50,
         "theme_name": "BDSM",
+        "is_special": false,
         "start_date": "\"2025-02-27T06:00:00.000Z\"",
         "end_date": "\"2025-03-11T05:00:00.000Z\"",
         "apple_link": null,
@@ -6085,6 +6269,7 @@
       "monthTheme": {
         "id": 50,
         "theme_name": "BDSM",
+        "is_special": false,
         "start_date": "\"2025-02-27T06:00:00.000Z\"",
         "end_date": "\"2025-03-11T05:00:00.000Z\"",
         "apple_link": null,
@@ -6135,6 +6320,7 @@
       "monthTheme": {
         "id": 50,
         "theme_name": "BDSM",
+        "is_special": false,
         "start_date": "\"2025-02-27T06:00:00.000Z\"",
         "end_date": "\"2025-03-11T05:00:00.000Z\"",
         "apple_link": null,
@@ -6219,13 +6405,14 @@
       "month_theme_id": 50,
       "host_pick": "slim",
       "affiliate_link": null,
-      "shirt_link": null,
+      "shirt_link": "https://vhsvillage.com/products/70mm-blade-runner-unisex-garment-dyed-t-shirt",
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
       "viewer_count": 88,
       "monthTheme": {
         "id": 50,
         "theme_name": "BDSM",
+        "is_special": false,
         "start_date": "\"2025-02-27T06:00:00.000Z\"",
         "end_date": "\"2025-03-11T05:00:00.000Z\"",
         "apple_link": null,
@@ -6276,6 +6463,7 @@
       "monthTheme": {
         "id": 49,
         "theme_name": "Fembruary",
+        "is_special": false,
         "start_date": "\"2025-01-30T06:00:00.000Z\"",
         "end_date": "\"2025-02-20T06:00:00.000Z\"",
         "apple_link": null,
@@ -6319,13 +6507,14 @@
       "month_theme_id": 49,
       "host_pick": "slim",
       "affiliate_link": null,
-      "shirt_link": null,
+      "shirt_link": "https://vhsvillage.com/products/70mm-mamma-mia-unisex-garment-dyed-t-shirt-1",
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
       "viewer_count": 69,
       "monthTheme": {
         "id": 49,
         "theme_name": "Fembruary",
+        "is_special": false,
         "start_date": "\"2025-01-30T06:00:00.000Z\"",
         "end_date": "\"2025-02-20T06:00:00.000Z\"",
         "apple_link": null,
@@ -6417,6 +6606,7 @@
       "monthTheme": {
         "id": 49,
         "theme_name": "Fembruary",
+        "is_special": false,
         "start_date": "\"2025-01-30T06:00:00.000Z\"",
         "end_date": "\"2025-02-20T06:00:00.000Z\"",
         "apple_link": null,
@@ -6467,6 +6657,7 @@
       "monthTheme": {
         "id": 49,
         "theme_name": "Fembruary",
+        "is_special": false,
         "start_date": "\"2025-01-30T06:00:00.000Z\"",
         "end_date": "\"2025-02-20T06:00:00.000Z\"",
         "apple_link": null,
@@ -6517,6 +6708,7 @@
       "monthTheme": {
         "id": 74,
         "theme_name": "Journeys with Dale",
+        "is_special": true,
         "start_date": null,
         "end_date": null,
         "apple_link": null,
@@ -6567,6 +6759,7 @@
       "monthTheme": {
         "id": 48,
         "theme_name": "Village Top 100",
+        "is_special": false,
         "start_date": "\"2025-01-04T06:00:00.000Z\"",
         "end_date": "\"2025-01-23T06:00:00.000Z\"",
         "apple_link": null,
@@ -6651,13 +6844,14 @@
       "month_theme_id": 48,
       "host_pick": "danny",
       "affiliate_link": null,
-      "shirt_link": null,
+      "shirt_link": "https://vhsvillage.com/products/70mm-spirited-away-unisex-garment-dyed-t-shirt-1",
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
       "viewer_count": 92,
       "monthTheme": {
         "id": 48,
         "theme_name": "Village Top 100",
+        "is_special": false,
         "start_date": "\"2025-01-04T06:00:00.000Z\"",
         "end_date": "\"2025-01-23T06:00:00.000Z\"",
         "apple_link": null,
@@ -6708,6 +6902,7 @@
       "monthTheme": {
         "id": 48,
         "theme_name": "Village Top 100",
+        "is_special": false,
         "start_date": "\"2025-01-04T06:00:00.000Z\"",
         "end_date": "\"2025-01-23T06:00:00.000Z\"",
         "apple_link": null,
@@ -6751,13 +6946,14 @@
       "month_theme_id": 48,
       "host_pick": "kenzo",
       "affiliate_link": null,
-      "shirt_link": null,
+      "shirt_link": "https://vhsvillage.com/products/70mm-magnolia-unisex-garment-dyed-t-shirt-1",
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
       "viewer_count": 71,
       "monthTheme": {
         "id": 48,
         "theme_name": "Village Top 100",
+        "is_special": false,
         "start_date": "\"2025-01-04T06:00:00.000Z\"",
         "end_date": "\"2025-01-23T06:00:00.000Z\"",
         "apple_link": null,
@@ -7006,13 +7202,14 @@
       "month_theme_id": 36,
       "host_pick": "danny",
       "affiliate_link": null,
-      "shirt_link": null,
+      "shirt_link": "https://vhsvillage.com/products/70mm-e-t-the-extraterrestrial-unisex-garment-dyed-t-shirt",
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
       "viewer_count": 90,
       "monthTheme": {
         "id": 36,
         "theme_name": "Newvember",
+        "is_special": false,
         "start_date": "\"2023-11-02T05:00:00.000Z\"",
         "end_date": "\"2024-11-28T06:00:00.000Z\"",
         "apple_link": null,
@@ -7063,6 +7260,7 @@
       "monthTheme": {
         "id": 36,
         "theme_name": "Newvember",
+        "is_special": false,
         "start_date": "\"2023-11-02T05:00:00.000Z\"",
         "end_date": "\"2024-11-28T06:00:00.000Z\"",
         "apple_link": null,
@@ -7113,6 +7311,7 @@
       "monthTheme": {
         "id": 36,
         "theme_name": "Newvember",
+        "is_special": false,
         "start_date": "\"2023-11-02T05:00:00.000Z\"",
         "end_date": "\"2024-11-28T06:00:00.000Z\"",
         "apple_link": null,
@@ -7163,6 +7362,7 @@
       "monthTheme": {
         "id": 74,
         "theme_name": "Journeys with Dale",
+        "is_special": true,
         "start_date": null,
         "end_date": null,
         "apple_link": null,
@@ -7206,13 +7406,14 @@
       "month_theme_id": 47,
       "host_pick": "vote",
       "affiliate_link": null,
-      "shirt_link": null,
+      "shirt_link": "https://vhsvillage.com/products/70mm-young-frankenstein-unisex-garment-dyed-t-shirt",
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
       "viewer_count": 61,
       "monthTheme": {
         "id": 47,
         "theme_name": "Monster Tober",
+        "is_special": false,
         "start_date": "\"2024-10-03T05:00:00.000Z\"",
         "end_date": "\"2024-10-24T05:00:00.000Z\"",
         "apple_link": null,
@@ -7263,6 +7464,7 @@
       "monthTheme": {
         "id": 47,
         "theme_name": "Monster Tober",
+        "is_special": false,
         "start_date": "\"2024-10-03T05:00:00.000Z\"",
         "end_date": "\"2024-10-24T05:00:00.000Z\"",
         "apple_link": null,
@@ -7313,6 +7515,7 @@
       "monthTheme": {
         "id": 47,
         "theme_name": "Monster Tober",
+        "is_special": false,
         "start_date": "\"2024-10-03T05:00:00.000Z\"",
         "end_date": "\"2024-10-24T05:00:00.000Z\"",
         "apple_link": null,
@@ -7356,7 +7559,7 @@
       "month_theme_id": null,
       "host_pick": null,
       "affiliate_link": null,
-      "shirt_link": null,
+      "shirt_link": "https://vhsvillage.com/products/70mm-minari-unisex-garment-dyed-t-shirt",
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
       "viewer_count": 67,
@@ -7397,13 +7600,14 @@
       "month_theme_id": 47,
       "host_pick": "proto",
       "affiliate_link": null,
-      "shirt_link": null,
+      "shirt_link": "https://vhsvillage.com/products/70mm-dracula-unisex-garment-dyed-t-shirt-1",
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
       "viewer_count": 64,
       "monthTheme": {
         "id": 47,
         "theme_name": "Monster Tober",
+        "is_special": false,
         "start_date": "\"2024-10-03T05:00:00.000Z\"",
         "end_date": "\"2024-10-24T05:00:00.000Z\"",
         "apple_link": null,
@@ -7454,6 +7658,7 @@
       "monthTheme": {
         "id": 46,
         "theme_name": "Scream Queens",
+        "is_special": false,
         "start_date": "\"2024-08-29T05:00:00.000Z\"",
         "end_date": "\"2024-09-26T05:00:00.000Z\"",
         "apple_link": null,
@@ -7538,7 +7743,7 @@
       "month_theme_id": null,
       "host_pick": null,
       "affiliate_link": null,
-      "shirt_link": null,
+      "shirt_link": "https://vhsvillage.com/products/70mm-big-trouble-unisex-garment-dyed-t-shirt",
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
       "viewer_count": 67,
@@ -7579,13 +7784,14 @@
       "month_theme_id": 46,
       "host_pick": "danny",
       "affiliate_link": "https://amzn.to/3XPcyym",
-      "shirt_link": null,
+      "shirt_link": "https://vhsvillage.com/products/70mm-texas-chainsaw-massacre-unisex-garment-dyed-t-shirt",
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
       "viewer_count": 65,
       "monthTheme": {
         "id": 46,
         "theme_name": "Scream Queens",
+        "is_special": false,
         "start_date": "\"2024-08-29T05:00:00.000Z\"",
         "end_date": "\"2024-09-26T05:00:00.000Z\"",
         "apple_link": null,
@@ -7669,7 +7875,7 @@
       "month_theme_id": null,
       "host_pick": null,
       "affiliate_link": null,
-      "shirt_link": null,
+      "shirt_link": "https://vhsvillage.com/products/70mm-the-last-emperor-unisex-garment-dyed-t-shirt",
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
       "viewer_count": 23,
@@ -7717,6 +7923,7 @@
       "monthTheme": {
         "id": 46,
         "theme_name": "Scream Queens",
+        "is_special": false,
         "start_date": "\"2024-08-29T05:00:00.000Z\"",
         "end_date": "\"2024-09-26T05:00:00.000Z\"",
         "apple_link": null,
@@ -7767,6 +7974,7 @@
       "monthTheme": {
         "id": 46,
         "theme_name": "Scream Queens",
+        "is_special": false,
         "start_date": "\"2024-08-29T05:00:00.000Z\"",
         "end_date": "\"2024-09-26T05:00:00.000Z\"",
         "apple_link": null,
@@ -7810,13 +8018,14 @@
       "month_theme_id": 46,
       "host_pick": "event",
       "affiliate_link": "https://amzn.to/3BhffzX",
-      "shirt_link": null,
+      "shirt_link": "https://vhsvillage.com/products/70mm-nightmare-on-elm-street-unisex-garment-dyed-t-shirt",
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
       "viewer_count": 72,
       "monthTheme": {
         "id": 46,
         "theme_name": "Scream Queens",
+        "is_special": false,
         "start_date": "\"2024-08-29T05:00:00.000Z\"",
         "end_date": "\"2024-09-26T05:00:00.000Z\"",
         "apple_link": null,
@@ -7860,13 +8069,14 @@
       "month_theme_id": 45,
       "host_pick": null,
       "affiliate_link": "https://amzn.to/3SzX4uY",
-      "shirt_link": null,
+      "shirt_link": "https://vhsvillage.com/products/70mm-children-of-men-unisex-garment-dyed-t-shirt",
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
       "viewer_count": 70,
       "monthTheme": {
         "id": 45,
         "theme_name": "??",
+        "is_special": false,
         "start_date": "\"2024-08-01T05:00:00.000Z\"",
         "end_date": "\"2024-08-16T05:00:00.000Z\"",
         "apple_link": null,
@@ -7917,6 +8127,7 @@
       "monthTheme": {
         "id": 45,
         "theme_name": "??",
+        "is_special": false,
         "start_date": "\"2024-08-01T05:00:00.000Z\"",
         "end_date": "\"2024-08-16T05:00:00.000Z\"",
         "apple_link": null,
@@ -7967,6 +8178,7 @@
       "monthTheme": {
         "id": 45,
         "theme_name": "??",
+        "is_special": false,
         "start_date": "\"2024-08-01T05:00:00.000Z\"",
         "end_date": "\"2024-08-16T05:00:00.000Z\"",
         "apple_link": null,
@@ -8058,6 +8270,7 @@
       "monthTheme": {
         "id": 45,
         "theme_name": "??",
+        "is_special": false,
         "start_date": "\"2024-08-01T05:00:00.000Z\"",
         "end_date": "\"2024-08-16T05:00:00.000Z\"",
         "apple_link": null,
@@ -8108,6 +8321,7 @@
       "monthTheme": {
         "id": 44,
         "theme_name": "LEADING LADIES V4",
+        "is_special": false,
         "start_date": "\"2024-06-27T05:00:00.000Z\"",
         "end_date": "\"2024-07-25T05:00:00.000Z\"",
         "apple_link": null,
@@ -8158,6 +8372,7 @@
       "monthTheme": {
         "id": 44,
         "theme_name": "LEADING LADIES V4",
+        "is_special": false,
         "start_date": "\"2024-06-27T05:00:00.000Z\"",
         "end_date": "\"2024-07-25T05:00:00.000Z\"",
         "apple_link": null,
@@ -8208,6 +8423,7 @@
       "monthTheme": {
         "id": 44,
         "theme_name": "LEADING LADIES V4",
+        "is_special": false,
         "start_date": "\"2024-06-27T05:00:00.000Z\"",
         "end_date": "\"2024-07-25T05:00:00.000Z\"",
         "apple_link": null,
@@ -8281,7 +8497,7 @@
       "transcript_link": null,
       "apple_link": "https://podcasts.apple.com/us/podcast/maxxxine-2024/id1495604053?i=1000661492845",
       "spotify_link": "https://open.spotify.com/episode/0tSKbPhq4NqyDtPDkPPsnD?si=Nzjx29ncTXWajBETF74eew",
-      "store_link": "https://vhsvillage.com/products/episode-226-maxxxine",
+      "store_link": null,
       "tmdb_id": "1023922",
       "tmdb_tv_id": null,
       "tmdb_tv_season": null,
@@ -8299,6 +8515,7 @@
       "monthTheme": {
         "id": 44,
         "theme_name": "LEADING LADIES V4",
+        "is_special": false,
         "start_date": "\"2024-06-27T05:00:00.000Z\"",
         "end_date": "\"2024-07-25T05:00:00.000Z\"",
         "apple_link": null,
@@ -8342,13 +8559,14 @@
       "month_theme_id": 44,
       "host_pick": "event",
       "affiliate_link": "https://amzn.to/4clo4Gp",
-      "shirt_link": null,
+      "shirt_link": "https://vhsvillage.com/products/70mm-pearl-x-double-feature-unisex-garment-dyed-t-shirt",
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
       "viewer_count": 81,
       "monthTheme": {
         "id": 44,
         "theme_name": "LEADING LADIES V4",
+        "is_special": false,
         "start_date": "\"2024-06-27T05:00:00.000Z\"",
         "end_date": "\"2024-07-25T05:00:00.000Z\"",
         "apple_link": null,
@@ -8392,7 +8610,7 @@
       "month_theme_id": null,
       "host_pick": null,
       "affiliate_link": "https://amzn.to/45KWZdw",
-      "shirt_link": null,
+      "shirt_link": "https://vhsvillage.com/products/70mm-pearl-x-double-feature-unisex-garment-dyed-t-shirt",
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
       "viewer_count": 69,
@@ -8440,6 +8658,7 @@
       "monthTheme": {
         "id": 43,
         "theme_name": "BLOCKBUSTED",
+        "is_special": false,
         "start_date": "\"2024-05-30T05:00:00.000Z\"",
         "end_date": "\"2024-06-20T05:00:00.000Z\"",
         "apple_link": null,
@@ -8483,13 +8702,14 @@
       "month_theme_id": 43,
       "host_pick": "vote",
       "affiliate_link": null,
-      "shirt_link": null,
+      "shirt_link": "https://vhsvillage.com/products/70mm-godzilla-minus-one-unisex-garment-dyed-t-shirt",
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
       "viewer_count": 92,
       "monthTheme": {
         "id": 43,
         "theme_name": "BLOCKBUSTED",
+        "is_special": false,
         "start_date": "\"2024-05-30T05:00:00.000Z\"",
         "end_date": "\"2024-06-20T05:00:00.000Z\"",
         "apple_link": null,
@@ -8581,6 +8801,7 @@
       "monthTheme": {
         "id": 43,
         "theme_name": "BLOCKBUSTED",
+        "is_special": false,
         "start_date": "\"2024-05-30T05:00:00.000Z\"",
         "end_date": "\"2024-06-20T05:00:00.000Z\"",
         "apple_link": null,
@@ -8624,13 +8845,14 @@
       "month_theme_id": 43,
       "host_pick": "slim",
       "affiliate_link": null,
-      "shirt_link": null,
+      "shirt_link": "https://vhsvillage.com/products/70mm-sorcerer-unisex-garment-dyed-t-shirt",
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
       "viewer_count": 72,
       "monthTheme": {
         "id": 43,
         "theme_name": "BLOCKBUSTED",
+        "is_special": false,
         "start_date": "\"2024-05-30T05:00:00.000Z\"",
         "end_date": "\"2024-06-20T05:00:00.000Z\"",
         "apple_link": null,
@@ -8681,6 +8903,7 @@
       "monthTheme": {
         "id": 42,
         "theme_name": "Planet of the Maypes",
+        "is_special": false,
         "start_date": "\"2024-05-02T05:00:00.000Z\"",
         "end_date": "\"2024-05-23T05:00:00.000Z\"",
         "apple_link": null,
@@ -8772,6 +8995,7 @@
       "monthTheme": {
         "id": 42,
         "theme_name": "Planet of the Maypes",
+        "is_special": false,
         "start_date": "\"2024-05-02T05:00:00.000Z\"",
         "end_date": "\"2024-05-23T05:00:00.000Z\"",
         "apple_link": null,
@@ -8938,13 +9162,14 @@
       "month_theme_id": 41,
       "host_pick": "vote",
       "affiliate_link": null,
-      "shirt_link": null,
+      "shirt_link": "https://vhsvillage.com/products/70mm-the-sound-of-music-unisex-garment-dyed-t-shirt",
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
       "viewer_count": 65,
       "monthTheme": {
         "id": 41,
         "theme_name": "60s Month",
+        "is_special": false,
         "start_date": "\"2024-03-28T05:00:00.000Z\"",
         "end_date": "\"2024-04-25T05:00:00.000Z\"",
         "apple_link": null,
@@ -8988,7 +9213,7 @@
       "month_theme_id": null,
       "host_pick": null,
       "affiliate_link": null,
-      "shirt_link": null,
+      "shirt_link": "https://vhsvillage.com/products/70mm-batman-66-unisex-garment-dyed-t-shirt",
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
       "viewer_count": 37,
@@ -9029,7 +9254,7 @@
       "month_theme_id": null,
       "host_pick": null,
       "affiliate_link": null,
-      "shirt_link": null,
+      "shirt_link": "https://vhsvillage.com/products/70mm-punch-drunk-love-unisex-garment-dyed-t-shirt",
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
       "viewer_count": 82,
@@ -9077,6 +9302,7 @@
       "monthTheme": {
         "id": 41,
         "theme_name": "60s Month",
+        "is_special": false,
         "start_date": "\"2024-03-28T05:00:00.000Z\"",
         "end_date": "\"2024-04-25T05:00:00.000Z\"",
         "apple_link": null,
@@ -9120,13 +9346,14 @@
       "month_theme_id": 41,
       "host_pick": "proto",
       "affiliate_link": null,
-      "shirt_link": null,
+      "shirt_link": "https://vhsvillage.com/products/70mm-high-and-low-unisex-garment-dyed-t-shirt",
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
       "viewer_count": 64,
       "monthTheme": {
         "id": 41,
         "theme_name": "60s Month",
+        "is_special": false,
         "start_date": "\"2024-03-28T05:00:00.000Z\"",
         "end_date": "\"2024-04-25T05:00:00.000Z\"",
         "apple_link": null,
@@ -9177,6 +9404,7 @@
       "monthTheme": {
         "id": 41,
         "theme_name": "60s Month",
+        "is_special": false,
         "start_date": "\"2024-03-28T05:00:00.000Z\"",
         "end_date": "\"2024-04-25T05:00:00.000Z\"",
         "apple_link": null,
@@ -9268,6 +9496,7 @@
       "monthTheme": {
         "id": 40,
         "theme_name": "90ish Mins or Less",
+        "is_special": false,
         "start_date": "\"2024-03-07T06:00:00.000Z\"",
         "end_date": "\"2024-03-21T05:00:00.000Z\"",
         "apple_link": null,
@@ -9318,6 +9547,7 @@
       "monthTheme": {
         "id": 40,
         "theme_name": "90ish Mins or Less",
+        "is_special": false,
         "start_date": "\"2024-03-07T06:00:00.000Z\"",
         "end_date": "\"2024-03-21T05:00:00.000Z\"",
         "apple_link": null,
@@ -9368,6 +9598,7 @@
       "monthTheme": {
         "id": 40,
         "theme_name": "90ish Mins or Less",
+        "is_special": false,
         "start_date": "\"2024-03-07T06:00:00.000Z\"",
         "end_date": "\"2024-03-21T05:00:00.000Z\"",
         "apple_link": null,
@@ -9459,6 +9690,7 @@
       "monthTheme": {
         "id": 39,
         "theme_name": "Faves Round 2",
+        "is_special": false,
         "start_date": "\"2024-02-01T06:00:00.000Z\"",
         "end_date": "\"2024-02-22T06:00:00.000Z\"",
         "apple_link": null,
@@ -9550,6 +9782,7 @@
       "monthTheme": {
         "id": 39,
         "theme_name": "Faves Round 2",
+        "is_special": false,
         "start_date": "\"2024-02-01T06:00:00.000Z\"",
         "end_date": "\"2024-02-22T06:00:00.000Z\"",
         "apple_link": null,
@@ -9634,13 +9867,14 @@
       "month_theme_id": 39,
       "host_pick": "danny",
       "affiliate_link": null,
-      "shirt_link": null,
+      "shirt_link": "https://vhsvillage.com/products/70mm-casino-royale-unisex-garment-dyed-t-shirt",
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
       "viewer_count": 82,
       "monthTheme": {
         "id": 39,
         "theme_name": "Faves Round 2",
+        "is_special": false,
         "start_date": "\"2024-02-01T06:00:00.000Z\"",
         "end_date": "\"2024-02-22T06:00:00.000Z\"",
         "apple_link": null,
@@ -9691,6 +9925,7 @@
       "monthTheme": {
         "id": 39,
         "theme_name": "Faves Round 2",
+        "is_special": false,
         "start_date": "\"2024-02-01T06:00:00.000Z\"",
         "end_date": "\"2024-02-22T06:00:00.000Z\"",
         "apple_link": null,
@@ -9782,6 +10017,7 @@
       "monthTheme": {
         "id": 38,
         "theme_name": "LB 1M Watched Club",
+        "is_special": false,
         "start_date": "\"2024-01-04T06:00:00.000Z\"",
         "end_date": "\"2024-01-25T06:00:00.000Z\"",
         "apple_link": null,
@@ -9907,13 +10143,14 @@
       "month_theme_id": 38,
       "host_pick": "danny",
       "affiliate_link": null,
-      "shirt_link": null,
+      "shirt_link": "https://vhsvillage.com/products/70mm-2001-a-space-odyssey-unisex-garment-dyed-t-shirt",
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
       "viewer_count": 91,
       "monthTheme": {
         "id": 38,
         "theme_name": "LB 1M Watched Club",
+        "is_special": false,
         "start_date": "\"2024-01-04T06:00:00.000Z\"",
         "end_date": "\"2024-01-25T06:00:00.000Z\"",
         "apple_link": null,
@@ -9964,6 +10201,7 @@
       "monthTheme": {
         "id": 38,
         "theme_name": "LB 1M Watched Club",
+        "is_special": false,
         "start_date": "\"2024-01-04T06:00:00.000Z\"",
         "end_date": "\"2024-01-25T06:00:00.000Z\"",
         "apple_link": null,
@@ -10007,13 +10245,14 @@
       "month_theme_id": 38,
       "host_pick": "event",
       "affiliate_link": null,
-      "shirt_link": null,
+      "shirt_link": "https://vhsvillage.com/products/70mm-parasite-unisex-garment-dyed-t-shirt",
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
       "viewer_count": 97,
       "monthTheme": {
         "id": 38,
         "theme_name": "LB 1M Watched Club",
+        "is_special": false,
         "start_date": "\"2024-01-04T06:00:00.000Z\"",
         "end_date": "\"2024-01-25T06:00:00.000Z\"",
         "apple_link": null,
@@ -10064,6 +10303,7 @@
       "monthTheme": {
         "id": 37,
         "theme_name": "Christmas In December",
+        "is_special": false,
         "start_date": "\"2023-12-07T06:00:00.000Z\"",
         "end_date": "\"2023-12-28T06:00:00.000Z\"",
         "apple_link": null,
@@ -10114,6 +10354,7 @@
       "monthTheme": {
         "id": 37,
         "theme_name": "Christmas In December",
+        "is_special": false,
         "start_date": "\"2023-12-07T06:00:00.000Z\"",
         "end_date": "\"2023-12-28T06:00:00.000Z\"",
         "apple_link": null,
@@ -10164,6 +10405,7 @@
       "monthTheme": {
         "id": 37,
         "theme_name": "Christmas In December",
+        "is_special": false,
         "start_date": "\"2023-12-07T06:00:00.000Z\"",
         "end_date": "\"2023-12-28T06:00:00.000Z\"",
         "apple_link": null,
@@ -10214,6 +10456,7 @@
       "monthTheme": {
         "id": 37,
         "theme_name": "Christmas In December",
+        "is_special": false,
         "start_date": "\"2023-12-07T06:00:00.000Z\"",
         "end_date": "\"2023-12-28T06:00:00.000Z\"",
         "apple_link": null,
@@ -10305,6 +10548,7 @@
       "monthTheme": {
         "id": 36,
         "theme_name": "Newvember",
+        "is_special": false,
         "start_date": "\"2023-11-02T05:00:00.000Z\"",
         "end_date": "\"2024-11-28T06:00:00.000Z\"",
         "apple_link": null,
@@ -10355,6 +10599,7 @@
       "monthTheme": {
         "id": 36,
         "theme_name": "Newvember",
+        "is_special": false,
         "start_date": "\"2023-11-02T05:00:00.000Z\"",
         "end_date": "\"2024-11-28T06:00:00.000Z\"",
         "apple_link": null,
@@ -10446,6 +10691,7 @@
       "monthTheme": {
         "id": 36,
         "theme_name": "Newvember",
+        "is_special": false,
         "start_date": "\"2023-11-02T05:00:00.000Z\"",
         "end_date": "\"2024-11-28T06:00:00.000Z\"",
         "apple_link": null,
@@ -10496,6 +10742,7 @@
       "monthTheme": {
         "id": 36,
         "theme_name": "Newvember",
+        "is_special": false,
         "start_date": "\"2023-11-02T05:00:00.000Z\"",
         "end_date": "\"2024-11-28T06:00:00.000Z\"",
         "apple_link": null,
@@ -10546,6 +10793,7 @@
       "monthTheme": {
         "id": 35,
         "theme_name": "TORMENTOBER",
+        "is_special": false,
         "start_date": "\"2023-09-28T05:00:00.000Z\"",
         "end_date": "\"2023-10-26T05:00:00.000Z\"",
         "apple_link": null,
@@ -10637,6 +10885,7 @@
       "monthTheme": {
         "id": 35,
         "theme_name": "TORMENTOBER",
+        "is_special": false,
         "start_date": "\"2023-09-28T05:00:00.000Z\"",
         "end_date": "\"2023-10-26T05:00:00.000Z\"",
         "apple_link": null,
@@ -10669,7 +10918,7 @@
       "transcript_link": null,
       "apple_link": "https://podcasts.apple.com/us/podcast/black-sabbath-1963/id1495604053?i=1000631433574",
       "spotify_link": "https://open.spotify.com/episode/6uUUgazeToQOqa5IOaST1G?si=AAznOX0lSQWw8q5PtXtX4Q",
-      "store_link": "https://vhsvillage.com/products/episode-192-black-sabbath",
+      "store_link": null,
       "tmdb_id": "28043",
       "tmdb_tv_id": null,
       "tmdb_tv_season": null,
@@ -10687,6 +10936,7 @@
       "monthTheme": {
         "id": 35,
         "theme_name": "TORMENTOBER",
+        "is_special": false,
         "start_date": "\"2023-09-28T05:00:00.000Z\"",
         "end_date": "\"2023-10-26T05:00:00.000Z\"",
         "apple_link": null,
@@ -10737,6 +10987,7 @@
       "monthTheme": {
         "id": 74,
         "theme_name": "Journeys with Dale",
+        "is_special": true,
         "start_date": null,
         "end_date": null,
         "apple_link": null,
@@ -10787,6 +11038,7 @@
       "monthTheme": {
         "id": 35,
         "theme_name": "TORMENTOBER",
+        "is_special": false,
         "start_date": "\"2023-09-28T05:00:00.000Z\"",
         "end_date": "\"2023-10-26T05:00:00.000Z\"",
         "apple_link": null,
@@ -10837,6 +11089,7 @@
       "monthTheme": {
         "id": 35,
         "theme_name": "TORMENTOBER",
+        "is_special": false,
         "start_date": "\"2023-09-28T05:00:00.000Z\"",
         "end_date": "\"2023-10-26T05:00:00.000Z\"",
         "apple_link": null,
@@ -10927,6 +11180,7 @@
       "monthTheme": {
         "id": 34,
         "theme_name": "Women Lovers / Femtember",
+        "is_special": false,
         "start_date": "\"2023-08-31T05:00:00.000Z\"",
         "end_date": "\"2023-09-21T05:00:00.000Z\"",
         "apple_link": null,
@@ -11018,6 +11272,7 @@
       "monthTheme": {
         "id": 34,
         "theme_name": "Women Lovers / Femtember",
+        "is_special": false,
         "start_date": "\"2023-08-31T05:00:00.000Z\"",
         "end_date": "\"2023-09-21T05:00:00.000Z\"",
         "apple_link": null,
@@ -11150,6 +11405,7 @@
       "monthTheme": {
         "id": 34,
         "theme_name": "Women Lovers / Femtember",
+        "is_special": false,
         "start_date": "\"2023-08-31T05:00:00.000Z\"",
         "end_date": "\"2023-09-21T05:00:00.000Z\"",
         "apple_link": null,
@@ -11200,6 +11456,7 @@
       "monthTheme": {
         "id": 34,
         "theme_name": "Women Lovers / Femtember",
+        "is_special": false,
         "start_date": "\"2023-08-31T05:00:00.000Z\"",
         "end_date": "\"2023-09-21T05:00:00.000Z\"",
         "apple_link": null,
@@ -11291,6 +11548,7 @@
       "monthTheme": {
         "id": 33,
         "theme_name": "Fogaust",
+        "is_special": false,
         "start_date": "\"2023-08-03T05:00:00.000Z\"",
         "end_date": "\"2023-08-24T05:00:00.000Z\"",
         "apple_link": null,
@@ -11341,6 +11599,7 @@
       "monthTheme": {
         "id": 33,
         "theme_name": "Fogaust",
+        "is_special": false,
         "start_date": "\"2023-08-03T05:00:00.000Z\"",
         "end_date": "\"2023-08-24T05:00:00.000Z\"",
         "apple_link": null,
@@ -11391,6 +11650,7 @@
       "monthTheme": {
         "id": 33,
         "theme_name": "Fogaust",
+        "is_special": false,
         "start_date": "\"2023-08-03T05:00:00.000Z\"",
         "end_date": "\"2023-08-24T05:00:00.000Z\"",
         "apple_link": null,
@@ -11441,6 +11701,7 @@
       "monthTheme": {
         "id": 33,
         "theme_name": "Fogaust",
+        "is_special": false,
         "start_date": "\"2023-08-03T05:00:00.000Z\"",
         "end_date": "\"2023-08-24T05:00:00.000Z\"",
         "apple_link": null,
@@ -11484,13 +11745,14 @@
       "month_theme_id": 32,
       "host_pick": "vote",
       "affiliate_link": null,
-      "shirt_link": null,
+      "shirt_link": "https://vhsvillage.com/products/70mm-barbie-unisex-garment-dyed-t-shirt-2",
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
       "viewer_count": 105,
       "monthTheme": {
         "id": 32,
         "theme_name": "BarbenHeimer",
+        "is_special": false,
         "start_date": "\"2023-07-06T05:00:00.000Z\"",
         "end_date": "\"2023-07-27T05:00:00.000Z\"",
         "apple_link": null,
@@ -11541,6 +11803,7 @@
       "monthTheme": {
         "id": 32,
         "theme_name": "BarbenHeimer",
+        "is_special": false,
         "start_date": "\"2023-07-06T05:00:00.000Z\"",
         "end_date": "\"2023-07-27T05:00:00.000Z\"",
         "apple_link": null,
@@ -11632,6 +11895,7 @@
       "monthTheme": {
         "id": 32,
         "theme_name": "BarbenHeimer",
+        "is_special": false,
         "start_date": "\"2023-07-06T05:00:00.000Z\"",
         "end_date": "\"2023-07-27T05:00:00.000Z\"",
         "apple_link": null,
@@ -11682,6 +11946,7 @@
       "monthTheme": {
         "id": 32,
         "theme_name": "BarbenHeimer",
+        "is_special": false,
         "start_date": "\"2023-07-06T05:00:00.000Z\"",
         "end_date": "\"2023-07-27T05:00:00.000Z\"",
         "apple_link": null,
@@ -11766,13 +12031,14 @@
       "month_theme_id": 31,
       "host_pick": "vote",
       "affiliate_link": null,
-      "shirt_link": null,
+      "shirt_link": "https://vhsvillage.com/products/70mm-scott-pilgrim-vs-the-world-unisex-garment-dyed-t-shirt",
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
       "viewer_count": 90,
       "monthTheme": {
         "id": 31,
         "theme_name": "Comic Book",
+        "is_special": false,
         "start_date": "\"2023-06-01T05:00:00.000Z\"",
         "end_date": "\"2023-06-29T05:00:00.000Z\"",
         "apple_link": null,
@@ -11823,6 +12089,7 @@
       "monthTheme": {
         "id": 31,
         "theme_name": "Comic Book",
+        "is_special": false,
         "start_date": "\"2023-06-01T05:00:00.000Z\"",
         "end_date": "\"2023-06-29T05:00:00.000Z\"",
         "apple_link": null,
@@ -11873,6 +12140,7 @@
       "monthTheme": {
         "id": 31,
         "theme_name": "Comic Book",
+        "is_special": false,
         "start_date": "\"2023-06-01T05:00:00.000Z\"",
         "end_date": "\"2023-06-29T05:00:00.000Z\"",
         "apple_link": null,
@@ -11923,6 +12191,7 @@
       "monthTheme": {
         "id": 31,
         "theme_name": "Comic Book",
+        "is_special": false,
         "start_date": "\"2023-06-01T05:00:00.000Z\"",
         "end_date": "\"2023-06-29T05:00:00.000Z\"",
         "apple_link": null,
@@ -11973,6 +12242,7 @@
       "monthTheme": {
         "id": 31,
         "theme_name": "Comic Book",
+        "is_special": false,
         "start_date": "\"2023-06-01T05:00:00.000Z\"",
         "end_date": "\"2023-06-29T05:00:00.000Z\"",
         "apple_link": null,
@@ -12023,6 +12293,7 @@
       "monthTheme": {
         "id": 30,
         "theme_name": "May the 4th",
+        "is_special": false,
         "start_date": "\"2023-04-27T05:00:00.000Z\"",
         "end_date": "\"2023-05-25T05:00:00.000Z\"",
         "apple_link": null,
@@ -12114,6 +12385,7 @@
       "monthTheme": {
         "id": 74,
         "theme_name": "Journeys with Dale",
+        "is_special": true,
         "start_date": null,
         "end_date": null,
         "apple_link": null,
@@ -12164,6 +12436,7 @@
       "monthTheme": {
         "id": 30,
         "theme_name": "May the 4th",
+        "is_special": false,
         "start_date": "\"2023-04-27T05:00:00.000Z\"",
         "end_date": "\"2023-05-25T05:00:00.000Z\"",
         "apple_link": null,
@@ -12255,6 +12528,7 @@
       "monthTheme": {
         "id": 30,
         "theme_name": "May the 4th",
+        "is_special": false,
         "start_date": "\"2023-04-27T05:00:00.000Z\"",
         "end_date": "\"2023-05-25T05:00:00.000Z\"",
         "apple_link": null,
@@ -12345,6 +12619,7 @@
       "monthTheme": {
         "id": 30,
         "theme_name": "May the 4th",
+        "is_special": false,
         "start_date": "\"2023-04-27T05:00:00.000Z\"",
         "end_date": "\"2023-05-25T05:00:00.000Z\"",
         "apple_link": null,
@@ -12395,6 +12670,7 @@
       "monthTheme": {
         "id": 29,
         "theme_name": "Holy/Regligion/Spiritual Month",
+        "is_special": false,
         "start_date": "\"2023-03-30T05:00:00.000Z\"",
         "end_date": "\"2023-04-20T05:00:00.000Z\"",
         "apple_link": null,
@@ -12445,6 +12721,7 @@
       "monthTheme": {
         "id": 29,
         "theme_name": "Holy/Regligion/Spiritual Month",
+        "is_special": false,
         "start_date": "\"2023-03-30T05:00:00.000Z\"",
         "end_date": "\"2023-04-20T05:00:00.000Z\"",
         "apple_link": null,
@@ -12488,13 +12765,14 @@
       "month_theme_id": 29,
       "host_pick": "slim",
       "affiliate_link": null,
-      "shirt_link": null,
+      "shirt_link": "https://vhsvillage.com/products/70mm-interstellar-unisex-garment-dyed-t-shirt-1",
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
       "viewer_count": 95,
       "monthTheme": {
         "id": 29,
         "theme_name": "Holy/Regligion/Spiritual Month",
+        "is_special": false,
         "start_date": "\"2023-03-30T05:00:00.000Z\"",
         "end_date": "\"2023-04-20T05:00:00.000Z\"",
         "apple_link": null,
@@ -12586,6 +12864,7 @@
       "monthTheme": {
         "id": 29,
         "theme_name": "Holy/Regligion/Spiritual Month",
+        "is_special": false,
         "start_date": "\"2023-03-30T05:00:00.000Z\"",
         "end_date": "\"2023-04-20T05:00:00.000Z\"",
         "apple_link": null,
@@ -12636,6 +12915,7 @@
       "monthTheme": {
         "id": 28,
         "theme_name": "Leading L80s",
+        "is_special": false,
         "start_date": "\"2023-03-23T05:00:00.000Z\"",
         "end_date": "\"2023-03-23T05:00:00.000Z\"",
         "apple_link": null,
@@ -12686,6 +12966,7 @@
       "monthTheme": {
         "id": 27,
         "theme_name": "Leading Ladies 80s",
+        "is_special": false,
         "start_date": "\"2023-03-02T06:00:00.000Z\"",
         "end_date": "\"2023-03-16T05:00:00.000Z\"",
         "apple_link": null,
@@ -12777,6 +13058,7 @@
       "monthTheme": {
         "id": 27,
         "theme_name": "Leading Ladies 80s",
+        "is_special": false,
         "start_date": "\"2023-03-02T06:00:00.000Z\"",
         "end_date": "\"2023-03-16T05:00:00.000Z\"",
         "apple_link": null,
@@ -12827,6 +13109,7 @@
       "monthTheme": {
         "id": 27,
         "theme_name": "Leading Ladies 80s",
+        "is_special": false,
         "start_date": "\"2023-03-02T06:00:00.000Z\"",
         "end_date": "\"2023-03-16T05:00:00.000Z\"",
         "apple_link": null,
@@ -12877,6 +13160,7 @@
       "monthTheme": {
         "id": 26,
         "theme_name": "VHS Village Top 100",
+        "is_special": false,
         "start_date": "\"2023-02-02T06:00:00.000Z\"",
         "end_date": "\"2023-02-23T06:00:00.000Z\"",
         "apple_link": null,
@@ -12920,13 +13204,14 @@
       "month_theme_id": 26,
       "host_pick": "slim",
       "affiliate_link": null,
-      "shirt_link": null,
+      "shirt_link": "https://vhsvillage.com/products/70mm-kill-bill-unisex-garment-dyed-t-shirt",
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
       "viewer_count": 90,
       "monthTheme": {
         "id": 26,
         "theme_name": "VHS Village Top 100",
+        "is_special": false,
         "start_date": "\"2023-02-02T06:00:00.000Z\"",
         "end_date": "\"2023-02-23T06:00:00.000Z\"",
         "apple_link": null,
@@ -13059,6 +13344,7 @@
       "monthTheme": {
         "id": 26,
         "theme_name": "VHS Village Top 100",
+        "is_special": false,
         "start_date": "\"2023-02-02T06:00:00.000Z\"",
         "end_date": "\"2023-02-23T06:00:00.000Z\"",
         "apple_link": null,
@@ -13143,13 +13429,14 @@
       "month_theme_id": 26,
       "host_pick": "danny",
       "affiliate_link": null,
-      "shirt_link": null,
+      "shirt_link": "https://vhsvillage.com/products/70mm-casablanca-unisex-garment-dyed-t-shirt",
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
       "viewer_count": 86,
       "monthTheme": {
         "id": 26,
         "theme_name": "VHS Village Top 100",
+        "is_special": false,
         "start_date": "\"2023-02-02T06:00:00.000Z\"",
         "end_date": "\"2023-02-23T06:00:00.000Z\"",
         "apple_link": null,
@@ -13200,6 +13487,7 @@
       "monthTheme": {
         "id": 25,
         "theme_name": "70s",
+        "is_special": false,
         "start_date": "\"2022-12-29T06:00:00.000Z\"",
         "end_date": "\"2023-01-26T06:00:00.000Z\"",
         "apple_link": null,
@@ -13250,6 +13538,7 @@
       "monthTheme": {
         "id": 25,
         "theme_name": "70s",
+        "is_special": false,
         "start_date": "\"2022-12-29T06:00:00.000Z\"",
         "end_date": "\"2023-01-26T06:00:00.000Z\"",
         "apple_link": null,
@@ -13341,6 +13630,7 @@
       "monthTheme": {
         "id": 25,
         "theme_name": "70s",
+        "is_special": false,
         "start_date": "\"2022-12-29T06:00:00.000Z\"",
         "end_date": "\"2023-01-26T06:00:00.000Z\"",
         "apple_link": null,
@@ -13391,6 +13681,7 @@
       "monthTheme": {
         "id": 25,
         "theme_name": "70s",
+        "is_special": false,
         "start_date": "\"2022-12-29T06:00:00.000Z\"",
         "end_date": "\"2023-01-26T06:00:00.000Z\"",
         "apple_link": null,
@@ -13441,6 +13732,7 @@
       "monthTheme": {
         "id": 25,
         "theme_name": "70s",
+        "is_special": false,
         "start_date": "\"2022-12-29T06:00:00.000Z\"",
         "end_date": "\"2023-01-26T06:00:00.000Z\"",
         "apple_link": null,
@@ -13654,6 +13946,7 @@
       "monthTheme": {
         "id": 24,
         "theme_name": "Movies about movies",
+        "is_special": false,
         "start_date": "\"2022-11-03T05:00:00.000Z\"",
         "end_date": "\"2022-12-01T06:00:00.000Z\"",
         "apple_link": null,
@@ -13745,6 +14038,7 @@
       "monthTheme": {
         "id": 24,
         "theme_name": "Movies about movies",
+        "is_special": false,
         "start_date": "\"2022-11-03T05:00:00.000Z\"",
         "end_date": "\"2022-12-01T06:00:00.000Z\"",
         "apple_link": null,
@@ -13795,6 +14089,7 @@
       "monthTheme": {
         "id": 24,
         "theme_name": "Movies about movies",
+        "is_special": false,
         "start_date": "\"2022-11-03T05:00:00.000Z\"",
         "end_date": "\"2022-12-01T06:00:00.000Z\"",
         "apple_link": null,
@@ -13886,6 +14181,7 @@
       "monthTheme": {
         "id": 24,
         "theme_name": "Movies about movies",
+        "is_special": false,
         "start_date": "\"2022-11-03T05:00:00.000Z\"",
         "end_date": "\"2022-12-01T06:00:00.000Z\"",
         "apple_link": null,
@@ -13936,6 +14232,7 @@
       "monthTheme": {
         "id": 24,
         "theme_name": "Movies about movies",
+        "is_special": false,
         "start_date": "\"2022-11-03T05:00:00.000Z\"",
         "end_date": "\"2022-12-01T06:00:00.000Z\"",
         "apple_link": null,
@@ -13986,6 +14283,7 @@
       "monthTheme": {
         "id": 23,
         "theme_name": "Hauntvember",
+        "is_special": false,
         "start_date": "\"2022-09-29T05:00:00.000Z\"",
         "end_date": "\"2022-10-27T05:00:00.000Z\"",
         "apple_link": null,
@@ -14077,6 +14375,7 @@
       "monthTheme": {
         "id": 23,
         "theme_name": "Hauntvember",
+        "is_special": false,
         "start_date": "\"2022-09-29T05:00:00.000Z\"",
         "end_date": "\"2022-10-27T05:00:00.000Z\"",
         "apple_link": null,
@@ -14127,6 +14426,7 @@
       "monthTheme": {
         "id": 23,
         "theme_name": "Hauntvember",
+        "is_special": false,
         "start_date": "\"2022-09-29T05:00:00.000Z\"",
         "end_date": "\"2022-10-27T05:00:00.000Z\"",
         "apple_link": null,
@@ -14218,6 +14518,7 @@
       "monthTheme": {
         "id": 23,
         "theme_name": "Hauntvember",
+        "is_special": false,
         "start_date": "\"2022-09-29T05:00:00.000Z\"",
         "end_date": "\"2022-10-27T05:00:00.000Z\"",
         "apple_link": null,
@@ -14268,6 +14569,7 @@
       "monthTheme": {
         "id": 23,
         "theme_name": "Hauntvember",
+        "is_special": false,
         "start_date": "\"2022-09-29T05:00:00.000Z\"",
         "end_date": "\"2022-10-27T05:00:00.000Z\"",
         "apple_link": null,
@@ -14318,6 +14620,7 @@
       "monthTheme": {
         "id": 22,
         "theme_name": "Lo-fi Sci-fi Month",
+        "is_special": false,
         "start_date": "\"2022-09-01T05:00:00.000Z\"",
         "end_date": "\"2022-09-22T05:00:00.000Z\"",
         "apple_link": null,
@@ -14450,6 +14753,7 @@
       "monthTheme": {
         "id": 22,
         "theme_name": "Lo-fi Sci-fi Month",
+        "is_special": false,
         "start_date": "\"2022-09-01T05:00:00.000Z\"",
         "end_date": "\"2022-09-22T05:00:00.000Z\"",
         "apple_link": null,
@@ -14500,6 +14804,7 @@
       "monthTheme": {
         "id": 22,
         "theme_name": "Lo-fi Sci-fi Month",
+        "is_special": false,
         "start_date": "\"2022-09-01T05:00:00.000Z\"",
         "end_date": "\"2022-09-22T05:00:00.000Z\"",
         "apple_link": null,
@@ -14550,6 +14855,7 @@
       "monthTheme": {
         "id": 22,
         "theme_name": "Lo-fi Sci-fi Month",
+        "is_special": false,
         "start_date": "\"2022-09-01T05:00:00.000Z\"",
         "end_date": "\"2022-09-22T05:00:00.000Z\"",
         "apple_link": null,
@@ -14641,6 +14947,7 @@
       "monthTheme": {
         "id": 21,
         "theme_name": "Animaugust",
+        "is_special": false,
         "start_date": "\"2022-07-28T05:00:00.000Z\"",
         "end_date": "\"2022-08-24T05:00:00.000Z\"",
         "apple_link": null,
@@ -14691,6 +14998,7 @@
       "monthTheme": {
         "id": 74,
         "theme_name": "Journeys with Dale",
+        "is_special": true,
         "start_date": null,
         "end_date": null,
         "apple_link": null,
@@ -14741,6 +15049,7 @@
       "monthTheme": {
         "id": 21,
         "theme_name": "Animaugust",
+        "is_special": false,
         "start_date": "\"2022-07-28T05:00:00.000Z\"",
         "end_date": "\"2022-08-24T05:00:00.000Z\"",
         "apple_link": null,
@@ -14794,6 +15103,46 @@
       "wikiArtConfirmed": true
     },
     {
+      "id": 499,
+      "movie": "The Magic of David Copperfield XIV: Flying – Live the Dream",
+      "year_released": 1992,
+      "date_published": "2022-08-18",
+      "episode": null,
+      "bonus": null,
+      "vault": null,
+      "pilot": null,
+      "book": null,
+      "watchalong": 4,
+      "slim": null,
+      "danny": null,
+      "proto": null,
+      "lb_link": null,
+      "guest": null,
+      "guest_lb_link": null,
+      "guest_rating": null,
+      "transcript_link": null,
+      "apple_link": null,
+      "spotify_link": null,
+      "store_link": null,
+      "tmdb_id": null,
+      "tmdb_tv_id": "56542",
+      "tmdb_tv_season": 1,
+      "tmdb_tv_episode": 14,
+      "vger_id": null,
+      "councilmember": null,
+      "councilmember_lb_link": null,
+      "month_theme_id": null,
+      "host_pick": null,
+      "affiliate_link": null,
+      "shirt_link": null,
+      "lastSynced": null,
+      "lb_link_val": null,
+      "viewer_count": 0,
+      "monthTheme": null,
+      "villager_count": 0,
+      "sum": null
+    },
+    {
       "id": 131,
       "movie": "Akira",
       "year_released": 1988,
@@ -14832,6 +15181,7 @@
       "monthTheme": {
         "id": 21,
         "theme_name": "Animaugust",
+        "is_special": false,
         "start_date": "\"2022-07-28T05:00:00.000Z\"",
         "end_date": "\"2022-08-24T05:00:00.000Z\"",
         "apple_link": null,
@@ -14922,6 +15272,7 @@
       "monthTheme": {
         "id": 21,
         "theme_name": "Animaugust",
+        "is_special": false,
         "start_date": "\"2022-07-28T05:00:00.000Z\"",
         "end_date": "\"2022-08-24T05:00:00.000Z\"",
         "apple_link": null,
@@ -14972,6 +15323,7 @@
       "monthTheme": {
         "id": 21,
         "theme_name": "Animaugust",
+        "is_special": false,
         "start_date": "\"2022-07-28T05:00:00.000Z\"",
         "end_date": "\"2022-08-24T05:00:00.000Z\"",
         "apple_link": null,
@@ -15063,6 +15415,7 @@
       "monthTheme": {
         "id": 20,
         "theme_name": "90s Action",
+        "is_special": false,
         "start_date": "\"2022-07-07T05:00:00.000Z\"",
         "end_date": "\"2022-07-19T05:00:00.000Z\"",
         "apple_link": null,
@@ -15113,6 +15466,7 @@
       "monthTheme": {
         "id": 20,
         "theme_name": "90s Action",
+        "is_special": false,
         "start_date": "\"2022-07-07T05:00:00.000Z\"",
         "end_date": "\"2022-07-19T05:00:00.000Z\"",
         "apple_link": null,
@@ -15163,6 +15517,7 @@
       "monthTheme": {
         "id": 20,
         "theme_name": "90s Action",
+        "is_special": false,
         "start_date": "\"2022-07-07T05:00:00.000Z\"",
         "end_date": "\"2022-07-19T05:00:00.000Z\"",
         "apple_link": null,
@@ -15295,6 +15650,7 @@
       "monthTheme": {
         "id": 19,
         "theme_name": "The Thing 40th June 25th",
+        "is_special": false,
         "start_date": "\"2022-06-23T05:00:00.000Z\"",
         "end_date": "\"2022-06-23T05:00:00.000Z\"",
         "apple_link": null,
@@ -15386,6 +15742,7 @@
       "monthTheme": {
         "id": 18,
         "theme_name": "Road to JW/Junassic World",
+        "is_special": false,
         "start_date": "\"2022-06-02T05:00:00.000Z\"",
         "end_date": "\"2022-06-16T05:00:00.000Z\"",
         "apple_link": null,
@@ -15436,6 +15793,7 @@
       "monthTheme": {
         "id": 18,
         "theme_name": "Road to JW/Junassic World",
+        "is_special": false,
         "start_date": "\"2022-06-02T05:00:00.000Z\"",
         "end_date": "\"2022-06-16T05:00:00.000Z\"",
         "apple_link": null,
@@ -15486,6 +15844,7 @@
       "monthTheme": {
         "id": 18,
         "theme_name": "Road to JW/Junassic World",
+        "is_special": false,
         "start_date": "\"2022-06-02T05:00:00.000Z\"",
         "end_date": "\"2022-06-16T05:00:00.000Z\"",
         "apple_link": null,
@@ -15618,6 +15977,7 @@
       "monthTheme": {
         "id": 17,
         "theme_name": "Sequels",
+        "is_special": false,
         "start_date": "\"2022-04-28T05:00:00.000Z\"",
         "end_date": "\"2022-05-26T05:00:00.000Z\"",
         "apple_link": null,
@@ -15668,6 +16028,7 @@
       "monthTheme": {
         "id": 17,
         "theme_name": "Sequels",
+        "is_special": false,
         "start_date": "\"2022-04-28T05:00:00.000Z\"",
         "end_date": "\"2022-05-26T05:00:00.000Z\"",
         "apple_link": null,
@@ -15718,6 +16079,7 @@
       "monthTheme": {
         "id": 17,
         "theme_name": "Sequels",
+        "is_special": false,
         "start_date": "\"2022-04-28T05:00:00.000Z\"",
         "end_date": "\"2022-05-26T05:00:00.000Z\"",
         "apple_link": null,
@@ -15809,6 +16171,7 @@
       "monthTheme": {
         "id": 17,
         "theme_name": "Sequels",
+        "is_special": false,
         "start_date": "\"2022-04-28T05:00:00.000Z\"",
         "end_date": "\"2022-05-26T05:00:00.000Z\"",
         "apple_link": null,
@@ -15900,6 +16263,7 @@
       "monthTheme": {
         "id": 17,
         "theme_name": "Sequels",
+        "is_special": false,
         "start_date": "\"2022-04-28T05:00:00.000Z\"",
         "end_date": "\"2022-05-26T05:00:00.000Z\"",
         "apple_link": null,
@@ -15950,6 +16314,7 @@
       "monthTheme": {
         "id": 16,
         "theme_name": "Leading Ladies Vol. 2",
+        "is_special": false,
         "start_date": "\"2022-03-17T05:00:00.000Z\"",
         "end_date": "\"2022-04-21T05:00:00.000Z\"",
         "apple_link": null,
@@ -16000,6 +16365,7 @@
       "monthTheme": {
         "id": 16,
         "theme_name": "Leading Ladies Vol. 2",
+        "is_special": false,
         "start_date": "\"2022-03-17T05:00:00.000Z\"",
         "end_date": "\"2022-04-21T05:00:00.000Z\"",
         "apple_link": null,
@@ -16050,6 +16416,7 @@
       "monthTheme": {
         "id": 16,
         "theme_name": "Leading Ladies Vol. 2",
+        "is_special": false,
         "start_date": "\"2022-03-17T05:00:00.000Z\"",
         "end_date": "\"2022-04-21T05:00:00.000Z\"",
         "apple_link": null,
@@ -16141,6 +16508,7 @@
       "monthTheme": {
         "id": 16,
         "theme_name": "Leading Ladies Vol. 2",
+        "is_special": false,
         "start_date": "\"2022-03-17T05:00:00.000Z\"",
         "end_date": "\"2022-04-21T05:00:00.000Z\"",
         "apple_link": null,
@@ -16254,7 +16622,7 @@
       "transcript_link": null,
       "apple_link": "https://podcasts.apple.com/us/podcast/harry-potter-and-the-order-of-the-phoenix-2007/id1495604053?i=1000555233936",
       "spotify_link": "https://open.spotify.com/episode/1R0tykwiMzxqBCVosoLCXE?si=fMMEPUn7SGC1MmDO-MFfsQ",
-      "store_link": null,
+      "store_link": "https://vhsvillage.com/products/bonus-episode-harry-potter-and-the-order-of-the-phoenix",
       "tmdb_id": "675",
       "tmdb_tv_id": null,
       "tmdb_tv_season": null,
@@ -16313,6 +16681,7 @@
       "monthTheme": {
         "id": 16,
         "theme_name": "Leading Ladies Vol. 2",
+        "is_special": false,
         "start_date": "\"2022-03-17T05:00:00.000Z\"",
         "end_date": "\"2022-04-21T05:00:00.000Z\"",
         "apple_link": null,
@@ -16363,6 +16732,7 @@
       "monthTheme": {
         "id": 15,
         "theme_name": "Road to the Batman",
+        "is_special": false,
         "start_date": "\"2022-02-17T06:00:00.000Z\"",
         "end_date": "\"2022-03-10T06:00:00.000Z\"",
         "apple_link": null,
@@ -16454,6 +16824,7 @@
       "monthTheme": {
         "id": 15,
         "theme_name": "Road to the Batman",
+        "is_special": false,
         "start_date": "\"2022-02-17T06:00:00.000Z\"",
         "end_date": "\"2022-03-10T06:00:00.000Z\"",
         "apple_link": null,
@@ -16504,6 +16875,7 @@
       "monthTheme": {
         "id": 15,
         "theme_name": "Road to the Batman",
+        "is_special": false,
         "start_date": "\"2022-02-17T06:00:00.000Z\"",
         "end_date": "\"2022-03-10T06:00:00.000Z\"",
         "apple_link": null,
@@ -16554,6 +16926,7 @@
       "monthTheme": {
         "id": 15,
         "theme_name": "Road to the Batman",
+        "is_special": false,
         "start_date": "\"2022-02-17T06:00:00.000Z\"",
         "end_date": "\"2022-03-10T06:00:00.000Z\"",
         "apple_link": null,
@@ -16604,6 +16977,7 @@
       "monthTheme": {
         "id": 15,
         "theme_name": "Road to the Batman",
+        "is_special": false,
         "start_date": "\"2022-02-17T06:00:00.000Z\"",
         "end_date": "\"2022-03-10T06:00:00.000Z\"",
         "apple_link": null,
@@ -16818,6 +17192,7 @@
       "monthTheme": {
         "id": 14,
         "theme_name": "No Theme",
+        "is_special": false,
         "start_date": "\"2022-01-06T06:00:00.000Z\"",
         "end_date": "\"2022-01-27T06:00:00.000Z\"",
         "apple_link": null,
@@ -16868,6 +17243,7 @@
       "monthTheme": {
         "id": 14,
         "theme_name": "No Theme",
+        "is_special": false,
         "start_date": "\"2022-01-06T06:00:00.000Z\"",
         "end_date": "\"2022-01-27T06:00:00.000Z\"",
         "apple_link": null,
@@ -16918,6 +17294,7 @@
       "monthTheme": {
         "id": 14,
         "theme_name": "No Theme",
+        "is_special": false,
         "start_date": "\"2022-01-06T06:00:00.000Z\"",
         "end_date": "\"2022-01-27T06:00:00.000Z\"",
         "apple_link": null,
@@ -16968,6 +17345,7 @@
       "monthTheme": {
         "id": 14,
         "theme_name": "No Theme",
+        "is_special": false,
         "start_date": "\"2022-01-06T06:00:00.000Z\"",
         "end_date": "\"2022-01-27T06:00:00.000Z\"",
         "apple_link": null,
@@ -17059,6 +17437,7 @@
       "monthTheme": {
         "id": 13,
         "theme_name": "Launch $10/tier + Phantom Menace",
+        "is_special": false,
         "start_date": "\"2021-12-30T06:00:00.000Z\"",
         "end_date": "\"2021-12-30T06:00:00.000Z\"",
         "apple_link": null,
@@ -17436,6 +17815,7 @@
       "monthTheme": {
         "id": 12,
         "theme_name": "Fall Vibes",
+        "is_special": false,
         "start_date": "\"2021-10-28T05:00:00.000Z\"",
         "end_date": "\"2021-11-25T06:00:00.000Z\"",
         "apple_link": null,
@@ -17486,6 +17866,7 @@
       "monthTheme": {
         "id": 12,
         "theme_name": "Fall Vibes",
+        "is_special": false,
         "start_date": "\"2021-10-28T05:00:00.000Z\"",
         "end_date": "\"2021-11-25T06:00:00.000Z\"",
         "apple_link": null,
@@ -17577,6 +17958,7 @@
       "monthTheme": {
         "id": 12,
         "theme_name": "Fall Vibes",
+        "is_special": false,
         "start_date": "\"2021-10-28T05:00:00.000Z\"",
         "end_date": "\"2021-11-25T06:00:00.000Z\"",
         "apple_link": null,
@@ -17627,6 +18009,7 @@
       "monthTheme": {
         "id": 12,
         "theme_name": "Fall Vibes",
+        "is_special": false,
         "start_date": "\"2021-10-28T05:00:00.000Z\"",
         "end_date": "\"2021-11-25T06:00:00.000Z\"",
         "apple_link": null,
@@ -17670,7 +18053,7 @@
       "month_theme_id": null,
       "host_pick": null,
       "affiliate_link": null,
-      "shirt_link": "https://vhsvillage.com/products/70mm-the-animatrix-unisex-garment-dyed-t-shirt",
+      "shirt_link": null,
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
       "viewer_count": 24,
@@ -17800,6 +18183,7 @@
       "monthTheme": {
         "id": 11,
         "theme_name": "Halloweenies",
+        "is_special": false,
         "start_date": "\"2021-09-30T05:00:00.000Z\"",
         "end_date": "\"2021-10-21T05:00:00.000Z\"",
         "apple_link": null,
@@ -17843,7 +18227,7 @@
       "month_theme_id": null,
       "host_pick": null,
       "affiliate_link": null,
-      "shirt_link": null,
+      "shirt_link": "https://vhsvillage.com/products/protokiri",
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
       "viewer_count": 46,
@@ -17932,6 +18316,7 @@
       "monthTheme": {
         "id": 11,
         "theme_name": "Halloweenies",
+        "is_special": false,
         "start_date": "\"2021-09-30T05:00:00.000Z\"",
         "end_date": "\"2021-10-21T05:00:00.000Z\"",
         "apple_link": null,
@@ -17982,6 +18367,7 @@
       "monthTheme": {
         "id": 11,
         "theme_name": "Halloweenies",
+        "is_special": false,
         "start_date": "\"2021-09-30T05:00:00.000Z\"",
         "end_date": "\"2021-10-21T05:00:00.000Z\"",
         "apple_link": null,
@@ -18032,6 +18418,7 @@
       "monthTheme": {
         "id": 11,
         "theme_name": "Halloweenies",
+        "is_special": false,
         "start_date": "\"2021-09-30T05:00:00.000Z\"",
         "end_date": "\"2021-10-21T05:00:00.000Z\"",
         "apple_link": null,
@@ -18123,6 +18510,7 @@
       "monthTheme": {
         "id": 11,
         "theme_name": "Halloweenies",
+        "is_special": false,
         "start_date": "\"2021-09-30T05:00:00.000Z\"",
         "end_date": "\"2021-10-21T05:00:00.000Z\"",
         "apple_link": null,
@@ -18214,6 +18602,7 @@
       "monthTheme": {
         "id": 10,
         "theme_name": "Latin American Movie Month",
+        "is_special": false,
         "start_date": "\"2021-09-09T05:00:00.000Z\"",
         "end_date": "\"2021-09-21T05:00:00.000Z\"",
         "apple_link": null,
@@ -18264,6 +18653,7 @@
       "monthTheme": {
         "id": 74,
         "theme_name": "Journeys with Dale",
+        "is_special": true,
         "start_date": null,
         "end_date": null,
         "apple_link": null,
@@ -18314,6 +18704,7 @@
       "monthTheme": {
         "id": 10,
         "theme_name": "Latin American Movie Month",
+        "is_special": false,
         "start_date": "\"2021-09-09T05:00:00.000Z\"",
         "end_date": "\"2021-09-21T05:00:00.000Z\"",
         "apple_link": null,
@@ -18405,6 +18796,7 @@
       "monthTheme": {
         "id": 10,
         "theme_name": "Latin American Movie Month",
+        "is_special": false,
         "start_date": "\"2021-09-09T05:00:00.000Z\"",
         "end_date": "\"2021-09-21T05:00:00.000Z\"",
         "apple_link": null,
@@ -18496,6 +18888,7 @@
       "monthTheme": {
         "id": 9,
         "theme_name": "Summer Blockbusters 21st Century",
+        "is_special": false,
         "start_date": "\"2021-07-29T05:00:00.000Z\"",
         "end_date": "\"2021-08-26T05:00:00.000Z\"",
         "apple_link": null,
@@ -18546,6 +18939,7 @@
       "monthTheme": {
         "id": 9,
         "theme_name": "Summer Blockbusters 21st Century",
+        "is_special": false,
         "start_date": "\"2021-07-29T05:00:00.000Z\"",
         "end_date": "\"2021-08-26T05:00:00.000Z\"",
         "apple_link": null,
@@ -18596,6 +18990,7 @@
       "monthTheme": {
         "id": 9,
         "theme_name": "Summer Blockbusters 21st Century",
+        "is_special": false,
         "start_date": "\"2021-07-29T05:00:00.000Z\"",
         "end_date": "\"2021-08-26T05:00:00.000Z\"",
         "apple_link": null,
@@ -18646,6 +19041,7 @@
       "monthTheme": {
         "id": 9,
         "theme_name": "Summer Blockbusters 21st Century",
+        "is_special": false,
         "start_date": "\"2021-07-29T05:00:00.000Z\"",
         "end_date": "\"2021-08-26T05:00:00.000Z\"",
         "apple_link": null,
@@ -18696,6 +19092,7 @@
       "monthTheme": {
         "id": 9,
         "theme_name": "Summer Blockbusters 21st Century",
+        "is_special": false,
         "start_date": "\"2021-07-29T05:00:00.000Z\"",
         "end_date": "\"2021-08-26T05:00:00.000Z\"",
         "apple_link": null,
@@ -18828,6 +19225,7 @@
       "monthTheme": {
         "id": 8,
         "theme_name": "Freedom",
+        "is_special": false,
         "start_date": "\"2021-06-24T05:00:00.000Z\"",
         "end_date": "\"2021-07-15T05:00:00.000Z\"",
         "apple_link": null,
@@ -18878,6 +19276,7 @@
       "monthTheme": {
         "id": 8,
         "theme_name": "Freedom",
+        "is_special": false,
         "start_date": "\"2021-06-24T05:00:00.000Z\"",
         "end_date": "\"2021-07-15T05:00:00.000Z\"",
         "apple_link": null,
@@ -18928,6 +19327,7 @@
       "monthTheme": {
         "id": 8,
         "theme_name": "Freedom",
+        "is_special": false,
         "start_date": "\"2021-06-24T05:00:00.000Z\"",
         "end_date": "\"2021-07-15T05:00:00.000Z\"",
         "apple_link": null,
@@ -19019,6 +19419,7 @@
       "monthTheme": {
         "id": 8,
         "theme_name": "Freedom",
+        "is_special": false,
         "start_date": "\"2021-06-24T05:00:00.000Z\"",
         "end_date": "\"2021-07-15T05:00:00.000Z\"",
         "apple_link": null,
@@ -19069,6 +19470,7 @@
       "monthTheme": {
         "id": 7,
         "theme_name": "Indiana Junes",
+        "is_special": false,
         "start_date": "\"2021-06-03T05:00:00.000Z\"",
         "end_date": "\"2021-06-23T05:00:00.000Z\"",
         "apple_link": null,
@@ -19119,6 +19521,7 @@
       "monthTheme": {
         "id": 7,
         "theme_name": "Indiana Junes",
+        "is_special": false,
         "start_date": "\"2021-06-03T05:00:00.000Z\"",
         "end_date": "\"2021-06-23T05:00:00.000Z\"",
         "apple_link": null,
@@ -19169,6 +19572,7 @@
       "monthTheme": {
         "id": 7,
         "theme_name": "Indiana Junes",
+        "is_special": false,
         "start_date": "\"2021-06-03T05:00:00.000Z\"",
         "end_date": "\"2021-06-23T05:00:00.000Z\"",
         "apple_link": null,
@@ -19219,6 +19623,7 @@
       "monthTheme": {
         "id": 7,
         "theme_name": "Indiana Junes",
+        "is_special": false,
         "start_date": "\"2021-06-03T05:00:00.000Z\"",
         "end_date": "\"2021-06-23T05:00:00.000Z\"",
         "apple_link": null,
@@ -19269,6 +19674,7 @@
       "monthTheme": {
         "id": 6,
         "theme_name": "Leading Ladies",
+        "is_special": false,
         "start_date": "\"2021-04-29T05:00:00.000Z\"",
         "end_date": "\"2021-05-27T05:00:00.000Z\"",
         "apple_link": null,
@@ -19360,6 +19766,7 @@
       "monthTheme": {
         "id": 6,
         "theme_name": "Leading Ladies",
+        "is_special": false,
         "start_date": "\"2021-04-29T05:00:00.000Z\"",
         "end_date": "\"2021-05-27T05:00:00.000Z\"",
         "apple_link": null,
@@ -19410,6 +19817,7 @@
       "monthTheme": {
         "id": 6,
         "theme_name": "Leading Ladies",
+        "is_special": false,
         "start_date": "\"2021-04-29T05:00:00.000Z\"",
         "end_date": "\"2021-05-27T05:00:00.000Z\"",
         "apple_link": null,
@@ -19460,6 +19868,7 @@
       "monthTheme": {
         "id": 6,
         "theme_name": "Leading Ladies",
+        "is_special": false,
         "start_date": "\"2021-04-29T05:00:00.000Z\"",
         "end_date": "\"2021-05-27T05:00:00.000Z\"",
         "apple_link": null,
@@ -19510,6 +19919,7 @@
       "monthTheme": {
         "id": 6,
         "theme_name": "Leading Ladies",
+        "is_special": false,
         "start_date": "\"2021-04-29T05:00:00.000Z\"",
         "end_date": "\"2021-05-27T05:00:00.000Z\"",
         "apple_link": null,
@@ -19642,6 +20052,7 @@
       "monthTheme": {
         "id": 5,
         "theme_name": "Box Office Bombs",
+        "is_special": false,
         "start_date": "\"2021-04-01T05:00:00.000Z\"",
         "end_date": "\"2021-04-15T05:00:00.000Z\"",
         "apple_link": null,
@@ -19692,6 +20103,7 @@
       "monthTheme": {
         "id": 5,
         "theme_name": "Box Office Bombs",
+        "is_special": false,
         "start_date": "\"2021-04-01T05:00:00.000Z\"",
         "end_date": "\"2021-04-15T05:00:00.000Z\"",
         "apple_link": null,
@@ -19742,6 +20154,7 @@
       "monthTheme": {
         "id": 5,
         "theme_name": "Box Office Bombs",
+        "is_special": false,
         "start_date": "\"2021-04-01T05:00:00.000Z\"",
         "end_date": "\"2021-04-15T05:00:00.000Z\"",
         "apple_link": null,
@@ -19792,6 +20205,7 @@
       "monthTheme": {
         "id": 5,
         "theme_name": "Box Office Bombs",
+        "is_special": false,
         "start_date": "\"2021-04-01T05:00:00.000Z\"",
         "end_date": "\"2021-04-15T05:00:00.000Z\"",
         "apple_link": null,
@@ -19965,6 +20379,7 @@
       "monthTheme": {
         "id": 4,
         "theme_name": "BUCKET LIST/SHAME",
+        "is_special": false,
         "start_date": "\"2021-02-25T06:00:00.000Z\"",
         "end_date": "\"2021-03-11T06:00:00.000Z\"",
         "apple_link": null,
@@ -20015,6 +20430,7 @@
       "monthTheme": {
         "id": 4,
         "theme_name": "BUCKET LIST/SHAME",
+        "is_special": false,
         "start_date": "\"2021-02-25T06:00:00.000Z\"",
         "end_date": "\"2021-03-11T06:00:00.000Z\"",
         "apple_link": null,
@@ -20065,6 +20481,7 @@
       "monthTheme": {
         "id": 4,
         "theme_name": "BUCKET LIST/SHAME",
+        "is_special": false,
         "start_date": "\"2021-02-25T06:00:00.000Z\"",
         "end_date": "\"2021-03-11T06:00:00.000Z\"",
         "apple_link": null,
@@ -20115,6 +20532,7 @@
       "monthTheme": {
         "id": 3,
         "theme_name": "FAVES",
+        "is_special": false,
         "start_date": "\"2021-01-28T06:00:00.000Z\"",
         "end_date": "\"2021-02-18T06:00:00.000Z\"",
         "apple_link": null,
@@ -20165,6 +20583,7 @@
       "monthTheme": {
         "id": 3,
         "theme_name": "FAVES",
+        "is_special": false,
         "start_date": "\"2021-01-28T06:00:00.000Z\"",
         "end_date": "\"2021-02-18T06:00:00.000Z\"",
         "apple_link": null,
@@ -20215,6 +20634,7 @@
       "monthTheme": {
         "id": 3,
         "theme_name": "FAVES",
+        "is_special": false,
         "start_date": "\"2021-01-28T06:00:00.000Z\"",
         "end_date": "\"2021-02-18T06:00:00.000Z\"",
         "apple_link": null,
@@ -20306,6 +20726,7 @@
       "monthTheme": {
         "id": 3,
         "theme_name": "FAVES",
+        "is_special": false,
         "start_date": "\"2021-01-28T06:00:00.000Z\"",
         "end_date": "\"2021-02-18T06:00:00.000Z\"",
         "apple_link": null,
@@ -20356,6 +20777,7 @@
       "monthTheme": {
         "id": 2,
         "theme_name": "CULT MONTH",
+        "is_special": false,
         "start_date": "\"2020-12-23T06:00:00.000Z\"",
         "end_date": "\"2021-01-21T06:00:00.000Z\"",
         "apple_link": null,
@@ -20406,6 +20828,7 @@
       "monthTheme": {
         "id": 2,
         "theme_name": "CULT MONTH",
+        "is_special": false,
         "start_date": "\"2020-12-23T06:00:00.000Z\"",
         "end_date": "\"2021-01-21T06:00:00.000Z\"",
         "apple_link": null,
@@ -20438,7 +20861,7 @@
       "transcript_link": null,
       "apple_link": "https://podcasts.apple.com/us/podcast/monty-python-and-the-holy-grail-1975/id1495604053?i=1000504959978",
       "spotify_link": "https://open.spotify.com/episode/5gASka6BEjf38AlXx5wrsH?si=jSOrCwBrSE64017ml74u8Q",
-      "store_link": "https://vhsvillage.com/products/episode-050-monty-python-and-the-holy-grail",
+      "store_link": null,
       "tmdb_id": "762",
       "tmdb_tv_id": null,
       "tmdb_tv_season": null,
@@ -20456,6 +20879,7 @@
       "monthTheme": {
         "id": 2,
         "theme_name": "CULT MONTH",
+        "is_special": false,
         "start_date": "\"2020-12-23T06:00:00.000Z\"",
         "end_date": "\"2021-01-21T06:00:00.000Z\"",
         "apple_link": null,
@@ -20506,6 +20930,7 @@
       "monthTheme": {
         "id": 2,
         "theme_name": "CULT MONTH",
+        "is_special": false,
         "start_date": "\"2020-12-23T06:00:00.000Z\"",
         "end_date": "\"2021-01-21T06:00:00.000Z\"",
         "apple_link": null,
@@ -20556,6 +20981,7 @@
       "monthTheme": {
         "id": 2,
         "theme_name": "CULT MONTH",
+        "is_special": false,
         "start_date": "\"2020-12-23T06:00:00.000Z\"",
         "end_date": "\"2021-01-21T06:00:00.000Z\"",
         "apple_link": null,
@@ -21057,6 +21483,7 @@
       "monthTheme": {
         "id": 1,
         "theme_name": "HORROR",
+        "is_special": false,
         "start_date": "\"2020-10-01T05:00:00.000Z\"",
         "end_date": "\"2020-10-22T05:00:00.000Z\"",
         "apple_link": null,
@@ -21107,6 +21534,7 @@
       "monthTheme": {
         "id": 1,
         "theme_name": "HORROR",
+        "is_special": false,
         "start_date": "\"2020-10-01T05:00:00.000Z\"",
         "end_date": "\"2020-10-22T05:00:00.000Z\"",
         "apple_link": null,
@@ -21157,6 +21585,7 @@
       "monthTheme": {
         "id": 1,
         "theme_name": "HORROR",
+        "is_special": false,
         "start_date": "\"2020-10-01T05:00:00.000Z\"",
         "end_date": "\"2020-10-22T05:00:00.000Z\"",
         "apple_link": null,
@@ -21207,6 +21636,7 @@
       "monthTheme": {
         "id": 1,
         "theme_name": "HORROR",
+        "is_special": false,
         "start_date": "\"2020-10-01T05:00:00.000Z\"",
         "end_date": "\"2020-10-22T05:00:00.000Z\"",
         "apple_link": null,
@@ -21291,7 +21721,7 @@
       "month_theme_id": null,
       "host_pick": null,
       "affiliate_link": null,
-      "shirt_link": null,
+      "shirt_link": "https://vhsvillage.com/products/70mm-shin-godzilla-unisex-garment-dyed-t-shirt",
       "lastSynced": "2026-10-24T01:01:06.235Z",
       "lb_link_val": null,
       "viewer_count": 56,
@@ -21906,7 +22336,7 @@
       "month_theme_id": null,
       "host_pick": null,
       "affiliate_link": null,
-      "shirt_link": null,
+      "shirt_link": "https://vhsvillage.com/products/70mm-shining-unisex-garment-dyed-t-shirt",
       "lastSynced": "2026-11-15T01:01:02.324Z",
       "lb_link_val": null,
       "viewer_count": 117,
@@ -21954,6 +22384,7 @@
       "monthTheme": {
         "id": 74,
         "theme_name": "Journeys with Dale",
+        "is_special": true,
         "start_date": null,
         "end_date": null,
         "apple_link": null,
